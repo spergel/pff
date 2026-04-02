@@ -1,0 +1,177 @@
+"use client";
+
+import { useState } from "react";
+import type { FlowRow } from "@/src/types/pff";
+import { SignalBadge } from "./SignalBadge";
+
+const fmt = new Intl.NumberFormat("en-US", {
+  notation: "compact",
+  maximumFractionDigits: 1,
+});
+const fmtDollar = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  notation: "compact",
+  maximumFractionDigits: 1,
+});
+
+function rowBg(type: FlowRow["flow_type"]) {
+  if (type === "ADDED") return "bg-blue-50";
+  if (type === "REMOVED") return "bg-orange-50";
+  if (type === "BUY") return "bg-green-50";
+  if (type === "SELL") return "bg-red-50";
+  if (type === "SUSPECT") return "bg-yellow-50";
+  return "";
+}
+
+type SortKey = "dollar_flow" | "shares_delta" | "weight_delta";
+
+export function FlowsTable({
+  flows,
+  showAll = false,
+}: {
+  flows: FlowRow[];
+  showAll?: boolean;
+}) {
+  const [sortKey, setSortKey] = useState<SortKey>("dollar_flow");
+  const [filterType, setFilterType] = useState<string>("all");
+
+  const filtered = flows.filter((f) => {
+    if (filterType === "all") return f.flow_type !== "UNCHANGED";
+    return f.flow_type === filterType;
+  });
+
+  const sorted = [...filtered].sort((a, b) => {
+    const av = Math.abs((a[sortKey] as number) ?? 0);
+    const bv = Math.abs((b[sortKey] as number) ?? 0);
+    return bv - av;
+  });
+
+  const visible = showAll ? sorted : sorted.slice(0, 50);
+
+  const types = ["all", "BUY", "SELL", "ADDED", "REMOVED", "SUSPECT"];
+
+  return (
+    <div className="space-y-3">
+      <div className="flex flex-wrap gap-2 text-sm">
+        {types.map((t) => (
+          <button
+            key={t}
+            onClick={() => setFilterType(t)}
+            className={`rounded border px-3 py-1 capitalize transition-colors ${
+              filterType === t
+                ? "border-slate-700 bg-slate-700 text-white"
+                : "border-slate-200 hover:border-slate-400"
+            }`}
+          >
+            {t === "all" ? "All Changes" : t}
+          </button>
+        ))}
+        <span className="ml-auto self-center text-slate-400">
+          {filtered.length} rows
+        </span>
+      </div>
+
+      <div className="overflow-x-auto rounded-lg border border-slate-200">
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="border-b border-slate-200 bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+              <th className="px-3 py-2">Ticker</th>
+              <th className="px-3 py-2">Name</th>
+              <th className="px-3 py-2">Sector</th>
+              <th className="px-3 py-2">Type</th>
+              <th
+                className="cursor-pointer px-3 py-2 hover:text-slate-800"
+                onClick={() => setSortKey("dollar_flow")}
+              >
+                $ Flow {sortKey === "dollar_flow" ? "↓" : ""}
+              </th>
+              <th
+                className="cursor-pointer px-3 py-2 hover:text-slate-800"
+                onClick={() => setSortKey("shares_delta")}
+              >
+                Δ Shares {sortKey === "shares_delta" ? "↓" : ""}
+              </th>
+              <th className="px-3 py-2">Prior Shares</th>
+              <th className="px-3 py-2">Today Shares</th>
+              <th
+                className="cursor-pointer px-3 py-2 hover:text-slate-800"
+                onClick={() => setSortKey("weight_delta")}
+              >
+                Δ Weight {sortKey === "weight_delta" ? "↓" : ""}
+              </th>
+              <th className="px-3 py-2">Price</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-100">
+            {visible.map((row) => (
+              <tr key={row.isin} className={`${rowBg(row.flow_type)} hover:opacity-80`}>
+                <td className="px-3 py-2 font-mono font-semibold">
+                  {row.ticker !== row.ticker_raw ? (
+                    <span title={`Raw: ${row.ticker_raw}`}>{row.ticker}</span>
+                  ) : (
+                    row.ticker
+                  )}
+                </td>
+                <td className="px-3 py-2 text-slate-600">{row.name}</td>
+                <td className="px-3 py-2 text-slate-500">{row.sector}</td>
+                <td className="px-3 py-2">
+                  <SignalBadge type={row.flow_type} />
+                </td>
+                <td
+                  className={`px-3 py-2 font-mono font-medium ${
+                    (row.dollar_flow ?? 0) > 0
+                      ? "text-green-700"
+                      : "text-red-700"
+                  }`}
+                >
+                  {row.dollar_flow != null ? fmtDollar.format(row.dollar_flow) : "—"}
+                </td>
+                <td
+                  className={`px-3 py-2 font-mono ${
+                    (row.shares_delta ?? 0) > 0
+                      ? "text-green-700"
+                      : "text-red-700"
+                  }`}
+                >
+                  {row.shares_delta != null
+                    ? `${row.shares_delta > 0 ? "+" : ""}${fmt.format(row.shares_delta)}`
+                    : "—"}
+                </td>
+                <td className="px-3 py-2 font-mono text-slate-500">
+                  {row.prior_shares != null ? fmt.format(row.prior_shares) : "—"}
+                </td>
+                <td className="px-3 py-2 font-mono text-slate-500">
+                  {row.today_shares != null ? fmt.format(row.today_shares) : "—"}
+                </td>
+                <td
+                  className={`px-3 py-2 font-mono text-xs ${
+                    (row.weight_delta ?? 0) > 0
+                      ? "text-green-600"
+                      : (row.weight_delta ?? 0) < 0
+                      ? "text-red-600"
+                      : "text-slate-400"
+                  }`}
+                >
+                  {row.weight_delta != null
+                    ? `${row.weight_delta > 0 ? "+" : ""}${row.weight_delta.toFixed(3)}%`
+                    : "—"}
+                </td>
+                <td className="px-3 py-2 font-mono text-slate-500">
+                  {row.price != null ? `$${row.price.toFixed(2)}` : "—"}
+                </td>
+              </tr>
+            ))}
+            {visible.length === 0 && (
+              <tr>
+                <td colSpan={10} className="px-3 py-8 text-center text-slate-400">
+                  No data
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}

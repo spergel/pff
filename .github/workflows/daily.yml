@@ -1,0 +1,42 @@
+name: Daily PFF Holdings Scrape
+
+on:
+  schedule:
+    - cron: "0 22 * * 1-5" # 6 pm ET (22:00 UTC) weekdays
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Date to backfill (YYYYMMDD). Leave blank for today."
+        required: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        working-directory: scripts
+        env:
+          OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
+        run: python run_pipeline.py ${{ github.event.inputs.date }}
+
+      - name: Commit and push data
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add data/holdings/ data/flows/ data/ticker_cache.json
+          git diff --staged --quiet && echo "No changes to commit." || \
+            git commit -m "data: PFF holdings $(date -u +%Y-%m-%d)"
+          git push
