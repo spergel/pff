@@ -1,6 +1,6 @@
 "date","isin","cusip","ticker","ticker_raw","name","sector","prior_shares","today_shares","shares_delta","prior_weight","today_weight","weight_delta","price","dollar_flow","flow_type","gap_days","yahoo_ticker","adv_30d","overhang_days","par_value","price_vs_par_pct","signal_score"
-"2026-02-09","-","","USD","USD","USD CASH","Cash and/or Derivatives","913712.0","156281.0","-757431.0","0.00654","0.00112","-0.00542","100.0","-75743100.0","SUSPECT","3","USD",820556,0.9,25.0,300.0,0.0
-"2026-02-09","US0669224778","","XTSLA","XTSLA","BLK CSH FND TREASURY SL AGENCY","Cash and/or Derivatives","71376876.0","71376705.0","-171.0","0.51121","0.51043","-0.00078","1.0","-171.0","SELL","3","","","",25.0,-96.0,""
+"2026-02-09","-","","USD","USD","USD CASH","Cash and/or Derivatives","913712.0","156281.0","-757431.0","0.00654","0.00112","-0.00542","100.0","-75743100.0","UNCHANGED","3","USD","820556","0.9","25.0","300.0","0.0"
+"2026-02-09","US0669224778","","XTSLA","XTSLA","BLK CSH FND TREASURY SL AGENCY","Cash and/or Derivatives","71376876.0","71376705.0","-171.0","0.51121","0.51043","-0.00078","1.0","-171.0","UNCHANGED","3","","","","25.0","-96.0",""
 "2026-02-09","US2333318598","","DTE","DTE","DTE ENERGY COMPANY","Utility","1189962.0","1189962.0","0.0","0.18929","0.18977","0.00048","22.3","0.0","UNCHANGED","3","","","","","",""
 "2026-02-09","CA67000B2030","","NOVTV","NOVTV","NOVANTA TANGIBLE EQUITY UNITS INC","Industrial","943494.0","943494.0","0.0","0.41882","0.41839","-0.00043","62.01","0.0","UNCHANGED","3","","","","","",""
 "2026-02-09","US38741L3050","","GPMT-A","GPMT","GRANITE POINT MORTGAGE TRUST INC","Financial Institutions","612004.0","612004.0","0.0","0.09143","0.09073","-0.0007","20.73","0.0","UNCHANGED","3","","","","","",""

@@ -1,5 +1,5 @@
 "date","isin","cusip","ticker","ticker_raw","name","sector","prior_shares","today_shares","shares_delta","prior_weight","today_weight","weight_delta","price","dollar_flow","flow_type","gap_days","yahoo_ticker","adv_30d","overhang_days","par_value","price_vs_par_pct","signal_score"
-"2025-08-08","-","","USD","USD","USD CASH","Cash and/or Derivatives","80246.0","-245702.0","-325948.0","0.00057","-0.00173","-0.0023","100.0","-32594800.0","SUSPECT","1","USD",820556,0.4,25.0,300.0,0.0
+"2025-08-08","-","","USD","USD","USD CASH","Cash and/or Derivatives","80246.0","-245702.0","-325948.0","0.00057","-0.00173","-0.0023","100.0","-32594800.0","UNCHANGED","1","USD","820556","0.4","25.0","300.0","0.0"
 "2025-08-08","US2333318598","","DTE","DTE","DTE ENERGY COMPANY","Utility","1275088.0","1275088.0","0.0","0.20488","0.20438","-0.0005","22.7","0.0","UNCHANGED","1","","","","","",""
 "2025-08-08","US38741L3050","","GPMT-A","GPMT","GRANITE POINT MORTGAGE TRUST INC","Financial Institutions","655853.0","655853.0","0.0","0.09203","0.09156","-0.00047","19.77","0.0","UNCHANGED","1","","","","","",""
 "2025-08-08","US1170436042","","BC","BC","BRUNSWICK CORPORATION","Industrial","733193.0","733193.0","0.0","0.12321","0.12296","-0.00025","23.75","0.0","UNCHANGED","1","","","","","",""

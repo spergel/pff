@@ -1,7 +1,7 @@
 "date","isin","cusip","ticker","ticker_raw","name","sector","prior_shares","today_shares","shares_delta","prior_weight","today_weight","weight_delta","price","dollar_flow","flow_type","gap_days","yahoo_ticker","adv_30d","overhang_days","par_value","price_vs_par_pct","signal_score"
-"2025-07-17","-","","USD","USD","USD CASH","Cash and/or Derivatives","-2522475.0","29920723.0","32443198.0","-0.01791","0.21109","0.229","100.0","3244319800.0","BUY","1","USD",820556,39.5,25.0,300.0,0.0
-"2025-07-17","US29359U1097","","ESGR-D","ESGR","ENSTAR GROUP LTD","Financial Institutions","1278653.0","0.0","-1278653.0","0.17935","0.0","-0.17935","19.75","-25253396.75","REMOVED","1","","","",25.0,-21.0,""
-"2025-07-17","US29359U2087","","ESGR-E","ESGR","ENSTAR GROUP LTD","Financial Institutions","347463.0","0.0","-347463.0","0.0474","0.0","-0.0474","19.21","-6674764.23","REMOVED","1","","","",25.0,-23.16,""
+"2025-07-17","-","","USD","USD","USD CASH","Cash and/or Derivatives","-2522475.0","29920723.0","32443198.0","-0.01791","0.21109","0.229","100.0","3244319800.0","UNCHANGED","1","USD","820556","39.5","25.0","300.0","0.0"
+"2025-07-17","US29359U1097","","ESGR-D","ESGR","ENSTAR GROUP LTD","Financial Institutions","1278653.0","0.0","-1278653.0","0.17935","0.0","-0.17935","19.75","-25253396.75","REMOVED","1","","","","25.0","-21.0",""
+"2025-07-17","US29359U2087","","ESGR-E","ESGR","ENSTAR GROUP LTD","Financial Institutions","347463.0","0.0","-347463.0","0.0474","0.0","-0.0474","19.21","-6674764.23","REMOVED","1","","","","25.0","-23.16",""
 "2025-07-17","US2333318598","","DTE","DTE","DTE ENERGY COMPANY","Utility","1255802.0","1255802.0","0.0","0.18979","0.18987","8e-05","21.43","0.0","UNCHANGED","1","","","","","",""
 "2025-07-17","US38741L3050","","GPMT-A","GPMT","GRANITE POINT MORTGAGE TRUST INC","Financial Institutions","641892.0","641892.0","0.0","0.08707","0.08672","-0.00035","19.15","0.0","UNCHANGED","1","","","","","",""
 "2025-07-17","US1170436042","","BC","BC","BRUNSWICK CORPORATION","Industrial","725806.0","725806.0","0.0","0.12438","0.12469","0.00031","24.35","0.0","UNCHANGED","1","","","","","",""

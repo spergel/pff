@@ -1,5 +1,5 @@
 "date","isin","cusip","ticker","ticker_raw","name","sector","prior_shares","today_shares","shares_delta","prior_weight","today_weight","weight_delta","price","dollar_flow","flow_type","gap_days","yahoo_ticker","adv_30d","overhang_days","par_value","price_vs_par_pct","signal_score"
-"2026-03-10","-","","USD","USD","USD CASH","Cash and/or Derivatives","-9113168.0","-6613984.0","2499184.0","-0.06519","-0.04734","0.01785","100.0","249918400.0","BUY","1","USD",820556,3.0,25.0,300.0,0.0
+"2026-03-10","-","","USD","USD","USD CASH","Cash and/or Derivatives","-9113168.0","-6613984.0","2499184.0","-0.06519","-0.04734","0.01785","100.0","249918400.0","UNCHANGED","1","USD","820556","3.0","25.0","300.0","0.0"
 "2026-03-10","US2333318598","","DTE","DTE","DTE ENERGY COMPANY","Utility","1164536.0","1164536.0","0.0","0.18209","0.18197","-0.00012","21.83","0.0","UNCHANGED","1","","","","","",""
 "2026-03-10","CA67000B2030","","NOVTV","NOVTV","NOVANTA TANGIBLE EQUITY UNITS INC","Industrial","920675.0","920675.0","0.0","0.37591","0.36583","-0.01008","55.51","0.0","UNCHANGED","1","","","","","",""
 "2026-03-10","US38741L3050","","GPMT-A","GPMT","GRANITE POINT MORTGAGE TRUST INC","Financial Institutions","598946.0","598946.0","0.0","0.08727","0.08798","0.00071","20.52","0.0","UNCHANGED","1","","","","","",""

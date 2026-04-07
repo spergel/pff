@@ -1,6 +1,6 @@
 "date","isin","cusip","ticker","ticker_raw","name","sector","prior_shares","today_shares","shares_delta","prior_weight","today_weight","weight_delta","price","dollar_flow","flow_type","gap_days","yahoo_ticker","adv_30d","overhang_days","par_value","price_vs_par_pct","signal_score"
-"2025-09-29","-","","USD","USD","USD CASH","Cash and/or Derivatives","-1835988.0","-1429727.0","406261.0","-0.01249","-0.00972","0.00277","100.0","40626100.0","BUY","3","USD",820556,0.5,25.0,300.0,0.0
-"2025-09-29","US0669224778","","XTSLA","XTSLA","BLK CSH FND TREASURY SL AGENCY","Cash and/or Derivatives","135625255.0","137339662.0","1714407.0","0.9223","0.9338","0.0115","1.0","1714407.0","BUY","3","","","",25.0,-96.0,""
+"2025-09-29","-","","USD","USD","USD CASH","Cash and/or Derivatives","-1835988.0","-1429727.0","406261.0","-0.01249","-0.00972","0.00277","100.0","40626100.0","UNCHANGED","3","USD","820556","0.5","25.0","300.0","0.0"
+"2025-09-29","US0669224778","","XTSLA","XTSLA","BLK CSH FND TREASURY SL AGENCY","Cash and/or Derivatives","135625255.0","137339662.0","1714407.0","0.9223","0.9338","0.0115","1.0","1714407.0","UNCHANGED","3","","","","25.0","-96.0",""
 "2025-09-29","US2333318598","","DTE","DTE","DTE ENERGY COMPANY","Utility","1277843.0","1277843.0","0.0","0.197","0.19531","-0.00169","22.48","0.0","UNCHANGED","3","","","","","",""
 "2025-09-29","US38741L3050","","GPMT-A","GPMT","GRANITE POINT MORTGAGE TRUST INC","Financial Institutions","657289.0","657289.0","0.0","0.0923","0.09184","-0.00046","20.55","0.0","UNCHANGED","3","","","","","",""
 "2025-09-29","US1170436042","","BC","BC","BRUNSWICK CORPORATION","Industrial","734729.0","734729.0","0.0","0.12371","0.12409","0.00038","24.84","0.0","UNCHANGED","3","","","","","",""

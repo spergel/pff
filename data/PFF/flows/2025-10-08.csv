@@ -1,7 +1,7 @@
 "date","isin","cusip","ticker","ticker_raw","name","sector","prior_shares","today_shares","shares_delta","prior_weight","today_weight","weight_delta","price","dollar_flow","flow_type","gap_days","yahoo_ticker","adv_30d","overhang_days","par_value","price_vs_par_pct","signal_score"
-"2025-10-08","-","","USD","USD","USD CASH","Cash and/or Derivatives","8369155.0","7709563.0","-659592.0","0.05687","0.05237","-0.0045","100.0","-65959200.0","SELL","1","USD",820556,0.8,25.0,300.0,0.0
-"2025-10-08","US67623C2089","","OPI","OPI","OFFICE PROPERTIES INCOME TRUST","Financial Institutions","510508.0","376488.0","-134020.0","0.01353","0.0069","-0.00663","2.7","-361854.0","SELL","1","","","",25.0,-89.2,""
-"2025-10-08","US0669224778","","XTSLA","XTSLA","BLK CSH FND TREASURY SL AGENCY","Cash and/or Derivatives","84045373.0","84298388.0","253015.0","0.57111","0.5726","0.00149","1.0","253015.0","BUY","1","","","",25.0,-96.0,""
+"2025-10-08","-","","USD","USD","USD CASH","Cash and/or Derivatives","8369155.0","7709563.0","-659592.0","0.05687","0.05237","-0.0045","100.0","-65959200.0","UNCHANGED","1","USD","820556","0.8","25.0","300.0","0.0"
+"2025-10-08","US67623C2089","","OPI","OPI","OFFICE PROPERTIES INCOME TRUST","Financial Institutions","510508.0","376488.0","-134020.0","0.01353","0.0069","-0.00663","2.7","-361854.0","SELL","1","","","","25.0","-89.2",""
+"2025-10-08","US0669224778","","XTSLA","XTSLA","BLK CSH FND TREASURY SL AGENCY","Cash and/or Derivatives","84045373.0","84298388.0","253015.0","0.57111","0.5726","0.00149","1.0","253015.0","UNCHANGED","1","","","","25.0","-96.0",""
 "2025-10-08","US2333318598","","DTE","DTE","DTE ENERGY COMPANY","Utility","1281983.0","1281983.0","0.0","0.1947","0.1948","0.0001","22.37","0.0","UNCHANGED","1","","","","","",""
 "2025-10-08","US38741L3050","","GPMT-A","GPMT","GRANITE POINT MORTGAGE TRUST INC","Financial Institutions","659419.0","659419.0","0.0","0.09033","0.09055","0.00022","20.22","0.0","UNCHANGED","1","","","","","",""
 "2025-10-08","US1170436042","","BC","BC","BRUNSWICK CORPORATION","Industrial","737099.0","737099.0","0.0","0.12427","0.12422","-5e-05","24.81","0.0","UNCHANGED","1","","","","","",""

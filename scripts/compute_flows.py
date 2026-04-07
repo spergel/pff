@@ -23,7 +23,7 @@ CACHE_FILE = "data/ticker_cache.json"
 SUSPECT_THRESHOLD = 0.50
 
 FIELDNAMES = [
-    "date", "isin", "ticker", "ticker_raw", "name", "sector",
+    "date", "isin", "cusip", "ticker", "ticker_raw", "name", "sector",
     "prior_shares", "today_shares", "shares_delta",
     "prior_weight", "today_weight", "weight_delta",
     "price", "dollar_flow", "flow_type", "gap_days",
@@ -122,13 +122,19 @@ def compute(prev_path: str, curr_path: str, ticker_cache: dict, key_field: str) 
         cache_entry = ticker_cache.get(cache_key, {})
         ticker = cache_entry.get("ticker") or ticker_raw
 
-        flow_type = classify(prior_shares, today_shares, prior_weight, today_weight)
+        # Cash and derivatives positions are fund plumbing, not rebalancing signals.
+        # Negative share counts (e.g. USD CASH receivables) also produce nonsense dollar flows.
+        if sector == "Cash and/or Derivatives":
+            flow_type = "UNCHANGED"
+        else:
+            flow_type = classify(prior_shares, today_shares, prior_weight, today_weight)
         shares_delta = today_shares - prior_shares
         dollar_flow = shares_delta * price
 
         rows.append({
             "date": curr_date_str,
-            "isin": isin_val or symbol,  # use symbol (CUSIP) if no ISIN
+            "isin": isin_val or symbol,
+            "cusip": cusip_val or (symbol if key_field == "cusip" else ""),
             "ticker": ticker,
             "ticker_raw": ticker_raw,
             "name": name,
