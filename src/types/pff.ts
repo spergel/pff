@@ -31,6 +31,7 @@ export interface FlowRow {
   ticker_raw: string;
   name: string;
   sector: string;
+  etf?: string; // set when merging across ETFs
   prior_shares: number | null;
   today_shares: number | null;
   shares_delta: number | null;

@@ -24,14 +24,22 @@ function rowBg(type: FlowRow["flow_type"]) {
   return "";
 }
 
+const ETF_COLORS: Record<string, string> = {
+  PFF: "bg-blue-100 text-blue-700",
+  PGX: "bg-purple-100 text-purple-700",
+  FPE: "bg-amber-100 text-amber-700",
+};
+
 type SortKey = "dollar_flow" | "shares_delta" | "weight_delta";
 
 export function FlowsTable({
   flows,
   showAll = false,
+  showEtf = false,
 }: {
   flows: FlowRow[];
   showAll?: boolean;
+  showEtf?: boolean;
 }) {
   const [sortKey, setSortKey] = useState<SortKey>("dollar_flow");
   const [filterType, setFilterType] = useState<string>("all");
@@ -76,6 +84,7 @@ export function FlowsTable({
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-slate-200 bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+              {showEtf && <th className="px-3 py-2">ETF</th>}
               <th className="px-3 py-2">Ticker</th>
               <th className="px-3 py-2">Name</th>
               <th className="px-3 py-2">Sector</th>
@@ -105,7 +114,14 @@ export function FlowsTable({
           </thead>
           <tbody className="divide-y divide-slate-100">
             {visible.map((row) => (
-              <tr key={row.isin} className={`${rowBg(row.flow_type)} hover:opacity-80`}>
+              <tr key={`${row.etf ?? ""}-${row.isin}`} className={`${rowBg(row.flow_type)} hover:opacity-80`}>
+                {showEtf && (
+                  <td className="px-3 py-2">
+                    <span className={`rounded px-1.5 py-0.5 text-xs font-semibold ${ETF_COLORS[row.etf ?? ""] ?? "bg-slate-100 text-slate-600"}`}>
+                      {row.etf ?? "—"}
+                    </span>
+                  </td>
+                )}
                 <td className="px-3 py-2 font-mono font-semibold">
                   {row.ticker !== row.ticker_raw ? (
                     <span title={`Raw: ${row.ticker_raw}`}>{row.ticker}</span>
@@ -164,7 +180,7 @@ export function FlowsTable({
             ))}
             {visible.length === 0 && (
               <tr>
-                <td colSpan={10} className="px-3 py-8 text-center text-slate-400">
+                <td colSpan={showEtf ? 11 : 10} className="px-3 py-8 text-center text-slate-400">
                   No data
                 </td>
               </tr>
