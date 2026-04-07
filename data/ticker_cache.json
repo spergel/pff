@@ -109,6 +109,16 @@
     "ticker": "RNR-G",
     "ticker_raw": "RNR"
   },
+  "BMG8192H1557": {
+    "figi": "BBG011LRMTB3",
+    "figi_name": "SIRIUSPOINT LTD",
+    "figi_ticker": "SPNT V8 PERP B",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "SPNT-B",
+    "ticker_raw": "SPNT"
+  },
   "BMG9078F1317": {
     "figi": "BBG00PGH4647",
     "figi_name": "TRITON INTERNATIONAL LTD",
@@ -188,6 +198,26 @@
     "securityType": "PUBLIC",
     "ticker": "FTAI-C",
     "ticker_raw": "FTAI"
+  },
+  "MHY0436Q1171": {
+    "figi": "BBG00S2GL4C5",
+    "figi_name": "ATLAS CORP",
+    "figi_ticker": "ATCO 7.95 PERP D",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "ATCO-D",
+    "ticker_raw": "ATCO"
+  },
+  "MHY0436Q1411": {
+    "figi": "BBG00S2GDCJ9",
+    "figi_name": "ATLAS CORP",
+    "figi_ticker": "ATCO 7.875 PERP H",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "ATCO-H",
+    "ticker_raw": "ATCO"
   },
   "MHY271831213": {
     "figi": "BBG006YWR2Y7",
@@ -459,6 +489,16 @@
     "ticker": "ANGINC",
     "ticker_raw": "ANGINC"
   },
+  "US0256768674": {
+    "figi": null,
+    "figi_name": null,
+    "figi_ticker": null,
+    "parsed_from_name": true,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "AEL PR B",
+    "ticker_raw": "AEL PR B"
+  },
   "US0259328070": {
     "figi": "BBG00NKSZ202",
     "figi_name": "AMERICAN FINANCIAL GROUP",
@@ -639,6 +679,26 @@
     "ticker": "ARES",
     "ticker_raw": "ARES"
   },
+  "US0401284072": {
+    "figi": "BBG00VY1LBP6",
+    "figi_name": "ARGO GROUP INTERNATIONAL",
+    "figi_ticker": "ARGO V7 PERP",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "ARGO",
+    "ticker_raw": "BNRE"
+  },
+  "US0401301066": {
+    "figi": "BBG003D8YRP7",
+    "figi_name": "ARGO GROUP US INC",
+    "figi_ticker": "ARGO 6.5 09/15/42",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "ARGO",
+    "ticker_raw": "ARGO"
+  },
   "US04208T2078": {
     "figi": "BBG00PF3RDH5",
     "figi_name": "AH REALTY TRUST INC",
@@ -707,6 +767,16 @@
     "resolved": true,
     "securityType": "PUBLIC",
     "ticker": "ATH-B",
+    "ticker_raw": "ATH"
+  },
+  "US04686J3095": {
+    "figi": "BBG00V94Y7S0",
+    "figi_name": "ATHENE HOLDING LTD",
+    "figi_ticker": "ATH V6.375 PERP C",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "ATH-C",
     "ticker_raw": "ATH"
   },
   "US04686J4085": {
@@ -829,6 +899,16 @@
     "ticker": "RILY",
     "ticker_raw": "RILY"
   },
+  "US05580M8275": {
+    "figi": "BBG00ZSDX8Q1",
+    "figi_name": "BRC GROUP HOLDINGS INC",
+    "figi_ticker": "RILY 5.5 03/31/26",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "RILY",
+    "ticker_raw": "RILY"
+  },
   "US05580M8358": {
     "figi": "BBG00YZGV9Y0",
     "figi_name": "BRC GROUP HOLDINGS INC",
@@ -839,6 +919,16 @@
     "ticker": "RILY",
     "ticker_raw": "RILY"
   },
+  "US05614L3087": {
+    "figi": "BBG00Z832JH5",
+    "figi_name": "BABCOCK & WILCOX ENTERPR",
+    "figi_ticker": "BW 8.125 02/28/26",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "BW",
+    "ticker_raw": "BW"
+  },
   "US05614L4077": {
     "figi": "BBG010R8N755",
     "figi_name": "BABCOCK & WILCOX ENTERPR",
@@ -847,6 +937,16 @@
     "resolved": true,
     "securityType": "PUBLIC",
     "ticker": "BW-A",
+    "ticker_raw": "BW"
+  },
+  "US05614L5066": {
+    "figi": "BBG013ZF4SQ6",
+    "figi_name": "BABCOCK & WILCOX ENTERPR",
+    "figi_ticker": "BW 6.5 12/31/26",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "BW",
     "ticker_raw": "BW"
   },
   "US05990K8412": {
@@ -1249,6 +1349,16 @@
     "ticker": "BRKR",
     "ticker_raw": "BRKR"
   },
+  "US1170434062": {
+    "figi": "BBG00M4Z1V45",
+    "figi_name": "BRUNSWICK CORP",
+    "figi_ticker": "BC 6.5 10/15/48",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "BC",
+    "ticker_raw": "BC"
+  },
   "US1170436042": {
     "figi": "BBG00NGC0424",
     "figi_name": "BRUNSWICK CORP",
@@ -1359,6 +1469,16 @@
     "ticker": "CNO",
     "ticker_raw": "CNO"
   },
+  "US12740C2026": {
+    "figi": "BBG00QV3KW26",
+    "figi_name": "CADENCE BANK",
+    "figi_ticker": "CADE 5.5 PERP A",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "CADE-A",
+    "ticker_raw": "CADE"
+  },
   "US14040H7338": {
     "figi": "BBG011Y75285",
     "figi_name": "CAPITAL ONE FINANCIAL CO",
@@ -1409,6 +1529,16 @@
     "ticker": "COF-I",
     "ticker_raw": "COF"
   },
+  "US14167R1005": {
+    "figi": "BBG000QYF0M5",
+    "figi_name": "CARECLOUD INC",
+    "figi_ticker": "CCLD",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "Common Stock",
+    "ticker": "CCLD",
+    "ticker_raw": "CCLD"
+  },
   "US14314C1053": {
     "figi": "BBG010S18C73",
     "figi_name": "CARLYLE FINANCE LLC",
@@ -1418,6 +1548,26 @@
     "securityType": "PUBLIC",
     "ticker": "CG",
     "ticker_raw": "CG"
+  },
+  "US16115Q3083": {
+    "figi": "BBG000P1K2X6",
+    "figi_name": "CHART INDUSTRIES INC",
+    "figi_ticker": "GTLS",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "Common Stock",
+    "ticker": "GTLS",
+    "ticker_raw": "GTLS"
+  },
+  "US16115Q4073": {
+    "figi": "BBG01BY36PN3",
+    "figi_name": "CHART INDUSTRIES INC",
+    "figi_ticker": "GTLS 6.75 12/15/25 B",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "GTLS",
+    "ticker_raw": "GTLS"
   },
   "US16208T2015": {
     "figi": "BBG011KQ33X0",
@@ -1549,6 +1699,26 @@
     "ticker": "CFG-I",
     "ticker_raw": "CFG"
   },
+  "US1785872003": {
+    "figi": "BBG00DX7THD6",
+    "figi_name": "CITY OFFICE REIT",
+    "figi_ticker": "CIO 6.625 PERP A",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "CIO-A",
+    "ticker_raw": "CIO"
+  },
+  "US2003407010": {
+    "figi": "BBG01WHXMNR3",
+    "figi_name": "COMERICA INC",
+    "figi_ticker": "CMA 6.875 PERP B",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "CMA-B",
+    "ticker_raw": "CMA"
+  },
   "US20451Q2030": {
     "figi": "BBG00H08SV23",
     "figi_name": "COMPASS DIVERSIF HOLDING",
@@ -1668,6 +1838,16 @@
     "securityType": "PUBLIC",
     "ticker": "DTE",
     "ticker_raw": "DTE"
+  },
+  "US2527844003": {
+    "figi": "BBG00WVT0DS2",
+    "figi_name": "DIAMONDROCK HOSPITALITY",
+    "figi_ticker": "DRH 8.25 PERP",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "DRH",
+    "ticker_raw": "DRH"
   },
   "US2538688225": {
     "figi": "BBG00QGJPJ13",
@@ -1849,6 +2029,16 @@
     "ticker": "KMI",
     "ticker_raw": "KMI"
   },
+  "US28852N2080": {
+    "figi": "BBG00QKYDP41",
+    "figi_name": "ELLINGTON FINANCIAL",
+    "figi_ticker": "EFC V6.75 PERP",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "EFC",
+    "ticker_raw": "EFC"
+  },
   "US28852N3070": {
     "figi": "BBG013ZC9VV5",
     "figi_name": "ELLINGTON FINANCIAL",
@@ -1868,6 +2058,26 @@
     "securityType": "PUBLIC",
     "ticker": "EFC-C",
     "ticker_raw": "EFC"
+  },
+  "US29359U1097": {
+    "figi": "BBG00L7YDMT7",
+    "figi_name": "ENSTAR GROUP LTD",
+    "figi_ticker": "ESGR V7 PERP D",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "ESGR-D",
+    "ticker_raw": "ESGR"
+  },
+  "US29359U2087": {
+    "figi": "BBG00MK1TLS8",
+    "figi_name": "ENSTAR GROUP LTD",
+    "figi_ticker": "ESGR 7 PERP E",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "ESGR-E",
+    "ticker_raw": "ESGR"
   },
   "US29364D1000": {
     "figi": "BBG00DKL54F2",
@@ -1909,6 +2119,16 @@
     "ticker": "ETR",
     "ticker_raw": "ETR"
   },
+  "US29380T4022": {
+    "figi": null,
+    "figi_name": null,
+    "figi_ticker": null,
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": null,
+    "ticker": null,
+    "ticker_raw": "EPR"
+  },
   "US29452E2000": {
     "figi": "BBG00QXQX4L0",
     "figi_name": "EQUITABLE HOLDINGS INC",
@@ -1948,6 +2168,16 @@
     "securityType": "PUBLIC",
     "ticker": "FG",
     "ticker_raw": "FG"
+  },
+  "US30258N5014": {
+    "figi": null,
+    "figi_name": null,
+    "figi_ticker": null,
+    "parsed_from_name": true,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "FATBP",
+    "ticker_raw": "FATBP"
   },
   "US3131488278": {
     "figi": null,
@@ -2138,6 +2368,36 @@
     "securityType": "PUBLIC",
     "ticker": "F",
     "ticker_raw": "F"
+  },
+  "US34988V1061": {
+    "figi": "BBG000C37332",
+    "figi_name": "FOSSIL GROUP INC",
+    "figi_ticker": "FOSL",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "Common Stock",
+    "ticker": "FOSL",
+    "ticker_raw": "FOSL"
+  },
+  "US34988V1145": {
+    "figi": null,
+    "figi_name": null,
+    "figi_ticker": null,
+    "parsed_from_name": true,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "-",
+    "ticker_raw": "-"
+  },
+  "US34988V3042": {
+    "figi": "BBG0139M5F14",
+    "figi_name": "FOSSIL GROUP INC",
+    "figi_ticker": "FOSL 7 11/30/26",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "FOSL",
+    "ticker_raw": "FOSL"
   },
   "US34988VAF31": {
     "figi": "BBG01YKK5GJ6",
@@ -3099,6 +3359,16 @@
     "ticker": "ADAM-D",
     "ticker_raw": "ADAM"
   },
+  "US6525267083": {
+    "figi": "BBG00YXSTQS8",
+    "figi_name": "NEWTEKONE INC",
+    "figi_ticker": "NEWT 5.5 02/01/26",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "NEWT",
+    "ticker_raw": "NEWT"
+  },
   "US65339F1194": {
     "figi": "BBG01QK639J2",
     "figi_name": "NEXTERA ENERGY INC",
@@ -3128,6 +3398,16 @@
     "securityType": "PUBLIC",
     "ticker": "NEE",
     "ticker_raw": "NEE"
+  },
+  "US65339F7134": {
+    "figi": null,
+    "figi_name": null,
+    "figi_ticker": null,
+    "parsed_from_name": true,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "NEEXU",
+    "ticker_raw": "NEEXU"
   },
   "US65339K8291": {
     "figi": "BBG0210PYBS7",
@@ -3188,6 +3468,16 @@
     "securityType": "PUBLIC",
     "ticker": "OAK-B",
     "ticker_raw": "OAK"
+  },
+  "US67623C2089": {
+    "figi": "BBG00VJGL476",
+    "figi_name": "OFFICE PPTY INCOME TRST",
+    "figi_ticker": "OPI 6.375 06/23/50 0000",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "OPI",
+    "ticker_raw": "OPI"
   },
   "US68003D2045": {
     "figi": "BBG015DJKKR5",
@@ -3338,6 +3628,16 @@
     "securityType": "PUBLIC",
     "ticker": "PMT",
     "ticker_raw": "PMT"
+  },
+  "US72346Q3020": {
+    "figi": "BBG00V3MLYQ3",
+    "figi_name": "PINNACLE FINANCIAL PARTN",
+    "figi_ticker": "PNFP 6.75 PERP B",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "PNFP-B",
+    "ticker_raw": "PNFP"
   },
   "US72348N2080": {
     "figi": null,
@@ -3629,6 +3929,26 @@
     "ticker": "RLJ-A",
     "ticker_raw": "RLJ"
   },
+  "US75574U4085": {
+    "figi": "BBG00PQNWNL6",
+    "figi_name": "READY CAPITAL CORP",
+    "figi_ticker": "RC 6.2 07/30/26",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "RC",
+    "ticker_raw": "RC"
+  },
+  "US75574U6064": {
+    "figi": "BBG00Z6F8L43",
+    "figi_name": "READY CAPITAL CORP",
+    "figi_ticker": "RC 5.75 02/15/26",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "RC",
+    "ticker_raw": "RC"
+  },
   "US75574U8383": {
     "figi": "BBG01R3LZ0Y3",
     "figi_name": "READY CAPITAL CORP",
@@ -3767,6 +4087,26 @@
     "resolved": true,
     "securityType": "PUBLIC",
     "ticker": "EIX",
+    "ticker_raw": "EIX"
+  },
+  "US78409G2066": {
+    "figi": "BBG009T03SB1",
+    "figi_name": "SCE TRUST IV",
+    "figi_ticker": "EIX V0 PERP J",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "EIX-J",
+    "ticker_raw": "EIX"
+  },
+  "US78409W2017": {
+    "figi": "BBG00CCPD5X2",
+    "figi_name": "SCE TRUST V",
+    "figi_ticker": "EIX V5.45 PERP K",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "EIX-K",
     "ticker_raw": "EIX"
   },
   "US78410V2007": {
@@ -3949,6 +4289,16 @@
     "ticker": "SO",
     "ticker_raw": "SO"
   },
+  "US84857L3096": {
+    "figi": "BBG00P4W8GG8",
+    "figi_name": "SPIRE INC",
+    "figi_ticker": "SR 5.9 PERP A",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "SR-A",
+    "ticker_raw": "SR"
+  },
   "US84857L7055": {
     "figi": "BBG01ZF674W0",
     "figi_name": "SPIRE INC",
@@ -3968,6 +4318,16 @@
     "securityType": "PUBLIC",
     "ticker": "STT-G",
     "ticker_raw": "STT"
+  },
+  "US85814R2067": {
+    "figi": "BBG00FYJFVR3",
+    "figi_name": "STEEL PARTNERS HLDS LP",
+    "figi_ticker": "SPLP 6 02/07/26 A",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "SPLP",
+    "ticker_raw": "SPLP"
   },
   "US8606306079": {
     "figi": "BBG00HTSQRB9",
@@ -4048,6 +4408,46 @@
     "securityType": "PUBLIC",
     "ticker": "SHO-H",
     "ticker_raw": "SHO"
+  },
+  "US8678928875": {
+    "figi": "BBG011RWHRB6",
+    "figi_name": "SUNSTONE HOTEL INVESTORS",
+    "figi_ticker": "SHO 5.7 PERP I",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "SHO-I",
+    "ticker_raw": "SHO"
+  },
+  "US87157B3015": {
+    "figi": "BBG011MF0X50",
+    "figi_name": "SYNCHRONOSS TECH",
+    "figi_ticker": "SNCR 8.375 06/30/26",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "SNCR",
+    "ticker_raw": "SNCR"
+  },
+  "US87161C6003": {
+    "figi": "BBG00L4P38V8",
+    "figi_name": "SYNOVUS FINANCIAL CORP",
+    "figi_ticker": "SNV 8.86629 PERP D",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "SNV-D",
+    "ticker_raw": "SNV"
+  },
+  "US87161C7092": {
+    "figi": "BBG00PK3LVH5",
+    "figi_name": "SYNOVUS FINANCIAL CORP",
+    "figi_ticker": "SNV 8.397 PERP E",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "SNV-E",
+    "ticker_raw": "SNV"
   },
   "US87165B2025": {
     "figi": "BBG00QSFBV16",
@@ -4269,6 +4669,16 @@
     "ticker": "TWO",
     "ticker_raw": "TWO"
   },
+  "US9027882078": {
+    "figi": "BBG01S3PJZ64",
+    "figi_name": "UMB FINANCIAL CORP",
+    "figi_ticker": "UMBF V7 PERP",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PRIVATE",
+    "ticker": "UMBF",
+    "ticker_raw": "UMBF"
+  },
   "US9027884058": {
     "figi": "BBG01V9Y2GN3",
     "figi_name": "UMB FINANCIAL CORP",
@@ -4353,6 +4763,16 @@
     "figi": "BBG00WLM44P7",
     "figi_name": "ARRAY DIGITAL INFRA INC",
     "figi_ticker": "AD 6.25 09/01/69",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "AD",
+    "ticker_raw": "USM"
+  },
+  "US9116848014": {
+    "figi": "BBG00YCZRVF0",
+    "figi_name": "ARRAY DIGITAL INFRA INC",
+    "figi_ticker": "AD 5.5 03/01/70",
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
@@ -4559,6 +4979,16 @@
     "ticker": "WFC",
     "ticker_raw": "WFC"
   },
+  "US9508107052": {
+    "figi": "BBG00WH3K369",
+    "figi_name": "WESBANCO INC",
+    "figi_ticker": "WSBC V6.75 PERP A",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "WSBC-A",
+    "ticker_raw": "WSBC"
+  },
   "US9508108878": {
     "figi": "BBG01X5WZT62",
     "figi_name": "WESBANCO INC",
@@ -4568,6 +4998,16 @@
     "securityType": "PUBLIC",
     "ticker": "WSBC-B",
     "ticker_raw": "WSBC"
+  },
+  "US95082P3038": {
+    "figi": "BBG00VNJNY22",
+    "figi_name": "WESCO INTERNATIONAL INC",
+    "figi_ticker": "WCC V10.625 PERP A",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "WCC-A",
+    "ticker_raw": "WCC"
   },
   "US9576384062": {
     "figi": "BBG012JJSW47",
@@ -4588,6 +5028,26 @@
     "securityType": "PUBLIC",
     "ticker": "WHR",
     "ticker_raw": "WHR"
+  },
+  "US97650W4050": {
+    "figi": "BBG009GZVL86",
+    "figi_name": "WINTRUST FINANCIAL CORP",
+    "figi_ticker": "WTFC V6.5 PERP D",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "WTFC-D",
+    "ticker_raw": "WTFC"
+  },
+  "US97650W5040": {
+    "figi": "BBG00TPBXYP6",
+    "figi_name": "WINTRUST FINANCIAL CORP",
+    "figi_ticker": "WTFC V6.875 PERP E",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": "PUBLIC",
+    "ticker": "WTFC-E",
+    "ticker_raw": "WTFC"
   },
   "US97650W7020": {
     "figi": "BBG01TX8KQS1",

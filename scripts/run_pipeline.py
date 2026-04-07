@@ -8,6 +8,8 @@ import fetch_holdings
 import resolve_tickers
 import compute_flows
 import enrich_flows
+import predict_flows
+import build_history
 
 
 def main():
@@ -28,6 +30,12 @@ def main():
 
     print("\n=== Step 4: Enrich flows (ADV + signal metrics) ===")
     enrich_flows.main()
+
+    print("\n=== Step 5: Predict next rebalancing flows ===")
+    predict_flows.main()
+
+    print("\n=== Step 6: Build history summaries ===")
+    build_history.main()
 
     print("\nPipeline complete.")
 

@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Papa from "papaparse";
-import type { DailySummary, FlowRow, Holding, TickerInfo } from "@/src/types/pff";
+import type { DailySummary, FlowRow, Holding, PredictedFlow, TickerInfo, DayAggregate, TickerAggregate } from "@/src/types/pff";
 
 const DATA_ROOT = path.join(process.cwd(), "data");
 
@@ -125,6 +125,42 @@ export function loadLatestFlows(): { date: string; flows: FlowRow[] } | null {
   const dates = listFlowDates();
   if (!dates.length) return null;
   return { date: dates[0], flows: loadFlows(dates[0]) };
+}
+
+export function loadPredictedFlows(): PredictedFlow[] {
+  const filePath = path.join(DATA_ROOT, "predicted_flows.csv");
+  if (!fs.existsSync(filePath)) return [];
+  return readCsv<Record<string, string>>(filePath).map((row) => ({
+    baseline_date: row.baseline_date ?? "",
+    current_date: row.current_date ?? "",
+    isin: row.isin ?? "",
+    ticker: row.ticker ?? "",
+    name: row.name ?? "",
+    sector: row.sector ?? "",
+    baseline_price: num(row.baseline_price),
+    current_price: num(row.current_price),
+    price_return_pct: num(row.price_return_pct),
+    drift_ratio: num(row.drift_ratio),
+    baseline_weight_pct: num(row.baseline_weight_pct),
+    implied_weight_pct: num(row.implied_weight_pct),
+    weight_gap_pct: num(row.weight_gap_pct),
+    predicted_dollar_flow: num(row.predicted_dollar_flow),
+    predicted_action: (row.predicted_action as PredictedFlow["predicted_action"]) ?? "FLAT",
+  }));
+}
+
+export function loadDailySummary(): DayAggregate[] {
+  const filePath = path.join(DATA_ROOT, "daily_summary.json");
+  if (!fs.existsSync(filePath)) return [];
+  const raw = JSON.parse(fs.readFileSync(filePath, "utf-8")) as { days: DayAggregate[] };
+  return raw.days;
+}
+
+export function loadTickerSummary(): Record<string, TickerAggregate> {
+  const filePath = path.join(DATA_ROOT, "ticker_summary.json");
+  if (!fs.existsSync(filePath)) return {};
+  const raw = JSON.parse(fs.readFileSync(filePath, "utf-8")) as { tickers: Record<string, TickerAggregate> };
+  return raw.tickers;
 }
 
 export function buildFlowHistory(limit = 30): DailySummary[] {

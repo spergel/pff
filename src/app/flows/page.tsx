@@ -1,5 +1,6 @@
 import { listFlowDates, loadFlows } from "@/src/lib/data";
 import { FlowsTable } from "@/src/components/FlowsTable";
+import { FlowDateSelect } from "@/src/components/FlowDateSelect";
 
 export default function FlowsPage({
   searchParams,
@@ -31,24 +32,7 @@ export default function FlowsPage({
         <h1 className="text-xl font-bold">Flow History</h1>
 
         {dates.length > 0 && (
-          <form>
-            <select
-              name="date"
-              defaultValue={selectedDate}
-              onChange={(e) => {
-                const url = new URL(window.location.href);
-                url.searchParams.set("date", e.target.value);
-                window.location.href = url.toString();
-              }}
-              className="rounded border border-slate-200 px-3 py-1.5 text-sm outline-none focus:border-slate-400"
-            >
-              {dates.map((d) => (
-                <option key={d} value={d}>
-                  {d}
-                </option>
-              ))}
-            </select>
-          </form>
+          <FlowDateSelect dates={dates} selectedDate={selectedDate} />
         )}
 
         {changes.length > 0 && (

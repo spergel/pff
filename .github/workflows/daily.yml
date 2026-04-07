@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add data/holdings/ data/flows/ data/ticker_cache.json
+          git add data/holdings/ data/flows/ data/ticker_cache.json data/predicted_flows.csv data/daily_summary.json data/ticker_summary.json
           git diff --staged --quiet && echo "No changes to commit." || \
             git commit -m "data: PFF holdings $(date -u +%Y-%m-%d)"
           git push
