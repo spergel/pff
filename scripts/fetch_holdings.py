@@ -103,7 +103,7 @@ def fetch(date_str: str) -> list[dict]:
     return rows
 
 
-def save(rows: list[dict], date_display: str, out_dir: str = "data/holdings") -> str:
+def save(rows: list[dict], date_display: str, out_dir: str = "data/PFF/holdings") -> str:
     os.makedirs(out_dir, exist_ok=True)
     dest = os.path.join(out_dir, f"{date_display}.csv")
 
@@ -132,7 +132,7 @@ def main(date_str: str | None = None):
 
     date_display = f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:]}"
 
-    dest = os.path.join("data/holdings", f"{date_display}.csv")
+    dest = os.path.join("data/PFF/holdings", f"{date_display}.csv")
     if os.path.exists(dest):
         print(f"Already have {dest}, skipping.")
         return True

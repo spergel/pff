@@ -1,15 +1,20 @@
-import { listFlowDates, loadFlows } from "@/src/lib/data";
+import { listFlowDates, loadFlows, SUPPORTED_ETFS } from "@/src/lib/data";
 import { FlowsTable } from "@/src/components/FlowsTable";
 import { FlowDateSelect } from "@/src/components/FlowDateSelect";
+import type { EtfTicker } from "@/src/lib/data";
 
 export default function FlowsPage({
   searchParams,
 }: {
-  searchParams: { date?: string };
+  searchParams: { date?: string; etf?: string };
 }) {
-  const dates = listFlowDates();
+  const etf = (SUPPORTED_ETFS.includes(searchParams.etf as EtfTicker)
+    ? searchParams.etf
+    : "PFF") as EtfTicker;
+
+  const dates = listFlowDates(etf);
   const selectedDate = searchParams.date ?? dates[0];
-  const flows = selectedDate ? loadFlows(selectedDate) : [];
+  const flows = selectedDate ? loadFlows(selectedDate, etf) : [];
 
   const changes = flows.filter((f) => f.flow_type !== "UNCHANGED");
   const buyDollars = changes
@@ -31,8 +36,25 @@ export default function FlowsPage({
       <div className="flex flex-wrap items-center gap-4">
         <h1 className="text-xl font-bold">Flow History</h1>
 
+        {/* ETF selector */}
+        <div className="flex gap-1">
+          {SUPPORTED_ETFS.map((e) => (
+            <a
+              key={e}
+              href={`/flows?etf=${e}`}
+              className={`rounded border px-3 py-1 text-sm transition-colors ${
+                etf === e
+                  ? "border-slate-700 bg-slate-700 text-white"
+                  : "border-slate-200 hover:border-slate-400"
+              }`}
+            >
+              {e}
+            </a>
+          ))}
+        </div>
+
         {dates.length > 0 && (
-          <FlowDateSelect dates={dates} selectedDate={selectedDate} />
+          <FlowDateSelect dates={dates} selectedDate={selectedDate ?? ""} etf={etf} />
         )}
 
         {changes.length > 0 && (

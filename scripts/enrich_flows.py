@@ -30,7 +30,7 @@ import io
 
 import yfinance as yf
 
-FLOWS_DIR = "data/flows"
+FLOWS_DIR = "data/PFF/flows"  # default; overridden in main(etf=...)
 CACHE_FILE = "data/adv_cache.json"
 ADV_CACHE_TTL_DAYS = 7
 
@@ -217,21 +217,24 @@ def enrich_file(flows_path: str, cache: dict) -> int:
     return enriched
 
 
-def main():
+def main(etf: str = "PFF"):
+    flows_dir = f"data/{etf}/flows"
     cache = load_adv_cache()
-    files = sorted(glob.glob(os.path.join(FLOWS_DIR, "*.csv")))
+    files = sorted(glob.glob(os.path.join(flows_dir, "*.csv")))
 
     if not files:
-        print("No flow files to enrich.")
+        print(f"{etf}: No flow files to enrich.")
         return
 
     for path in files:
         date_str = os.path.basename(path).replace(".csv", "")
-        print(f"Enriching {date_str}...")
+        print(f"{etf}: Enriching {date_str}...")
         n = enrich_file(path, cache)
         save_adv_cache(cache)
-        print(f"  {n} rows enriched, cache has {len(cache)} ADV entries.")
+        if n:
+            print(f"  {n} rows enriched, cache has {len(cache)} ADV entries.")
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(sys.argv[1] if len(sys.argv) > 1 else "PFF")

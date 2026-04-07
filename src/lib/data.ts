@@ -5,12 +5,15 @@ import type { DailySummary, FlowRow, Holding, PredictedFlow, TickerInfo, DayAggr
 
 const DATA_ROOT = path.join(process.cwd(), "data");
 
+export const SUPPORTED_ETFS = ["PFF", "FPE"] as const;
+export type EtfTicker = typeof SUPPORTED_ETFS[number];
+
 function readCsv<T>(filePath: string): T[] {
   const content = fs.readFileSync(filePath, "utf-8");
   const result = Papa.parse<T>(content, {
     header: true,
     skipEmptyLines: true,
-    dynamicTyping: false, // we parse numbers ourselves to handle "-" placeholders
+    dynamicTyping: false,
   });
   return result.data;
 }
@@ -24,37 +27,32 @@ function num(v: string | undefined): number | null {
 function loadTickerCache(): Map<string, TickerInfo> {
   const cachePath = path.join(DATA_ROOT, "ticker_cache.json");
   if (!fs.existsSync(cachePath)) return new Map();
-  const raw = JSON.parse(fs.readFileSync(cachePath, "utf-8")) as Record<
-    string,
-    TickerInfo
-  >;
+  const raw = JSON.parse(fs.readFileSync(cachePath, "utf-8")) as Record<string, TickerInfo>;
   return new Map(Object.entries(raw));
 }
 
-export function listHoldingDates(): string[] {
-  const dir = path.join(DATA_ROOT, "holdings");
+export function listHoldingDates(etf: EtfTicker = "PFF"): string[] {
+  const dir = path.join(DATA_ROOT, etf, "holdings");
   if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
+  return fs.readdirSync(dir)
     .filter((f) => f.endsWith(".csv"))
     .map((f) => f.replace(".csv", ""))
     .sort()
     .reverse();
 }
 
-export function listFlowDates(): string[] {
-  const dir = path.join(DATA_ROOT, "flows");
+export function listFlowDates(etf: EtfTicker = "PFF"): string[] {
+  const dir = path.join(DATA_ROOT, etf, "flows");
   if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
+  return fs.readdirSync(dir)
     .filter((f) => f.endsWith(".csv"))
     .map((f) => f.replace(".csv", ""))
     .sort()
     .reverse();
 }
 
-export function loadHoldings(date: string): Holding[] {
-  const filePath = path.join(DATA_ROOT, "holdings", `${date}.csv`);
+export function loadHoldings(date: string, etf: EtfTicker = "PFF"): Holding[] {
+  const filePath = path.join(DATA_ROOT, etf, "holdings", `${date}.csv`);
   if (!fs.existsSync(filePath)) return [];
 
   const cache = loadTickerCache();
@@ -62,8 +60,7 @@ export function loadHoldings(date: string): Holding[] {
   return readCsv<Record<string, string>>(filePath).map((row) => {
     const isin = row.isin ?? "";
     const cached = cache.get(isin);
-    const resolvedTicker =
-      cached?.resolved && cached.ticker ? cached.ticker : null;
+    const resolvedTicker = cached?.resolved && cached.ticker ? cached.ticker : null;
 
     return {
       date: row.date ?? date,
@@ -85,8 +82,8 @@ export function loadHoldings(date: string): Holding[] {
   });
 }
 
-export function loadFlows(date: string): FlowRow[] {
-  const filePath = path.join(DATA_ROOT, "flows", `${date}.csv`);
+export function loadFlows(date: string, etf: EtfTicker = "PFF"): FlowRow[] {
+  const filePath = path.join(DATA_ROOT, etf, "flows", `${date}.csv`);
   if (!fs.existsSync(filePath)) return [];
 
   return readCsv<Record<string, string>>(filePath).map((row) => ({
@@ -115,16 +112,16 @@ export function loadFlows(date: string): FlowRow[] {
   }));
 }
 
-export function loadLatestHoldings(): { date: string; holdings: Holding[] } | null {
-  const dates = listHoldingDates();
+export function loadLatestHoldings(etf: EtfTicker = "PFF"): { date: string; holdings: Holding[] } | null {
+  const dates = listHoldingDates(etf);
   if (!dates.length) return null;
-  return { date: dates[0], holdings: loadHoldings(dates[0]) };
+  return { date: dates[0], holdings: loadHoldings(dates[0], etf) };
 }
 
-export function loadLatestFlows(): { date: string; flows: FlowRow[] } | null {
-  const dates = listFlowDates();
+export function loadLatestFlows(etf: EtfTicker = "PFF"): { date: string; flows: FlowRow[] } | null {
+  const dates = listFlowDates(etf);
   if (!dates.length) return null;
-  return { date: dates[0], flows: loadFlows(dates[0]) };
+  return { date: dates[0], flows: loadFlows(dates[0], etf) };
 }
 
 export function loadPredictedFlows(): PredictedFlow[] {
@@ -149,67 +146,67 @@ export function loadPredictedFlows(): PredictedFlow[] {
   }));
 }
 
-export function loadDailySummary(): DayAggregate[] {
+export function loadDailySummary(etf?: EtfTicker): DayAggregate[] {
   const filePath = path.join(DATA_ROOT, "daily_summary.json");
   if (!fs.existsSync(filePath)) return [];
-  const raw = JSON.parse(fs.readFileSync(filePath, "utf-8")) as { days: DayAggregate[] };
-  return raw.days;
+  const raw = JSON.parse(fs.readFileSync(filePath, "utf-8")) as {
+    days: Array<{ date: string; etfs: Record<string, Omit<DayAggregate, "date">> }>;
+  };
+
+  return raw.days.map((d) => {
+    if (etf) {
+      // Return per-ETF day or zeros
+      const etfDay = d.etfs?.[etf];
+      return { date: d.date, ...(etfDay ?? { buys: 0, sells: 0, added: 0, removed: 0, suspect: 0, total_buy_dollars: 0, total_sell_dollars: 0, num_changes: 0, sector_net: {} }) };
+    }
+    // Merge all ETFs into one aggregate
+    const merged: DayAggregate = { date: d.date, buys: 0, sells: 0, added: 0, removed: 0, suspect: 0, total_buy_dollars: 0, total_sell_dollars: 0, num_changes: 0, sector_net: {} };
+    for (const etfData of Object.values(d.etfs ?? {})) {
+      merged.buys += etfData.buys ?? 0;
+      merged.sells += etfData.sells ?? 0;
+      merged.added += etfData.added ?? 0;
+      merged.removed += etfData.removed ?? 0;
+      merged.suspect += etfData.suspect ?? 0;
+      merged.total_buy_dollars += etfData.total_buy_dollars ?? 0;
+      merged.total_sell_dollars += etfData.total_sell_dollars ?? 0;
+      merged.num_changes += etfData.num_changes ?? 0;
+      for (const [sector, val] of Object.entries(etfData.sector_net ?? {})) {
+        merged.sector_net[sector] = (merged.sector_net[sector] ?? 0) + val;
+      }
+    }
+    return merged;
+  });
 }
 
-export function loadTickerSummary(): Record<string, TickerAggregate> {
+export function loadTickerSummary(etf?: EtfTicker): Record<string, TickerAggregate> {
   const filePath = path.join(DATA_ROOT, "ticker_summary.json");
   if (!fs.existsSync(filePath)) return {};
-  const raw = JSON.parse(fs.readFileSync(filePath, "utf-8")) as { tickers: Record<string, TickerAggregate> };
-  return raw.tickers;
+  const raw = JSON.parse(fs.readFileSync(filePath, "utf-8")) as { tickers: Record<string, TickerAggregate & { etf?: string }> };
+  if (!etf) return raw.tickers;
+  // Filter to just the requested ETF (keys are namespaced as "ETF:symbol")
+  return Object.fromEntries(
+    Object.entries(raw.tickers).filter(([k]) => k.startsWith(`${etf}:`))
+  );
 }
 
-export function buildFlowHistory(limit = 30): DailySummary[] {
-  const dates = listFlowDates().slice(0, limit).reverse();
+export function buildFlowHistory(limit = 30, etf: EtfTicker = "PFF"): DailySummary[] {
+  const dates = listFlowDates(etf).slice(0, limit).reverse();
   return dates.map((date) => {
-    const flows = loadFlows(date);
-    let buys = 0,
-      sells = 0,
-      added = 0,
-      removed = 0,
-      suspect = 0;
-    let total_buy_dollars = 0,
-      total_sell_dollars = 0;
+    const flows = loadFlows(date, etf);
+    let buys = 0, sells = 0, added = 0, removed = 0, suspect = 0;
+    let total_buy_dollars = 0, total_sell_dollars = 0;
 
     for (const f of flows) {
       const d = f.dollar_flow ?? 0;
       switch (f.flow_type) {
-        case "BUY":
-          buys++;
-          total_buy_dollars += d;
-          break;
-        case "SELL":
-          sells++;
-          total_sell_dollars += Math.abs(d);
-          break;
-        case "ADDED":
-          added++;
-          total_buy_dollars += d;
-          break;
-        case "REMOVED":
-          removed++;
-          total_sell_dollars += Math.abs(d);
-          break;
-        case "SUSPECT":
-          suspect++;
-          break;
+        case "BUY": buys++; total_buy_dollars += d; break;
+        case "SELL": sells++; total_sell_dollars += Math.abs(d); break;
+        case "ADDED": added++; total_buy_dollars += d; break;
+        case "REMOVED": removed++; total_sell_dollars += Math.abs(d); break;
+        case "SUSPECT": suspect++; break;
       }
     }
 
-    return {
-      date,
-      buys,
-      sells,
-      added,
-      removed,
-      suspect,
-      total_buy_dollars,
-      total_sell_dollars,
-      num_changes: flows.filter((f) => f.flow_type !== "UNCHANGED").length,
-    };
+    return { date, buys, sells, added, removed, suspect, total_buy_dollars, total_sell_dollars, num_changes: flows.filter((f) => f.flow_type !== "UNCHANGED").length };
   });
 }

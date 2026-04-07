@@ -16,7 +16,6 @@ import os
 import tempfile
 from collections import defaultdict
 
-FLOWS_DIR = "data/flows"
 DAILY_OUT = "data/daily_summary.json"
 TICKER_OUT = "data/ticker_summary.json"
 
@@ -37,7 +36,7 @@ def _num(v) -> float | None:
         return None
 
 
-def build(flow_files: list[str]) -> tuple[list[dict], dict]:
+def build(flow_files: list[str], etf: str = "PFF") -> tuple[list[dict], dict]:
     """
     Returns (daily_rows, ticker_map).
 
@@ -196,29 +195,55 @@ def save_json(obj, path: str):
 
 
 def main():
-    files = sorted(glob.glob(os.path.join(FLOWS_DIR, "*.csv")))
-    if not files:
-        print("No flow files found.")
-        return
+    from etf_config import ETFS
+    import datetime
 
-    print(f"Building history from {len(files)} flow files...")
-    daily_rows, ticker_map = build(files)
+    today = datetime.date.today().isoformat()
 
-    daily_out = {
-        "generated_at": os.popen("date -u +%Y-%m-%d").read().strip(),
-        "days": daily_rows,
-    }
+    # Collect daily rows and ticker maps across all ETFs
+    all_daily: dict[str, dict] = {}  # date -> merged day dict
+    all_tickers: dict[str, dict] = {}  # symbol -> ticker aggregate
+
+    for etf in ETFS:
+        flows_dir = f"data/{etf}/flows"
+        files = sorted(glob.glob(os.path.join(flows_dir, "*.csv")))
+        if not files:
+            print(f"{etf}: No flow files found, skipping.")
+            continue
+
+        print(f"{etf}: Building history from {len(files)} flow files...")
+        daily_rows, ticker_map = build(files, etf)
+
+        for day in daily_rows:
+            date_key = day["date"]
+            if date_key not in all_daily:
+                all_daily[date_key] = {
+                    "date": date_key,
+                    "etfs": {},
+                }
+            all_daily[date_key]["etfs"][etf] = {
+                k: v for k, v in day.items() if k != "date"
+            }
+
+        for symbol, t in ticker_map.items():
+            # Namespace by ETF to avoid CUSIP/ISIN collisions across ETFs
+            key = f"{etf}:{symbol}"
+            t["etf"] = etf
+            all_tickers[key] = t
+
+        active = sum(1 for t in ticker_map.values() if t["buy_days"] + t["sell_days"] > 0)
+        print(f"  {len(ticker_map)} symbols, {active} ever active")
+
+    # Sort daily rows by date
+    daily_list = sorted(all_daily.values(), key=lambda d: d["date"])
+
+    daily_out = {"generated_at": today, "days": daily_list}
     save_json(daily_out, DAILY_OUT)
-    print(f"  Wrote {DAILY_OUT} ({len(daily_rows)} days)")
+    print(f"Wrote {DAILY_OUT} ({len(daily_list)} days across {len(ETFS)} ETFs)")
 
-    ticker_out = {
-        "generated_at": daily_out["generated_at"],
-        "tickers": ticker_map,
-    }
+    ticker_out = {"generated_at": today, "tickers": all_tickers}
     save_json(ticker_out, TICKER_OUT)
-
-    active = sum(1 for t in ticker_map.values() if t["buy_days"] + t["sell_days"] > 0)
-    print(f"  Wrote {TICKER_OUT} ({len(ticker_map)} ISINs, {active} ever active)")
+    print(f"Wrote {TICKER_OUT} ({len(all_tickers)} symbols)")
 
 
 if __name__ == "__main__":

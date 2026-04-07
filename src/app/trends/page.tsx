@@ -1,20 +1,25 @@
-import { loadDailySummary, loadTickerSummary } from "@/src/lib/data";
+import { loadDailySummary, loadTickerSummary, SUPPORTED_ETFS } from "@/src/lib/data";
 import { DailyActivityTable } from "@/src/components/trends/DailyActivityTable";
 import { SectorRotation } from "@/src/components/trends/SectorRotation";
 import { PressureLeaderboard } from "@/src/components/trends/PressureLeaderboard";
+import type { EtfTicker } from "@/src/lib/data";
 import type { TickerAggregate } from "@/src/types/pff";
 
 export default function TrendsPage({
   searchParams,
 }: {
-  searchParams: { window?: string };
+  searchParams: { window?: string; etf?: string };
 }) {
+  const etf = (SUPPORTED_ETFS.includes(searchParams.etf as EtfTicker)
+    ? searchParams.etf
+    : "PFF") as EtfTicker;
+
   const windowDays = parseInt(searchParams.window ?? "30", 10);
 
-  const allDays = loadDailySummary();
+  const allDays = loadDailySummary(etf);
   const recentDays = allDays.slice(-windowDays);
 
-  const allTickers = loadTickerSummary();
+  const allTickers = loadTickerSummary(etf);
 
   // Only tickers with activity in the selected window
   const windowStart = recentDays[0]?.date ?? "";
@@ -70,11 +75,29 @@ export default function TrendsPage({
     <div className="space-y-8">
       <div className="flex flex-wrap items-center gap-4">
         <h1 className="text-xl font-bold">Trends</h1>
+
+        {/* ETF selector */}
+        <div className="flex gap-1">
+          {SUPPORTED_ETFS.map((e) => (
+            <a
+              key={e}
+              href={`/trends?etf=${e}&window=${windowDays}`}
+              className={`rounded border px-3 py-1 text-sm transition-colors ${
+                etf === e
+                  ? "border-slate-700 bg-slate-700 text-white"
+                  : "border-slate-200 hover:border-slate-400"
+              }`}
+            >
+              {e}
+            </a>
+          ))}
+        </div>
+
         <div className="flex gap-1">
           {windows.map((w) => (
             <a
               key={w.value}
-              href={`/trends?window=${w.value}`}
+              href={`/trends?etf=${etf}&window=${w.value}`}
               className={`rounded border px-3 py-1 text-sm transition-colors ${
                 windowDays === w.value
                   ? "border-slate-700 bg-slate-700 text-white"

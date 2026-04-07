@@ -1,40 +1,83 @@
 """
-Orchestrator: fetch_holdings -> resolve_tickers -> compute_flows.
+Orchestrator: runs the full data pipeline for each configured ETF.
 Accepts an optional date argument (YYYYMMDD) for manual backfill.
+
+Per-ETF steps:
+  1. Fetch holdings
+  2. Resolve tickers (passive/index ETFs only)
+  3. Compute flows
+  4. Enrich flows (ADV + signal metrics)
+  5. Predict flows (passive/index ETFs only)
+
+Cross-ETF step:
+  6. Build history summaries (daily_summary.json, ticker_summary.json)
 """
 
 import sys
 import fetch_holdings
+import fetch_fpe
 import resolve_tickers
 import compute_flows
 import enrich_flows
 import predict_flows
 import build_history
+from etf_config import ETFS
+
+# Maps provider -> fetch function
+FETCHERS = {
+    "ishares": fetch_holdings.main,
+    "firsttrust": fetch_fpe.main,
+}
+
+
+def run_etf(etf: str, cfg: dict, date_arg: str | None):
+    print(f"\n{'='*50}")
+    print(f"  ETF: {etf} — {cfg['name']}")
+    print(f"{'='*50}")
+
+    fetcher = FETCHERS.get(cfg["provider"])
+    if not fetcher:
+        print(f"  No fetcher for provider '{cfg['provider']}', skipping.")
+        return False
+
+    print(f"\n--- Step 1: Fetch holdings ---")
+    wrote = fetcher(date_arg)
+    if not wrote:
+        print(f"  No new holdings for {etf} — skipping remaining steps.")
+        return False
+
+    if cfg.get("resolve_tickers"):
+        print(f"\n--- Step 2: Resolve tickers ---")
+        resolve_tickers.main()
+
+    print(f"\n--- Step 3: Compute flows ---")
+    compute_flows.main(etf, cfg.get("key_field", "isin"))
+
+    print(f"\n--- Step 4: Enrich flows ---")
+    enrich_flows.main(etf)
+
+    if cfg.get("predict"):
+        print(f"\n--- Step 5: Predict flows ---")
+        predict_flows.main()
+
+    return True
 
 
 def main():
     date_arg = sys.argv[1] if len(sys.argv) > 1 else None
 
-    print("=== Step 1: Fetch holdings ===")
-    wrote = fetch_holdings.main(date_arg)
+    any_wrote = False
+    for etf, cfg in ETFS.items():
+        wrote = run_etf(etf, cfg, date_arg)
+        any_wrote = any_wrote or wrote
 
-    if not wrote:
-        print("No new holdings file written -- stopping pipeline.")
+    if not any_wrote:
+        print("\nNo new holdings for any ETF — stopping.")
         sys.exit(0)
 
-    print("\n=== Step 2: Resolve tickers ===")
-    resolve_tickers.main()
-
-    print("\n=== Step 3: Compute flows ===")
-    compute_flows.main()
-
-    print("\n=== Step 4: Enrich flows (ADV + signal metrics) ===")
-    enrich_flows.main()
-
-    print("\n=== Step 5: Predict next rebalancing flows ===")
-    predict_flows.main()
-
-    print("\n=== Step 6: Build history summaries ===")
+    print(f"\n{'='*50}")
+    print("  Step 6: Build history summaries")
+    print(f"{'='*50}")
     build_history.main()
 
     print("\nPipeline complete.")

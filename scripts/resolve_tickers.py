@@ -134,7 +134,7 @@ def resolve_via_figi(isins: list[str], api_key: str | None = None) -> dict:
 def collect_isin_rows() -> dict[str, dict]:
     """Return {isin: {ticker_raw, name}} from all holdings CSVs."""
     rows: dict[str, dict] = {}
-    for path in sorted(glob.glob("data/holdings/*.csv")):
+    for path in sorted(glob.glob("data/PFF/holdings/*.csv")):
         with open(path, encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:

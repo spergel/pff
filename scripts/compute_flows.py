@@ -1,10 +1,10 @@
 """
-Diffs consecutive holdings files to compute daily ETF flows per ISIN.
-Writes data/flows/YYYY-MM-DD.csv for each new day.
+Diffs consecutive holdings files to compute daily ETF flows per symbol.
+Writes data/{ETF}/flows/YYYY-MM-DD.csv for each new day.
 
 Flow types:
-  ADDED    — ISIN entered the fund (prior_shares == 0)
-  REMOVED  — ISIN exited the fund (today_shares == 0)
+  ADDED    — symbol entered the fund (prior_shares == 0)
+  REMOVED  — symbol exited the fund (today_shares == 0)
   BUY      — share count increased
   SELL     — share count decreased
   UNCHANGED — weight changed via price move only (shares flat)
@@ -19,9 +19,8 @@ import os
 import tempfile
 from datetime import date, timedelta
 
-HOLDINGS_DIR = "data/holdings"
-FLOWS_DIR = "data/flows"
 CACHE_FILE = "data/ticker_cache.json"
+SUSPECT_THRESHOLD = 0.50
 
 FIELDNAMES = [
     "date", "isin", "ticker", "ticker_raw", "name", "sector",
@@ -29,8 +28,6 @@ FIELDNAMES = [
     "prior_weight", "today_weight", "weight_delta",
     "price", "dollar_flow", "flow_type", "gap_days",
 ]
-
-SUSPECT_THRESHOLD = 0.50  # 50% share change in one day
 
 
 def load_cache() -> dict:
@@ -40,62 +37,74 @@ def load_cache() -> dict:
     return {}
 
 
-def load_holdings(path: str) -> dict[str, dict]:
+def load_holdings(path: str, key_field: str = "isin") -> dict[str, dict]:
+    """
+    Load a holdings CSV keyed by key_field (isin or cusip).
+    Falls back to the other field if the primary is blank.
+    """
     holdings = {}
     with open(path, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            isin = row.get("isin", "").strip()
-            if not isin:
+            key = row.get(key_field, "").strip()
+            if not key:
+                # fallback: try the other identifier
+                alt = "cusip" if key_field == "isin" else "isin"
+                key = row.get(alt, "").strip()
+            if not key:
                 continue
-            holdings[isin] = {
-                "isin": isin,
+            try:
+                shares = float(row["shares"]) if row.get("shares") not in ("", "-") else 0.0
+            except (ValueError, KeyError):
+                shares = 0.0
+            try:
+                weight = float(row["weight"]) if row.get("weight") not in ("", "-") else 0.0
+            except (ValueError, KeyError):
+                weight = 0.0
+            try:
+                price = float(row["price"]) if row.get("price") not in ("", "-") else 0.0
+            except (ValueError, KeyError):
+                price = 0.0
+            holdings[key] = {
+                "isin": row.get("isin", ""),
+                "cusip": row.get("cusip", ""),
                 "ticker_raw": row.get("ticker_raw", ""),
                 "name": row.get("name", ""),
                 "sector": row.get("sector", ""),
-                "shares": float(row["shares"]) if row.get("shares") not in ("", "-") else 0.0,
-                "weight": float(row["weight"]) if row.get("weight") not in ("", "-") else 0.0,
-                "price": float(row["price"]) if row.get("price") not in ("", "-") else 0.0,
+                "shares": shares,
+                "weight": weight,
+                "price": price,
             }
     return holdings
 
 
-def classify(prior_shares: float, today_shares: float, prior_weight: float, today_weight: float) -> str:
+def classify(prior_shares, today_shares, prior_weight, today_weight) -> str:
     if prior_shares == 0:
         return "ADDED"
     if today_shares == 0:
         return "REMOVED"
-
     delta_shares = today_shares - prior_shares
     if delta_shares == 0:
         return "UNCHANGED"
-
     pct_change = abs(delta_shares) / prior_shares
     weight_delta = abs(today_weight - prior_weight)
-
     if pct_change > SUSPECT_THRESHOLD and weight_delta < 0.01:
         return "SUSPECT"
-
     return "BUY" if delta_shares > 0 else "SELL"
 
 
-def compute(prev_path: str, curr_path: str, ticker_cache: dict) -> list[dict]:
-    prev = load_holdings(prev_path)
-    curr = load_holdings(curr_path)
+def compute(prev_path: str, curr_path: str, ticker_cache: dict, key_field: str) -> list[dict]:
+    prev = load_holdings(prev_path, key_field)
+    curr = load_holdings(curr_path, key_field)
 
     curr_date_str = os.path.basename(curr_path).replace(".csv", "")
     prev_date_str = os.path.basename(prev_path).replace(".csv", "")
+    gap_days = (date.fromisoformat(curr_date_str) - date.fromisoformat(prev_date_str)).days
 
-    curr_date = date.fromisoformat(curr_date_str)
-    prev_date = date.fromisoformat(prev_date_str)
-    gap_days = (curr_date - prev_date).days
-
-    all_isins = set(prev) | set(curr)
     rows = []
-
-    for isin in all_isins:
-        p = prev.get(isin)
-        c = curr.get(isin)
+    for symbol in set(prev) | set(curr):
+        p = prev.get(symbol)
+        c = curr.get(symbol)
 
         today_shares = c["shares"] if c else 0.0
         prior_shares = p["shares"] if p else 0.0
@@ -105,8 +114,12 @@ def compute(prev_path: str, curr_path: str, ticker_cache: dict) -> list[dict]:
         ticker_raw = (c or p)["ticker_raw"]
         name = (c or p)["name"]
         sector = (c or p)["sector"]
+        isin_val = (c or p)["isin"]
+        cusip_val = (c or p)["cusip"]
 
-        cache_entry = ticker_cache.get(isin, {})
+        # Try to resolve a display ticker from cache (keyed by isin when available)
+        cache_key = isin_val or symbol
+        cache_entry = ticker_cache.get(cache_key, {})
         ticker = cache_entry.get("ticker") or ticker_raw
 
         flow_type = classify(prior_shares, today_shares, prior_weight, today_weight)
@@ -115,7 +128,7 @@ def compute(prev_path: str, curr_path: str, ticker_cache: dict) -> list[dict]:
 
         rows.append({
             "date": curr_date_str,
-            "isin": isin,
+            "isin": isin_val or symbol,  # use symbol (CUSIP) if no ISIN
             "ticker": ticker,
             "ticker_raw": ticker_raw,
             "name": name,
@@ -136,10 +149,10 @@ def compute(prev_path: str, curr_path: str, ticker_cache: dict) -> list[dict]:
     return rows
 
 
-def save_flows(rows: list[dict], date_str: str):
-    os.makedirs(FLOWS_DIR, exist_ok=True)
-    dest = os.path.join(FLOWS_DIR, f"{date_str}.csv")
-    fd, tmp = tempfile.mkstemp(dir=FLOWS_DIR, suffix=".tmp")
+def save_flows(rows: list[dict], date_str: str, flows_dir: str) -> str:
+    os.makedirs(flows_dir, exist_ok=True)
+    dest = os.path.join(flows_dir, f"{date_str}.csv")
+    fd, tmp = tempfile.mkstemp(dir=flows_dir, suffix=".tmp")
     try:
         with os.fdopen(fd, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=FIELDNAMES, quoting=csv.QUOTE_NONNUMERIC)
@@ -152,27 +165,32 @@ def save_flows(rows: list[dict], date_str: str):
     return dest
 
 
-def main():
+def main(etf: str = "PFF", key_field: str = "isin"):
+    holdings_dir = f"data/{etf}/holdings"
+    flows_dir = f"data/{etf}/flows"
+
     ticker_cache = load_cache()
-    files = sorted(glob.glob(os.path.join(HOLDINGS_DIR, "*.csv")))
+    files = sorted(glob.glob(os.path.join(holdings_dir, "*.csv")))
 
     if len(files) < 2:
-        print("Need at least 2 days of holdings to compute flows.")
+        print(f"{etf}: Need at least 2 days of holdings to compute flows.")
         return
 
     for i in range(1, len(files)):
         date_str = os.path.basename(files[i]).replace(".csv", "")
-        out = os.path.join(FLOWS_DIR, f"{date_str}.csv")
-
+        out = os.path.join(flows_dir, f"{date_str}.csv")
         if os.path.exists(out):
             continue
-
-        print(f"Computing flows for {date_str}...")
-        rows = compute(files[i - 1], files[i], ticker_cache)
-        path = save_flows(rows, date_str)
+        print(f"{etf}: Computing flows for {date_str}...")
+        rows = compute(files[i - 1], files[i], ticker_cache, key_field)
+        path = save_flows(rows, date_str, flows_dir)
         changes = sum(1 for r in rows if r["flow_type"] != "UNCHANGED")
         print(f"  Saved {len(rows)} rows ({changes} with share changes) -> {path}")
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    etf_arg = sys.argv[1] if len(sys.argv) > 1 else "PFF"
+    from etf_config import ETFS
+    cfg = ETFS.get(etf_arg, {})
+    main(etf_arg, cfg.get("key_field", "isin"))

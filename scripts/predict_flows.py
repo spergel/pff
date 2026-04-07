@@ -20,7 +20,7 @@ import csv
 import glob
 import os
 
-HOLDINGS_DIR = "data/holdings"
+HOLDINGS_DIR = "data/PFF/holdings"
 OUT_FILE = "data/predicted_flows.csv"
 MIN_DRIFT = 0.002  # 0.2% weight gap threshold
 
