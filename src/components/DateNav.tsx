@@ -9,18 +9,20 @@ export function DateNav({
   nextDate,
   etf,
   allDates,
+  basePath = "/flows",
 }: {
   selectedDate: string;
   prevDate: string | null;
   nextDate: string | null;
   etf: string;
   allDates: string[];
+  basePath?: string;
 }) {
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
 
   function navTo(date: string) {
-    router.push(`/flows?date=${date}&etf=${etf}`);
+    router.push(`${basePath}?date=${date}&etf=${etf}`);
   }
 
   const formatted = new Date(selectedDate + "T00:00:00").toLocaleDateString("en-US", {
