@@ -3033,40 +3033,44 @@
     "figi": "BBG01W930WV7",
     "figi_name": "STRATEGY INC",
     "figi_ticker": "MSTR 11.5 PERP A.",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "MSTR-A",
+    "ticker": "STRC",
     "ticker_raw": "MSTR"
   },
   "US5949728613": {
     "figi": "BBG01VC7GB81",
     "figi_name": "STRATEGY INC",
     "figi_ticker": "MSTR 10 PERP A",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "MSTR-A",
+    "ticker": "STRD",
     "ticker_raw": "MSTR"
   },
   "US5949728795": {
     "figi": "BBG01SX4QB45",
     "figi_name": "STRATEGY INC",
     "figi_ticker": "MSTR 10 PERP",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "MSTR",
-    "ticker_raw": "MSTR"
+    "ticker": "STRF",
+    "ticker_raw": "MCSAP"
   },
   "US5949728878": {
     "figi": "BBG01S3K7WZ3",
     "figi_name": "STRATEGY INC",
     "figi_ticker": "MSTR 8 PERP",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "MSTR",
+    "ticker": "STRK",
     "ticker_raw": "MSTR"
   },
   "US5950173022": {

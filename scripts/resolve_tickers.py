@@ -24,6 +24,7 @@ import requests
 
 OPENFIGI_URL = "https://api.openfigi.com/v3/mapping"
 CACHE_FILE = "data/ticker_cache.json"
+OVERRIDES_FILE = "data/ticker_overrides.json"
 
 # Preferred US exchange codes in priority order
 US_EXCH = {"US", "UN", "UA", "UW", "UP", "UR"}
@@ -66,6 +67,15 @@ def parse_series_ticker(ticker_raw: str, name: str) -> str | None:
 
 
 # ---------- OpenFIGI helpers ----------
+
+def load_overrides() -> dict[str, str]:
+    """Load manual ISIN → ticker overrides. These beat everything else."""
+    if os.path.exists(OVERRIDES_FILE):
+        with open(OVERRIDES_FILE, encoding="utf-8") as f:
+            data = json.load(f)
+        return {k: v for k, v in data.items() if not k.startswith("_")}
+    return {}
+
 
 def load_cache() -> dict:
     if os.path.exists(CACHE_FILE):
@@ -147,7 +157,7 @@ def collect_isin_rows() -> dict[str, dict]:
     return rows
 
 
-_FIGI_PERP_RE = re.compile(r"\bPERP\s+([A-Z0-9](?:-[0-9])?)\b", re.IGNORECASE)
+_FIGI_PERP_RE = re.compile(r"\bPERP\s+([A-Z0-9](?:-[0-9])?)[.\s]*", re.IGNORECASE)
 
 
 def parse_series_from_figi(ticker_raw: str, figi_ticker: str | None) -> str | None:
@@ -191,7 +201,23 @@ def build_entry(isin: str, ticker_raw: str, name: str, figi: dict | None) -> dic
 
 def main(api_key: str | None = None):
     cache = load_cache()
+    overrides = load_overrides()
     isin_rows = collect_isin_rows()
+
+    # Apply overrides at highest priority — always overwrite cache for these ISINs
+    for isin, ticker in overrides.items():
+        meta = isin_rows.get(isin, {})
+        entry = cache.get(isin, {})
+        cache[isin] = {
+            **entry,
+            "ticker": ticker,
+            "ticker_raw": meta.get("ticker_raw", entry.get("ticker_raw", "")),
+            "resolved": True,
+            "override": True,
+        }
+        print(f"  Override: {isin} -> {ticker}")
+    if overrides:
+        save_cache(cache)
 
     uncached = {
         isin: meta

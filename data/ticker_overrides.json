@@ -1,0 +1,7 @@
+{
+  "_comment": "Manual ISIN → ticker overrides. Highest priority — beats OpenFIGI and name parsing. Add entries here for preferred stocks where the listed ticker is completely different from the equity base ticker.",
+  "US5949728878": "STRK",
+  "US5949728795": "STRF",
+  "US5949728613": "STRD",
+  "US5949728530": "STRC"
+}
