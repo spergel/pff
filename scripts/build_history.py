@@ -18,6 +18,7 @@ from collections import defaultdict
 
 DAILY_OUT = "data/daily_summary.json"
 TICKER_OUT = "data/ticker_summary.json"
+OVERLAP_OUT = "data/overlap_summary.json"
 
 ACTIVE_TYPES = {"BUY", "SELL", "ADDED", "REMOVED", "SUSPECT"}
 
@@ -159,6 +160,7 @@ def build(flow_files: list[str], etf: str = "PFF") -> tuple[list[dict], dict]:
 
                 t["current_streak"] = t["_streak"]
 
+                cusip_val = row.get("cusip", "")
                 t["history"].append({
                     "date": date_str,
                     "flow_type": ft,
@@ -167,6 +169,9 @@ def build(flow_files: list[str], etf: str = "PFF") -> tuple[list[dict], dict]:
                     "today_shares": round(today_shares, 0) if today_shares is not None else None,
                     "signal_score": round(signal, 2) if signal is not None else None,
                 })
+                # Update cusip if we now have it (new flow files include it)
+                if cusip_val and not t.get("cusip"):
+                    t["cusip"] = cusip_val
             else:
                 # UNCHANGED resets the streak
                 t["_streak"] = 0
@@ -244,6 +249,82 @@ def main():
     ticker_out = {"generated_at": today, "tickers": all_tickers}
     save_json(ticker_out, TICKER_OUT)
     print(f"Wrote {TICKER_OUT} ({len(all_tickers)} symbols)")
+
+    # Build overlap_summary: cross-ETF view keyed by CUSIP
+    _build_overlap(all_tickers, today)
+
+
+def _build_overlap(all_tickers: dict, today: str):
+    """
+    Groups ticker_map entries by CUSIP across ETFs.
+    For PFF entries (keyed by ISIN), derives CUSIP from the most recent PFF holdings file.
+    """
+    # Build ISIN→CUSIP map from most recent PFF holdings
+    isin_to_cusip: dict[str, str] = {}
+    pff_holdings_files = sorted(glob.glob("data/PFF/holdings/*.csv"))
+    if pff_holdings_files:
+        with open(pff_holdings_files[-1], encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                isin = row.get("isin", "").strip()
+                cusip = row.get("cusip", "").strip()
+                if isin and cusip:
+                    isin_to_cusip[isin] = cusip
+
+    by_cusip: dict[str, dict] = {}
+
+    for key, t in all_tickers.items():
+        etf, symbol = key.split(":", 1)
+
+        if etf == "PFF":
+            # Symbol is an ISIN; look up CUSIP
+            cusip = t.get("cusip") or isin_to_cusip.get(symbol, "")
+            if not cusip:
+                continue  # can't match without CUSIP
+        else:
+            # Symbol is already a CUSIP
+            cusip = symbol
+
+        if cusip not in by_cusip:
+            by_cusip[cusip] = {
+                "cusip": cusip,
+                "name": t["name"],
+                "etfs": {},
+            }
+        # Use the most populated name
+        if t["name"] and len(t["name"]) > len(by_cusip[cusip]["name"]):
+            by_cusip[cusip]["name"] = t["name"]
+
+        # Store per-ETF stats — keep last 30 history entries to limit size
+        by_cusip[cusip]["etfs"][etf] = {
+            "isin": t.get("isin", symbol if etf == "PFF" else ""),
+            "ticker": t.get("ticker", ""),
+            "sector": t.get("sector", ""),
+            "buy_days": t["buy_days"],
+            "sell_days": t["sell_days"],
+            "added_days": t["added_days"],
+            "removed_days": t["removed_days"],
+            "current_streak": t["current_streak"],
+            "net_dollar_flow": round(t["net_dollar_flow"], 2),
+            "last_flow_type": t["last_flow_type"],
+            "last_date": t["last_date"],
+            "history": t["history"][-30:],  # last 30 active days
+        }
+
+    # Annotate with derived fields
+    for entry in by_cusip.values():
+        entry["num_etfs"] = len(entry["etfs"])
+        entry["combined_net_flow"] = round(
+            sum(e["net_dollar_flow"] for e in entry["etfs"].values()), 2
+        )
+
+    overlap_out = {
+        "generated_at": today,
+        "isin_to_cusip": isin_to_cusip,
+        "by_cusip": by_cusip,
+    }
+    save_json(overlap_out, OVERLAP_OUT)
+    multi = sum(1 for e in by_cusip.values() if e["num_etfs"] >= 2)
+    print(f"Wrote {OVERLAP_OUT} ({len(by_cusip)} CUSIPs, {multi} in 2+ ETFs)")
 
 
 if __name__ == "__main__":

@@ -35,7 +35,7 @@ CACHE_FILE = "data/adv_cache.json"
 ADV_CACHE_TTL_DAYS = 7
 
 FIELDNAMES_BASE = [
-    "date", "isin", "ticker", "ticker_raw", "name", "sector",
+    "date", "isin", "cusip", "ticker", "ticker_raw", "name", "sector",
     "prior_shares", "today_shares", "shares_delta",
     "prior_weight", "today_weight", "weight_delta",
     "price", "dollar_flow", "flow_type", "gap_days",
@@ -203,7 +203,8 @@ def enrich_file(flows_path: str, cache: dict) -> int:
                                         "par_value", "price_vs_par_pct", "signal_score"]}
         row.update(metrics)
 
-    fd, tmp = tempfile.mkstemp(dir=FLOWS_DIR, suffix=".tmp")
+    flows_dir = os.path.dirname(flows_path)
+    fd, tmp = tempfile.mkstemp(dir=flows_dir, suffix=".tmp")
     try:
         with os.fdopen(fd, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=FIELDNAMES_ENRICHED, quoting=csv.QUOTE_NONNUMERIC)
