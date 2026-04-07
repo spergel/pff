@@ -1,6 +1,6 @@
 import { listFlowDates, loadFlows, SUPPORTED_ETFS } from "@/src/lib/data";
 import { FlowsTable } from "@/src/components/FlowsTable";
-import { FlowDateSelect } from "@/src/components/FlowDateSelect";
+import { DateNav } from "@/src/components/DateNav";
 import type { EtfTicker } from "@/src/lib/data";
 
 export default function FlowsPage({
@@ -12,9 +12,14 @@ export default function FlowsPage({
     ? searchParams.etf
     : "PFF") as EtfTicker;
 
+  // dates is newest-first
   const dates = listFlowDates(etf);
   const selectedDate = searchParams.date ?? dates[0];
   const flows = selectedDate ? loadFlows(selectedDate, etf) : [];
+
+  const dateIdx = selectedDate ? dates.indexOf(selectedDate) : -1;
+  const prevDate = dateIdx >= 0 && dateIdx < dates.length - 1 ? dates[dateIdx + 1] : null;
+  const nextDate = dateIdx > 0 ? dates[dateIdx - 1] : null;
 
   const changes = flows.filter((f) => f.flow_type !== "UNCHANGED");
   const buyDollars = changes
@@ -53,8 +58,14 @@ export default function FlowsPage({
           ))}
         </div>
 
-        {dates.length > 0 && (
-          <FlowDateSelect dates={dates} selectedDate={selectedDate ?? ""} etf={etf} />
+        {selectedDate && (
+          <DateNav
+            selectedDate={selectedDate}
+            prevDate={prevDate}
+            nextDate={nextDate}
+            etf={etf}
+            allDates={dates}
+          />
         )}
 
         {changes.length > 0 && (
