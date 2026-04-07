@@ -15,6 +15,7 @@ Cross-ETF step:
 
 import sys
 import fetch_holdings
+import fetch_pgx
 import fetch_fpe
 import resolve_tickers
 import compute_flows
@@ -26,6 +27,7 @@ from etf_config import ETFS
 # Maps provider -> fetch function
 FETCHERS = {
     "ishares": fetch_holdings.main,
+    "invesco": fetch_pgx.main,
     "firsttrust": fetch_fpe.main,
 }
 

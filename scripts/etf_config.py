@@ -20,6 +20,13 @@ ETFS: dict[str, dict] = {
         "predict": True,
         "resolve_tickers": True,
     },
+    "PGX": {
+        "name": "Invesco Preferred ETF",
+        "provider": "invesco",
+        "key_field": "cusip",
+        "predict": False,
+        "resolve_tickers": False,
+    },
     "FPE": {
         "name": "First Trust Preferred Securities and Income ETF",
         "provider": "firsttrust",

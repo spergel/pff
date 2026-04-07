@@ -5,7 +5,7 @@ import type { DailySummary, FlowRow, Holding, PredictedFlow, TickerInfo, DayAggr
 
 const DATA_ROOT = path.join(process.cwd(), "data");
 
-export const SUPPORTED_ETFS = ["PFF", "FPE"] as const;
+export const SUPPORTED_ETFS = ["PFF", "PGX", "FPE"] as const;
 export type EtfTicker = typeof SUPPORTED_ETFS[number];
 
 function readCsv<T>(filePath: string): T[] {
