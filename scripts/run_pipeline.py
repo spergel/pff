@@ -13,7 +13,16 @@ Cross-ETF step:
   6. Build history summaries (daily_summary.json, ticker_summary.json)
 """
 
+import os
 import sys
+
+# Anchor all data/ paths to the repo root regardless of launch directory.
+# scripts/ is kept on sys.path so sibling-module imports continue to work.
+_SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
+_REPO_ROOT = os.path.dirname(_SCRIPTS_DIR)
+os.chdir(_REPO_ROOT)
+if _SCRIPTS_DIR not in sys.path:
+    sys.path.insert(0, _SCRIPTS_DIR)
 import fetch_holdings
 import fetch_pgx
 import fetch_fpe
