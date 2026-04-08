@@ -131,3 +131,43 @@ export interface DailySummary {
   total_sell_dollars: number;
   num_changes: number;
 }
+
+export interface OverlapEtfData {
+  isin: string;
+  ticker: string;
+  sector: string;
+  buy_days: number;
+  sell_days: number;
+  added_days: number;
+  removed_days: number;
+  current_streak: number;
+  net_dollar_flow: number;
+  last_flow_type: string;
+  last_date: string;
+  history: Array<{
+    date: string;
+    flow_type: string;
+    dollar_flow: number;
+    shares_delta: number;
+    signal_score: number | null;
+  }>;
+}
+
+export interface OverlapEntry {
+  cusip: string;
+  name: string;
+  num_etfs: number;
+  combined_net_flow: number;
+  etfs: Record<string, OverlapEtfData>;
+}
+
+export interface ConsensusRow {
+  cusip: string;
+  name: string;
+  ticker: string;
+  sector: string;
+  consensus: "BUY" | "SELL";
+  etfs: string[];
+  etf_count: number;
+  combined_flow: number;
+}

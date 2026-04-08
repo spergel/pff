@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Papa from "papaparse";
-import type { DailySummary, FlowRow, Holding, PredictedFlow, TickerInfo, DayAggregate, TickerAggregate } from "@/src/types/pff";
+import type { DailySummary, FlowRow, Holding, PredictedFlow, TickerInfo, DayAggregate, TickerAggregate, OverlapEntry, ConsensusRow } from "@/src/types/pff";
 
 const DATA_ROOT = path.join(process.cwd(), "data");
 
@@ -209,4 +209,63 @@ export function buildFlowHistory(limit = 30, etf: EtfTicker = "PFF"): DailySumma
 
     return { date, buys, sells, added, removed, suspect, total_buy_dollars, total_sell_dollars, num_changes: flows.filter((f) => f.flow_type !== "UNCHANGED").length };
   });
+}
+
+export function loadOverlapSummary(): { by_cusip: Record<string, OverlapEntry>; isin_to_cusip: Record<string, string> } {
+  const filePath = path.join(DATA_ROOT, "overlap_summary.json");
+  if (!fs.existsSync(filePath)) return { by_cusip: {}, isin_to_cusip: {} };
+  return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+}
+
+const BUY_TYPES = new Set(["BUY", "ADDED"]);
+const SELL_TYPES = new Set(["SELL", "REMOVED"]);
+
+export function computeConsensus(date: string, overlap: { by_cusip: Record<string, OverlapEntry> }): ConsensusRow[] {
+  const rows: ConsensusRow[] = [];
+
+  for (const entry of Object.values(overlap.by_cusip)) {
+    if (entry.num_etfs < 2) continue;
+
+    const etfMoves: { etf: string; flow_type: string; dollar_flow: number }[] = [];
+    for (const [etf, data] of Object.entries(entry.etfs)) {
+      const hist = data.history.find((h) => h.date === date);
+      if (hist && hist.flow_type !== "UNCHANGED") {
+        etfMoves.push({ etf, flow_type: hist.flow_type, dollar_flow: hist.dollar_flow });
+      }
+    }
+
+    if (etfMoves.length < 2) continue;
+
+    const buying = etfMoves.filter((m) => BUY_TYPES.has(m.flow_type));
+    const selling = etfMoves.filter((m) => SELL_TYPES.has(m.flow_type));
+
+    let consensus: "BUY" | "SELL" | null = null;
+    if (buying.length >= 2 && selling.length === 0) consensus = "BUY";
+    else if (selling.length >= 2 && buying.length === 0) consensus = "SELL";
+    if (!consensus) continue;
+
+    const combinedFlow = etfMoves.reduce((s, m) => s + m.dollar_flow, 0);
+    const etfList = etfMoves.map((m) => m.etf);
+
+    // Pick ticker/sector from first ETF that has one
+    let ticker = "";
+    let sector = "";
+    for (const data of Object.values(entry.etfs)) {
+      if (data.ticker) { ticker = data.ticker; }
+      if (data.sector) { sector = data.sector; }
+    }
+
+    rows.push({
+      cusip: entry.cusip,
+      name: entry.name,
+      ticker,
+      sector,
+      consensus,
+      etfs: etfList,
+      etf_count: etfList.length,
+      combined_flow: combinedFlow,
+    });
+  }
+
+  return rows.sort((a, b) => Math.abs(b.combined_flow) - Math.abs(a.combined_flow));
 }

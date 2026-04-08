@@ -3,12 +3,13 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PFF Rebalancing Tracker",
-  description: "Daily flow monitor for iShares Preferred and Income Securities ETF",
+  title: "Preferred Securities Flow Tracker",
+  description: "Daily flow monitor for preferred ETFs: PFF, PGX, FPE",
 };
 
 const nav = [
   { href: "/", label: "Dashboard" },
+  { href: "/overlap", label: "Cross-ETF" },
   { href: "/predictions", label: "Predictions" },
   { href: "/holdings", label: "Holdings" },
   { href: "/flows", label: "Flow History" },
@@ -27,10 +28,10 @@ export default function RootLayout({
           <div className="mx-auto flex max-w-screen-xl items-center gap-8 px-6 py-4">
             <div>
               <h1 className="text-base font-bold tracking-tight">
-                PFF Rebalancing Tracker
+                Preferred Securities Flow Tracker
               </h1>
               <p className="text-xs text-slate-500">
-                iShares Preferred &amp; Income Securities ETF · Daily Flow Monitor
+                PFF · PGX · FPE · Daily Flow Monitor
               </p>
             </div>
             <nav className="flex gap-1">
