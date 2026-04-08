@@ -21,10 +21,11 @@ import csv
 import html
 import json
 import os
-import subprocess
 import sys
 import tempfile
 from datetime import datetime, timezone
+
+from curl_cffi import requests as cffi_requests
 
 # PGX share-class CUSIP — used as the API identifier for this fund
 FUND_CUSIP = "46138E511"
@@ -44,21 +45,19 @@ SKIP_CUSIPS = {"BNYMLEND"}
 
 
 def fetch_json() -> dict:
-    """Fetch holdings JSON via curl (bypasses Invesco's TLS fingerprint block)."""
-    result = subprocess.run(
-        [
-            "curl", "-sf", "--max-time", "30",
-            API_URL,
-            "-H", "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-            "-H", "Accept: application/json",
-            "-H", "Referer: https://www.invesco.com/",
-            "-H", "Origin: https://www.invesco.com",
-        ],
-        capture_output=True,
+    """Fetch holdings JSON, impersonating Chrome to bypass Invesco's TLS fingerprint block."""
+    resp = cffi_requests.get(
+        API_URL,
+        headers={
+            "Accept": "application/json",
+            "Referer": "https://www.invesco.com/",
+            "Origin": "https://www.invesco.com",
+        },
+        impersonate="chrome",
+        timeout=30,
     )
-    if result.returncode != 0:
-        raise RuntimeError(f"curl failed: {result.stderr.decode()}")
-    return json.loads(result.stdout.decode("utf-8", errors="replace"))
+    resp.raise_for_status()
+    return resp.json()
 
 
 def parse(data: dict) -> tuple[str, list[dict]]:
