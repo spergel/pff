@@ -127,26 +127,37 @@ def save(rows: list[dict], date_display: str, out_dir: str = "data/PFF/holdings"
 
 
 def main(date_str: str | None = None):
+    from datetime import timedelta
+
     if date_str is None:
-        date_str = datetime.now(timezone.utc).strftime("%Y%m%d")
+        # Try today and the 4 most recent calendar days to catch late-published data.
+        # iShares sometimes doesn't publish until after our 6pm ET scheduled run.
+        today = datetime.now(timezone.utc).date()
+        candidates = [
+            (today - timedelta(days=i)).strftime("%Y%m%d") for i in range(5)
+        ]
+    else:
+        candidates = [date_str]
 
-    date_display = f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:]}"
+    wrote_any = False
+    for ds in candidates:
+        date_display = f"{ds[:4]}-{ds[4:6]}-{ds[6:]}"
+        dest = os.path.join("data/PFF/holdings", f"{date_display}.csv")
 
-    dest = os.path.join("data/PFF/holdings", f"{date_display}.csv")
-    if os.path.exists(dest):
-        print(f"Already have {dest}, skipping.")
-        return True
+        if os.path.exists(dest):
+            continue  # already have it
 
-    print(f"Fetching PFF holdings for {date_display}...")
-    rows = fetch(date_str)
+        print(f"Fetching PFF holdings for {date_display}...")
+        rows = fetch(ds)
 
-    if not rows:
-        print("No holdings returned — skipping write.")
-        return False
+        if not rows:
+            continue  # weekend / holiday / not yet published
 
-    path = save(rows, date_display)
-    print(f"Saved {len(rows)} holdings -> {path}")
-    return True
+        path = save(rows, date_display)
+        print(f"Saved {len(rows)} holdings -> {path}")
+        wrote_any = True
+
+    return wrote_any
 
 
 if __name__ == "__main__":
