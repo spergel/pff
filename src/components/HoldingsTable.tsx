@@ -68,38 +68,42 @@ export function HoldingsTable({ holdings }: { holdings: Holding[] }) {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-300">
-            {sorted.map((h, i) => (
-              <tr key={h.isin} className="hover:bg-yellow-50">
-                <td className="px-3 py-2 font-mono text-gray-400">{i + 1}</td>
-                <td className="px-3 py-2 font-mono font-semibold">
-                  {h.ticker !== h.ticker_raw ? (
-                    <span
-                      className="text-blue-700"
-                      title={`Resolved from raw ticker: ${h.ticker_raw}`}
-                    >
-                      {h.ticker}
-                    </span>
-                  ) : (
-                    <span className="text-gray-900">{h.ticker}</span>
-                  )}
-                </td>
-                <td className="max-w-xs truncate px-3 py-2 text-gray-600">{h.name}</td>
-                <td className="px-3 py-2 font-mono text-xs text-gray-500">{h.sector}</td>
-                <td className="px-3 py-2 font-mono text-gray-800">
-                  {h.weight != null ? `${h.weight.toFixed(2)}%` : "—"}
-                </td>
-                <td className="px-3 py-2 font-mono text-gray-600">
-                  {h.mkt_val != null ? fmtDollar(h.mkt_val) : "—"}
-                </td>
-                <td className="px-3 py-2 font-mono text-gray-600">
-                  {h.shares != null ? fmtNum(h.shares) : "—"}
-                </td>
-                <td className="px-3 py-2 font-mono text-gray-600">
-                  {h.price != null ? `$${h.price.toFixed(2)}` : "—"}
-                </td>
-                <td className="px-3 py-2 font-mono text-xs text-gray-400">{h.isin}</td>
-              </tr>
-            ))}
+            {sorted.map((h, i) => {
+              const lookupHref = `/security?q=${encodeURIComponent(h.ticker)}`;
+              return (
+                <tr
+                  key={h.isin}
+                  className="cursor-pointer hover:bg-yellow-50"
+                  onClick={() => { window.location.href = lookupHref; }}
+                >
+                  <td className="px-3 py-2 font-mono text-gray-400">{i + 1}</td>
+                  <td className="px-3 py-2 font-mono font-semibold">
+                    {h.ticker !== h.ticker_raw ? (
+                      <span className="text-blue-700" title={`Resolved from raw ticker: ${h.ticker_raw}`}>
+                        {h.ticker}
+                      </span>
+                    ) : (
+                      <span className="text-gray-900">{h.ticker}</span>
+                    )}
+                  </td>
+                  <td className="max-w-xs truncate px-3 py-2 text-gray-600">{h.name}</td>
+                  <td className="px-3 py-2 font-mono text-xs text-gray-500">{h.sector}</td>
+                  <td className="px-3 py-2 font-mono text-gray-800">
+                    {h.weight != null ? `${h.weight.toFixed(2)}%` : "—"}
+                  </td>
+                  <td className="px-3 py-2 font-mono text-gray-600">
+                    {h.mkt_val != null ? fmtDollar(h.mkt_val) : "—"}
+                  </td>
+                  <td className="px-3 py-2 font-mono text-gray-600">
+                    {h.shares != null ? fmtNum(h.shares) : "—"}
+                  </td>
+                  <td className="px-3 py-2 font-mono text-gray-600">
+                    {h.price != null ? `$${h.price.toFixed(2)}` : "—"}
+                  </td>
+                  <td className="px-3 py-2 font-mono text-xs text-gray-400">{h.isin}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
