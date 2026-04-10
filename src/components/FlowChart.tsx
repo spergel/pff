@@ -1,8 +1,6 @@
 "use client";
 
 import { fmtDollar } from "@/src/lib/fmt";
-"use client";
-
 import {
   Bar,
   BarChart,

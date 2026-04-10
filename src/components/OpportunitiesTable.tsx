@@ -1,7 +1,6 @@
 "use client";
 
 import { fmtDollar, fmtNum } from "@/src/lib/fmt";
-"use client";
 
 import type { FlowRow } from "@/src/types/pff";
 import { SignalBadge } from "./SignalBadge";

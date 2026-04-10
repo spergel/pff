@@ -1,7 +1,6 @@
 "use client";
 
 import { fmtDollar } from "@/src/lib/fmt";
-"use client";
 
 import type { DayAggregate } from "@/src/types/pff";
 

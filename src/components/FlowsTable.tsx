@@ -1,7 +1,6 @@
 "use client";
 
 import { fmtDollar, fmtNum } from "@/src/lib/fmt";
-"use client";
 
 import { useState } from "react";
 import type { FlowRow } from "@/src/types/pff";

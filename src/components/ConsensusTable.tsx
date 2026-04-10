@@ -1,7 +1,6 @@
 "use client";
 
 import { fmtDollar } from "@/src/lib/fmt";
-"use client";
 
 import type { ConsensusRow } from "@/src/types/pff";
 
