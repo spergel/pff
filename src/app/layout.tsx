@@ -4,6 +4,7 @@ import { Sidebar } from "@/src/components/Sidebar";
 
 const nav = [
   { href: "/", label: "Dashboard", key: "D" },
+  { href: "/holdings", label: "Holdings", key: "H" },
   { href: "/predictions", label: "Predictions", key: "P" },
   { href: "/flows", label: "Flows & Trends", key: "F" },
   { href: "/security", label: "Lookup", key: "L" },
