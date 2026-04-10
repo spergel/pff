@@ -1,3 +1,5 @@
+"use client";
+
 import { fmtDollar, fmtNum } from "@/src/lib/fmt";
 "use client";
 

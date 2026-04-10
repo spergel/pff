@@ -8,23 +8,16 @@ import {
   listHoldingDates,
   loadOverlapSummary,
   computeConsensus,
+  loadTickerSummary,
   SUPPORTED_ETFS,
 } from "@/src/lib/data";
 import type { ConsensusFrequencyRow } from "@/src/lib/data";
-import type { EtfTicker } from "@/src/lib/data";
-import type { ConsensusRow, FlowRow } from "@/src/types/pff";
+import type { ConsensusRow, FlowRow, TickerAggregate } from "@/src/types/pff";
 import { FlowChart } from "@/src/components/FlowChart";
-import { OpportunitiesTable } from "@/src/components/OpportunitiesTable";
 import { EtfSummaryStrip } from "@/src/components/EtfSummaryStrip";
 import type { EtfStat } from "@/src/components/EtfSummaryStrip";
 import { DateNav } from "@/src/components/DateNav";
-import Link from "next/link";
-
-// ─── formatters ────────────────────────────────────────────────────────────
-
-
-
-
+import { SignalBadge } from "@/src/components/SignalBadge";
 
 // ─── rebalancing countdown ─────────────────────────────────────────────────
 
@@ -33,7 +26,7 @@ function getNextRebalance(): { label: string; daysLeft: number } {
   const y = now.getFullYear();
 
   function lastTradingDay(year: number, month: number): Date {
-    const last = new Date(year, month, 0); // last day of month
+    const last = new Date(year, month, 0);
     const dow = last.getDay();
     if (dow === 0) last.setDate(last.getDate() - 2);
     else if (dow === 6) last.setDate(last.getDate() - 1);
@@ -65,7 +58,7 @@ const ETF_BADGE: Record<string, string> = {
   PFFA: "bg-green-100 text-green-700",
 };
 
-// ─── mini components ───────────────────────────────────────────────────────
+// ─── consensus panels ──────────────────────────────────────────────────────
 
 function MiniConsensus({ rows }: { rows: ConsensusRow[] }) {
   if (rows.length === 0) {
@@ -75,7 +68,6 @@ function MiniConsensus({ rows }: { rows: ConsensusRow[] }) {
       </p>
     );
   }
-
   return (
     <div className="space-y-px">
       {rows.map((row) => {
@@ -83,22 +75,16 @@ function MiniConsensus({ rows }: { rows: ConsensusRow[] }) {
         return (
           <div
             key={row.cusip}
-            className={`flex items-center gap-2  px-2 py-1.5 text-xs ${
-              isBuy ? "bg-emerald-50" : "bg-rose-50"
-            }`}
+            className={`flex items-center gap-2 px-2 py-1.5 text-xs ${isBuy ? "bg-emerald-50" : "bg-rose-50"}`}
           >
             <span className={`shrink-0 font-mono font-bold w-8 ${isBuy ? "text-emerald-600" : "text-rose-500"}`}>
               {row.etf_count === 3 ? "⚡" : isBuy ? "▲" : "▼"}
             </span>
-            <span className="font-mono font-semibold text-gray-900 w-16 shrink-0">
-              {row.ticker || "—"}
-            </span>
-            <span className="truncate text-gray-500 flex-1 min-w-0 text-[10px]">
-              {row.name}
-            </span>
+            <span className="font-mono font-semibold text-gray-900 w-16 shrink-0">{row.ticker || "—"}</span>
+            <span className="truncate text-gray-500 flex-1 min-w-0 text-[10px]">{row.name}</span>
             <div className="flex gap-0.5 shrink-0">
               {row.etfs.map((etf) => (
-                <span key={etf} className={` px-1 py-0.5 text-[10px] font-semibold ${ETF_BADGE[etf] ?? "bg-gray-100 text-gray-500"}`}>
+                <span key={etf} className={`px-1 py-0.5 text-[10px] font-semibold ${ETF_BADGE[etf] ?? "bg-gray-100 text-gray-500"}`}>
                   {etf}
                 </span>
               ))}
@@ -121,45 +107,31 @@ function RecurringConsensus({ rows }: { rows: ConsensusFrequencyRow[] }) {
       </p>
     );
   }
-
   return (
     <div className="space-y-px">
       {rows.slice(0, 12).map((row) => {
         const isBuy = row.recentConsensus === "BUY";
         const totalDays = row.buyDays + row.sellDays;
         return (
-          <div
-            key={row.cusip}
-            className="flex items-center gap-2 px-2 py-1.5 hover:bg-yellow-50"
-          >
+          <div key={row.cusip} className="flex items-center gap-2 px-2 py-1.5 hover:bg-yellow-50">
             <span className={`shrink-0 font-mono font-bold w-8 text-xs ${isBuy ? "text-emerald-600" : "text-rose-500"}`}>
               {isBuy ? "▲" : "▼"}
             </span>
-            <span className="font-mono font-semibold text-gray-900 w-16 shrink-0 text-xs">
-              {row.ticker || "—"}
-            </span>
-            <span className="truncate text-gray-500 flex-1 min-w-0 text-[10px]">
-              {row.name}
-            </span>
-            {/* Day frequency pills */}
+            <span className="font-mono font-semibold text-gray-900 w-16 shrink-0 text-xs">{row.ticker || "—"}</span>
+            <span className="truncate text-gray-500 flex-1 min-w-0 text-[10px]">{row.name}</span>
             <div className="flex gap-0.5 shrink-0">
-              {Array.from({ length: totalDays }).map((_, i) => {
-                const isBuyDay = i < row.buyDays;
-                return (
-                  <div
-                    key={i}
-                    className={`h-2.5 w-2  ${isBuyDay ? "bg-emerald-400" : "bg-rose-400"}`}
-                    title={isBuyDay ? "consensus BUY" : "consensus SELL"}
-                  />
-                );
-              })}
+              {Array.from({ length: totalDays }).map((_, i) => (
+                <div
+                  key={i}
+                  className={`h-2.5 w-2 ${i < row.buyDays ? "bg-emerald-400" : "bg-rose-400"}`}
+                  title={i < row.buyDays ? "consensus BUY" : "consensus SELL"}
+                />
+              ))}
             </div>
-            <span className="font-mono text-[10px] text-gray-400 shrink-0 w-6 text-right">
-              {totalDays}d
-            </span>
+            <span className="font-mono text-[10px] text-gray-400 shrink-0 w-6 text-right">{totalDays}d</span>
             <div className="flex gap-0.5 shrink-0">
               {row.etfs.map((etf) => (
-                <span key={etf} className={` px-1 py-0.5 text-[10px] font-semibold ${ETF_BADGE[etf] ?? "bg-gray-100 text-gray-500"}`}>
+                <span key={etf} className={`px-1 py-0.5 text-[10px] font-semibold ${ETF_BADGE[etf] ?? "bg-gray-100 text-gray-500"}`}>
                   {etf}
                 </span>
               ))}
@@ -171,75 +143,179 @@ function RecurringConsensus({ rows }: { rows: ConsensusFrequencyRow[] }) {
   );
 }
 
-function ForcedBuyTable({ flows }: { flows: FlowRow[] }) {
-  const rows = flows
-    .filter((f) => (f.flow_type === "BUY" || f.flow_type === "ADDED") && f.adv_30d != null && f.overhang_days != null && (f.overhang_days ?? 0) > 0)
-    .sort((a, b) => (b.overhang_days ?? 0) - (a.overhang_days ?? 0))
-    .slice(0, 10);
+// ─── signals panel ─────────────────────────────────────────────────────────
 
-  if (rows.length === 0) {
-    return (
-      <div className="border border-gray-500 px-6 py-8 text-center font-mono text-xs text-gray-400">
-        no forced-buy signals with ADV data today
-      </div>
-    );
-  }
+type SignalView = "sells_dollar" | "sells_vol" | "buys_monthly";
+type VolPeriod = "daily" | "weekly" | "monthly";
+
+const VOL_PERIOD_DAYS: Record<VolPeriod, number> = { daily: 1, weekly: 5, monthly: 21 };
+
+interface MonthlyBuyRow extends TickerAggregate {
+  etf: string;
+  windowBuyDollars: number;
+  windowBuyDays: number;
+}
+
+function SellsDollarTable({ flows }: { flows: FlowRow[] }) {
+  const rows = flows
+    .filter((f) => f.flow_type === "SELL" || f.flow_type === "REMOVED")
+    .sort((a, b) => Math.abs(b.dollar_flow ?? 0) - Math.abs(a.dollar_flow ?? 0))
+    .slice(0, 15);
+
+  if (!rows.length) return <p className="py-6 text-center font-mono text-xs text-gray-400">no sell data today</p>;
 
   return (
-    <div className="overflow-x-auto border-2 border-gray-600">
+    <div className="overflow-x-auto">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b border-gray-500 bg-gray-300 text-left text-[10px] font-bold uppercase tracking-wider text-gray-800">
+          <tr className="border-b-2 border-gray-600 bg-gray-300 text-left text-[10px] font-bold uppercase tracking-wider text-gray-800">
             <th className="px-3 py-2">Ticker</th>
             <th className="px-3 py-2">Name</th>
+            <th className="px-3 py-2">ETF</th>
             <th className="px-3 py-2">Type</th>
-            <th className="px-3 py-2">$ Bought</th>
-            <th className="px-3 py-2">Overhang</th>
+            <th className="px-3 py-2">$ Sold</th>
             <th className="px-3 py-2">Price</th>
+            <th className="px-3 py-2">Sector</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-300">
-          {rows.map((row) => {
-            const pct = Math.min(100, ((row.overhang_days ?? 0) / 30) * 100);
-            const barColor =
-              (row.overhang_days ?? 0) >= 10
-                ? "bg-emerald-500"
-                : (row.overhang_days ?? 0) >= 3
-                ? "bg-emerald-400"
-                : "bg-emerald-300";
+          {rows.map((row, i) => (
+            <tr key={`${row.etf}-${row.isin}-${i}`} className="hover:bg-yellow-50">
+              <td className="px-3 py-2 font-mono font-semibold text-gray-900">{row.ticker}</td>
+              <td className="max-w-[160px] truncate px-3 py-2 text-xs text-gray-600">{row.name}</td>
+              <td className="px-3 py-2">
+                <span className={`px-1.5 py-0.5 text-[10px] font-semibold ${ETF_BADGE[row.etf ?? ""] ?? "bg-gray-100 text-gray-500"}`}>
+                  {row.etf}
+                </span>
+              </td>
+              <td className="px-3 py-2"><SignalBadge type={row.flow_type} /></td>
+              <td className="px-3 py-2 font-mono text-xs font-medium text-rose-500">
+                {row.dollar_flow != null ? fmtDollar(Math.abs(row.dollar_flow)) : "—"}
+              </td>
+              <td className="px-3 py-2 font-mono text-xs text-gray-600">
+                {row.price != null ? `$${row.price.toFixed(2)}` : "—"}
+              </td>
+              <td className="px-3 py-2 text-xs text-gray-500">{row.sector}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function SellsVolTable({ flows, period }: { flows: FlowRow[]; period: VolPeriod }) {
+  const periodDays = VOL_PERIOD_DAYS[period];
+  const rows = flows
+    .filter((f) => (f.flow_type === "SELL" || f.flow_type === "REMOVED") && f.overhang_days != null)
+    .map((f) => ({ ...f, pctVol: ((f.overhang_days ?? 0) / periodDays) * 100 }))
+    .sort((a, b) => b.pctVol - a.pctVol)
+    .slice(0, 15);
+
+  if (!rows.length) return <p className="py-6 text-center font-mono text-xs text-gray-400">no ADV data for sells today</p>;
+
+  const periodLabel = period === "daily" ? "Daily ADV" : period === "weekly" ? "Weekly ADV" : "Monthly ADV";
+
+  return (
+    <div className="overflow-x-auto">
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="border-b-2 border-gray-600 bg-gray-300 text-left text-[10px] font-bold uppercase tracking-wider text-gray-800">
+            <th className="px-3 py-2">Ticker</th>
+            <th className="px-3 py-2">Name</th>
+            <th className="px-3 py-2">ETF</th>
+            <th className="px-3 py-2">Type</th>
+            <th className="px-3 py-2">% {periodLabel}</th>
+            <th className="px-3 py-2">$ Sold</th>
+            <th className="px-3 py-2">Sector</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-300">
+          {rows.map((row, i) => {
+            const pctBar = Math.min(100, row.pctVol / 5); // scale: 500% = full bar
             return (
-              <tr key={row.isin} className="hover:bg-yellow-50">
+              <tr key={`${row.etf}-${row.isin}-${i}`} className="hover:bg-yellow-50">
                 <td className="px-3 py-2 font-mono font-semibold text-gray-900">{row.ticker}</td>
-                <td className="max-w-[160px] truncate px-3 py-2 text-gray-600">{row.name}</td>
+                <td className="max-w-[160px] truncate px-3 py-2 text-xs text-gray-600">{row.name}</td>
                 <td className="px-3 py-2">
-                  <span className={`inline-block  px-2 py-0.5 font-mono text-[10px] font-semibold ${
-                    row.flow_type === "ADDED" ? "bg-blue-100 text-blue-800" : "bg-emerald-100 text-emerald-700"
-                  }`}>
-                    {row.flow_type}
+                  <span className={`px-1.5 py-0.5 text-[10px] font-semibold ${ETF_BADGE[row.etf ?? ""] ?? "bg-gray-100 text-gray-500"}`}>
+                    {row.etf}
                   </span>
                 </td>
-                <td className="px-3 py-2 font-mono text-emerald-600">
-                  {row.dollar_flow != null ? fmtDollar(row.dollar_flow) : "—"}
-                </td>
+                <td className="px-3 py-2"><SignalBadge type={row.flow_type} /></td>
                 <td className="px-3 py-2">
                   <div className="flex items-center gap-2">
-                    <div className="h-1.5 w-16 bg-gray-200">
-                      <div className={`h-1.5  ${barColor}`} style={{ width: `${pct}%` }} />
+                    <div className="h-1.5 w-20 bg-gray-200">
+                      <div className="h-1.5 bg-rose-500" style={{ width: `${pctBar}%` }} />
                     </div>
-                    <span className="font-mono text-xs text-gray-500">{(row.overhang_days ?? 0).toFixed(1)}d</span>
+                    <span className="font-mono text-xs font-medium text-rose-500">
+                      {row.pctVol.toFixed(0)}%
+                    </span>
                   </div>
                 </td>
-                <td className="px-3 py-2 font-mono text-gray-600">
-                  {row.price != null ? `$${row.price.toFixed(2)}` : "—"}
+                <td className="px-3 py-2 font-mono text-xs text-rose-500">
+                  {row.dollar_flow != null ? fmtDollar(Math.abs(row.dollar_flow)) : "—"}
                 </td>
+                <td className="px-3 py-2 text-xs text-gray-500">{row.sector}</td>
               </tr>
             );
           })}
         </tbody>
       </table>
       <div className="border-t border-gray-400 px-3 py-2 font-mono text-[10px] text-gray-400">
-        overhang = $ bought ÷ 30d ADV · ETF still needs to absorb this position · higher = stronger front-run opportunity
+        overhang_days = $ sold ÷ 30d ADV · % {periodLabel.toLowerCase()} = overhang ÷ {periodDays} trading days
       </div>
+    </div>
+  );
+}
+
+function BuysMonthlyTable({ rows }: { rows: MonthlyBuyRow[] }) {
+  if (!rows.length) return <p className="py-6 text-center font-mono text-xs text-gray-400">no buy data in the last 30 days</p>;
+
+  return (
+    <div className="overflow-x-auto">
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="border-b-2 border-gray-600 bg-gray-300 text-left text-[10px] font-bold uppercase tracking-wider text-gray-800">
+            <th className="px-3 py-2">Ticker</th>
+            <th className="px-3 py-2">Name</th>
+            <th className="px-3 py-2">ETF</th>
+            <th className="px-3 py-2">$ Bought (30d)</th>
+            <th className="px-3 py-2">Buy Days</th>
+            <th className="px-3 py-2">Streak</th>
+            <th className="px-3 py-2">Sector</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-300">
+          {rows.map((row, i) => (
+            <tr key={`${row.etf}-${row.isin}-${i}`} className="hover:bg-yellow-50">
+              <td className="px-3 py-2 font-mono font-semibold text-gray-900">{row.ticker}</td>
+              <td className="max-w-[160px] truncate px-3 py-2 text-xs text-gray-600">{row.name}</td>
+              <td className="px-3 py-2">
+                <span className={`px-1.5 py-0.5 text-[10px] font-semibold ${ETF_BADGE[row.etf] ?? "bg-gray-100 text-gray-500"}`}>
+                  {row.etf}
+                </span>
+              </td>
+              <td className="px-3 py-2 font-mono text-xs font-medium text-emerald-600">
+                {fmtDollar(row.windowBuyDollars)}
+              </td>
+              <td className="px-3 py-2 font-mono text-xs text-emerald-600">
+                {row.windowBuyDays}d
+              </td>
+              <td className="px-3 py-2 font-mono text-xs">
+                {row.current_streak > 0 ? (
+                  <span className="text-emerald-600">BUY ×{row.current_streak}</span>
+                ) : row.current_streak < 0 ? (
+                  <span className="text-rose-500">SELL ×{Math.abs(row.current_streak)}</span>
+                ) : (
+                  <span className="text-gray-400">—</span>
+                )}
+              </td>
+              <td className="px-3 py-2 text-xs text-gray-500">{row.sector}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
@@ -249,7 +325,7 @@ function ForcedBuyTable({ flows }: { flows: FlowRow[] }) {
 export default function DashboardPage({
   searchParams,
 }: {
-  searchParams: { date?: string; etf?: string };
+  searchParams: { date?: string; etf?: string; view?: string; period?: string };
 }) {
   const pffDates = listFlowDates("PFF");
   const selectedDate = searchParams.date ?? pffDates[0];
@@ -257,6 +333,16 @@ export default function DashboardPage({
   const dateIdx = selectedDate ? pffDates.indexOf(selectedDate) : -1;
   const prevDate = dateIdx >= 0 && dateIdx < pffDates.length - 1 ? pffDates[dateIdx + 1] : null;
   const nextDate = dateIdx > 0 ? pffDates[dateIdx - 1] : null;
+
+  const view: SignalView =
+    searchParams.view === "sells_vol" ? "sells_vol"
+    : searchParams.view === "buys_monthly" ? "buys_monthly"
+    : "sells_dollar";
+
+  const period: VolPeriod =
+    searchParams.period === "weekly" ? "weekly"
+    : searchParams.period === "monthly" ? "monthly"
+    : "daily";
 
   // Load flows for each ETF
   const allFlows: FlowRow[] = [];
@@ -317,6 +403,33 @@ export default function DashboardPage({
 
   const etfsWithData = SUPPORTED_ETFS.filter((etf) => listFlowDates(etf).length > 0);
 
+  // Monthly buys (last 30 days across all ETFs)
+  const windowStart = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  const monthlyBuyRows: MonthlyBuyRow[] = [];
+  for (const etf of SUPPORTED_ETFS) {
+    const summary = loadTickerSummary(etf);
+    for (const t of Object.values(summary)) {
+      const windowHistory = t.history.filter(
+        (h) => h.date >= windowStart && (h.flow_type === "BUY" || h.flow_type === "ADDED")
+      );
+      const windowBuyDollars = windowHistory.reduce((s, h) => s + h.dollar_flow, 0);
+      if (windowBuyDollars > 0) {
+        monthlyBuyRows.push({ ...t, etf, windowBuyDollars, windowBuyDays: windowHistory.length });
+      }
+    }
+  }
+  monthlyBuyRows.sort((a, b) => b.windowBuyDollars - a.windowBuyDollars);
+  const top15Buys = monthlyBuyRows.slice(0, 15);
+
+  // Tab href helper
+  function viewHref(v: string, p?: string) {
+    const base = `/?${selectedDate ? `date=${selectedDate}&` : ""}view=${v}`;
+    return p ? `${base}&period=${p}` : base;
+  }
+
+  const TAB_ACTIVE = "border-b-2 border-blue-800 bg-white text-gray-900 font-bold";
+  const TAB_INACTIVE = "text-gray-600 hover:bg-gray-100 hover:text-gray-900";
+
   return (
     <div className="space-y-4">
       {/* Row 1: Date nav + stat chips + rebalance countdown */}
@@ -343,7 +456,7 @@ export default function DashboardPage({
         </div>
 
         {/* Rebalancing countdown */}
-        <div className={`ml-auto flex items-center gap-1.5  border px-3 py-1 font-mono text-xs ${
+        <div className={`ml-auto flex items-center gap-1.5 border px-3 py-1 font-mono text-xs ${
           rebalance.daysLeft <= 14
             ? "border-amber-200 bg-amber-50 text-amber-700"
             : "border-gray-600 bg-gray-100 text-gray-600"
@@ -353,7 +466,7 @@ export default function DashboardPage({
           <span className={`font-semibold ${rebalance.daysLeft <= 14 ? "text-amber-700" : "text-gray-700"}`}>
             {rebalance.label}
           </span>
-          <span className={`${rebalance.daysLeft <= 14 ? "text-amber-600" : "text-gray-400"}`}>
+          <span className={rebalance.daysLeft <= 14 ? "text-amber-600" : "text-gray-400"}>
             ({rebalance.daysLeft}d)
           </span>
         </div>
@@ -384,18 +497,13 @@ export default function DashboardPage({
             <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
               Cross-ETF Consensus
             </span>
-            <div className="flex items-center gap-2">
-              {consensusRows.length > 0 && (
-                <span className="font-mono text-[10px] text-gray-500">
-                  <span className="text-emerald-600">{consensusBuys}b</span>
-                  {" · "}
-                  <span className="text-rose-500">{consensusSells}s</span>
-                </span>
-              )}
-              <Link href={`/overlap?date=${selectedDate}`} className="font-mono text-[10px] text-blue-700 hover:text-blue-800">
-                history →
-              </Link>
-            </div>
+            {consensusRows.length > 0 && (
+              <span className="font-mono text-[10px] text-gray-500">
+                <span className="text-emerald-600">{consensusBuys}b</span>
+                {" · "}
+                <span className="text-rose-500">{consensusSells}s</span>
+              </span>
+            )}
           </div>
           <MiniConsensus rows={consensusRows} />
         </div>
@@ -410,36 +518,49 @@ export default function DashboardPage({
           <span className="font-mono text-[10px] text-gray-400">
             last 14 trading days · {recurringRows.length} securities with 2+ consensus days
           </span>
-          <Link href="/overlap" className="ml-auto font-mono text-[10px] text-blue-700 hover:text-blue-800">
-            all →
-          </Link>
         </div>
         <RecurringConsensus rows={recurringRows} />
       </div>
 
-      {/* Row 5: Front-Run + Buy-the-Dip signals */}
-      <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
-        <div className="border-2 border-gray-600 bg-white p-4">
-          <div className="mb-3 flex items-center gap-3">
-            <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
-              Front-Run Signals
-            </span>
-            <span className="font-mono text-[10px] text-gray-400">forced buys by overhang</span>
-          </div>
-          <ForcedBuyTable flows={allFlows} />
+      {/* Row 5: Signals panel */}
+      <div className="border-2 border-gray-600 bg-white">
+        {/* Tab bar */}
+        <div className="flex gap-0.5 border-b-2 border-gray-600 px-4">
+          <a href={viewHref("sells_dollar")} className={`px-4 py-2 font-mono text-xs capitalize ${view === "sells_dollar" ? TAB_ACTIVE : TAB_INACTIVE}`}>
+            Largest Sold ($)
+          </a>
+          <a href={viewHref("sells_vol", period)} className={`px-4 py-2 font-mono text-xs capitalize ${view === "sells_vol" ? TAB_ACTIVE : TAB_INACTIVE}`}>
+            Sold (% Vol)
+          </a>
+          <a href={viewHref("buys_monthly")} className={`px-4 py-2 font-mono text-xs capitalize ${view === "buys_monthly" ? TAB_ACTIVE : TAB_INACTIVE}`}>
+            Most Bought (30d)
+          </a>
+
+          {/* Period picker — only for sells_vol */}
+          {view === "sells_vol" && (
+            <div className="ml-auto flex items-center gap-1 py-1">
+              {(["daily", "weekly", "monthly"] as VolPeriod[]).map((p) => (
+                <a
+                  key={p}
+                  href={viewHref("sells_vol", p)}
+                  className={`border px-2.5 py-1 font-mono text-[10px] ${
+                    period === p
+                      ? "border-gray-800 bg-gray-900 text-white font-bold"
+                      : "border-gray-500 text-gray-500 hover:border-gray-400 hover:text-gray-900"
+                  }`}
+                >
+                  {p}
+                </a>
+              ))}
+            </div>
+          )}
         </div>
 
-        <div className="border-2 border-gray-600 bg-white p-4">
-          <div className="mb-3 flex items-center gap-3">
-            <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
-              Buy-the-Dip Signals
-            </span>
-            <span className="font-mono text-[10px] text-gray-400">{selectedDate}</span>
-            <Link href={`/flows?date=${selectedDate}`} className="ml-auto font-mono text-[10px] text-blue-700 hover:text-blue-800">
-              full flows →
-            </Link>
-          </div>
-          <OpportunitiesTable flows={allFlows} />
+        {/* Tab content */}
+        <div className="p-4">
+          {view === "sells_dollar" && <SellsDollarTable flows={allFlows} />}
+          {view === "sells_vol" && <SellsVolTable flows={allFlows} period={period} />}
+          {view === "buys_monthly" && <BuysMonthlyTable rows={top15Buys} />}
         </div>
       </div>
     </div>

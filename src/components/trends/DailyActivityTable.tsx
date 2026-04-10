@@ -1,3 +1,5 @@
+"use client";
+
 import { fmtDollar } from "@/src/lib/fmt";
 "use client";
 
