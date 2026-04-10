@@ -16,6 +16,7 @@ import type { EtfTicker } from "@/src/lib/data";
 import type { DayAggregate, TickerAggregate } from "@/src/types/pff";
 
 type Tab = "flows" | "trends";
+type FlowsEtf = EtfTicker | "ALL";
 type TrendsEtf = EtfTicker | "ALL";
 
 // ─── helpers ───────────────────────────────────────────────────────────────
@@ -96,10 +97,12 @@ export default function FlowsPage({
 }) {
   const tab: Tab = searchParams.tab === "trends" ? "trends" : "flows";
 
-  // Flows ETF — must be a specific ETF
-  const flowsEtf = (SUPPORTED_ETFS.includes(searchParams.etf as EtfTicker)
-    ? searchParams.etf
-    : "PFF") as EtfTicker;
+  // Flows ETF — specific ETF or "ALL"
+  const rawEtf = searchParams.etf ?? "PFF";
+  const flowsEtf: FlowsEtf =
+    rawEtf === "ALL" || SUPPORTED_ETFS.includes(rawEtf as EtfTicker)
+      ? (rawEtf as FlowsEtf)
+      : "PFF";
 
   // Trends ETF — can be a specific ETF or "ALL"
   const rawTetf = searchParams.tetf ?? "ALL";
@@ -110,14 +113,32 @@ export default function FlowsPage({
 
   const windowDays = parseInt(searchParams.window ?? "30", 10);
 
-  // Flows data
-  const flowDates = listFlowDates(flowsEtf);
-  const selectedDate = searchParams.date ?? flowDates[0];
-  const flows = selectedDate ? loadFlows(selectedDate, flowsEtf) : [];
+  // Flows data — use PFF dates as the navigation spine
+  const navDates = listFlowDates("PFF");
+  const selectedDate = searchParams.date ?? navDates[0];
 
-  const dateIdx = selectedDate ? flowDates.indexOf(selectedDate) : -1;
-  const prevDate = dateIdx >= 0 && dateIdx < flowDates.length - 1 ? flowDates[dateIdx + 1] : null;
-  const nextDate = dateIdx > 0 ? flowDates[dateIdx - 1] : null;
+  const dateIdx = selectedDate ? navDates.indexOf(selectedDate) : -1;
+  const prevDate = dateIdx >= 0 && dateIdx < navDates.length - 1 ? navDates[dateIdx + 1] : null;
+  const nextDate = dateIdx > 0 ? navDates[dateIdx - 1] : null;
+
+  // Load flows — single ETF or all ETFs combined
+  let flows: import("@/src/types/pff").FlowRow[] = [];
+  if (flowsEtf === "ALL") {
+    for (const etf of SUPPORTED_ETFS) {
+      const etfDates = listFlowDates(etf);
+      // Find closest available date on or before selectedDate
+      const etfDate = selectedDate
+        ? etfDates.find((d) => d <= selectedDate) ?? etfDates[0]
+        : etfDates[0];
+      if (etfDate) {
+        flows = flows.concat(loadFlows(etfDate, etf).map((f) => ({ ...f, etf })));
+      }
+    }
+  } else {
+    const etfDates = listFlowDates(flowsEtf);
+    const etfDate = selectedDate && etfDates.includes(selectedDate) ? selectedDate : etfDates[0];
+    flows = etfDate ? loadFlows(etfDate, flowsEtf).map((f) => ({ ...f, etf: flowsEtf })) : [];
+  }
 
   const changes = flows.filter((f) => f.flow_type !== "UNCHANGED");
   const buyDollars = changes
@@ -171,7 +192,7 @@ export default function FlowsPage({
   const TAB_ACTIVE = "border-b-2 border-blue-800 bg-white text-gray-900 font-bold";
   const TAB_INACTIVE = "text-gray-600 hover:bg-gray-100 hover:text-gray-900";
 
-  function flowsTabHref(e: EtfTicker) {
+  function flowsTabHref(e: FlowsEtf) {
     return `/flows?etf=${e}&tab=flows${selectedDate ? `&date=${selectedDate}` : ""}`;
   }
   function trendsTabHref(te: TrendsEtf, w?: number) {
@@ -198,6 +219,10 @@ export default function FlowsPage({
           {/* ETF + date controls */}
           <div className="flex flex-wrap items-center gap-3">
             <div className="flex gap-1">
+              <a href={flowsTabHref("ALL")}
+                className={`border px-2.5 py-1 font-mono text-xs ${flowsEtf === "ALL" ? BTN_ACTIVE : BTN_INACTIVE}`}>
+                All ETFs
+              </a>
               {SUPPORTED_ETFS.map((e) => (
                 <a key={e} href={flowsTabHref(e)}
                   className={`border px-2.5 py-1 font-mono text-xs ${flowsEtf === e ? BTN_ACTIVE : BTN_INACTIVE}`}>
@@ -210,10 +235,10 @@ export default function FlowsPage({
                 selectedDate={selectedDate}
                 prevDate={prevDate}
                 nextDate={nextDate}
-                etf={flowsEtf}
-                allDates={flowDates}
+                etf="PFF"
+                allDates={navDates}
                 basePath="/flows"
-                extraParams="tab=flows"
+                extraParams={`tab=flows&etf=${flowsEtf}`}
               />
             )}
             {changes.length > 0 && (
@@ -227,8 +252,8 @@ export default function FlowsPage({
             )}
           </div>
 
-          {/* Sector chart */}
-          {flows.length > 0 && (
+          {/* Sector chart — single ETF only */}
+          {flowsEtf !== "ALL" && flows.length > 0 && (
             <div className="border-2 border-gray-600 bg-white p-4">
               <p className="mb-2 font-mono text-[10px] font-semibold uppercase tracking-wider text-gray-500">
                 Sector Flow (net $) — {flowsEtf} {selectedDate}
@@ -244,7 +269,7 @@ export default function FlowsPage({
             </div>
           ) : (
             <div className="border-2 border-gray-600 bg-white p-4">
-              <FlowsTable flows={flows} showAll />
+              <FlowsTable flows={flows} showAll showEtf={flowsEtf === "ALL"} />
             </div>
           )}
         </div>
