@@ -34,4 +34,11 @@ ETFS: dict[str, dict] = {
         "predict": False,
         "resolve_tickers": False,
     },
+    "PFFA": {
+        "name": "Virtus InfraCap U.S. Preferred Stock ETF",
+        "provider": "virtus",
+        "key_field": "cusip",   # Virtus internal Security Id stored in cusip field
+        "predict": False,       # Actively managed leveraged fund
+        "resolve_tickers": False,
+    },
 }

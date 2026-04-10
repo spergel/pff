@@ -5,7 +5,7 @@ import type { DailySummary, FlowRow, Holding, PredictedFlow, TickerInfo, DayAggr
 
 const DATA_ROOT = path.join(process.cwd(), "data");
 
-export const SUPPORTED_ETFS = ["PFF", "PGX", "FPE"] as const;
+export const SUPPORTED_ETFS = ["PFF", "PGX", "FPE", "PFFA"] as const;
 export type EtfTicker = typeof SUPPORTED_ETFS[number];
 
 function readCsv<T>(filePath: string): T[] {
@@ -89,6 +89,7 @@ export function loadFlows(date: string, etf: EtfTicker = "PFF"): FlowRow[] {
   return readCsv<Record<string, string>>(filePath).map((row) => ({
     date: row.date ?? date,
     isin: row.isin ?? "",
+    cusip: row.cusip ?? "",
     ticker: row.ticker ?? row.ticker_raw ?? "",
     ticker_raw: row.ticker_raw ?? "",
     name: row.name ?? "",
@@ -209,6 +210,68 @@ export function buildFlowHistory(limit = 30, etf: EtfTicker = "PFF"): DailySumma
 
     return { date, buys, sells, added, removed, suspect, total_buy_dollars, total_sell_dollars, num_changes: flows.filter((f) => f.flow_type !== "UNCHANGED").length };
   });
+}
+
+export interface ConsensusFrequencyRow {
+  cusip: string;
+  ticker: string;
+  name: string;
+  sector: string;
+  buyDays: number;
+  sellDays: number;
+  recentConsensus: "BUY" | "SELL";
+  etfs: string[];
+  lastCombinedFlow: number;
+}
+
+export function buildConsensusHistory(limit = 14): ConsensusFrequencyRow[] {
+  const overlap = loadOverlapSummary();
+  const dates = listFlowDates("PFF").slice(0, limit);
+
+  const counts: Record<string, {
+    buyDays: number;
+    sellDays: number;
+    recentConsensus: "BUY" | "SELL" | null;
+    etfs: Set<string>;
+    lastFlow: number;
+  }> = {};
+
+  for (const date of dates) {
+    const rows = computeConsensus(date, overlap);
+    for (const row of rows) {
+      if (!counts[row.cusip]) {
+        counts[row.cusip] = { buyDays: 0, sellDays: 0, recentConsensus: null, etfs: new Set(), lastFlow: 0 };
+      }
+      if (row.consensus === "BUY") counts[row.cusip].buyDays++;
+      else counts[row.cusip].sellDays++;
+      if (counts[row.cusip].recentConsensus === null) {
+        counts[row.cusip].recentConsensus = row.consensus;
+        counts[row.cusip].lastFlow = row.combined_flow;
+        for (const etf of row.etfs) counts[row.cusip].etfs.add(etf);
+      }
+    }
+  }
+
+  return Object.entries(counts)
+    .filter(([, s]) => s.buyDays + s.sellDays >= 2)
+    .map(([cusip, s]) => {
+      const entry = overlap.by_cusip[cusip];
+      const ticker = Object.values(entry?.etfs ?? {}).find((e) => e.ticker)?.ticker ?? "";
+      const name = entry?.name ?? "";
+      const sector = Object.values(entry?.etfs ?? {}).find((e) => e.sector)?.sector ?? "";
+      return {
+        cusip,
+        ticker,
+        name,
+        sector,
+        buyDays: s.buyDays,
+        sellDays: s.sellDays,
+        recentConsensus: (s.recentConsensus ?? "BUY") as "BUY" | "SELL",
+        etfs: Array.from(s.etfs),
+        lastCombinedFlow: s.lastFlow,
+      };
+    })
+    .sort((a, b) => b.buyDays + b.sellDays - (a.buyDays + a.sellDays));
 }
 
 export function loadOverlapSummary(): { by_cusip: Record<string, OverlapEntry>; isin_to_cusip: Record<string, string> } {

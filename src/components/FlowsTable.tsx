@@ -18,16 +18,17 @@ const fmtDollar = new Intl.NumberFormat("en-US", {
 function rowBg(type: FlowRow["flow_type"]) {
   if (type === "ADDED") return "bg-blue-50";
   if (type === "REMOVED") return "bg-orange-50";
-  if (type === "BUY") return "bg-green-50";
-  if (type === "SELL") return "bg-red-50";
+  if (type === "BUY") return "bg-emerald-50";
+  if (type === "SELL") return "bg-rose-50";
   if (type === "SUSPECT") return "bg-yellow-50";
   return "";
 }
 
-const ETF_COLORS: Record<string, string> = {
-  PFF: "bg-blue-100 text-blue-700",
+const ETF_BADGE: Record<string, string> = {
+  PFF: "bg-blue-100 text-blue-800",
   PGX: "bg-purple-100 text-purple-700",
   FPE: "bg-amber-100 text-amber-700",
+  PFFA: "bg-green-100 text-green-700",
 };
 
 type SortKey = "dollar_flow" | "shares_delta" | "weight_delta";
@@ -43,6 +44,7 @@ export function FlowsTable({
 }) {
   const [sortKey, setSortKey] = useState<SortKey>("dollar_flow");
   const [filterType, setFilterType] = useState<string>("all");
+  const [showId, setShowId] = useState(false);
 
   const filtered = flows.filter((f) => {
     if (filterType === "all") return f.flow_type !== "UNCHANGED";
@@ -59,44 +61,54 @@ export function FlowsTable({
 
   const types = ["all", "BUY", "SELL", "ADDED", "REMOVED", "SUSPECT"];
 
+  const BTN_ACTIVE = "border-gray-800 bg-gray-900 text-white";
+  const BTN_INACTIVE = "border-gray-500 text-gray-500 hover:border-gray-400 hover:text-gray-900";
+
   return (
     <div className="space-y-3">
-      <div className="flex flex-wrap gap-2 text-sm">
+      <div className="flex flex-wrap gap-1.5 text-xs">
         {types.map((t) => (
           <button
             key={t}
             onClick={() => setFilterType(t)}
-            className={`rounded border px-3 py-1 capitalize transition-colors ${
-              filterType === t
-                ? "border-slate-700 bg-slate-700 text-white"
-                : "border-slate-200 hover:border-slate-400"
+            className={` border px-2.5 py-1 font-mono  ${
+              filterType === t ? BTN_ACTIVE : BTN_INACTIVE
             }`}
           >
-            {t === "all" ? "All Changes" : t}
+            {t === "all" ? "all changes" : t}
           </button>
         ))}
-        <span className="ml-auto self-center text-slate-400">
+        <button
+          onClick={() => setShowId((v) => !v)}
+          className={` border px-2.5 py-1 font-mono  ${
+            showId ? BTN_ACTIVE : BTN_INACTIVE
+          }`}
+        >
+          ISIN/CUSIP
+        </button>
+        <span className="ml-auto self-center font-mono text-gray-500">
           {filtered.length} rows
         </span>
       </div>
 
-      <div className="overflow-x-auto rounded-lg border border-slate-200">
+      <div className="overflow-x-auto border-2 border-gray-600">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-slate-200 bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+            <tr className="border-b border-gray-500 bg-gray-300 text-left text-[10px] font-bold uppercase tracking-wider text-gray-800">
               {showEtf && <th className="px-3 py-2">ETF</th>}
+              {showId && <th className="px-3 py-2">ISIN / CUSIP</th>}
               <th className="px-3 py-2">Ticker</th>
               <th className="px-3 py-2">Name</th>
               <th className="px-3 py-2">Sector</th>
               <th className="px-3 py-2">Type</th>
               <th
-                className="cursor-pointer px-3 py-2 hover:text-slate-800"
+                className="cursor-pointer px-3 py-2 hover:text-gray-900"
                 onClick={() => setSortKey("dollar_flow")}
               >
                 $ Flow {sortKey === "dollar_flow" ? "↓" : ""}
               </th>
               <th
-                className="cursor-pointer px-3 py-2 hover:text-slate-800"
+                className="cursor-pointer px-3 py-2 hover:text-gray-900"
                 onClick={() => setSortKey("shares_delta")}
               >
                 Δ Shares {sortKey === "shares_delta" ? "↓" : ""}
@@ -104,7 +116,7 @@ export function FlowsTable({
               <th className="px-3 py-2">Prior Shares</th>
               <th className="px-3 py-2">Today Shares</th>
               <th
-                className="cursor-pointer px-3 py-2 hover:text-slate-800"
+                className="cursor-pointer px-3 py-2 hover:text-gray-900"
                 onClick={() => setSortKey("weight_delta")}
               >
                 Δ Weight {sortKey === "weight_delta" ? "↓" : ""}
@@ -112,76 +124,85 @@ export function FlowsTable({
               <th className="px-3 py-2">Price</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-slate-100">
+          <tbody className="divide-y divide-gray-300">
             {visible.map((row) => (
-              <tr key={`${row.etf ?? ""}-${row.isin}`} className={`${rowBg(row.flow_type)} hover:opacity-80`}>
+              <tr
+                key={`${row.etf ?? ""}-${row.isin}`}
+                className={`${rowBg(row.flow_type)} hover:opacity-80 `}
+              >
                 {showEtf && (
                   <td className="px-3 py-2">
-                    <span className={`rounded px-1.5 py-0.5 text-xs font-semibold ${ETF_COLORS[row.etf ?? ""] ?? "bg-slate-100 text-slate-600"}`}>
+                    <span
+                      className={` px-1.5 py-0.5 font-mono text-xs font-semibold ${ETF_BADGE[row.etf ?? ""] ?? "bg-gray-100 text-gray-500"}`}
+                    >
                       {row.etf ?? "—"}
                     </span>
                   </td>
                 )}
-                <td className="px-3 py-2 font-mono font-semibold">
+                {showId && (
+                  <td className="px-3 py-2 font-mono text-[10px] text-gray-400">
+                    {row.isin || row.cusip || "—"}
+                  </td>
+                )}
+                <td className="px-3 py-2 font-mono font-semibold text-gray-900">
                   {row.ticker !== row.ticker_raw ? (
                     <span title={`Raw: ${row.ticker_raw}`}>{row.ticker}</span>
                   ) : (
                     row.ticker
                   )}
                 </td>
-                <td className="px-3 py-2 text-slate-600">{row.name}</td>
-                <td className="px-3 py-2 text-slate-500">{row.sector}</td>
+                <td className="px-3 py-2 text-gray-600">{row.name}</td>
+                <td className="px-3 py-2 font-mono text-xs text-gray-500">{row.sector}</td>
                 <td className="px-3 py-2">
                   <SignalBadge type={row.flow_type} />
                 </td>
                 <td
                   className={`px-3 py-2 font-mono font-medium ${
-                    (row.dollar_flow ?? 0) > 0
-                      ? "text-green-700"
-                      : "text-red-700"
+                    (row.dollar_flow ?? 0) > 0 ? "text-emerald-600" : "text-rose-500"
                   }`}
                 >
                   {row.dollar_flow != null ? fmtDollar.format(row.dollar_flow) : "—"}
                 </td>
                 <td
                   className={`px-3 py-2 font-mono ${
-                    (row.shares_delta ?? 0) > 0
-                      ? "text-green-700"
-                      : "text-red-700"
+                    (row.shares_delta ?? 0) > 0 ? "text-emerald-600" : "text-rose-500"
                   }`}
                 >
                   {row.shares_delta != null
                     ? `${row.shares_delta > 0 ? "+" : ""}${fmt.format(row.shares_delta)}`
                     : "—"}
                 </td>
-                <td className="px-3 py-2 font-mono text-slate-500">
+                <td className="px-3 py-2 font-mono text-gray-500">
                   {row.prior_shares != null ? fmt.format(row.prior_shares) : "—"}
                 </td>
-                <td className="px-3 py-2 font-mono text-slate-500">
+                <td className="px-3 py-2 font-mono text-gray-500">
                   {row.today_shares != null ? fmt.format(row.today_shares) : "—"}
                 </td>
                 <td
                   className={`px-3 py-2 font-mono text-xs ${
                     (row.weight_delta ?? 0) > 0
-                      ? "text-green-600"
+                      ? "text-emerald-600"
                       : (row.weight_delta ?? 0) < 0
-                      ? "text-red-600"
-                      : "text-slate-400"
+                      ? "text-rose-500"
+                      : "text-gray-300"
                   }`}
                 >
                   {row.weight_delta != null
                     ? `${row.weight_delta > 0 ? "+" : ""}${row.weight_delta.toFixed(3)}%`
                     : "—"}
                 </td>
-                <td className="px-3 py-2 font-mono text-slate-500">
+                <td className="px-3 py-2 font-mono text-gray-500">
                   {row.price != null ? `$${row.price.toFixed(2)}` : "—"}
                 </td>
               </tr>
             ))}
             {visible.length === 0 && (
               <tr>
-                <td colSpan={showEtf ? 11 : 10} className="px-3 py-8 text-center text-slate-400">
-                  No data
+                <td
+                  colSpan={(showEtf ? 11 : 10) + (showId ? 1 : 0)}
+                  className="px-3 py-8 text-center font-mono text-xs text-gray-400"
+                >
+                  no data
                 </td>
               </tr>
             )}

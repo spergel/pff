@@ -15,8 +15,8 @@ export default function PredictionsPage() {
 
   if (rows.length === 0) {
     return (
-      <div className="rounded-lg border border-slate-200 bg-white px-6 py-12 text-center text-slate-400">
-        No prediction data yet — runs daily after market close.
+      <div className="border border-gray-500 px-6 py-12 text-center font-mono text-xs text-gray-400">
+        no prediction data yet — runs daily after market close
       </div>
     );
   }
@@ -27,18 +27,18 @@ export default function PredictionsPage() {
   const buys = rows.filter((r) => r.predicted_action === "BUY");
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <div className="flex flex-wrap items-baseline gap-4">
-        <h1 className="text-xl font-bold">Predicted Rebalancing Flows</h1>
-        <span className="text-sm text-slate-500">
-          Drift since <span className="font-medium">{baselineDate}</span>
-          {" · "}as of <span className="font-medium">{currentDate}</span>
+        <h1 className="text-base font-bold text-gray-900">Predicted Rebalancing Flows</h1>
+        <span className="font-mono text-xs text-gray-500">
+          drift since <span className="text-gray-800">{baselineDate}</span>
+          {" · "}as of <span className="text-gray-800">{currentDate}</span>
         </span>
       </div>
 
-      <p className="text-sm text-slate-500 -mt-4">
-        Securities that outperformed the portfolio since the last rebalancing are
-        overweight — PFF will sell them at month-end. Underperformers will be bought.
+      <p className="font-mono text-xs text-gray-500 -mt-2">
+        securities that outperformed the portfolio since last rebalancing are overweight — PFF will
+        sell them at month-end · underperformers will be bought
       </p>
 
       <FlowTable title="Predicted Sells" rows={sells} color="red" />
@@ -58,59 +58,60 @@ function FlowTable({
 }) {
   if (rows.length === 0) return null;
 
-  const accent = color === "red" ? "text-red-700" : "text-green-700";
+  const accent = color === "red" ? "text-rose-500" : "text-emerald-600";
   const badge =
     color === "red"
-      ? "bg-red-50 text-red-700 ring-1 ring-red-200"
-      : "bg-green-50 text-green-700 ring-1 ring-green-200";
+      ? "bg-rose-100 text-rose-700"
+      : "bg-emerald-100 text-emerald-700";
+  const heading = color === "red" ? "text-rose-500" : "text-emerald-600";
 
   return (
     <section>
       <div className="mb-3 flex items-baseline gap-3">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
+        <h2 className={`font-mono text-[10px] font-semibold uppercase tracking-wider ${heading}`}>
           {title}
         </h2>
-        <span className="text-xs text-slate-400">{rows.length} securities</span>
+        <span className="font-mono text-xs text-gray-500">{rows.length} securities</span>
       </div>
 
-      <div className="rounded-lg border border-slate-200 bg-white overflow-x-auto">
+      <div className="overflow-x-auto border-2 border-gray-600">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-slate-100 text-xs text-slate-500">
-              <th className="px-4 py-2 text-left font-medium">Ticker</th>
-              <th className="px-4 py-2 text-left font-medium">Name</th>
-              <th className="px-4 py-2 text-left font-medium">Sector</th>
-              <th className="px-4 py-2 text-right font-medium">Baseline $</th>
-              <th className="px-4 py-2 text-right font-medium">Current $</th>
-              <th className="px-4 py-2 text-right font-medium">Return</th>
-              <th className="px-4 py-2 text-right font-medium">Drift</th>
-              <th className="px-4 py-2 text-right font-medium">Wgt gap</th>
-              <th className="px-4 py-2 text-right font-medium">Pred. flow</th>
+            <tr className="border-b-2 border-gray-600 bg-gray-300 text-[10px] text-gray-500">
+              <th className="px-4 py-2 text-left font-semibold uppercase tracking-wider">Ticker</th>
+              <th className="px-4 py-2 text-left font-semibold uppercase tracking-wider">Name</th>
+              <th className="px-4 py-2 text-left font-semibold uppercase tracking-wider">Sector</th>
+              <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider">Baseline $</th>
+              <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider">Current $</th>
+              <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider">Return</th>
+              <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider">Drift</th>
+              <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider">Wgt gap</th>
+              <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider">Pred. flow</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-slate-50">
+          <tbody className="divide-y divide-gray-300">
             {rows.map((r) => (
-              <tr key={r.isin} className="hover:bg-slate-50">
-                <td className="px-4 py-2 font-mono font-medium">{r.ticker}</td>
-                <td className="px-4 py-2 text-slate-600 max-w-[200px] truncate">{r.name}</td>
-                <td className="px-4 py-2 text-slate-500 text-xs">{r.sector}</td>
-                <td className="px-4 py-2 text-right tabular-nums">
+              <tr key={r.isin} className="hover:bg-yellow-50">
+                <td className="px-4 py-2 font-mono font-medium text-gray-900">{r.ticker}</td>
+                <td className="max-w-[200px] truncate px-4 py-2 text-gray-600">{r.name}</td>
+                <td className="px-4 py-2 font-mono text-xs text-gray-500">{r.sector}</td>
+                <td className="px-4 py-2 text-right font-mono tabular-nums text-gray-600">
                   {r.baseline_price != null ? `$${r.baseline_price.toFixed(2)}` : "—"}
                 </td>
-                <td className="px-4 py-2 text-right tabular-nums">
+                <td className="px-4 py-2 text-right font-mono tabular-nums text-gray-600">
                   {r.current_price != null ? `$${r.current_price.toFixed(2)}` : "—"}
                 </td>
-                <td className={`px-4 py-2 text-right tabular-nums font-medium ${accent}`}>
+                <td className={`px-4 py-2 text-right font-mono tabular-nums font-medium ${accent}`}>
                   {fmtPct(r.price_return_pct)}
                 </td>
-                <td className="px-4 py-2 text-right tabular-nums text-slate-500">
+                <td className="px-4 py-2 text-right font-mono tabular-nums text-gray-500">
                   {r.drift_ratio != null ? r.drift_ratio.toFixed(4) : "—"}
                 </td>
-                <td className="px-4 py-2 text-right tabular-nums text-slate-500">
+                <td className="px-4 py-2 text-right font-mono tabular-nums text-gray-500">
                   {fmtPct(r.weight_gap_pct, 3)}
                 </td>
                 <td className="px-4 py-2 text-right">
-                  <span className={`inline-block rounded px-2 py-0.5 text-xs font-medium tabular-nums ${badge}`}>
+                  <span className={`inline-block  px-2 py-0.5 font-mono text-xs font-medium tabular-nums ${badge}`}>
                     {r.predicted_dollar_flow != null
                       ? fmt.format(Math.abs(r.predicted_dollar_flow))
                       : "—"}

@@ -6,8 +6,8 @@ export default function HoldingsPage() {
 
   if (!result) {
     return (
-      <div className="rounded-lg border border-slate-200 bg-white px-6 py-12 text-center text-slate-400">
-        No holdings data yet. Run the scraper to populate.
+      <div className="border border-gray-500 px-6 py-12 text-center font-mono text-xs text-gray-400">
+        no holdings data yet — run the scraper to populate
       </div>
     );
   }
@@ -17,11 +17,11 @@ export default function HoldingsPage() {
   const resolved = holdings.filter((h) => h.ticker !== h.ticker_raw).length;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5">
       <div className="flex flex-wrap items-baseline gap-4">
-        <h1 className="text-xl font-bold">Holdings</h1>
-        <span className="text-sm text-slate-500">as of {date}</span>
-        <span className="text-sm text-slate-500">
+        <h1 className="text-base font-bold text-gray-900">Holdings</h1>
+        <span className="font-mono text-xs text-gray-500">as of {date}</span>
+        <span className="font-mono text-xs text-gray-500">
           {holdings.length} securities ·{" "}
           {new Intl.NumberFormat("en-US", {
             style: "currency",
@@ -32,13 +32,13 @@ export default function HoldingsPage() {
           AUM
         </span>
         {resolved > 0 && (
-          <span className="text-sm text-blue-600">
+          <span className="font-mono text-xs text-blue-700">
             {resolved} tickers resolved via OpenFIGI
           </span>
         )}
       </div>
 
-      <div className="rounded-lg border border-slate-200 bg-white p-4">
+      <div className="border-2 border-gray-600 bg-white p-4">
         <HoldingsTable holdings={holdings} />
       </div>
     </div>

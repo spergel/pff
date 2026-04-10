@@ -13,13 +13,10 @@ function Bar({ value, max, color }: { value: number; max: number; color: string 
   const pct = max > 0 ? Math.round((value / max) * 100) : 0;
   return (
     <div className="flex items-center gap-2">
-      <div className="h-2 w-24 rounded-full bg-slate-100">
-        <div
-          className={`h-2 rounded-full ${color}`}
-          style={{ width: `${pct}%` }}
-        />
+      <div className="h-1.5 w-20 bg-gray-200">
+        <div className={`h-1.5  ${color}`} style={{ width: `${pct}%` }} />
       </div>
-      <span className="font-mono text-xs text-slate-600">{value}</span>
+      <span className="font-mono text-xs text-gray-500">{value}</span>
     </div>
   );
 }
@@ -32,10 +29,10 @@ export function DailyActivityTable({ days }: { days: DayAggregate[] }) {
   const reversed = [...days].reverse();
 
   return (
-    <div className="overflow-x-auto rounded-lg border border-slate-200 bg-white">
+    <div className="overflow-x-auto border-2 border-gray-600">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b border-slate-200 bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+          <tr className="border-b border-gray-500 bg-gray-300 text-left text-[10px] font-bold uppercase tracking-wider text-gray-800">
             <th className="px-3 py-2">Date</th>
             <th className="px-3 py-2">Changes</th>
             <th className="px-3 py-2">Buys</th>
@@ -47,34 +44,34 @@ export function DailyActivityTable({ days }: { days: DayAggregate[] }) {
             <th className="px-3 py-2">Net</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-slate-100">
+        <tbody className="divide-y divide-gray-300">
           {reversed.map((d) => {
             const net = d.total_buy_dollars - d.total_sell_dollars;
             return (
-              <tr key={d.date} className="hover:bg-slate-50">
-                <td className="px-3 py-1.5 font-mono text-xs text-slate-500">{d.date}</td>
+              <tr key={d.date} className="hover:bg-yellow-50">
+                <td className="px-3 py-1.5 font-mono text-xs text-gray-600">{d.date}</td>
                 <td className="px-3 py-1.5">
-                  <Bar value={d.num_changes} max={maxChanges} color="bg-slate-400" />
+                  <Bar value={d.num_changes} max={maxChanges} color="bg-gray-400" />
                 </td>
-                <td className="px-3 py-1.5 font-mono text-green-700">{d.buys}</td>
-                <td className="px-3 py-1.5 font-mono text-red-700">{d.sells}</td>
-                <td className="px-3 py-1.5 font-mono text-blue-700">{d.added}</td>
-                <td className="px-3 py-1.5 font-mono text-orange-700">{d.removed}</td>
+                <td className="px-3 py-1.5 font-mono text-xs text-emerald-600">{d.buys}</td>
+                <td className="px-3 py-1.5 font-mono text-xs text-rose-500">{d.sells}</td>
+                <td className="px-3 py-1.5 font-mono text-xs text-blue-700">{d.added}</td>
+                <td className="px-3 py-1.5 font-mono text-xs text-orange-600">{d.removed}</td>
                 <td className="px-3 py-1.5">
-                  <Bar value={d.total_buy_dollars} max={maxBuy} color="bg-green-400" />
-                  <span className="font-mono text-xs text-green-700">
+                  <Bar value={d.total_buy_dollars} max={maxBuy} color="bg-emerald-500" />
+                  <span className="font-mono text-xs text-emerald-600">
                     {fmtM.format(d.total_buy_dollars)}
                   </span>
                 </td>
                 <td className="px-3 py-1.5">
-                  <Bar value={d.total_sell_dollars} max={maxSell} color="bg-red-400" />
-                  <span className="font-mono text-xs text-red-700">
+                  <Bar value={d.total_sell_dollars} max={maxSell} color="bg-rose-500" />
+                  <span className="font-mono text-xs text-rose-500">
                     {fmtM.format(d.total_sell_dollars)}
                   </span>
                 </td>
                 <td
                   className={`px-3 py-1.5 font-mono text-xs font-medium ${
-                    net >= 0 ? "text-green-700" : "text-red-700"
+                    net >= 0 ? "text-emerald-600" : "text-rose-500"
                   }`}
                 >
                   {net >= 0 ? "+" : ""}

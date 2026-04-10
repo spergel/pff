@@ -3,9 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --font-mono: "Söhne Mono", "Cascadia Code", "Fira Code", ui-monospace, monospace;
+  --font-mono: "Courier New", Courier, monospace;
 }
 
 body {
-  @apply bg-slate-50 text-slate-900 antialiased;
+  @apply bg-gray-200 text-gray-900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
 }

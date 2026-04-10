@@ -26,6 +26,7 @@ if _SCRIPTS_DIR not in sys.path:
 import fetch_holdings
 import fetch_pgx
 import fetch_fpe
+import fetch_pffa
 import resolve_tickers
 import compute_flows
 import enrich_flows
@@ -38,6 +39,7 @@ FETCHERS = {
     "ishares": fetch_holdings.main,
     "invesco": fetch_pgx.main,
     "firsttrust": fetch_fpe.main,
+    "virtus": fetch_pffa.main,
 }
 
 

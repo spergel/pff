@@ -5,13 +5,13 @@ import {
   BarChart,
   CartesianGrid,
   Cell,
-  Legend,
   ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
 } from "recharts";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import type { DailySummary } from "@/src/types/pff";
 
@@ -22,23 +22,33 @@ const fmtDollar = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 0,
 });
 
+// Each ETF gets a fixed color; positive = full, negative = same color (bars go below zero)
+const ETF_CONFIG: Record<string, { color: string; label: string }> = {
+  pff_net:  { color: "#1d4ed8", label: "PFF" },  // blue
+  pgx_net:  { color: "#7c3aed", label: "PGX" },  // purple
+  fpe_net:  { color: "#d97706", label: "FPE" },  // amber
+  pffa_net: { color: "#16a34a", label: "PFFA" }, // green
+};
+
 function CustomTooltip({ active, payload }: any) {
   if (!active || !payload?.length) return null;
-  const d: DailySummary = payload[0]?.payload;
+  const d = payload[0]?.payload;
   return (
-    <div className="rounded border border-slate-200 bg-white p-3 text-xs shadow-md">
-      <p className="mb-1 font-semibold">{d.date}</p>
-      {payload.map((p: any) => (
-        <p key={p.dataKey} style={{ color: p.color }}>
-          {p.name}: {fmtDollar.format(p.value)}
-        </p>
-      ))}
-      <p className="mt-1 text-slate-400 italic">Click to view flows</p>
+    <div className="border-2 border-gray-600 bg-white p-3 text-xs">
+      <p className="mb-1 font-mono font-semibold text-gray-900">{d.date}</p>
+      {payload.map((p: any) => {
+        const cfg = ETF_CONFIG[p.dataKey];
+        return (
+          <p key={p.dataKey} className="font-mono" style={{ color: cfg?.color ?? p.color }}>
+            {cfg?.label ?? p.dataKey}: {fmtDollar.format(p.value)}
+          </p>
+        );
+      })}
+      <p className="mt-1 font-mono text-[10px] text-gray-400">click to view flows</p>
     </div>
   );
 }
 
-// Merge aux histories onto the PFF date spine
 function buildChartData(
   primary: DailySummary[],
   aux: Record<string, DailySummary[]>
@@ -62,12 +72,6 @@ function buildChartData(
   return Object.values(byDate).sort((a, b) => a.date.localeCompare(b.date));
 }
 
-const ETF_COLORS = {
-  pff_net: { pos: "#22c55e", neg: "#ef4444" },
-  pgx_net: { pos: "#a855f7", neg: "#c084fc" },
-  fpe_net: { pos: "#f59e0b", neg: "#fcd34d" },
-};
-
 export function FlowChart({
   history,
   auxHistories = {},
@@ -81,80 +85,117 @@ export function FlowChart({
 }) {
   const router = useRouter();
 
+  const allKeys = [
+    "pff_net",
+    ...Object.keys(auxHistories)
+      .filter((k) => auxHistories[k].length > 0)
+      .map((e) => `${e.toLowerCase()}_net`),
+  ];
+
+  const [hidden, setHidden] = useState<Set<string>>(new Set());
+
+  function toggle(key: string) {
+    setHidden((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }
+
   if (!history.length) {
     return (
-      <div className="flex h-48 items-center justify-center text-slate-400 text-sm">
-        No flow history yet
+      <div className="flex h-48 items-center justify-center font-mono text-xs text-gray-400">
+        no flow history yet
       </div>
     );
   }
 
   const data = buildChartData(history, auxHistories);
-  const hasAux = Object.keys(auxHistories).some(
-    (k) => auxHistories[k].length > 0
-  );
+  const visibleKeys = allKeys.filter((k) => !hidden.has(k));
 
   function handleBarClick(payload: any) {
     const date: string | undefined = payload?.activePayload?.[0]?.payload?.date;
     if (date) router.push(`/?date=${date}&etf=${etf}`);
   }
 
-  const netKeys = ["pff_net", ...Object.keys(auxHistories).map((e) => `${e.toLowerCase()}_net`)];
-  const etfLabels: Record<string, string> = { pff_net: "PFF", pgx_net: "PGX", fpe_net: "FPE" };
-
   return (
-    <ResponsiveContainer width="100%" height={240}>
-      <BarChart
-        data={data}
-        margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
-        onClick={handleBarClick}
-        style={{ cursor: "pointer" }}
-        barGap={2}
-        barCategoryGap="20%"
-      >
-        <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" vertical={false} />
-        <XAxis
-          dataKey="date_short"
-          tick={{ fontSize: 11, fill: "#94a3b8" }}
-          axisLine={false}
-          tickLine={false}
-        />
-        <YAxis
-          tickFormatter={(v) => fmtDollar.format(v)}
-          tick={{ fontSize: 11, fill: "#94a3b8" }}
-          axisLine={false}
-          tickLine={false}
-          width={70}
-        />
-        <Tooltip content={<CustomTooltip />} />
-        <ReferenceLine y={0} stroke="#cbd5e1" />
-        {hasAux && (
-          <Legend
-            formatter={(value) => etfLabels[value] ?? value}
-            wrapperStyle={{ fontSize: 11, paddingTop: 8 }}
+    <div>
+      {/* ETF toggle pills */}
+      {allKeys.length > 1 && (
+        <div className="mb-3 flex flex-wrap gap-1.5">
+          {allKeys.map((key) => {
+            const cfg = ETF_CONFIG[key];
+            const isHidden = hidden.has(key);
+            return (
+              <button
+                key={key}
+                onClick={() => toggle(key)}
+                className="border px-2 py-0.5 font-mono text-[10px] font-semibold"
+                style={{
+                  borderColor: isHidden ? "#9ca3af" : cfg?.color,
+                  color: isHidden ? "#9ca3af" : cfg?.color,
+                  background: isHidden ? "transparent" : cfg?.color + "18",
+                }}
+              >
+                {cfg?.label ?? key}
+              </button>
+            );
+          })}
+        </div>
+      )}
+
+      <ResponsiveContainer width="100%" height={280}>
+        <BarChart
+          data={data}
+          margin={{ top: 4, right: 4, left: 0, bottom: 0 }}
+          onClick={handleBarClick}
+          style={{ cursor: "pointer" }}
+          barCategoryGap="12%"
+        >
+          <CartesianGrid strokeDasharray="3 3" stroke="#d1d5db" vertical={false} />
+          <XAxis
+            dataKey="date_short"
+            tick={{ fontSize: 10, fill: "#4b5563", fontFamily: "Courier New, monospace" }}
+            axisLine={{ stroke: "#6b7280" }}
+            tickLine={false}
           />
-        )}
-        {netKeys.map((key) => {
-          const colors = ETF_COLORS[key as keyof typeof ETF_COLORS] ?? { pos: "#22c55e", neg: "#ef4444" };
-          return (
-            <Bar key={key} dataKey={key} name={key} radius={[2, 2, 0, 0]}>
-              {data.map((entry, i) => {
-                const val = entry[key] ?? 0;
-                const isSelected = entry.date === selectedDate;
-                return (
-                  <Cell
-                    key={i}
-                    fill={val >= 0 ? colors.pos : colors.neg}
-                    fillOpacity={isSelected ? 1 : 0.65}
-                    stroke={isSelected ? (val >= 0 ? colors.pos : colors.neg) : "none"}
-                    strokeWidth={isSelected ? 2 : 0}
-                  />
-                );
-              })}
-            </Bar>
-          );
-        })}
-      </BarChart>
-    </ResponsiveContainer>
+          <YAxis
+            tickFormatter={(v) => fmtDollar.format(v)}
+            tick={{ fontSize: 10, fill: "#4b5563", fontFamily: "Courier New, monospace" }}
+            axisLine={{ stroke: "#6b7280" }}
+            tickLine={false}
+            width={68}
+          />
+          <Tooltip content={<CustomTooltip />} cursor={{ fill: "#f3f4f6" }} />
+          <ReferenceLine y={0} stroke="#374151" strokeWidth={1.5} />
+          {visibleKeys.map((key) => {
+            const cfg = ETF_CONFIG[key] ?? { color: "#059669", label: key };
+            return (
+              <Bar
+                key={key}
+                dataKey={key}
+                name={cfg.label}
+                stackId="flow"
+                fill={cfg.color}
+              >
+                {data.map((entry, i) => {
+                  const isSelected = entry.date === selectedDate;
+                  return (
+                    <Cell
+                      key={i}
+                      fill={cfg.color}
+                      fillOpacity={isSelected ? 1 : 0.7}
+                      stroke={isSelected ? cfg.color : "none"}
+                      strokeWidth={isSelected ? 2 : 0}
+                    />
+                  );
+                })}
+              </Bar>
+            );
+          })}
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
   );
 }

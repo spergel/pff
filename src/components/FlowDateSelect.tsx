@@ -19,7 +19,7 @@ export function FlowDateSelect({
         if (etf) url.searchParams.set("etf", etf);
         window.location.href = url.toString();
       }}
-      className="rounded border border-slate-200 px-3 py-1.5 text-sm outline-none focus:border-slate-400"
+      className="border border-slate-200 px-3 py-1.5 text-sm outline-none focus:border-slate-400"
     >
       {dates.map((d) => (
         <option key={d} value={d}>

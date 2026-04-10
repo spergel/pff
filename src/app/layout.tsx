@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import "./globals.css";
+import { Sidebar } from "@/src/components/Sidebar";
+
+const nav = [
+  { href: "/", label: "Dashboard", key: "D" },
+  { href: "/overlap", label: "Cross-ETF", key: "X" },
+  { href: "/predictions", label: "Predictions", key: "P" },
+  { href: "/flows", label: "Flows & Trends", key: "F" },
+  { href: "/security", label: "Lookup", key: "L" },
+];
 
 export const metadata: Metadata = {
   title: "Preferred Securities Flow Tracker",
   description: "Daily flow monitor for preferred ETFs: PFF, PGX, FPE",
 };
-
-const nav = [
-  { href: "/", label: "Dashboard" },
-  { href: "/overlap", label: "Cross-ETF" },
-  { href: "/predictions", label: "Predictions" },
-  { href: "/holdings", label: "Holdings" },
-  { href: "/flows", label: "Flow History" },
-  { href: "/trends", label: "Trends" },
-];
 
 export default function RootLayout({
   children,
@@ -24,30 +23,38 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="border-b border-slate-200 bg-white">
-          <div className="mx-auto flex max-w-screen-xl items-center gap-8 px-6 py-4">
+        {/* Mobile top nav */}
+        <header className="sticky top-0 z-50 border-b-2 border-gray-600 bg-gray-300 lg:hidden">
+          <div className="flex items-center gap-3 px-4 py-3">
             <div>
-              <h1 className="text-base font-bold tracking-tight">
-                Preferred Securities Flow Tracker
-              </h1>
-              <p className="text-xs text-slate-500">
-                PFF · PGX · FPE · Daily Flow Monitor
-              </p>
+              <span className="font-mono text-xs font-bold tracking-widest text-blue-900 uppercase">
+                PFF
+              </span>
+              <span className="ml-1.5 font-mono text-xs text-gray-600">
+                preferred flow tracker
+              </span>
             </div>
-            <nav className="flex gap-1">
+            <nav className="ml-auto flex gap-0.5 flex-wrap">
               {nav.map((n) => (
-                <Link
+                <a
                   key={n.href}
                   href={n.href}
-                  className="rounded px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-colors"
+                  className="px-2.5 py-1 text-xs text-gray-700 border border-gray-500 hover:bg-gray-200 hover:text-gray-900"
                 >
                   {n.label}
-                </Link>
+                </a>
               ))}
             </nav>
           </div>
         </header>
-        <main className="mx-auto max-w-screen-xl px-6 py-8">{children}</main>
+
+        {/* Desktop sidebar */}
+        <Sidebar nav={nav} />
+
+        {/* Main content */}
+        <main className="lg:ml-52 px-4 py-5 lg:px-6 lg:py-6">
+          {children}
+        </main>
       </body>
     </html>
   );

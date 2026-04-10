@@ -27,6 +27,7 @@ export type FlowType =
 export interface FlowRow {
   date: string;
   isin: string;
+  cusip: string;
   ticker: string;
   ticker_raw: string;
   name: string;

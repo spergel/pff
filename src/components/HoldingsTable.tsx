@@ -38,7 +38,7 @@ export function HoldingsTable({ holdings }: { holdings: Holding[] }) {
 
   const colHead = (label: string, key: SortKey) => (
     <th
-      className="cursor-pointer px-3 py-2 hover:text-slate-800"
+      className="cursor-pointer px-3 py-2 hover:text-gray-900"
       onClick={() => setSortKey(key)}
     >
       {label} {sortKey === key ? "↓" : ""}
@@ -50,18 +50,18 @@ export function HoldingsTable({ holdings }: { holdings: Holding[] }) {
       <div className="flex items-center gap-3">
         <input
           type="text"
-          placeholder="Filter by ticker, name, sector, ISIN…"
+          placeholder="filter by ticker, name, sector, ISIN…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="flex-1 rounded border border-slate-200 px-3 py-1.5 text-sm outline-none focus:border-slate-400"
+          className="flex-1 border-2 border-gray-600 bg-white px-3 py-1.5 font-mono text-sm text-gray-900 placeholder:text-gray-300 outline-none focus:border-gray-400 focus:ring-1 focus:ring-gray-200"
         />
-        <span className="text-sm text-slate-400">{sorted.length} holdings</span>
+        <span className="font-mono text-xs text-gray-500">{sorted.length} holdings</span>
       </div>
 
-      <div className="overflow-x-auto rounded-lg border border-slate-200">
+      <div className="overflow-x-auto border-2 border-gray-600">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-slate-200 bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+            <tr className="border-b border-gray-500 bg-gray-300 text-left text-[10px] font-bold uppercase tracking-wider text-gray-800">
               <th className="px-3 py-2">#</th>
               <th className="px-3 py-2">Ticker</th>
               <th className="px-3 py-2">Name</th>
@@ -73,10 +73,10 @@ export function HoldingsTable({ holdings }: { holdings: Holding[] }) {
               <th className="px-3 py-2">ISIN</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-slate-100">
+          <tbody className="divide-y divide-gray-300">
             {sorted.map((h, i) => (
-              <tr key={h.isin} className="hover:bg-slate-50">
-                <td className="px-3 py-2 text-slate-400">{i + 1}</td>
+              <tr key={h.isin} className="hover:bg-yellow-50">
+                <td className="px-3 py-2 font-mono text-gray-400">{i + 1}</td>
                 <td className="px-3 py-2 font-mono font-semibold">
                   {h.ticker !== h.ticker_raw ? (
                     <span
@@ -86,28 +86,24 @@ export function HoldingsTable({ holdings }: { holdings: Holding[] }) {
                       {h.ticker}
                     </span>
                   ) : (
-                    h.ticker
+                    <span className="text-gray-900">{h.ticker}</span>
                   )}
                 </td>
-                <td className="max-w-xs truncate px-3 py-2 text-slate-600">
-                  {h.name}
-                </td>
-                <td className="px-3 py-2 text-slate-500">{h.sector}</td>
-                <td className="px-3 py-2 font-mono">
+                <td className="max-w-xs truncate px-3 py-2 text-gray-600">{h.name}</td>
+                <td className="px-3 py-2 font-mono text-xs text-gray-500">{h.sector}</td>
+                <td className="px-3 py-2 font-mono text-gray-800">
                   {h.weight != null ? `${h.weight.toFixed(2)}%` : "—"}
                 </td>
-                <td className="px-3 py-2 font-mono text-slate-600">
+                <td className="px-3 py-2 font-mono text-gray-600">
                   {h.mkt_val != null ? fmtDollar.format(h.mkt_val) : "—"}
                 </td>
-                <td className="px-3 py-2 font-mono text-slate-600">
+                <td className="px-3 py-2 font-mono text-gray-600">
                   {h.shares != null ? fmtNum.format(h.shares) : "—"}
                 </td>
-                <td className="px-3 py-2 font-mono text-slate-600">
+                <td className="px-3 py-2 font-mono text-gray-600">
                   {h.price != null ? `$${h.price.toFixed(2)}` : "—"}
                 </td>
-                <td className="px-3 py-2 font-mono text-xs text-slate-400">
-                  {h.isin}
-                </td>
+                <td className="px-3 py-2 font-mono text-xs text-gray-400">{h.isin}</td>
               </tr>
             ))}
           </tbody>
