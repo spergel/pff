@@ -1,3 +1,4 @@
+import { fmtDollar } from "@/src/lib/fmt";
 import {
   listFlowDates,
   listHoldingDates,
@@ -18,12 +19,7 @@ import { PressureLeaderboard } from "@/src/components/trends/PressureLeaderboard
 import type { EtfTicker } from "@/src/lib/data";
 import type { TickerAggregate } from "@/src/types/pff";
 
-const fmt = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
 
 type Tab = "flows" | "holdings" | "trends";
 
@@ -161,16 +157,16 @@ export default function FlowsPage({
 
         {tab === "flows" && changes.length > 0 && (
           <span className="font-mono text-xs text-gray-500">
-            <span className="text-emerald-600">{fmt.format(buyDollars)} bought</span>
+            <span className="text-emerald-600">{fmtDollar(buyDollars)} bought</span>
             {" · "}
-            <span className="text-rose-500">{fmt.format(sellDollars)} sold</span>
+            <span className="text-rose-500">{fmtDollar(sellDollars)} sold</span>
             {" · "}
             <span>{changes.length} changes</span>
           </span>
         )}
         {tab === "holdings" && holdings.length > 0 && (
           <span className="font-mono text-xs text-gray-500">
-            {holdings.length} securities · {fmt.format(aum)} AUM
+            {holdings.length} securities · {fmtDollar(aum)} AUM
             {holdingDate !== selectedDate && holdingDate && (
               <span className="ml-1 text-gray-400">(holdings as of {holdingDate})</span>
             )}

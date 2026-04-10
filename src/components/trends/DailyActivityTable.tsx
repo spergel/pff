@@ -1,13 +1,9 @@
+import { fmtDollar } from "@/src/lib/fmt";
 "use client";
 
 import type { DayAggregate } from "@/src/types/pff";
 
-const fmtM = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
 
 function Bar({ value, max, color }: { value: number; max: number; color: string }) {
   const pct = max > 0 ? Math.round((value / max) * 100) : 0;
@@ -60,13 +56,13 @@ export function DailyActivityTable({ days }: { days: DayAggregate[] }) {
                 <td className="px-3 py-1.5">
                   <Bar value={d.total_buy_dollars} max={maxBuy} color="bg-emerald-500" />
                   <span className="font-mono text-xs text-emerald-600">
-                    {fmtM.format(d.total_buy_dollars)}
+                    {fmtDollar(d.total_buy_dollars)}
                   </span>
                 </td>
                 <td className="px-3 py-1.5">
                   <Bar value={d.total_sell_dollars} max={maxSell} color="bg-rose-500" />
                   <span className="font-mono text-xs text-rose-500">
-                    {fmtM.format(d.total_sell_dollars)}
+                    {fmtDollar(d.total_sell_dollars)}
                   </span>
                 </td>
                 <td
@@ -75,7 +71,7 @@ export function DailyActivityTable({ days }: { days: DayAggregate[] }) {
                   }`}
                 >
                   {net >= 0 ? "+" : ""}
-                  {fmtM.format(net)}
+                  {fmtDollar(net)}
                 </td>
               </tr>
             );

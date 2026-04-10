@@ -1,5 +1,6 @@
 "use client";
 
+import { fmtDollar } from "@/src/lib/fmt";
 import {
   Bar,
   BarChart,
@@ -11,12 +12,6 @@ import {
 } from "recharts";
 import type { FlowRow } from "@/src/types/pff";
 
-const fmtDollar = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 0,
-});
 
 function abbrev(s: string) {
   return s
@@ -31,7 +26,7 @@ function CustomTooltip({ active, payload, label }: any) {
     <div className="border-2 border-gray-600 bg-white p-2 font-mono text-xs">
       <p className="font-semibold text-gray-900">{label}</p>
       <p className={val >= 0 ? "text-emerald-600" : "text-rose-500"}>
-        {fmtDollar.format(val)}
+        {fmtDollar(val)}
       </p>
     </div>
   );
@@ -70,7 +65,7 @@ export function SectorFlowChart({ flows }: { flows: FlowRow[] }) {
       >
         <XAxis
           type="number"
-          tickFormatter={(v) => fmtDollar.format(v)}
+          tickFormatter={(v) => fmtDollar(v)}
           tick={{ fontSize: 10, fill: "#6b7280", fontFamily: "ui-monospace, monospace" }}
           axisLine={false}
           tickLine={false}

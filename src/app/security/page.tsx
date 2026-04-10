@@ -2,17 +2,8 @@ import { SUPPORTED_ETFS, loadTickerSummary, listFlowDates, loadLatestHoldings } 
 import type { EtfTicker } from "@/src/lib/data";
 import type { TickerAggregate } from "@/src/types/pff";
 import Link from "next/link";
+import { fmtDollar, fmtNum } from "@/src/lib/fmt";
 
-const fmtDollar = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 2,
-});
-const fmtNum = new Intl.NumberFormat("en-US", {
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
 
 // ─── holdings enrichment (CUSIP / country / exchange) ──────────────────────
 
@@ -194,13 +185,13 @@ function SecurityHistory({
         <div className="flex flex-wrap gap-4 border-2 border-gray-600 bg-gray-100 px-4 py-2.5 font-mono text-xs">
           <span className="text-gray-500">
             at month-end:{" "}
-            {monthEndSells > 0 && <span className="text-rose-500">sold {fmtDollar.format(monthEndSells)}</span>}
+            {monthEndSells > 0 && <span className="text-rose-500">sold {fmtDollar(monthEndSells)}</span>}
             {monthEndSells > 0 && monthEndBuys > 0 && <span className="text-gray-300"> · </span>}
-            {monthEndBuys > 0 && <span className="text-emerald-600">bought {fmtDollar.format(monthEndBuys)}</span>}
+            {monthEndBuys > 0 && <span className="text-emerald-600">bought {fmtDollar(monthEndBuys)}</span>}
           </span>
           {quarterEndSells > 0 && (
             <span className="text-gray-500">
-              at quarter-end: <span className="text-rose-500">sold {fmtDollar.format(quarterEndSells)}</span>
+              at quarter-end: <span className="text-rose-500">sold {fmtDollar(quarterEndSells)}</span>
             </span>
           )}
         </div>
@@ -249,14 +240,14 @@ function SecurityHistory({
                   </td>
                   <td className={`px-3 py-2 text-right font-mono text-xs ${isBuy ? "text-emerald-600" : isSell ? "text-rose-500" : "text-gray-500"}`}>
                     {e.shares_delta !== 0
-                      ? `${e.shares_delta > 0 ? "+" : ""}${fmtNum.format(e.shares_delta)}`
+                      ? `${e.shares_delta > 0 ? "+" : ""}${fmtNum(e.shares_delta)}`
                       : "—"}
                   </td>
                   <td className={`px-3 py-2 text-right font-mono text-xs ${isBuy ? "text-emerald-600" : isSell ? "text-rose-500" : "text-gray-500"}`}>
-                    {e.dollar_flow !== 0 ? fmtDollar.format(e.dollar_flow) : "—"}
+                    {e.dollar_flow !== 0 ? fmtDollar(e.dollar_flow) : "—"}
                   </td>
                   <td className="px-3 py-2 text-right font-mono text-xs text-gray-500">
-                    {e.today_shares != null ? fmtNum.format(e.today_shares) : "—"}
+                    {e.today_shares != null ? fmtNum(e.today_shares) : "—"}
                   </td>
                 </tr>
               );
@@ -530,7 +521,7 @@ export default function SecurityPage({
                       )}
                     </td>
                     <td className={`px-3 py-2 text-right font-mono text-xs ${m.agg.net_dollar_flow >= 0 ? "text-emerald-600" : "text-rose-500"}`}>
-                      {fmtDollar.format(m.agg.net_dollar_flow)}
+                      {fmtDollar(m.agg.net_dollar_flow)}
                     </td>
                   </tr>
                 ))}
@@ -600,14 +591,14 @@ export default function SecurityPage({
                 </span>
               </span>
               <span className="text-gray-500">
-                bought <span className="text-emerald-600">{fmtDollar.format(totalBuy)}</span>
+                bought <span className="text-emerald-600">{fmtDollar(totalBuy)}</span>
               </span>
               <span className="text-gray-500">
-                sold <span className="text-rose-500">{fmtDollar.format(totalSell)}</span>
+                sold <span className="text-rose-500">{fmtDollar(totalSell)}</span>
               </span>
               <span className="text-gray-500">
                 net <span className={m.agg.net_dollar_flow >= 0 ? "text-emerald-600" : "text-rose-500"}>
-                  {fmtDollar.format(m.agg.net_dollar_flow)}
+                  {fmtDollar(m.agg.net_dollar_flow)}
                 </span>
               </span>
               <span className="text-gray-500">

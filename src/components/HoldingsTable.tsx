@@ -1,18 +1,11 @@
+import { fmtDollar, fmtNum } from "@/src/lib/fmt";
 "use client";
 
 import { useState } from "react";
 import type { Holding } from "@/src/types/pff";
 
-const fmtNum = new Intl.NumberFormat("en-US", {
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
-const fmtDollar = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
+
 
 type SortKey = "weight" | "mkt_val" | "shares" | "price";
 
@@ -95,10 +88,10 @@ export function HoldingsTable({ holdings }: { holdings: Holding[] }) {
                   {h.weight != null ? `${h.weight.toFixed(2)}%` : "—"}
                 </td>
                 <td className="px-3 py-2 font-mono text-gray-600">
-                  {h.mkt_val != null ? fmtDollar.format(h.mkt_val) : "—"}
+                  {h.mkt_val != null ? fmtDollar(h.mkt_val) : "—"}
                 </td>
                 <td className="px-3 py-2 font-mono text-gray-600">
-                  {h.shares != null ? fmtNum.format(h.shares) : "—"}
+                  {h.shares != null ? fmtNum(h.shares) : "—"}
                 </td>
                 <td className="px-3 py-2 font-mono text-gray-600">
                   {h.price != null ? `$${h.price.toFixed(2)}` : "—"}

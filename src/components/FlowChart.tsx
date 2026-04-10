@@ -1,3 +1,4 @@
+import { fmtDollar } from "@/src/lib/fmt";
 "use client";
 
 import {
@@ -15,12 +16,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import type { DailySummary } from "@/src/types/pff";
 
-const fmtDollar = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 0,
-});
+
 
 // Each ETF gets a fixed color; positive = full, negative = same color (bars go below zero)
 const ETF_CONFIG: Record<string, { color: string; label: string }> = {
@@ -40,7 +36,7 @@ function CustomTooltip({ active, payload }: any) {
         const cfg = ETF_CONFIG[p.dataKey];
         return (
           <p key={p.dataKey} className="font-mono" style={{ color: cfg?.color ?? p.color }}>
-            {cfg?.label ?? p.dataKey}: {fmtDollar.format(p.value)}
+            {cfg?.label ?? p.dataKey}: {fmtDollar(p.value)}
           </p>
         );
       })}
@@ -161,7 +157,7 @@ export function FlowChart({
             tickLine={false}
           />
           <YAxis
-            tickFormatter={(v) => fmtDollar.format(v)}
+            tickFormatter={(v) => fmtDollar(v)}
             tick={{ fontSize: 10, fill: "#4b5563", fontFamily: "Courier New, monospace" }}
             axisLine={{ stroke: "#6b7280" }}
             tickLine={false}

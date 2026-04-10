@@ -1,11 +1,7 @@
 import type { DayAggregate } from "@/src/types/pff";
+import { fmtDollar } from "@/src/lib/fmt";
 
-const fmtM = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
 
 export function SectorRotation({ days }: { days: DayAggregate[] }) {
   const sectorNet: Record<string, number> = {};
@@ -50,7 +46,7 @@ export function SectorRotation({ days }: { days: DayAggregate[] }) {
                   }`}
                 >
                   {isPositive ? "+" : ""}
-                  {fmtM.format(net)}
+                  {fmtDollar(net)}
                 </td>
                 <td className="px-3 py-2">
                   <div className="flex items-center">

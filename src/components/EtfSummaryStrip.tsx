@@ -1,11 +1,7 @@
 import type { EtfTicker } from "@/src/lib/data";
+import { fmtDollar } from "@/src/lib/fmt";
 
-const fmtDollar = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
 
 const ETF_ACCENT: Record<string, string> = {
   PFF: "border-t-blue-700",
@@ -48,11 +44,11 @@ export function EtfSummaryStrip({ stats }: { stats: EtfStat[] }) {
           {s.date ? (
             <div className="mt-2 flex gap-4 font-mono text-sm">
               <span className="text-emerald-600">
-                ▲ {fmtDollar.format(s.buy_dollars)}
+                ▲ {fmtDollar(s.buy_dollars)}
                 <span className="ml-1 text-xs text-emerald-500">{s.buys}b</span>
               </span>
               <span className="text-rose-500">
-                ▼ {fmtDollar.format(s.sell_dollars)}
+                ▼ {fmtDollar(s.sell_dollars)}
                 <span className="ml-1 text-xs text-rose-400">{s.sells}s</span>
               </span>
               <span className="ml-auto text-xs text-gray-400">{s.num_changes} chg</span>

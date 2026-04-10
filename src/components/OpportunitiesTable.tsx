@@ -1,18 +1,11 @@
+import { fmtDollar, fmtNum } from "@/src/lib/fmt";
 "use client";
 
 import type { FlowRow } from "@/src/types/pff";
 import { SignalBadge } from "./SignalBadge";
 
-const fmtDollar = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
-const fmtNum = new Intl.NumberFormat("en-US", {
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
+
 
 function OverhangBar({ days }: { days: number }) {
   const pct = Math.min(100, (days / 30) * 100);
@@ -94,13 +87,13 @@ export function OpportunitiesTable({ flows }: { flows: FlowRow[] }) {
                 <SignalBadge type={row.flow_type} />
               </td>
               <td className="px-3 py-2 font-mono text-rose-500">
-                {row.dollar_flow != null ? fmtDollar.format(Math.abs(row.dollar_flow)) : "—"}
+                {row.dollar_flow != null ? fmtDollar(Math.abs(row.dollar_flow)) : "—"}
               </td>
               <td className="px-3 py-2 font-mono text-gray-600">
-                {row.shares_delta != null ? fmtNum.format(Math.abs(row.shares_delta)) : "—"}
+                {row.shares_delta != null ? fmtNum(Math.abs(row.shares_delta)) : "—"}
               </td>
               <td className="px-3 py-2 font-mono text-gray-500">
-                {row.adv_30d != null ? fmtNum.format(row.adv_30d) : "—"}
+                {row.adv_30d != null ? fmtNum(row.adv_30d) : "—"}
               </td>
               <td className="px-3 py-2">
                 {row.overhang_days != null ? (

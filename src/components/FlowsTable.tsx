@@ -1,19 +1,12 @@
+import { fmtDollar, fmtNum } from "@/src/lib/fmt";
 "use client";
 
 import { useState } from "react";
 import type { FlowRow } from "@/src/types/pff";
 import { SignalBadge } from "./SignalBadge";
 
-const fmt = new Intl.NumberFormat("en-US", {
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
-const fmtDollar = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
+
 
 function rowBg(type: FlowRow["flow_type"]) {
   if (type === "ADDED") return "bg-blue-50";
@@ -161,7 +154,7 @@ export function FlowsTable({
                     (row.dollar_flow ?? 0) > 0 ? "text-emerald-600" : "text-rose-500"
                   }`}
                 >
-                  {row.dollar_flow != null ? fmtDollar.format(row.dollar_flow) : "—"}
+                  {row.dollar_flow != null ? fmtDollar(row.dollar_flow) : "—"}
                 </td>
                 <td
                   className={`px-3 py-2 font-mono ${
@@ -169,14 +162,14 @@ export function FlowsTable({
                   }`}
                 >
                   {row.shares_delta != null
-                    ? `${row.shares_delta > 0 ? "+" : ""}${fmt.format(row.shares_delta)}`
+                    ? `${row.shares_delta > 0 ? "+" : ""}${fmtNum(row.shares_delta)}`
                     : "—"}
                 </td>
                 <td className="px-3 py-2 font-mono text-gray-500">
-                  {row.prior_shares != null ? fmt.format(row.prior_shares) : "—"}
+                  {row.prior_shares != null ? fmtNum(row.prior_shares) : "—"}
                 </td>
                 <td className="px-3 py-2 font-mono text-gray-500">
-                  {row.today_shares != null ? fmt.format(row.today_shares) : "—"}
+                  {row.today_shares != null ? fmtNum(row.today_shares) : "—"}
                 </td>
                 <td
                   className={`px-3 py-2 font-mono text-xs ${

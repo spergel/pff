@@ -1,12 +1,8 @@
 import { loadOverlapSummary, listFlowDates, computeConsensus, SUPPORTED_ETFS } from "@/src/lib/data";
 import { DateNav } from "@/src/components/DateNav";
+import { fmtDollar } from "@/src/lib/fmt";
 
-const fmtDollar = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
 
 const ETF_BADGE: Record<string, string> = {
   PFF: "bg-blue-100 text-blue-800",
@@ -151,7 +147,7 @@ export default function OverlapPage({
                         row.consensus === "BUY" ? "text-emerald-600" : "text-rose-500"
                       }`}
                     >
-                      {fmtDollar.format(row.combined_flow)}
+                      {fmtDollar(row.combined_flow)}
                     </td>
                   </tr>
                 ))}
@@ -234,7 +230,7 @@ export default function OverlapPage({
                             d && d.net_dollar_flow > 0 ? "text-emerald-600" : "text-rose-500"
                           }`}
                         >
-                          {d ? fmtDollar.format(d.net_dollar_flow) : "—"}
+                          {d ? fmtDollar(d.net_dollar_flow) : "—"}
                         </td>
                       );
                     })}
@@ -243,7 +239,7 @@ export default function OverlapPage({
                         entry.combined_net_flow > 0 ? "text-emerald-600" : "text-rose-500"
                       }`}
                     >
-                      {fmtDollar.format(entry.combined_net_flow)}
+                      {fmtDollar(entry.combined_net_flow)}
                     </td>
                   </tr>
                 );

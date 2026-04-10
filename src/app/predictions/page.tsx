@@ -1,11 +1,7 @@
 import { loadPredictedFlows } from "@/src/lib/data";
+import { fmtDollar } from "@/src/lib/fmt";
 
-const fmt = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
 
 const fmtPct = (v: number | null, decimals = 2) =>
   v == null ? "—" : `${v >= 0 ? "+" : ""}${v.toFixed(decimals)}%`;
@@ -113,7 +109,7 @@ function FlowTable({
                 <td className="px-4 py-2 text-right">
                   <span className={`inline-block  px-2 py-0.5 font-mono text-xs font-medium tabular-nums ${badge}`}>
                     {r.predicted_dollar_flow != null
-                      ? fmt.format(Math.abs(r.predicted_dollar_flow))
+                      ? fmtDollar(Math.abs(r.predicted_dollar_flow))
                       : "—"}
                   </span>
                 </td>

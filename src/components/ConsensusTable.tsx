@@ -1,13 +1,9 @@
+import { fmtDollar } from "@/src/lib/fmt";
 "use client";
 
 import type { ConsensusRow } from "@/src/types/pff";
 
-const fmtDollar = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
 
 const ETF_BADGE: Record<string, string> = {
   PFF: "bg-blue-100 text-blue-800",
@@ -87,7 +83,7 @@ export function ConsensusTable({ rows }: { rows: ConsensusRow[] }) {
                     isBuy ? "text-emerald-600" : "text-rose-500"
                   }`}
                 >
-                  {fmtDollar.format(row.combined_flow)}
+                  {fmtDollar(row.combined_flow)}
                 </td>
               </tr>
             );

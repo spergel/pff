@@ -1,11 +1,7 @@
 import type { TickerAggregate } from "@/src/types/pff";
+import { fmtDollar } from "@/src/lib/fmt";
 
-const fmtM = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
 
 type EnrichedTicker = TickerAggregate & {
   windowBuyDays: number;
@@ -50,7 +46,7 @@ function ActivityDots({
         return (
           <div
             key={h.date}
-            title={`${h.date}: ${h.flow_type} ${fmtM.format(h.dollar_flow)}`}
+            title={`${h.date}: ${h.flow_type} ${fmtDollar(h.dollar_flow)}`}
             className={`h-3 w-2  ${
               isBuy
                 ? "bg-emerald-500"
@@ -136,7 +132,7 @@ export function PressureLeaderboard({
                 }`}
               >
                 {t.windowNetDollars >= 0 ? "+" : ""}
-                {fmtM.format(t.windowNetDollars)}
+                {fmtDollar(t.windowNetDollars)}
               </td>
               <td className="px-3 py-2">
                 <ActivityDots history={t.history} mode={mode} windowStart={windowStart} />

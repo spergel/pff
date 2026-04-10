@@ -1,3 +1,4 @@
+import { fmtDollar, fmtNum } from "@/src/lib/fmt";
 import {
   buildFlowHistory,
   buildConsensusHistory,
@@ -21,17 +22,9 @@ import Link from "next/link";
 
 // ─── formatters ────────────────────────────────────────────────────────────
 
-const fmtDollar = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
 
-const fmtNum = new Intl.NumberFormat("en-US", {
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+
+
 
 // ─── rebalancing countdown ─────────────────────────────────────────────────
 
@@ -111,7 +104,7 @@ function MiniConsensus({ rows }: { rows: ConsensusRow[] }) {
               ))}
             </div>
             <span className={`font-mono font-medium shrink-0 ${isBuy ? "text-emerald-600" : "text-rose-500"}`}>
-              {fmtDollar.format(row.combined_flow)}
+              {fmtDollar(row.combined_flow)}
             </span>
           </div>
         );
@@ -226,7 +219,7 @@ function ForcedBuyTable({ flows }: { flows: FlowRow[] }) {
                   </span>
                 </td>
                 <td className="px-3 py-2 font-mono text-emerald-600">
-                  {row.dollar_flow != null ? fmtDollar.format(row.dollar_flow) : "—"}
+                  {row.dollar_flow != null ? fmtDollar(row.dollar_flow) : "—"}
                 </td>
                 <td className="px-3 py-2">
                   <div className="flex items-center gap-2">
@@ -340,11 +333,11 @@ export default function DashboardPage({
         )}
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs">
           <span className="text-gray-500">
-            AUM <span className="text-gray-900 font-semibold">{fmtDollar.format(aum)}</span>
+            AUM <span className="text-gray-900 font-semibold">{fmtDollar(aum)}</span>
           </span>
           <span className="text-gray-300">|</span>
-          <span className="text-emerald-600">▲ {fmtDollar.format(totalBuyDollars)}</span>
-          <span className="text-rose-500">▼ {fmtDollar.format(totalSellDollars)}</span>
+          <span className="text-emerald-600">▲ {fmtDollar(totalBuyDollars)}</span>
+          <span className="text-rose-500">▼ {fmtDollar(totalSellDollars)}</span>
           <span className="text-gray-300">|</span>
           <span className="text-gray-400">{etfsWithData.join(" · ")}</span>
         </div>
