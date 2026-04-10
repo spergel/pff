@@ -41,7 +41,7 @@ export function HoldingsTable({ holdings }: { holdings: Holding[] }) {
 
   return (
     <div className="space-y-3">
-      <div className="flex items-center gap-3">
+      <div className="sticky top-14 z-10 bg-white pb-2 flex items-center gap-3">
         <input
           type="text"
           placeholder="filter by ticker, name, sector, ISIN…"

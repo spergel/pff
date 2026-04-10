@@ -89,8 +89,8 @@ export default function HoldingsPage({
 
   return (
     <div className="space-y-5">
-      {/* Header row */}
-      <div className="flex flex-wrap items-center gap-3">
+      {/* Header row — sticky */}
+      <div className="sticky top-0 z-20 -mx-4 -mt-5 mb-0 bg-gray-200 px-4 pt-5 pb-3 lg:-mx-6 lg:px-6 flex flex-wrap items-center gap-3">
         <h1 className="text-base font-bold text-gray-900">Holdings</h1>
 
         {/* ETF dropdown tabs */}
@@ -121,7 +121,7 @@ export default function HoldingsPage({
 
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-[220px_1fr]">
         {/* ─── Calendar sidebar ─── */}
-        <div className="space-y-3">
+        <div className="space-y-3 sticky top-14 self-start">
           {cal ? (
             <div className="border-2 border-gray-600 bg-white">
               {/* Month nav */}
