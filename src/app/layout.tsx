@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import "./globals.css";
 import { Sidebar } from "@/src/components/Sidebar";
 
@@ -6,7 +7,7 @@ const nav = [
   { href: "/", label: "Dashboard", key: "D" },
   { href: "/holdings", label: "Holdings", key: "H" },
   { href: "/predictions", label: "Predictions", key: "P" },
-  { href: "/flows", label: "Flows & Trends", key: "F" },
+  { href: "/flows", label: "Purchases & Sales", key: "F" },
   { href: "/security", label: "Lookup", key: "L" },
 ];
 
@@ -49,7 +50,9 @@ export default function RootLayout({
         </header>
 
         {/* Desktop sidebar */}
-        <Sidebar nav={nav} />
+        <Suspense fallback={null}>
+          <Sidebar nav={nav} />
+        </Suspense>
 
         {/* Main content */}
         <main className="lg:ml-52 px-4 py-5 lg:px-6 lg:py-6">

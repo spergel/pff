@@ -27,10 +27,13 @@ import fetch_holdings
 import fetch_pgx
 import fetch_fpe
 import fetch_pffa
+import fetch_pffd
+import fetch_pfxf
 import resolve_tickers
 import compute_flows
 import enrich_flows
 import predict_flows
+import fetch_industries
 import build_history
 from etf_config import ETFS
 
@@ -40,6 +43,8 @@ FETCHERS = {
     "invesco": fetch_pgx.main,
     "firsttrust": fetch_fpe.main,
     "virtus": fetch_pffa.main,
+    "globalx": fetch_pffd.main,
+    "vaneck": fetch_pfxf.main,
 }
 
 
@@ -89,7 +94,12 @@ def main():
         sys.exit(0)
 
     print(f"\n{'='*50}")
-    print("  Step 6: Build history summaries")
+    print("  Step 6: Fetch industry classifications")
+    print(f"{'='*50}")
+    fetch_industries.main()
+
+    print(f"\n{'='*50}")
+    print("  Step 7: Build history summaries")
     print(f"{'='*50}")
     build_history.main()
 

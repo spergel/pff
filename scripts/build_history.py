@@ -199,11 +199,20 @@ def save_json(obj, path: str):
         raise
 
 
+def load_industry_cache() -> dict:
+    path = "data/industry_cache.json"
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
 def main():
     from etf_config import ETFS
     import datetime
 
     today = datetime.date.today().isoformat()
+    ind_cache = load_industry_cache()
 
     # Collect daily rows and ticker maps across all ETFs
     all_daily: dict[str, dict] = {}  # date -> merged day dict
@@ -234,6 +243,10 @@ def main():
             # Namespace by ETF to avoid CUSIP/ISIN collisions across ETFs
             key = f"{etf}:{symbol}"
             t["etf"] = etf
+            # Merge industry classification from industry_cache (keyed by ISIN or CUSIP)
+            ind = ind_cache.get(symbol, {})
+            t["sector_yf"]   = ind.get("sector", "")
+            t["industry_yf"] = ind.get("industry", "")
             all_tickers[key] = t
 
         active = sum(1 for t in ticker_map.values() if t["buy_days"] + t["sell_days"] > 0)

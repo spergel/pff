@@ -1,15 +1,15 @@
 """
-Fetches FPE (First Trust Preferred Securities and Income ETF) holdings
-from the First Trust portfolio page and writes data/FPE/holdings/YYYY-MM-DD.csv.
+Fetches FPE (First Trust Preferred Securities and Income ETF) holdings.
 
-The page renders holdings as an HTML table with columns:
-  Security Name | Identifier | CUSIP | Shares/Quantity | Market Value | Weighting
+Tries two sources in order:
+  1. JSON API endpoint (fast, reliable when available)
+  2. HTML scraping of the holdings page (fallback)
 
-Since First Trust does not publish ISINs, CUSIP is used as the primary key.
-Price is derived as Market Value / Shares.
+Writes data/FPE/holdings/YYYY-MM-DD.csv.
 """
 
 import csv
+import json
 import os
 import re
 import sys
@@ -19,7 +19,10 @@ from datetime import datetime, timezone
 import requests
 from bs4 import BeautifulSoup
 
-URL = "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=FPE"
+HTML_URL = "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=FPE"
+JSON_URL = "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=FPE&IsStale=false"
+EXCEL_URL = "https://www.ftportfolios.com/Common/CreativeServices/Handlers/FundHoldingsHandler.ashx?Ticker=FPE&Type=Excel"
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -35,88 +38,164 @@ FIELDNAMES = [
     "mkt_val", "weight", "shares", "price", "currency", "exchange", "country",
 ]
 
+# Standard CUSIP: 9 alphanumeric chars (occasionally 6-8 for non-US securities)
+CUSIP_RE = re.compile(r'^[A-Z0-9]{6,9}$')
+
+CASH_NAMES = {"USD CASH", "U.S. DOLLAR", "US DOLLAR"}
+CASH_IDENTIFIERS = {"$USD", "USD"}
+
 
 def clean_number(s: str) -> str:
-    """Strip $ signs, commas, % signs from a formatted number string."""
     return re.sub(r"[$,%]", "", s).strip()
 
 
+def is_valid_cusip(s: str) -> bool:
+    return bool(CUSIP_RE.match(s.strip().upper()))
+
+
+def is_cash_row(name: str, identifier: str) -> bool:
+    return (
+        name.upper().strip() in CASH_NAMES
+        or identifier.strip() in CASH_IDENTIFIERS
+        or name.lower().startswith("us dollar")
+        or name.lower().startswith("usd cash")
+    )
+
+
+def make_record(date_str, name, identifier, cusip, shares_raw, mkt_val_raw, weight_raw) -> dict | None:
+    """Parse and validate a single row. Returns None if row should be skipped."""
+    cusip = cusip.strip()
+    name = name.strip()
+    identifier = identifier.strip()
+
+    if not is_valid_cusip(cusip):
+        return None
+    if is_cash_row(name, identifier):
+        return None
+    if not name or len(name) > 400:
+        return None
+
+    try:
+        shares = float(clean_number(shares_raw)) if shares_raw.strip() else 0.0
+    except ValueError:
+        shares = 0.0
+    try:
+        mkt_val = float(clean_number(mkt_val_raw)) if mkt_val_raw.strip() else 0.0
+    except ValueError:
+        mkt_val = 0.0
+    try:
+        weight = float(clean_number(weight_raw)) if weight_raw.strip() else 0.0
+    except ValueError:
+        weight = 0.0
+
+    price = round(mkt_val / shares, 4) if shares > 0 else 0.0
+
+    return {
+        "date": date_str,
+        "isin": "",
+        "cusip": cusip,
+        "ticker_raw": identifier,
+        "name": name,
+        "sector": "",
+        "asset_class": "",
+        "mkt_val": round(mkt_val, 2) if mkt_val else "",
+        "weight": round(weight / 100, 6) if weight else "",
+        "shares": shares if shares else "",
+        "price": price if price else "",
+        "currency": "USD",
+        "exchange": "",
+        "country": "",
+    }
+
+
 def find_holdings_table(soup: BeautifulSoup):
-    """Find the table whose first row is the holdings header."""
+    """Find the holdings table by looking for the exact Security Name/CUSIP header row."""
     for table in soup.find_all("table"):
-        headers = [th.get_text(strip=True) for th in table.find_all("tr")[0].find_all(["th", "td"])]
-        if "Security Name" in headers and "CUSIP" in headers:
+        direct_rows = table.find_all("tr", recursive=False)
+        if not direct_rows:
+            continue
+        cells = [
+            td.get_text(strip=True)
+            for td in direct_rows[0].find_all(["th", "td"], recursive=False)
+        ]
+        # Require exact cell matches, not substring — prevents matching giant blob rows
+        if cells == ["Security Name", "Identifier", "CUSIP", "Shares / Quantity", "Market Value", "Weighting"]:
+            return table
+        if "Security Name" in cells and "CUSIP" in cells and len(cells) <= 8:
             return table
     return None
 
 
-def fetch(date_str: str) -> list[dict]:
-    resp = requests.get(URL, headers=HEADERS, timeout=30)
+def fetch_html(date_str: str) -> list[dict]:
+    resp = requests.get(HTML_URL, headers=HEADERS, timeout=30)
     resp.raise_for_status()
 
     soup = BeautifulSoup(resp.text, "html.parser")
     table = find_holdings_table(soup)
     if not table:
-        print("FPE: Could not find holdings table in page.")
+        print("FPE HTML: Could not find holdings table in page.")
         return []
 
-    rows = table.find_all("tr")
+    rows = table.find_all("tr", recursive=False)
     records = []
-
-    for row in rows[1:]:  # skip header
-        cells = [td.get_text(strip=True) for td in row.find_all(["th", "td"])]
+    for row in rows[1:]:
+        cells = [td.get_text(strip=True) for td in row.find_all(["th", "td"], recursive=False)]
         if len(cells) < 6:
             continue
+        rec = make_record(date_str, cells[0], cells[1], cells[2], cells[3], cells[4], cells[5])
+        if rec:
+            records.append(rec)
 
-        name = cells[0]
-        identifier = cells[1]  # ticker if available, else blank
-        cusip = cells[2]
-        shares_raw = clean_number(cells[3])
-        mkt_val_raw = clean_number(cells[4])
-        weight_raw = clean_number(cells[5])
+    if len(records) < 20:
+        print(f"FPE HTML: Only {len(records)} valid rows — page likely JS-rendered, rejecting.")
+        return []
 
-        if not cusip and not name:
-            continue  # completely empty row
+    return records
 
-        # Skip USD cash and totals rows
-        if identifier == "$USD" or name.lower().startswith("total"):
-            continue
 
-        try:
-            shares = float(shares_raw) if shares_raw else 0.0
-        except ValueError:
-            shares = 0.0
+def fetch_json_api(date_str: str) -> list[dict]:
+    """Attempt to fetch holdings from First Trust's JSON API."""
+    try:
+        resp = requests.get(
+            JSON_URL,
+            headers={**HEADERS, "Accept": "application/json, text/javascript, */*; q=0.01",
+                     "X-Requested-With": "XMLHttpRequest"},
+            timeout=20,
+        )
+        if resp.status_code != 200 or "application/json" not in resp.headers.get("Content-Type", ""):
+            return []
+        data = resp.json()
+        # Shape varies — try common patterns
+        items = data if isinstance(data, list) else data.get("holdings", data.get("data", []))
+        if not items or not isinstance(items, list):
+            return []
+        records = []
+        for item in items:
+            cusip = str(item.get("cusip", "") or item.get("CUSIP", ""))
+            name = str(item.get("securityName", "") or item.get("name", ""))
+            identifier = str(item.get("ticker", "") or item.get("identifier", ""))
+            shares_raw = str(item.get("shares", "") or item.get("quantity", ""))
+            mkt_val_raw = str(item.get("marketValue", "") or item.get("mktVal", ""))
+            weight_raw = str(item.get("weighting", "") or item.get("weight", ""))
+            rec = make_record(date_str, name, identifier, cusip, shares_raw, mkt_val_raw, weight_raw)
+            if rec:
+                records.append(rec)
+        return records if len(records) >= 20 else []
+    except Exception as e:
+        print(f"FPE JSON API failed: {e}")
+        return []
 
-        try:
-            mkt_val = float(mkt_val_raw) if mkt_val_raw else 0.0
-        except ValueError:
-            mkt_val = 0.0
 
-        try:
-            weight = float(weight_raw) if weight_raw else 0.0
-        except ValueError:
-            weight = 0.0
+def fetch(date_str: str) -> list[dict]:
+    # Try JSON API first
+    records = fetch_json_api(date_str)
+    if records:
+        print(f"FPE: Got {len(records)} holdings from JSON API.")
+        return records
 
-        # Derive price from market value / shares
-        price = round(mkt_val / shares, 4) if shares > 0 else 0.0
-
-        records.append({
-            "date": date_str,
-            "isin": "",          # FPE does not provide ISINs
-            "cusip": cusip,
-            "ticker_raw": identifier,
-            "name": name,
-            "sector": "",        # FPE does not categorise by sector
-            "asset_class": "",
-            "mkt_val": round(mkt_val, 2) if mkt_val else "",
-            "weight": round(weight / 100, 6) if weight else "",  # store as decimal like PFF
-            "shares": shares if shares else "",
-            "price": price if price else "",
-            "currency": "USD",
-            "exchange": "",
-            "country": "",
-        })
-
+    # Fall back to HTML scraping
+    print("FPE: Falling back to HTML scraping...")
+    records = fetch_html(date_str)
     return records
 
 
@@ -151,7 +230,7 @@ def main(date_str: str | None = None) -> bool:
     rows = fetch(date_str)
 
     if not rows:
-        print("FPE: No holdings returned — skipping write.")
+        print("FPE: No valid holdings returned — skipping write.")
         return False
 
     path = save(rows, date_display)

@@ -41,4 +41,18 @@ ETFS: dict[str, dict] = {
         "predict": False,       # Actively managed leveraged fund
         "resolve_tickers": False,
     },
+    "PFFD": {
+        "name": "Global X U.S. Preferred ETF",
+        "provider": "globalx",
+        "key_field": "cusip",   # SEDOL stored in cusip field (no CUSIP/ISIN provided)
+        "predict": False,
+        "resolve_tickers": False,
+    },
+    "PFXF": {
+        "name": "VanEck Preferred Securities ex Financials ETF",
+        "provider": "vaneck",
+        "key_field": "isin",
+        "predict": False,
+        "resolve_tickers": False,
+    },
 }

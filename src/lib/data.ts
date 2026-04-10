@@ -31,6 +31,27 @@ function loadTickerCache(): Map<string, TickerInfo> {
   return new Map(Object.entries(raw));
 }
 
+function loadCusipTickerCache(): Map<string, string> {
+  const cachePath = path.join(DATA_ROOT, "cusip_ticker_cache.json");
+  if (!fs.existsSync(cachePath)) return new Map();
+  const raw = JSON.parse(fs.readFileSync(cachePath, "utf-8")) as Record<string, string>;
+  return new Map(Object.entries(raw));
+}
+
+/** Normalize ETF-specific ticker formats to standard TICKER-SERIES form.
+ *  "WFC.L"  → "WFC-L"   (First Trust dot notation)
+ *  "BANC F" → "BANC-F"  (Virtus space notation)
+ */
+function normalizeTicker(raw: string): string {
+  if (!raw) return raw;
+  // Dot notation: "WFC.L", "NEE.U", "WFC.PR.L"
+  if (/^[A-Z]{1,6}\.[A-Z]{1,3}$/.test(raw)) return raw.replace(".", "-");
+  // Space notation: "BANC F", "ET I", "GNL D"
+  const m = raw.match(/^([A-Z]{1,6})\s+([A-Z]{1,3})$/);
+  if (m) return `${m[1]}-${m[2]}`;
+  return raw;
+}
+
 export function listHoldingDates(etf: EtfTicker = "PFF"): string[] {
   const dir = path.join(DATA_ROOT, etf, "holdings");
   if (!fs.existsSync(dir)) return [];
@@ -55,24 +76,44 @@ export function loadHoldings(date: string, etf: EtfTicker = "PFF"): Holding[] {
   const filePath = path.join(DATA_ROOT, etf, "holdings", `${date}.csv`);
   if (!fs.existsSync(filePath)) return [];
 
-  const cache = loadTickerCache();
+  const isinCache = loadTickerCache();       // ISIN → TickerInfo (PFF)
+  const cusipCache = loadCusipTickerCache(); // CUSIP → ticker string (PGX, FPE)
 
-  return readCsv<Record<string, string>>(filePath).map((row) => {
+  const rows = readCsv<Record<string, string>>(filePath);
+
+  // Detect weight scale: some ETFs store weights as fractions (sum≈1), others as percentages (sum≈100).
+  const weightSum = rows.reduce((s, r) => s + (parseFloat(r.weight ?? "") || 0), 0);
+  const weightScale = weightSum < 5 ? 100 : 1;
+
+  return rows.map((row) => {
     const isin = row.isin ?? "";
-    const cached = cache.get(isin);
-    const resolvedTicker = cached?.resolved && cached.ticker ? cached.ticker : null;
+    const cusip = row.cusip ?? "";
+    const ticker_raw = row.ticker_raw ?? "";
+
+    // Resolution priority:
+    // 1. ISIN cache (PFF, OpenFIGI-resolved)
+    // 2. CUSIP cache (PGX/FPE, OpenFIGI CUSIP-resolved)
+    // 3. Normalize ticker_raw (dot/space → dash)
+    const isinResolved = isinCache.get(isin);
+    const cusipResolved = cusipCache.get(cusip);
+    const ticker =
+      (isinResolved?.resolved && isinResolved.ticker ? isinResolved.ticker : null) ??
+      cusipResolved ??
+      normalizeTicker(ticker_raw);
+
+    const rawWeight = num(row.weight);
 
     return {
       date: row.date ?? date,
       isin,
-      cusip: row.cusip ?? "",
-      ticker_raw: row.ticker_raw ?? "",
-      ticker: resolvedTicker ?? row.ticker_raw ?? "",
+      cusip,
+      ticker_raw,
+      ticker,
       name: row.name ?? "",
       sector: row.sector ?? "",
       asset_class: row.asset_class ?? "",
       mkt_val: num(row.mkt_val),
-      weight: num(row.weight),
+      weight: rawWeight != null ? rawWeight * weightScale : null,
       shares: num(row.shares),
       price: num(row.price),
       currency: row.currency ?? "",
@@ -128,7 +169,9 @@ export function loadLatestFlows(etf: EtfTicker = "PFF"): { date: string; flows: 
 export function loadPredictedFlows(): PredictedFlow[] {
   const filePath = path.join(DATA_ROOT, "predicted_flows.csv");
   if (!fs.existsSync(filePath)) return [];
-  return readCsv<Record<string, string>>(filePath).map((row) => ({
+  return readCsv<Record<string, string>>(filePath)
+    .filter((row) => row.sector !== "Cash and/or Derivatives")
+    .map((row) => ({
     baseline_date: row.baseline_date ?? "",
     current_date: row.current_date ?? "",
     isin: row.isin ?? "",
@@ -146,6 +189,7 @@ export function loadPredictedFlows(): PredictedFlow[] {
     predicted_action: (row.predicted_action as PredictedFlow["predicted_action"]) ?? "FLAT",
   }));
 }
+
 
 export function loadDailySummary(etf?: EtfTicker): DayAggregate[] {
   const filePath = path.join(DATA_ROOT, "daily_summary.json");

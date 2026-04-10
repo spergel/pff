@@ -19,7 +19,9 @@ import os
 import tempfile
 from datetime import date, timedelta
 
-CACHE_FILE = "data/ticker_cache.json"
+ISIN_CACHE_FILE      = "data/ticker_cache.json"
+CUSIP_CACHE_FILE     = "data/cusip_ticker_cache.json"
+CUSIP_OVERRIDES_FILE = "data/cusip_ticker_overrides.json"
 SUSPECT_THRESHOLD = 0.50
 
 FIELDNAMES = [
@@ -30,11 +32,32 @@ FIELDNAMES = [
 ]
 
 
-def load_cache() -> dict:
-    if os.path.exists(CACHE_FILE):
-        with open(CACHE_FILE, encoding="utf-8") as f:
-            return json.load(f)
-    return {}
+def load_caches() -> tuple[dict, dict]:
+    """Return (isin_cache, cusip_cache).
+
+    isin_cache  — keyed by ISIN, values are dicts with a 'ticker' key (PFF/PFXF)
+    cusip_cache — keyed by CUSIP or SEDOL, values are plain ticker strings
+                  (PGX, FPE, PFFD, PFXF)
+    """
+    isin_cache = {}
+    if os.path.exists(ISIN_CACHE_FILE):
+        with open(ISIN_CACHE_FILE, encoding="utf-8") as f:
+            isin_cache = json.load(f)
+
+    cusip_cache = {}
+    if os.path.exists(CUSIP_CACHE_FILE):
+        with open(CUSIP_CACHE_FILE, encoding="utf-8") as f:
+            cusip_cache = json.load(f)
+
+    # Overrides win unconditionally — merge on top of automatic cache
+    if os.path.exists(CUSIP_OVERRIDES_FILE):
+        with open(CUSIP_OVERRIDES_FILE, encoding="utf-8") as f:
+            overrides = json.load(f)
+        for k, v in overrides.items():
+            if not k.startswith("_") and v:  # skip comment keys and blank values
+                cusip_cache[k] = v
+
+    return isin_cache, cusip_cache
 
 
 def load_holdings(path: str, key_field: str = "isin") -> dict[str, dict]:
@@ -93,7 +116,8 @@ def classify(prior_shares, today_shares, prior_weight, today_weight) -> str:
     return "BUY" if delta_shares > 0 else "SELL"
 
 
-def compute(prev_path: str, curr_path: str, ticker_cache: dict, key_field: str) -> list[dict]:
+def compute(prev_path: str, curr_path: str, ticker_cache: dict, key_field: str,
+            cusip_cache: dict | None = None) -> list[dict]:
     prev = load_holdings(prev_path, key_field)
     curr = load_holdings(curr_path, key_field)
 
@@ -117,10 +141,32 @@ def compute(prev_path: str, curr_path: str, ticker_cache: dict, key_field: str) 
         isin_val = (c or p)["isin"]
         cusip_val = (c or p)["cusip"]
 
-        # Try to resolve a display ticker from cache (keyed by isin when available)
+        # 1. Try ISIN cache (PFF / PFXF — keyed by ISIN, value is a dict)
         cache_key = isin_val or symbol
         cache_entry = ticker_cache.get(cache_key, {})
-        ticker = cache_entry.get("ticker") or ticker_raw
+        isin_ticker = cache_entry.get("ticker") if isinstance(cache_entry, dict) else None
+
+        # 2. Try CUSIP cache (PGX / FPE / PFFD — keyed by CUSIP or SEDOL, value is a string)
+        cusip_ticker = None
+        if cusip_cache:
+            cusip_ticker = (
+                cusip_cache.get(cusip_val) or
+                cusip_cache.get(symbol)   # symbol == CUSIP/SEDOL for non-ISIN ETFs
+            ) or None
+            if cusip_ticker == "":  # empty string = unresolvable; skip
+                cusip_ticker = None
+
+        # Prefer whichever ticker has a series designator ('-' or length > 4).
+        # OpenFIGI sometimes resolves an ISIN to the plain equity base ticker (e.g.
+        # 'BAC') when the CUSIP lookup correctly returned 'BAC-HH'.  Picking the
+        # more specific result fixes these cases without touching the cache files.
+        def _is_plain(t: str | None) -> bool:
+            return not t or ("-" not in t and len(t) <= 4)
+
+        if not _is_plain(cusip_ticker) and _is_plain(isin_ticker):
+            ticker = cusip_ticker
+        else:
+            ticker = isin_ticker or cusip_ticker or ticker_raw
 
         # Cash and derivatives positions are fund plumbing, not rebalancing signals.
         # Negative share counts (e.g. USD CASH receivables) also produce nonsense dollar flows.
@@ -175,7 +221,7 @@ def main(etf: str = "PFF", key_field: str = "isin"):
     holdings_dir = f"data/{etf}/holdings"
     flows_dir = f"data/{etf}/flows"
 
-    ticker_cache = load_cache()
+    ticker_cache, cusip_cache = load_caches()
     files = sorted(glob.glob(os.path.join(holdings_dir, "*.csv")))
 
     if len(files) < 2:
@@ -188,7 +234,7 @@ def main(etf: str = "PFF", key_field: str = "isin"):
         if os.path.exists(out):
             continue
         print(f"{etf}: Computing flows for {date_str}...")
-        rows = compute(files[i - 1], files[i], ticker_cache, key_field)
+        rows = compute(files[i - 1], files[i], ticker_cache, key_field, cusip_cache)
         path = save_flows(rows, date_str, flows_dir)
         changes = sum(1 for r in rows if r["flow_type"] != "UNCHANGED")
         print(f"  Saved {len(rows)} rows ({changes} with share changes) -> {path}")

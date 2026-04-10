@@ -205,11 +205,11 @@ export default function FlowsPage({
       <div className="flex gap-0.5 border-b-2 border-gray-600">
         <a href={`/flows?etf=${flowsEtf}&tab=flows${selectedDate ? `&date=${selectedDate}` : ""}`}
           className={`px-5 py-2 font-mono text-xs ${tab === "flows" ? TAB_ACTIVE : TAB_INACTIVE}`}>
-          Flows
+          Daily
         </a>
         <a href={`/flows?etf=${flowsEtf}&tab=trends&tetf=${trendsEtf}&window=${windowDays}`}
           className={`px-5 py-2 font-mono text-xs ${tab === "trends" ? TAB_ACTIVE : TAB_INACTIVE}`}>
-          Trends
+          Long Term
         </a>
       </div>
 

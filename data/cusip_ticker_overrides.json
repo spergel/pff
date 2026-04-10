@@ -1,0 +1,4 @@
+{
+  "_comment": "Manually verified CUSIP -> preferred ticker mappings. Add entries here when OpenFIGI resolution is wrong or missing.",
+  "316773837": "FITBM"
+}
