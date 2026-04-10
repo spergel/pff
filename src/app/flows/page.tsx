@@ -288,8 +288,12 @@ export default function FlowsPage({
           <section>
             <h2 className="mb-2 font-mono text-[10px] font-semibold uppercase tracking-wider text-gray-500">
               Daily Activity
+              <span className="ml-2 font-normal text-gray-400 normal-case">— click a date to view flows</span>
             </h2>
-            <DailyActivityTable days={recentDays} />
+            <DailyActivityTable
+              days={recentDays}
+              dateHrefBase={`/flows?tab=flows&etf=${trendsEtf === "ALL" ? "PFF" : trendsEtf}`}
+            />
           </section>
 
           <section>

@@ -18,7 +18,13 @@ function Bar({ value, max, color }: { value: number; max: number; color: string 
   );
 }
 
-export function DailyActivityTable({ days }: { days: DayAggregate[] }) {
+export function DailyActivityTable({
+  days,
+  dateHrefBase,
+}: {
+  days: DayAggregate[];
+  dateHrefBase?: string;
+}) {
   const maxBuy = Math.max(...days.map((d) => d.total_buy_dollars), 1);
   const maxSell = Math.max(...days.map((d) => d.total_sell_dollars), 1);
   const maxChanges = Math.max(...days.map((d) => d.num_changes), 1);
@@ -46,7 +52,18 @@ export function DailyActivityTable({ days }: { days: DayAggregate[] }) {
             const net = d.total_buy_dollars - d.total_sell_dollars;
             return (
               <tr key={d.date} className="hover:bg-yellow-50">
-                <td className="px-3 py-1.5 font-mono text-xs text-gray-600">{d.date}</td>
+                <td className="px-3 py-1.5 font-mono text-xs">
+                  {dateHrefBase ? (
+                    <a
+                      href={`${dateHrefBase}&date=${d.date}`}
+                      className="text-blue-700 hover:underline"
+                    >
+                      {d.date}
+                    </a>
+                  ) : (
+                    <span className="text-gray-600">{d.date}</span>
+                  )}
+                </td>
                 <td className="px-3 py-1.5">
                   <Bar value={d.num_changes} max={maxChanges} color="bg-gray-400" />
                 </td>
