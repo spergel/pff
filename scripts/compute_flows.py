@@ -16,6 +16,7 @@ import csv
 import glob
 import json
 import os
+import re
 import tempfile
 from datetime import date, timedelta
 
@@ -160,13 +161,28 @@ def compute(prev_path: str, curr_path: str, ticker_cache: dict, key_field: str,
         # OpenFIGI sometimes resolves an ISIN to the plain equity base ticker (e.g.
         # 'BAC') when the CUSIP lookup correctly returned 'BAC-HH'.  Picking the
         # more specific result fixes these cases without touching the cache files.
+        # Guard: only prefer cusip when it extends the same base as isin (e.g.
+        # 'BAC'→'BAC-HH' ✓) — prevents a wrong CUSIP ticker like 'MSTR-A' from
+        # overriding a correct ISIN ticker like 'STRC'.
         def _is_plain(t: str | None) -> bool:
             return not t or ("-" not in t and len(t) <= 4)
 
-        if not _is_plain(cusip_ticker) and _is_plain(isin_ticker):
+        cusip_base = (cusip_ticker or "").split("-")[0]
+        isin_base = (isin_ticker or "").split("-")[0]
+        cusip_extends_isin = not isin_ticker or not cusip_ticker or cusip_base == isin_base
+        if not _is_plain(cusip_ticker) and _is_plain(isin_ticker) and cusip_extends_isin:
             ticker = cusip_ticker
         else:
             ticker = isin_ticker or cusip_ticker or ticker_raw
+
+        # Normalize space/dot notation (e.g. "BA A" → "BA-A", "WFC.L" → "WFC-L")
+        # for ETFs (e.g. PFFA) whose providers encode preferred series this way.
+        if ticker and " " in ticker:
+            _m = re.match(r"^([A-Z]{1,6})\s+([A-Z]{1,3})$", ticker)
+            if _m:
+                ticker = f"{_m.group(1)}-{_m.group(2)}"
+        if ticker and "." in ticker and re.match(r"^[A-Z]{1,6}\.[A-Z]{1,3}$", ticker):
+            ticker = ticker.replace(".", "-")
 
         # Cash and derivatives positions are fund plumbing, not rebalancing signals.
         # Negative share counts (e.g. USD CASH receivables) also produce nonsense dollar flows.

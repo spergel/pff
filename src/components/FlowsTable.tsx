@@ -92,7 +92,6 @@ export function FlowsTable({
               {showEtf && <th className="px-3 py-2">ETF</th>}
               {showId && <th className="px-3 py-2">ISIN / CUSIP</th>}
               <th className="px-3 py-2">Ticker</th>
-              <th className="px-3 py-2">Name</th>
               <th className="px-3 py-2">Sector</th>
               <th className="px-3 py-2">Type</th>
               <th
@@ -138,14 +137,16 @@ export function FlowsTable({
                     {row.isin || row.cusip || "—"}
                   </td>
                 )}
-                <td className="px-3 py-2 font-mono font-semibold text-gray-900">
-                  {row.ticker !== row.ticker_raw ? (
-                    <span title={`Raw: ${row.ticker_raw}`}>{row.ticker}</span>
-                  ) : (
-                    row.ticker
-                  )}
+                <td className="px-3 py-2">
+                  <div className="font-mono font-semibold text-gray-900">
+                    {row.ticker !== row.ticker_raw ? (
+                      <span title={`Raw: ${row.ticker_raw}`}>{row.ticker}</span>
+                    ) : (
+                      row.ticker
+                    )}
+                  </div>
+                  {row.desc && <div className="truncate max-w-[200px] text-[10px] text-gray-400">{row.desc}</div>}
                 </td>
-                <td className="px-3 py-2 text-gray-600">{row.name}</td>
                 <td className="px-3 py-2 font-mono text-xs text-gray-500">{row.sector}</td>
                 <td className="px-3 py-2">
                   <SignalBadge type={row.flow_type} />
@@ -193,7 +194,7 @@ export function FlowsTable({
             {visible.length === 0 && (
               <tr>
                 <td
-                  colSpan={(showEtf ? 11 : 10) + (showId ? 1 : 0)}
+                  colSpan={(showEtf ? 10 : 9) + (showId ? 1 : 0)}
                   className="px-3 py-8 text-center font-mono text-xs text-gray-400"
                 >
                   no data

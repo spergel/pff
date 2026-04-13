@@ -66,7 +66,6 @@ export function OpportunitiesTable({ flows }: { flows: FlowRow[] }) {
         <thead>
           <tr className="border-b border-gray-500 bg-gray-300 text-left text-[10px] font-bold uppercase tracking-wider text-gray-800">
             <th className="px-3 py-2">Ticker</th>
-            <th className="px-3 py-2">Name</th>
             <th className="px-3 py-2">Type</th>
             <th className="px-3 py-2">$ Sold</th>
             <th className="px-3 py-2">Shares</th>
@@ -80,10 +79,10 @@ export function OpportunitiesTable({ flows }: { flows: FlowRow[] }) {
         <tbody className="divide-y divide-gray-300">
           {rows.map((row) => (
             <tr key={row.isin} className="hover:bg-yellow-50">
-              <td className="px-3 py-2 font-mono font-semibold text-gray-900">
-                {row.ticker}
+              <td className="px-3 py-2">
+                <div className="font-mono font-semibold text-gray-900">{row.ticker}</div>
+                {row.desc && <div className="truncate max-w-[180px] text-[10px] text-gray-400">{row.desc}</div>}
               </td>
-              <td className="max-w-[180px] truncate px-3 py-2 text-gray-600">{row.name}</td>
               <td className="px-3 py-2">
                 <SignalBadge type={row.flow_type} />
               </td>

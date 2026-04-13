@@ -32,7 +32,7 @@ export function Sidebar({ nav }: { nav: NavItem[] }) {
           const navParams = new URLSearchParams(navQuery ?? "");
           // Active if pathname matches AND all nav query params match current URL
           const pathMatch = pathname === navPath;
-          const paramMatch = [...navParams.entries()].every(
+          const paramMatch = Array.from(navParams.entries()).every(
             ([k, v]) => searchParams.get(k) === v
           );
           const isActive = pathMatch && (navParams.size === 0 || paramMatch);

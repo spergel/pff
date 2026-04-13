@@ -50,13 +50,12 @@
     "ticker_raw": "BPY"
   },
   "BMG162491564": {
-    "figi": "BBG00PZ6XWN0",
-    "figi_name": "BROOKFIELD PROPERTY PART",
+    "figi": null,
     "figi_ticker": "BPY 6.375 PERP A2",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BPY",
+    "securityType": null,
+    "ticker": "BPY-A2",
     "ticker_raw": "BPY"
   },
   "BMG162491648": {
@@ -80,13 +79,12 @@
     "ticker_raw": "BPY"
   },
   "BMG162522756": {
-    "figi": "BBG00YVW5YX4",
-    "figi_name": "BROOKFIELD INFRASTRUCTUR",
+    "figi": null,
     "figi_ticker": "BIP 5 PERP 14",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BIP",
+    "securityType": null,
+    "ticker": "BIP-14",
     "ticker_raw": "BIP"
   },
   "BMG162582313": {
@@ -123,20 +121,22 @@
     "figi": "BBG00PGH4647",
     "figi_name": "TRITON INTERNATIONAL LTD",
     "figi_ticker": "TRTN 8 PERP",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "TRTN",
+    "ticker": "TRTN-B",
     "ticker_raw": "TRTN"
   },
   "BMG9078F1499": {
     "figi": "BBG00QRDWCF6",
     "figi_name": "TRITON INTERNATIONAL LTD",
     "figi_ticker": "TRTN 7.375 PERP",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "TRTN",
+    "ticker": "TRTN-C",
     "ticker_raw": "TRTN"
   },
   "BMG9078F1564": {
@@ -153,16 +153,18 @@
     "figi": "BBG01S2TVMJ8",
     "figi_name": "TRITON INTERNATIONAL LTD",
     "figi_ticker": "TRTN 7.625 PERP",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "TRTN",
+    "ticker": "TRTN-D",
     "ticker_raw": "TRTN"
   },
   "BMG9078F2067": {
     "figi": "BBG00RDSX3Q3",
     "figi_name": "TRITON INTERNATIONAL LTD",
     "figi_ticker": "TRTN 6.875 PERP",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
@@ -676,7 +678,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "ARES",
+    "ticker": "ARES-B",
     "ticker_raw": "ARES"
   },
   "US0401284072": {
@@ -873,30 +875,33 @@
     "figi": "BBG013TC1538",
     "figi_name": "BRC GROUP HOLDINGS INC",
     "figi_ticker": "RILY 5 12/31/26",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "RILY",
+    "ticker": "RILYZ",
     "ticker_raw": "RILY"
   },
   "US05580M8010": {
     "figi": "BBG00Q9VDCG6",
     "figi_name": "BRC GROUP HOLDINGS INC",
     "figi_ticker": "RILY 6.5 09/30/26",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "RILY",
+    "ticker": "RILYK",
     "ticker_raw": "RILY"
   },
   "US05580M8192": {
     "figi": "BBG0120BZFS7",
     "figi_name": "BRC GROUP HOLDINGS INC",
     "figi_ticker": "RILY 5.25 08/31/28",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "RILY",
+    "ticker": "RILYI",
     "ticker_raw": "RILY"
   },
   "US05580M8275": {
@@ -913,10 +918,11 @@
     "figi": "BBG00YZGV9Y0",
     "figi_name": "BRC GROUP HOLDINGS INC",
     "figi_ticker": "RILY 6 01/31/28",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "RILY",
+    "ticker": "RILYM",
     "ticker_raw": "RILY"
   },
   "US05614L3087": {
@@ -960,33 +966,30 @@
     "ticker_raw": "BANC"
   },
   "US0605051798": {
-    "figi": "BBG00M8V1TP2",
-    "figi_name": "BANK OF AMERICA CORP",
+    "figi": null,
     "figi_ticker": "BAC 6.45 12/15/66 K*",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BAC",
+    "securityType": null,
+    "ticker": "BAC-K",
     "ticker_raw": "BAC"
   },
   "US0605051954": {
-    "figi": "BBG00LG6JBB5",
-    "figi_name": "BANK OF AMERICA CORP",
+    "figi": null,
     "figi_ticker": "BAC 5.875 PERP HH",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BAC",
+    "securityType": null,
+    "ticker": "BAC-HH",
     "ticker_raw": "BAC"
   },
   "US0605052291": {
-    "figi": "BBG00KVSPD67",
-    "figi_name": "BANK OF AMERICA CORP",
+    "figi": null,
     "figi_ticker": "BAC 6 PERP GG",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BAC",
+    "securityType": null,
+    "ticker": "BAC-GG",
     "ticker_raw": "BAC"
   },
   "US0605055831": {
@@ -1010,13 +1013,12 @@
     "ticker_raw": "BAC"
   },
   "US0605056250": {
-    "figi": "BBG0000086G9",
-    "figi_name": "BANK OF AMERICA CORP",
+    "figi": null,
     "figi_ticker": "BAC F PERP 02",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BAC",
+    "securityType": null,
+    "ticker": "BAC-02",
     "ticker_raw": "BAC"
   },
   "US0605056821": {
@@ -1040,63 +1042,57 @@
     "ticker_raw": "BAC"
   },
   "US06053U6010": {
-    "figi": "BBG00PGLTWW3",
-    "figi_name": "BANK OF AMERICA CORP",
+    "figi": null,
     "figi_ticker": "BAC 5.375 PERP KK",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BAC",
+    "securityType": null,
+    "ticker": "BAC-KK",
     "ticker_raw": "BAC"
   },
   "US06055H2022": {
-    "figi": "BBG00Q73VX01",
-    "figi_name": "BANK OF AMERICA CORP",
+    "figi": null,
     "figi_ticker": "BAC 5 PERP LL",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BAC",
+    "securityType": null,
+    "ticker": "BAC-LL",
     "ticker_raw": "BAC"
   },
   "US06055H4002": {
-    "figi": "BBG00Y054Z10",
-    "figi_name": "BANK OF AMERICA CORP",
+    "figi": null,
     "figi_ticker": "BAC 4.375 PERP NN",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BAC",
+    "securityType": null,
+    "ticker": "BAC-NN",
     "ticker_raw": "BAC"
   },
   "US06055H6080": {
-    "figi": "BBG00Z0GWN55",
-    "figi_name": "BANK OF AMERICA CORP",
+    "figi": null,
     "figi_ticker": "BAC 4.125 PERP PP",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BAC",
+    "securityType": null,
+    "ticker": "BAC-PP",
     "ticker_raw": "BAC"
   },
   "US06055H8060": {
-    "figi": "BBG01339XNR3",
-    "figi_name": "BANK OF AMERICA CORP",
+    "figi": null,
     "figi_ticker": "BAC 4.25 PERP QQ",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BAC",
+    "securityType": null,
+    "ticker": "BAC-QQ",
     "ticker_raw": "BAC"
   },
   "US06055H8714": {
-    "figi": "BBG014X6R6F1",
-    "figi_name": "BANK OF AMERICA CORP",
+    "figi": null,
     "figi_ticker": "BAC 4.75 PERP SS",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BAC",
+    "securityType": null,
+    "ticker": "BAC-SS",
     "ticker_raw": "BAC"
   },
   "US0625403078": {
@@ -1566,7 +1562,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "GTLS",
+    "ticker": "GTLS-B",
     "ticker_raw": "GTLS"
   },
   "US16208T2015": {
@@ -1650,13 +1646,12 @@
     "ticker_raw": "CICC"
   },
   "US1729672428": {
-    "figi": "BBG01ZW9WCB2",
-    "figi_name": "CITIGROUP INC",
+    "figi": null,
     "figi_ticker": "C 6.25 PERP II",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "C",
+    "securityType": null,
+    "ticker": "C-II",
     "ticker_raw": "C"
   },
   "US1730802014": {
@@ -1806,7 +1801,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "DTE",
+    "ticker": "DTE-H",
     "ticker_raw": "DTE"
   },
   "US2333318184": {
@@ -1826,7 +1821,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "DTE",
+    "ticker": "DTE-G",
     "ticker_raw": "DTE"
   },
   "US2333318598": {
@@ -1836,7 +1831,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "DTE",
+    "ticker": "DTE-E",
     "ticker_raw": "DTE"
   },
   "US2527844003": {
@@ -2593,10 +2588,11 @@
     "figi": "BBG01PPJ0VC2",
     "figi_name": "HP ENTERPRISE CO",
     "figi_ticker": "HPE 7.625 09/01/27",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "HPE",
+    "ticker": "HPE-A",
     "ticker_raw": "HPE"
   },
   "US4440973075": {
@@ -2670,63 +2666,57 @@
     "ticker_raw": "JXN"
   },
   "US48128B5232": {
-    "figi": "BBG011XMPST1",
-    "figi_name": "JPMORGAN CHASE & CO",
+    "figi": null,
     "figi_ticker": "JPM 4.2 PERP MM",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "JPM",
+    "securityType": null,
+    "ticker": "JPM-MM",
     "ticker_raw": "JPM"
   },
   "US48128B5497": {
-    "figi": "BBG0112JF7F4",
-    "figi_name": "JPMORGAN CHASE & CO",
+    "figi": null,
     "figi_ticker": "JPM 4.625 PERP LL",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "JPM",
+    "securityType": null,
+    "ticker": "JPM-LL",
     "ticker_raw": "JPM"
   },
   "US48128B5802": {
-    "figi": "BBG00ZLH70C0",
-    "figi_name": "JPMORGAN CHASE & CO",
+    "figi": null,
     "figi_ticker": "JPM 4.55 PERP JJ",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "JPM",
+    "securityType": null,
+    "ticker": "JPM-JJ",
     "ticker_raw": "JPM"
   },
   "US48128B6222": {
-    "figi": "BBG00QRCH846",
-    "figi_name": "JPMORGAN CHASE & CO",
+    "figi": null,
     "figi_ticker": "JPM 4.75 PERP GG",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "JPM",
+    "securityType": null,
+    "ticker": "JPM-GG",
     "ticker_raw": "JPM"
   },
   "US48128B6487": {
-    "figi": "BBG00N2WDHD0",
-    "figi_name": "JPMORGAN CHASE & CO",
+    "figi": null,
     "figi_ticker": "JPM 6 PERP EE",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "JPM",
+    "securityType": null,
+    "ticker": "JPM-EE",
     "ticker_raw": "JPM"
   },
   "US48128B6552": {
-    "figi": "BBG00M0GF179",
-    "figi_name": "JPMORGAN CHASE & CO",
+    "figi": null,
     "figi_ticker": "JPM 5.75 PERP DD",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "JPM",
+    "securityType": null,
+    "ticker": "JPM-DD",
     "ticker_raw": "JPM"
   },
   "US48251K2096": {
@@ -2746,7 +2736,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "KKR",
+    "ticker": "KKR-D",
     "ticker_raw": "KKR"
   },
   "US48251W6093": {
@@ -2756,7 +2746,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "KKR",
+    "ticker": "KKR-T",
     "ticker_raw": "KKR"
   },
   "US48253M1045": {
@@ -3377,30 +3367,33 @@
     "figi": "BBG01QK639J2",
     "figi_name": "NEXTERA ENERGY INC",
     "figi_ticker": "NEE 7.234 11/01/27",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "NEE",
-    "ticker_raw": "NEE"
+    "ticker": "NEE-T",
+    "ticker_raw": "NEECV"
   },
   "US65339F6557": {
     "figi": "BBG020NQVSL5",
     "figi_name": "NEXTERA ENERGY INC",
     "figi_ticker": "NEE 7.375 02/15/29",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "NEE",
+    "ticker": "NEE-V",
     "ticker_raw": "NEE"
   },
   "US65339F6631": {
     "figi": "BBG01NCK7GY0",
     "figi_name": "NEXTERA ENERGY INC",
     "figi_ticker": "NEE 7.299 06/01/27",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "NEE",
+    "ticker": "NEE-S",
     "ticker_raw": "NEE"
   },
   "US65339F7134": {
@@ -3417,10 +3410,11 @@
     "figi": "BBG0210PYBS7",
     "figi_name": "NEXTERA ENERGY CAPITAL",
     "figi_ticker": "NEE 6.5 04/15/86 .Z",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "NEE",
+    "ticker": "NEE-Z",
     "ticker_raw": "NEE"
   },
   "US65339K8374": {
@@ -3430,7 +3424,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "NEE",
+    "ticker": "NEE-U",
     "ticker_raw": "NEE"
   },
   "US65339K8606": {
@@ -3440,7 +3434,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "NEE",
+    "ticker": "NEE-N",
     "ticker_raw": "NEE"
   },
   "US6658598569": {
@@ -3510,7 +3504,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "ORCL",
+    "ticker": "ORCL-D",
     "ticker_raw": "ORCL"
   },
   "US69331C3060": {
@@ -3520,7 +3514,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "PCG",
+    "ticker": "PCG-A",
     "ticker_raw": "PCG"
   },
   "US69351T8669": {
@@ -4087,10 +4081,11 @@
     "figi": "BBG0042FXR90",
     "figi_name": "SCE TRUST II",
     "figi_ticker": "EIX 5.1 PERP",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "EIX",
+    "ticker": "SCE-J",
     "ticker_raw": "EIX"
   },
   "US78409G2066": {
@@ -4117,10 +4112,11 @@
     "figi": "BBG00GZXFVS8",
     "figi_name": "SCE TRUST VI",
     "figi_ticker": "EIX 5 PERP",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "EIX",
+    "ticker": "SCE-L",
     "ticker_raw": "EIX"
   },
   "US78440X5077": {
@@ -4270,7 +4266,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "SO",
+    "ticker": "SO-A",
     "ticker_raw": "SO"
   },
   "US8425878670": {
@@ -4290,7 +4286,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "SO",
+    "ticker": "SO-C",
     "ticker_raw": "SO"
   },
   "US84857L3096": {
@@ -4330,7 +4326,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "SPLP",
+    "ticker": "SPLP-A",
     "ticker_raw": "SPLP"
   },
   "US8606306079": {
@@ -4524,23 +4520,21 @@
     "ticker_raw": "TRTX"
   },
   "US8794337613": {
-    "figi": "BBG01230NF56",
-    "figi_name": "TELEPHONE & DATA SYS",
+    "figi": null,
     "figi_ticker": "TDS 6 PERP VV",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "TDS",
+    "securityType": null,
+    "ticker": "TDS-VV",
     "ticker_raw": "TDS"
   },
   "US8794337878": {
-    "figi": "BBG00ZF244C5",
-    "figi_name": "TELEPHONE & DATA SYS",
+    "figi": null,
     "figi_ticker": "TDS 6.625 PERP UU",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "TDS",
+    "securityType": null,
+    "ticker": "TDS-UU",
     "ticker_raw": "TDS"
   },
   "US8805913006": {
@@ -4550,7 +4544,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "TVA",
+    "ticker": "TVA-D",
     "ticker_raw": "TVA"
   },
   "US8805914095": {
@@ -4560,7 +4554,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "TVA",
+    "ticker": "TVA-A",
     "ticker_raw": "TVA"
   },
   "US88224Q3056": {
@@ -4767,30 +4761,33 @@
     "figi": "BBG00WLM44P7",
     "figi_name": "ARRAY DIGITAL INFRA INC",
     "figi_ticker": "AD 6.25 09/01/69",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "AD",
+    "ticker": "UZA",
     "ticker_raw": "USM"
   },
   "US9116848014": {
     "figi": "BBG00YCZRVF0",
     "figi_name": "ARRAY DIGITAL INFRA INC",
     "figi_ticker": "AD 5.5 03/01/70",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "AD",
+    "ticker": "UZB",
     "ticker_raw": "USM"
   },
   "US9116848840": {
     "figi": "BBG010Z97SK9",
     "figi_name": "ARRAY DIGITAL INFRA INC",
     "figi_ticker": "AD 5.5 06/01/70",
+    "override": true,
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "AD",
+    "ticker": "UZC",
     "ticker_raw": "USM"
   },
   "US91529Y6014": {
@@ -4934,13 +4931,12 @@
     "ticker_raw": "WFC"
   },
   "US94988U1280": {
-    "figi": "BBG00XYJN896",
-    "figi_name": "WELLS FARGO & COMPANY",
+    "figi": null,
     "figi_ticker": "WFC 4.7 PERP AA",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "WFC",
+    "securityType": null,
+    "ticker": "WFC-AA",
     "ticker_raw": "WFC"
   },
   "US94988U1512": {
@@ -4964,23 +4960,21 @@
     "ticker_raw": "WFC"
   },
   "US95002Y2028": {
-    "figi": "BBG00Z19HY08",
-    "figi_name": "WELLS FARGO & COMPANY",
+    "figi": null,
     "figi_ticker": "WFC 4.375 PERP CC",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "WFC",
+    "securityType": null,
+    "ticker": "WFC-CC",
     "ticker_raw": "WFC"
   },
   "US95002Y4008": {
-    "figi": "BBG011WSPCG8",
-    "figi_name": "WELLS FARGO & COMPANY",
+    "figi": null,
     "figi_ticker": "WFC 4.25 PERP DD",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "WFC",
+    "securityType": null,
+    "ticker": "WFC-DD",
     "ticker_raw": "WFC"
   },
   "US9508107052": {
@@ -5030,7 +5024,7 @@
     "parsed_from_name": false,
     "resolved": true,
     "securityType": "PUBLIC",
-    "ticker": "WHR",
+    "ticker": "WHR-A",
     "ticker_raw": "WHR"
   },
   "US97650W4050": {
@@ -5074,13 +5068,12 @@
     "ticker_raw": "XEL"
   },
   "USG162522670": {
-    "figi": "BBG00XCCR1D1",
-    "figi_name": "BROOKFIELD INFRASTRUCTUR",
+    "figi": null,
     "figi_ticker": "BIP 5.125 PERP 13",
     "parsed_from_name": false,
     "resolved": true,
-    "securityType": "PUBLIC",
-    "ticker": "BIP",
+    "securityType": null,
+    "ticker": "BIP-13",
     "ticker_raw": "BIP"
   }
 }

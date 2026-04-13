@@ -32,7 +32,6 @@ export function ConsensusTable({ rows }: { rows: ConsensusRow[] }) {
           <tr className="border-b border-gray-500 bg-gray-300 text-left text-[10px] font-bold uppercase tracking-wider text-gray-800">
             <th className="px-4 py-2">Dir</th>
             <th className="px-4 py-2">Ticker</th>
-            <th className="px-4 py-2">Name</th>
             <th className="px-4 py-2">Sector</th>
             <th className="px-4 py-2">ETFs</th>
             <th className="px-4 py-2">Combined $</th>
@@ -62,10 +61,10 @@ export function ConsensusTable({ rows }: { rows: ConsensusRow[] }) {
                     {row.consensus}
                   </span>
                 </td>
-                <td className="px-4 py-2.5 font-mono font-semibold text-gray-900">
-                  {row.ticker || "—"}
+                <td className="px-4 py-2.5">
+                  <div className="font-mono font-semibold text-gray-900">{row.ticker || "—"}</div>
+                  <div className="truncate max-w-[200px] text-[10px] text-gray-400">{row.name}</div>
                 </td>
-                <td className="max-w-xs truncate px-4 py-2.5 text-gray-600">{row.name}</td>
                 <td className="px-4 py-2.5 font-mono text-xs text-gray-500">{row.sector}</td>
                 <td className="px-4 py-2.5">
                   <div className="flex gap-1">

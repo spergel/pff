@@ -3,6 +3,7 @@ import type { EtfTicker } from "@/src/lib/data";
 import type { TickerAggregate } from "@/src/types/pff";
 import Link from "next/link";
 import { fmtDollar, fmtNum } from "@/src/lib/fmt";
+import { SecurityFlowChart } from "@/src/components/SecurityFlowChart";
 
 
 // ─── holdings enrichment (CUSIP / country / exchange) ──────────────────────
@@ -56,7 +57,6 @@ interface Match {
 }
 
 function searchSecurities(q: string, enrichMap: Map<string, Enrichment>): Match[] {
-  if (!q.trim()) return [];
   const lower = q.toLowerCase().trim();
   const seen = new Set<string>(); // deduplicate by isin+etf
   const results: Match[] = [];
@@ -66,39 +66,49 @@ function searchSecurities(q: string, enrichMap: Map<string, Enrichment>): Match[
     for (const [key, agg] of Object.entries(summary)) {
       const enrich = enrichMap.get(agg.isin) ?? null;
 
-      const ticker = (agg.ticker ?? "").toLowerCase();
-      const name = (agg.name ?? "").toLowerCase();
-      const isin = (agg.isin ?? "").toLowerCase();
-      const sector = (agg.sector ?? "").toLowerCase();
-      const cusip = (enrich?.cusip ?? "").toLowerCase();
-      const country = (enrich?.country ?? "").toLowerCase();
-      const exchange = (enrich?.exchange ?? "").toLowerCase();
+      if (lower) {
+        const ticker = (agg.ticker ?? "").toLowerCase();
+        const name = (agg.name ?? "").toLowerCase();
+        const isin = (agg.isin ?? "").toLowerCase();
+        const sector = (agg.sector ?? "").toLowerCase();
+        const cusip = (enrich?.cusip ?? "").toLowerCase();
+        const country = (enrich?.country ?? "").toLowerCase();
+        const exchange = (enrich?.exchange ?? "").toLowerCase();
 
-      const matches =
-        ticker.includes(lower) ||
-        name.includes(lower) ||
-        isin === lower ||
-        (cusip && cusip === lower) ||
-        sector.includes(lower) ||
-        (country && country.includes(lower)) ||
-        (exchange && exchange.includes(lower));
+        const matches =
+          ticker.includes(lower) ||
+          name.includes(lower) ||
+          isin === lower ||
+          (cusip && cusip === lower) ||
+          sector.includes(lower) ||
+          (country && country.includes(lower)) ||
+          (exchange && exchange.includes(lower));
 
-      if (matches) {
-        const dedupeKey = `${etf}:${agg.isin}`;
-        if (!seen.has(dedupeKey)) {
-          seen.add(dedupeKey);
-          results.push({ etf, key, agg, enrich });
-        }
+        if (!matches) continue;
+      }
+
+      const dedupeKey = `${etf}:${agg.isin}`;
+      if (!seen.has(dedupeKey)) {
+        seen.add(dedupeKey);
+        results.push({ etf, key, agg, enrich });
       }
     }
   }
 
   return results.sort((a, b) => {
-    // Exact ticker match first
-    const aExact = (a.agg.ticker ?? "").toLowerCase() === lower ? 0 : 1;
-    const bExact = (b.agg.ticker ?? "").toLowerCase() === lower ? 0 : 1;
-    if (aExact !== bExact) return aExact - bExact;
-    // Then by net flow magnitude (most active first)
+    if (lower) {
+      // Exact identifier matches first (ticker, CUSIP, then ISIN).
+      const exactRank = (m: Match) => {
+        if ((m.agg.ticker ?? "").toLowerCase() === lower) return 0;
+        if ((m.enrich?.cusip ?? "").toLowerCase() === lower) return 1;
+        if ((m.agg.isin ?? "").toLowerCase() === lower) return 2;
+        return 3;
+      };
+      const aExact = exactRank(a);
+      const bExact = exactRank(b);
+      if (aExact !== bExact) return aExact - bExact;
+    }
+    // Sort by net flow magnitude (most active first)
     return Math.abs(b.agg.net_dollar_flow) - Math.abs(a.agg.net_dollar_flow);
   });
 }
@@ -261,14 +271,6 @@ function SecurityHistory({
 
 // ─── page ──────────────────────────────────────────────────────────────────
 
-const QUICK_EXAMPLES = [
-  { label: "WFC-L", hint: "ticker" },
-  { label: "JPM-D", hint: "ticker" },
-  { label: "Financial Institutions", hint: "sector" },
-  { label: "Utilities", hint: "sector" },
-  { label: "Energy Transfer", hint: "issuer" },
-  { label: "Canada", hint: "country" },
-];
 
 export default function SecurityPage({
   searchParams,
@@ -359,109 +361,63 @@ export default function SecurityPage({
         )}
       </form>
 
-      {/* Filter chips — ETF + Sector */}
-      {(q || filterSector) && (
-        <div className="flex flex-wrap gap-x-4 gap-y-2">
-          {/* ETF chips */}
-          {matches.length > 0 && (
-            <div className="flex items-center gap-1.5 flex-wrap">
-              <span className="font-mono text-[10px] text-gray-400">ETF:</span>
-              <a href={filterHref({ sector: filterSector })} className={` border px-2 py-0.5 font-mono text-[10px]  ${!filterEtf ? BTN_ACTIVE : BTN_INACTIVE}`}>
-                all ({matches.length})
-              </a>
-              {SUPPORTED_ETFS.filter((etf) => matches.some((m) => m.etf === etf)).map((etf) => {
-                const count = matches.filter((m) => m.etf === etf).length;
-                return (
-                  <a
-                    key={etf}
-                    href={filterHref({ etf, sector: filterSector })}
-                    className={` border px-2 py-0.5 font-mono text-[10px] font-semibold  ${
-                      filterEtf === etf ? BTN_ACTIVE : `${ETF_BADGE[etf] ?? ""} border-transparent hover:border-gray-300`
-                    }`}
-                  >
-                    {etf} ({count})
-                  </a>
-                );
-              })}
-            </div>
-          )}
-
-          {/* Sector chips */}
-          {allSectors.length > 1 && (
-            <div className="flex items-center gap-1.5 flex-wrap">
-              <span className="font-mono text-[10px] text-gray-400">sector:</span>
-              <a href={filterHref({ etf: filterEtf })} className={` border px-2 py-0.5 font-mono text-[10px]  ${!filterSector ? BTN_ACTIVE : BTN_INACTIVE}`}>
-                all
-              </a>
-              {allSectors.map((sector) => {
-                const count = (filterEtf ? matches.filter((m) => m.etf === filterEtf) : matches)
-                  .filter((m) => m.agg.sector === sector).length;
-                return (
-                  <a
-                    key={sector}
-                    href={filterHref({ etf: filterEtf, sector })}
-                    className={` border px-2 py-0.5 font-mono text-[10px]  ${
-                      filterSector === sector ? BTN_ACTIVE : "border-gray-500 text-gray-600 hover:border-gray-400 hover:text-gray-900"
-                    }`}
-                  >
-                    {abbrevSector(sector)} ({count})
-                  </a>
-                );
-              })}
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* No query — show quick examples */}
-      {!q && !filterSector && (
-        <div className="border-2 border-gray-600 bg-white px-6 py-10 text-center space-y-4">
-          <p className="font-mono text-sm text-gray-500">search any preferred security</p>
-          <div className="flex flex-wrap justify-center gap-2">
-            {QUICK_EXAMPLES.map(({ label, hint }) => (
+      {/* Filter chips — ETF + Sector (always shown) */}
+      <div className="flex flex-wrap gap-x-4 gap-y-2">
+        {/* ETF chips */}
+        <div className="flex items-center gap-1.5 flex-wrap">
+          <span className="font-mono text-[10px] text-gray-400">ETF:</span>
+          <a href={filterHref({ sector: filterSector })} className={` border px-2 py-0.5 font-mono text-[10px]  ${!filterEtf ? BTN_ACTIVE : BTN_INACTIVE}`}>
+            all ({matches.length})
+          </a>
+          {SUPPORTED_ETFS.filter((etf) => matches.some((m) => m.etf === etf)).map((etf) => {
+            const count = matches.filter((m) => m.etf === etf).length;
+            return (
               <a
-                key={label}
-                href={`/security?q=${encodeURIComponent(label)}`}
-                className="group flex flex-col items-center border border-gray-500 px-3 py-1.5 font-mono text-xs text-gray-600 hover:border-gray-400 hover:text-gray-900"
+                key={etf}
+                href={filterHref({ etf, sector: filterSector })}
+                className={` border px-2 py-0.5 font-mono text-[10px] font-semibold  ${
+                  filterEtf === etf ? BTN_ACTIVE : `${ETF_BADGE[etf] ?? ""} border-transparent hover:border-gray-300`
+                }`}
               >
-                <span>{label}</span>
-                <span className="text-[10px] text-gray-400 group-hover:text-gray-500">{hint}</span>
+                {etf} ({count})
               </a>
-            ))}
-          </div>
-          <p className="font-mono text-[10px] text-gray-400">
-            or browse by sector:
-          </p>
-          <div className="flex flex-wrap justify-center gap-1.5">
-            {["Financial Institutions", "Utility", "Real Estate", "Industrial", "Energy"].map((s) => (
-              <a
-                key={s}
-                href={`/security?sector=${encodeURIComponent(s)}`}
-                className="border border-gray-500 px-3 py-1 font-mono text-[10px] text-gray-500 hover:border-gray-400 hover:text-gray-900"
-              >
-                {abbrevSector(s)}
-              </a>
-            ))}
-          </div>
+            );
+          })}
         </div>
-      )}
 
-      {/* Sector browse (no text query, sector filter active) */}
-      {!q && filterSector && (
-        <p className="font-mono text-xs text-gray-500">
-          Browsing <span className="font-semibold text-gray-900">{filterSector}</span> · {filtered.length} securities
-        </p>
-      )}
+        {/* Sector chips */}
+        {allSectors.length > 1 && (
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <span className="font-mono text-[10px] text-gray-400">sector:</span>
+            <a href={filterHref({ etf: filterEtf })} className={` border px-2 py-0.5 font-mono text-[10px]  ${!filterSector ? BTN_ACTIVE : BTN_INACTIVE}`}>
+              all
+            </a>
+            {allSectors.map((sector) => {
+              const count = (filterEtf ? matches.filter((m) => m.etf === filterEtf) : matches)
+                .filter((m) => m.agg.sector === sector).length;
+              return (
+                <a
+                  key={sector}
+                  href={filterHref({ etf: filterEtf, sector })}
+                  className={` border px-2 py-0.5 font-mono text-[10px]  ${
+                    filterSector === sector ? BTN_ACTIVE : "border-gray-500 text-gray-600 hover:border-gray-400 hover:text-gray-900"
+                  }`}
+                >
+                  {abbrevSector(sector)} ({count})
+                </a>
+              );
+            })}
+          </div>
+        )}
+      </div>
 
       {/* No results */}
-      {(q || filterSector) && filtered.length === 0 && matches.length === 0 && (
+      {filtered.length === 0 && matches.length === 0 && (
         <div className="border border-gray-500 px-6 py-10 text-center font-mono text-xs text-gray-400">
-          {q
-            ? `no securities found matching "${q}"`
-            : `no securities found in sector "${filterSector}"`}
+          {q ? `no securities found matching "${q}"` : "no securities found"}
         </div>
       )}
-      {(q || filterSector) && filtered.length === 0 && matches.length > 0 && (
+      {filtered.length === 0 && matches.length > 0 && (
         <div className="border border-gray-500 px-6 py-8 text-center font-mono text-xs text-gray-400">
           no results match the current filters —{" "}
           <a href={filterHref({})} className="text-blue-700 hover:text-blue-800">clear filters</a>
@@ -472,7 +428,7 @@ export default function SecurityPage({
       {filtered.length > 5 && (
         <div className="space-y-1.5">
           <p className="font-mono text-xs text-gray-500">
-            {filtered.length} matches{filtered.length > 100 ? " — showing first 100" : ""} · narrow your search or pick a security to see full history
+            {filtered.length} securities{filtered.length > 200 ? " — showing first 200" : ""}{q ? ` matching "${q}"` : " · sorted by total flow"} · search or filter to narrow
           </p>
           <div className="overflow-x-auto border-2 border-gray-600">
             <table className="w-full text-sm">
@@ -489,7 +445,7 @@ export default function SecurityPage({
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-300">
-                {filtered.slice(0, 100).map((m) => (
+                {filtered.slice(0, 200).map((m) => (
                   <tr key={m.key} className="hover:bg-yellow-50">
                     <td className="px-3 py-2">
                       <span className={` px-1.5 py-0.5 font-mono text-xs font-semibold ${ETF_BADGE[m.etf] ?? "bg-gray-100 text-gray-500"}`}>
@@ -498,7 +454,7 @@ export default function SecurityPage({
                     </td>
                     <td className="px-3 py-2">
                       <a
-                        href={`/security?q=${encodeURIComponent(m.agg.ticker ?? "")}&etf=${m.etf}`}
+                        href={`/security?q=${encodeURIComponent(m.enrich?.cusip || m.agg.ticker || "")}&etf=${m.etf}`}
                         className="font-mono font-semibold text-gray-900 hover:text-blue-700"
                       >
                         {m.agg.ticker || "—"}
@@ -578,6 +534,9 @@ export default function SecurityPage({
               </div>
             </div>
 
+            {/* Stacked security flow chart (buy vs sell over time) */}
+            <SecurityFlowChart history={m.agg.history} etf={m.etf} />
+
             {/* Stats */}
             <div className="flex flex-wrap gap-x-6 gap-y-1 border-b border-gray-400 px-4 py-2 font-mono text-xs">
               <span className="text-gray-500">
@@ -589,12 +548,6 @@ export default function SecurityPage({
                     ? `SELL ×${Math.abs(m.agg.current_streak)}`
                     : "flat"}
                 </span>
-              </span>
-              <span className="text-gray-500">
-                bought <span className="text-emerald-600">{fmtDollar(totalBuy)}</span>
-              </span>
-              <span className="text-gray-500">
-                sold <span className="text-rose-500">{fmtDollar(totalSell)}</span>
               </span>
               <span className="text-gray-500">
                 net <span className={m.agg.net_dollar_flow >= 0 ? "text-emerald-600" : "text-rose-500"}>

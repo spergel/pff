@@ -4,6 +4,7 @@ export interface Holding {
   cusip: string;
   ticker_raw: string;
   ticker: string; // resolved preferred ticker, falls back to ticker_raw
+  desc: string | null; // formatted security description from figi_ticker (e.g. "6% perp · Ser GG")
   name: string;
   sector: string;
   asset_class: string;
@@ -30,6 +31,7 @@ export interface FlowRow {
   cusip: string;
   ticker: string;
   ticker_raw: string;
+  desc: string | null; // formatted security description from figi_ticker
   name: string;
   sector: string;
   etf?: string; // set when merging across ETFs

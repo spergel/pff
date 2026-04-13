@@ -34,11 +34,11 @@ OVERRIDES_FILE = "data/ticker_overrides.json"
 US_EXCH = {"US", "UN", "UA", "UW", "UP", "UR"}
 
 _SERIES_RE = re.compile(
-    r"\b(?:SER(?:IES)?|SR\.?|PFD|PREFERRED|PREF|PERP(?:ETUAL)?)\s+([A-Z0-9](?:-[0-9])?)\b",
+    r"\b(?:SER(?:IES)?|SR\.?|PFD|PREFERRED|PREF|PERP(?:ETUAL)?)\s+([A-Z0-9]{1,3}(?:-[0-9])?)\b",
     re.IGNORECASE,
 )
 _PLAIN_EQUITY_RE = re.compile(r"^[A-Z]{1,4}$")
-_FIGI_PERP_RE = re.compile(r"\bPERP\s+([A-Z0-9](?:-[0-9])?)[.\s]*", re.IGNORECASE)
+_FIGI_PERP_RE = re.compile(r"\bPERP\s+([A-Z0-9]{1,3}(?:-[0-9])?)[.\s]*", re.IGNORECASE)
 
 # Real CUSIP: 9 alphanumeric chars. Virtus PFEP... IDs are not real CUSIPs.
 _REAL_CUSIP_RE = re.compile(r"^[A-Z0-9]{8,9}$")
@@ -149,8 +149,13 @@ def parse_series_from_figi(ticker_raw: str, figi_ticker: str | None) -> str | No
 def build_isin_entry(isin: str, ticker_raw: str, name: str, figi: dict | None) -> dict:
     figi_ticker = figi["ticker"] if figi else None
     parsed = parse_series_ticker(ticker_raw, name)
-    if not parsed and figi_ticker:
+    if not parsed and figi_ticker and ticker_raw and _PLAIN_EQUITY_RE.match(ticker_raw):
+        # Try PERP-pattern first, then full trailing-letter logic (covers "KKR 6.875 06/01/65 T")
         parsed = parse_series_from_figi(ticker_raw, figi_ticker)
+        if not parsed:
+            candidate = extract_series_from_figi_desc(ticker_raw, figi_ticker)
+            if candidate != ticker_raw:  # extract_series_from_figi_desc returns base when no series found
+                parsed = candidate
     if not parsed and figi_ticker:
         figi_clean = figi_ticker.strip().split()[0]
         if figi_clean.isalpha() and len(figi_clean) <= 6:
@@ -230,12 +235,13 @@ def extract_series_from_figi_desc(base: str, desc: str) -> str:
     """Parse OpenFIGI bond description into TICKER-SERIES.
 
     Examples:
-      "JPM 6 PERP EE"       -> "JPM-EE"
-      "WFC 4.75 PERP Z"     -> "WFC-Z"
-      "BAC 6 PERP GG"       -> "BAC-GG"
-      "NEE 6.5 06/01/85 U"  -> "NEE-U"
-      "BAC V6.625 PERP"     -> "BAC"   (no series)
-      "XEL 6.25 10/15/85"   -> "XEL"   (no series)
+      "JPM 6 PERP EE"         -> "JPM-EE"
+      "WFC 4.75 PERP Z"       -> "WFC-Z"
+      "BAC 6 PERP GG"         -> "BAC-GG"
+      "NEE 6.5 06/01/85 U"    -> "NEE-U"
+      "NEE 6.5 04/15/86 .Z"   -> "NEE-Z"   (period-prefixed series)
+      "BAC V6.625 PERP"       -> "BAC"     (no series)
+      "XEL 6.25 10/15/85"     -> "XEL"     (no series)
     """
     # After PERP: "PERP EE", "PERP Z"
     m = re.search(r"\bPERP\s+([A-Z0-9]{1,3})\b", desc, re.IGNORECASE)
@@ -244,6 +250,14 @@ def extract_series_from_figi_desc(base: str, desc: str) -> str:
     # Trailing uppercase word (series letter at end, not a keyword)
     _NON_SERIES = {"PERP", "SR", "PFD", "VAR", "FIX", "QIB", "REG", "LLC", "INC", "PLC", "ETF"}
     m = re.search(r"\s+([A-Z]{1,3})$", desc.strip())
+    if m and m.group(1).upper() not in _NON_SERIES:
+        return f"{base}-{m.group(1).upper()}"
+    # Period-prefixed series at end: ".Z", ".AA" (OpenFIGI sometimes uses this notation)
+    m = re.search(r"\.\s*([A-Z]{1,3})\s*$", desc.strip())
+    if m and m.group(1).upper() not in _NON_SERIES:
+        return f"{base}-{m.group(1).upper()}"
+    # Letter before trailing asterisk(s): "K*", "L**" (asterisk = redeemable / called marker)
+    m = re.search(r"\s+([A-Z]{1,3})\*+\s*$", desc.strip())
     if m and m.group(1).upper() not in _NON_SERIES:
         return f"{base}-{m.group(1).upper()}"
     return base
@@ -266,8 +280,27 @@ def resolve_cusips(api_key: str | None):
                         continue  # skip non-standard CUSIPs (Virtus PFEP...) and SEDOLs
                     if cusip not in cusip_rows:
                         cusip_rows[cusip] = {"ticker_raw": ticker_raw, "name": name, "etf": etf}
+                    elif _SERIES_RE.search(name) and not _SERIES_RE.search(cusip_rows[cusip]["name"]):
+                        # Prefer a name that contains series info over a generic one
+                        cusip_rows[cusip]["name"] = name
+                        if ticker_raw and not cusip_rows[cusip]["ticker_raw"]:
+                            cusip_rows[cusip]["ticker_raw"] = ticker_raw
 
     print(f"CUSIP: {len(cusip_rows)} unique CUSIPs from PGX+FPE | {len(cache)} cached")
+
+    # Step 0: upgrade already-cached plain equity tickers using name-based series parsing.
+    # e.g. cache["172967QJ5"] = "C" but name says "Series HH" → upgrade to "C-HH".
+    upgraded = 0
+    for cusip, meta in cusip_rows.items():
+        cached = cache.get(cusip, "")
+        if cached and _PLAIN_EQUITY_RE.match(cached):
+            better = parse_series_ticker(cached, meta["name"])
+            if better and better != cached:
+                cache[cusip] = better
+                upgraded += 1
+    if upgraded:
+        save_json(cache, CUSIP_CACHE_FILE)
+        print(f"  Upgraded {upgraded} cached plain equity tickers using security name.")
 
     # Step 1: normalize dot/space notation — free, no API needed
     resolved_from_norm = 0
@@ -309,7 +342,9 @@ def resolve_cusips(api_key: str | None):
                     figi_base_m = re.match(r"^([A-Z]{1,6})\b", figi_t.strip())
                     if figi_base_m:
                         figi_base = figi_base_m.group(1)
-                        cache[cusip] = extract_series_from_figi_desc(figi_base, figi_t)
+                        # Prefer name-based series (e.g. "Series HH") over FIGI description
+                        name_result = parse_series_ticker(figi_base, meta["name"])
+                        cache[cusip] = name_result or extract_series_from_figi_desc(figi_base, figi_t)
                     else:
                         cache[cusip] = cusip  # last resort: use CUSIP as key
             else:

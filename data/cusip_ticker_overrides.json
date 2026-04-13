@@ -1,4 +1,9 @@
 {
   "_comment": "Manually verified CUSIP -> preferred ticker mappings. Add entries here when OpenFIGI resolution is wrong or missing.",
-  "316773837": "FITBM"
+  "316773837": "FITBM",
+  "65339F655": "NEE-V",
+  "65339F663": "NEE-S",
+  "65339F119": "NEE-T",
+  "65339K829": "NEE-Z",
+  "42824C208": "HPE-A"
 }

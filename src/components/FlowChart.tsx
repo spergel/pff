@@ -110,6 +110,14 @@ export function FlowChart({
   const data = buildChartData(history, auxHistories);
   const visibleKeys = allKeys.filter((k) => !hidden.has(k));
 
+  // First date each aux ETF appears in the data (used for "tracking started" marker)
+  const etfStartShort: Record<string, string> = {};
+  for (const [etf, hist] of Object.entries(auxHistories)) {
+    if (!hist.length) continue;
+    const first = [...hist].sort((a, b) => a.date.localeCompare(b.date))[0];
+    etfStartShort[`${etf.toLowerCase()}_net`] = first.date.slice(5);
+  }
+
   function handleBarClick(payload: any) {
     const date: string | undefined = payload?.activePayload?.[0]?.payload?.date;
     if (date) router.push(`/?date=${date}&etf=${etf}`);
@@ -165,6 +173,29 @@ export function FlowChart({
           />
           <Tooltip content={<CustomTooltip />} cursor={{ fill: "#f3f4f6" }} />
           <ReferenceLine y={0} stroke="#374151" strokeWidth={1.5} />
+          {/* Vertical markers showing when each ETF's tracking began */}
+          {visibleKeys
+            .filter((key) => key !== "pff_net" && etfStartShort[key])
+            .map((key, i) => {
+              const cfg = ETF_CONFIG[key];
+              return (
+                <ReferenceLine
+                  key={`start-${key}`}
+                  x={etfStartShort[key]}
+                  stroke={cfg?.color ?? "#6b7280"}
+                  strokeWidth={1.5}
+                  strokeDasharray="4 3"
+                  label={{
+                    value: `${cfg?.label ?? key} start`,
+                    position: "insideTopLeft",
+                    fontSize: 8,
+                    fill: cfg?.color ?? "#6b7280",
+                    fontFamily: "ui-monospace, monospace",
+                    dy: i * 11, // stagger vertically so overlapping labels don't collide
+                  }}
+                />
+              );
+            })}
           {visibleKeys.map((key) => {
             const cfg = ETF_CONFIG[key] ?? { color: "#059669", label: key };
             return (
