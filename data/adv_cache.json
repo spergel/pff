@@ -274,6 +274,11 @@
     "fetched_date": "2026-04-08",
     "yahoo_ticker": "OZK"
   },
+  "07336UAA1": {
+    "adv_30d": null,
+    "fetched_date": "2026-04-13",
+    "yahoo_ticker": null
+  },
   "084423706": {
     "adv_30d": 2186727,
     "fetched_date": "2026-04-08",
@@ -443,6 +448,11 @@
     "adv_30d": 5037367,
     "fetched_date": "2026-04-08",
     "yahoo_ticker": "CFG"
+  },
+  "19075QAE2": {
+    "adv_30d": null,
+    "fetched_date": "2026-04-13",
+    "yahoo_ticker": null
   },
   "21871X208": {
     "adv_30d": 68983,
