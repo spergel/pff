@@ -84,7 +84,7 @@ def fetch(date_str: str) -> list[dict]:
             continue  # skip cash, derivatives, totals rows
 
         rows.append({
-            "date": date_str.replace("", "-")[:10],  # normalised below
+            "date": f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:]}",
             "isin": isin,
             "cusip": extract(row, "cusip"),
             "ticker_raw": extract(row, "ticker_raw"),

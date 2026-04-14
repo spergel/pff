@@ -23,7 +23,7 @@ import json
 import os
 import sys
 import tempfile
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 from curl_cffi import requests as cffi_requests
 
@@ -132,13 +132,16 @@ def main(date_str: str | None = None) -> bool:
         print("PGX: No holdings returned.")
         return False
 
-    # Use the API's effectiveDate (T-1), ignoring any passed date_str
-    # (Invesco always returns the most recent available date)
-    file_date = api_date
+    # Invesco's effectiveDate is T-1 but the data reflects T's holdings.
+    # Advance by 1 calendar day so the filename matches the actual trading day.
+    file_date = (datetime.strptime(api_date, "%Y-%m-%d") + timedelta(days=1)).strftime("%Y-%m-%d")
     dest = os.path.join(HOLDINGS_DIR, f"{file_date}.csv")
     if os.path.exists(dest):
         print(f"PGX: Already have {dest}, skipping.")
         return True
+
+    for row in rows:
+        row["date"] = file_date
 
     path = save(rows, file_date)
     print(f"PGX: Saved {len(rows)} holdings for {file_date} -> {path}")
