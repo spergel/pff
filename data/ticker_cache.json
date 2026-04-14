@@ -495,10 +495,11 @@
     "figi": null,
     "figi_name": null,
     "figi_ticker": null,
+    "override": true,
     "parsed_from_name": true,
     "resolved": true,
     "securityType": null,
-    "ticker": "AEL PR B",
+    "ticker": "AEL-B",
     "ticker_raw": "AEL PR B"
   },
   "US0259328070": {
@@ -3207,10 +3208,11 @@
     "figi": null,
     "figi_name": null,
     "figi_ticker": null,
+    "override": true,
     "parsed_from_name": true,
     "resolved": true,
     "securityType": null,
-    "ticker": "NSA PR B",
+    "ticker": "NSA-B",
     "ticker_raw": "NSA PR B"
   },
   "US63938C4050": {
@@ -3641,10 +3643,11 @@
     "figi": null,
     "figi_name": null,
     "figi_ticker": null,
+    "override": true,
     "parsed_from_name": true,
     "resolved": true,
     "securityType": null,
-    "ticker": "PNFP PR A",
+    "ticker": "PNFP-A",
     "ticker_raw": "PNFP PR A"
   },
   "US72348N3070": {
@@ -3661,10 +3664,11 @@
     "figi": null,
     "figi_name": null,
     "figi_ticker": null,
+    "override": true,
     "parsed_from_name": true,
     "resolved": true,
     "securityType": null,
-    "ticker": "PNFP PR C",
+    "ticker": "PNFP-C",
     "ticker_raw": "PNFP PR C"
   },
   "US7244795065": {

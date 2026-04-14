@@ -9,11 +9,14 @@ import {
   loadOverlapSummary,
   computeConsensus,
   loadTickerSummary,
+  loadDescMap,
   SUPPORTED_ETFS,
 } from "@/src/lib/data";
 import type { ConsensusFrequencyRow } from "@/src/lib/data";
 import type { ConsensusRow, FlowRow, TickerAggregate } from "@/src/types/pff";
 import { FlowChart } from "@/src/components/FlowChart";
+import { FlowMosaic } from "@/src/components/FlowMosaic";
+import type { MosaicTile } from "@/src/components/FlowMosaic";
 import { EtfSummaryStrip } from "@/src/components/EtfSummaryStrip";
 import type { EtfStat } from "@/src/components/EtfSummaryStrip";
 import { DateNav } from "@/src/components/DateNav";
@@ -145,8 +148,9 @@ function RecurringConsensus({ rows }: { rows: ConsensusFrequencyRow[] }) {
 
 // ─── signals panel ─────────────────────────────────────────────────────────
 
-type SignalView = "sells_dollar" | "sells_vol" | "buys_monthly";
+type SignalView = "sells_dollar" | "sells_vol" | "buys_monthly" | "mosaic";
 type VolPeriod = "daily" | "weekly" | "monthly";
+type MosaicPeriod = "week" | "month";
 
 const VOL_PERIOD_DAYS: Record<VolPeriod, number> = { daily: 1, weekly: 5, monthly: 21 };
 
@@ -325,7 +329,7 @@ function BuysMonthlyTable({ rows }: { rows: MonthlyBuyRow[] }) {
 export default function DashboardPage({
   searchParams,
 }: {
-  searchParams: { date?: string; etf?: string; view?: string; period?: string };
+  searchParams: { date?: string; etf?: string; view?: string; period?: string; mosaic_period?: string };
 }) {
   const pffDates = listFlowDates("PFF");
   const selectedDate = searchParams.date ?? pffDates[0];
@@ -337,12 +341,16 @@ export default function DashboardPage({
   const view: SignalView =
     searchParams.view === "sells_vol" ? "sells_vol"
     : searchParams.view === "buys_monthly" ? "buys_monthly"
+    : searchParams.view === "mosaic" ? "mosaic"
     : "sells_dollar";
 
   const period: VolPeriod =
     searchParams.period === "weekly" ? "weekly"
     : searchParams.period === "monthly" ? "monthly"
     : "daily";
+
+  const mosaicPeriod: MosaicPeriod =
+    searchParams.mosaic_period === "week" ? "week" : "month";
 
   // Load flows for each ETF
   const allFlows: FlowRow[] = [];
@@ -421,10 +429,51 @@ export default function DashboardPage({
   monthlyBuyRows.sort((a, b) => b.windowBuyDollars - a.windowBuyDollars);
   const top15Buys = monthlyBuyRows.slice(0, 15);
 
-  // Tab href helper
+  // Mosaic: aggregate net flow per ticker over the selected window
+  const descMap = loadDescMap();
+  const mosaicWindowDays = mosaicPeriod === "week" ? 5 : 21;
+  const mosaicStart = new Date(Date.now() - mosaicWindowDays * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  const mosaicMap = new Map<string, MosaicTile>();
+  for (const etf of SUPPORTED_ETFS) {
+    const summary = loadTickerSummary(etf);
+    for (const t of Object.values(summary)) {
+      const window = t.history.filter((h) => h.date >= mosaicStart && h.flow_type !== "UNCHANGED" && h.flow_type !== "SUSPECT");
+      if (!window.length) continue;
+      const buys = window.filter((h) => h.flow_type === "BUY" || h.flow_type === "ADDED").reduce((s, h) => s + h.dollar_flow, 0);
+      const sells = window.filter((h) => h.flow_type === "SELL" || h.flow_type === "REMOVED").reduce((s, h) => s + Math.abs(h.dollar_flow), 0);
+      const net = buys - sells;
+      if (Math.abs(net) < 10_000) continue; // skip noise
+      const key = t.ticker || t.isin;
+      const existing = mosaicMap.get(key);
+      if (existing) {
+        existing.buys += buys;
+        existing.sells += sells;
+        existing.net += net;
+        existing.days += window.length;
+        if (!existing.etfs.includes(etf)) existing.etfs.push(etf);
+      } else {
+        mosaicMap.set(key, {
+          ticker: t.ticker,
+          desc: descMap.get(t.isin) ?? null,
+          name: t.name,
+          net,
+          buys,
+          sells,
+          days: window.length,
+          etfs: [etf],
+        });
+      }
+    }
+  }
+  const mosaicTiles = Array.from(mosaicMap.values()).sort((a, b) => Math.abs(b.net) - Math.abs(a.net));
+
+  // Tab href helpers
   function viewHref(v: string, p?: string) {
     const base = `/?${selectedDate ? `date=${selectedDate}&` : ""}view=${v}`;
     return p ? `${base}&period=${p}` : base;
+  }
+  function mosaicHref(mp: MosaicPeriod) {
+    return `/?${selectedDate ? `date=${selectedDate}&` : ""}view=mosaic&mosaic_period=${mp}`;
   }
 
   const TAB_ACTIVE = "border-b-2 border-blue-800 bg-white text-gray-900 font-bold";
@@ -535,6 +584,9 @@ export default function DashboardPage({
           <a href={viewHref("buys_monthly")} className={`px-4 py-2 font-mono text-xs capitalize ${view === "buys_monthly" ? TAB_ACTIVE : TAB_INACTIVE}`}>
             Most Bought (30d)
           </a>
+          <a href={mosaicHref(mosaicPeriod)} className={`px-4 py-2 font-mono text-xs capitalize ${view === "mosaic" ? TAB_ACTIVE : TAB_INACTIVE}`}>
+            Mosaic
+          </a>
 
           {/* Period picker — only for sells_vol */}
           {view === "sells_vol" && (
@@ -554,6 +606,25 @@ export default function DashboardPage({
               ))}
             </div>
           )}
+
+          {/* Period picker — only for mosaic */}
+          {view === "mosaic" && (
+            <div className="ml-auto flex items-center gap-1 py-1">
+              {(["week", "month"] as MosaicPeriod[]).map((mp) => (
+                <a
+                  key={mp}
+                  href={mosaicHref(mp)}
+                  className={`border px-2.5 py-1 font-mono text-[10px] ${
+                    mosaicPeriod === mp
+                      ? "border-gray-800 bg-gray-900 text-white font-bold"
+                      : "border-gray-500 text-gray-500 hover:border-gray-400 hover:text-gray-900"
+                  }`}
+                >
+                  {mp}
+                </a>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Tab content */}
@@ -561,6 +632,7 @@ export default function DashboardPage({
           {view === "sells_dollar" && <SellsDollarTable flows={allFlows} />}
           {view === "sells_vol" && <SellsVolTable flows={allFlows} period={period} />}
           {view === "buys_monthly" && <BuysMonthlyTable rows={top15Buys} />}
+          {view === "mosaic" && <FlowMosaic tiles={mosaicTiles} period={mosaicPeriod} />}
         </div>
       </div>
     </div>
