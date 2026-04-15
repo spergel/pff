@@ -204,6 +204,16 @@
     "fetched_date": "2026-04-08",
     "yahoo_ticker": "BIP"
   },
+  "05565ASK0": {
+    "adv_30d": null,
+    "fetched_date": "2026-04-15",
+    "yahoo_ticker": null
+  },
+  "05602XQS0": {
+    "adv_30d": null,
+    "fetched_date": "2026-04-15",
+    "yahoo_ticker": null
+  },
   "05990K841": {
     "adv_30d": 3195243,
     "fetched_date": "2026-04-08",
@@ -3089,6 +3099,11 @@
     "fetched_date": "2026-04-10",
     "yahoo_ticker": "UZE"
   },
+  "PFEP0597104": {
+    "adv_30d": 3828,
+    "fetched_date": "2026-04-15",
+    "yahoo_ticker": "ALTG-PA"
+  },
   "PFEP0597112": {
     "adv_30d": 10123,
     "fetched_date": "2026-04-10",
@@ -3223,6 +3238,11 @@
     "adv_30d": null,
     "fetched_date": "2026-04-10",
     "yahoo_ticker": null
+  },
+  "PFEP0599894": {
+    "adv_30d": 10850,
+    "fetched_date": "2026-04-15",
+    "yahoo_ticker": "NHPBP"
   },
   "PFEP0600098": {
     "adv_30d": null,
@@ -3865,8 +3885,8 @@
     "yahoo_ticker": "APO"
   },
   "US0389238504": {
-    "adv_30d": 16565,
-    "fetched_date": "2026-04-07",
+    "adv_30d": 17787,
+    "fetched_date": "2026-04-15",
     "yahoo_ticker": "ABR-PF"
   },
   "US0389238686": {
@@ -5390,8 +5410,8 @@
     "yahoo_ticker": null
   },
   "US7244795065": {
-    "adv_30d": 3047143,
-    "fetched_date": "2026-04-07",
+    "adv_30d": 2916613,
+    "fetched_date": "2026-04-15",
     "yahoo_ticker": "PBI"
   },
   "US73317H2067": {
