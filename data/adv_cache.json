@@ -591,7 +591,7 @@
   },
   "30040WBD9": {
     "adv_30d": null,
-    "fetched_date": "2026-04-09",
+    "fetched_date": "2026-04-17",
     "yahoo_ticker": null
   },
   "30190A203": {
@@ -895,9 +895,9 @@
     "yahoo_ticker": "FLG"
   },
   "65339K829": {
-    "adv_30d": 10308713,
-    "fetched_date": "2026-04-08",
-    "yahoo_ticker": "NEE"
+    "adv_30d": null,
+    "fetched_date": "2026-04-17",
+    "yahoo_ticker": null
   },
   "65339K837": {
     "adv_30d": 10308713,
@@ -1220,9 +1220,9 @@
     "yahoo_ticker": "TCBI"
   },
   "893526681": {
-    "adv_30d": 49780,
-    "fetched_date": "2026-04-08",
-    "yahoo_ticker": "TCPA"
+    "adv_30d": null,
+    "fetched_date": "2026-04-17",
+    "yahoo_ticker": null
   },
   "89832Q695": {
     "adv_30d": null,
@@ -2691,7 +2691,7 @@
   },
   "G05384162": {
     "adv_30d": null,
-    "fetched_date": "2026-04-08",
+    "fetched_date": "2026-04-17",
     "yahoo_ticker": null
   },
   "G05384204": {
