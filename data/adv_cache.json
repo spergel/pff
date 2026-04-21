@@ -385,8 +385,8 @@
     "yahoo_ticker": "BC"
   },
   "12542R506": {
-    "adv_30d": 28467,
-    "fetched_date": "2026-04-08",
+    "adv_30d": 24517,
+    "fetched_date": "2026-04-21",
     "yahoo_ticker": "CHSCN"
   },
   "12542R704": {
@@ -1113,6 +1113,11 @@
     "adv_30d": 72503,
     "fetched_date": "2026-04-20",
     "yahoo_ticker": "SCHW-PJ"
+  },
+  "808513CM5": {
+    "adv_30d": null,
+    "fetched_date": "2026-04-21",
+    "yahoo_ticker": null
   },
   "816300503": {
     "adv_30d": null,
@@ -5536,7 +5541,7 @@
   },
   "US7472623013": {
     "adv_30d": null,
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-04-21",
     "yahoo_ticker": null
   },
   "US7472624003": {
