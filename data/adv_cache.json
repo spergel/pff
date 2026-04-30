@@ -2984,6 +2984,11 @@
     "fetched_date": "2026-04-28",
     "yahoo_ticker": "ADAMN"
   },
+  "PFEP0537639": {
+    "adv_30d": 87617,
+    "fetched_date": "2026-04-30",
+    "yahoo_ticker": "IIPR-PA"
+  },
   "PFEP0539643": {
     "adv_30d": 7607,
     "fetched_date": "2026-04-28",
@@ -3385,8 +3390,8 @@
     "yahoo_ticker": "BANC-PF"
   },
   "PFEP0604637": {
-    "adv_30d": 33847,
-    "fetched_date": "2026-04-10",
+    "adv_30d": 33730,
+    "fetched_date": "2026-04-30",
     "yahoo_ticker": "ATLCZ"
   },
   "PFEP0604645": {
