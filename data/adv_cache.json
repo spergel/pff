@@ -2679,6 +2679,11 @@
     "fetched_date": "2026-05-02",
     "yahoo_ticker": "USD"
   },
+  "COYO8456254": {
+    "adv_30d": null,
+    "fetched_date": "2026-05-05",
+    "yahoo_ticker": null
+  },
   "CUSIP": {
     "adv_30d": null,
     "fetched_date": "2026-04-08",
@@ -3149,6 +3154,11 @@
     "fetched_date": "2026-04-28",
     "yahoo_ticker": "BHFAO"
   },
+  "PFEP0589762": {
+    "adv_30d": 910,
+    "fetched_date": "2026-05-05",
+    "yahoo_ticker": "OPIRQ"
+  },
   "PFEP0591420": {
     "adv_30d": 5127,
     "fetched_date": "2026-04-28",
@@ -3310,8 +3320,8 @@
     "yahoo_ticker": "WAL-PA"
   },
   "PFEP0599894": {
-    "adv_30d": 10850,
-    "fetched_date": "2026-04-15",
+    "adv_30d": 13833,
+    "fetched_date": "2026-05-05",
     "yahoo_ticker": "NHPBP"
   },
   "PFEP0600098": {
@@ -3410,8 +3420,8 @@
     "yahoo_ticker": "ATLCZ"
   },
   "PFEP0604645": {
-    "adv_30d": 17010,
-    "fetched_date": "2026-04-24",
+    "adv_30d": 49093,
+    "fetched_date": "2026-05-05",
     "yahoo_ticker": "BTSGU"
   },
   "PFEP0604942": {
@@ -3770,8 +3780,8 @@
     "yahoo_ticker": null
   },
   "PFEP0610790": {
-    "adv_30d": 25318,
-    "fetched_date": "2026-04-24",
+    "adv_30d": 18825,
+    "fetched_date": "2026-05-05",
     "yahoo_ticker": "CFTR-PA"
   },
   "Printer Friendly Page": {
