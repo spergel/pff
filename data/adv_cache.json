@@ -864,6 +864,11 @@
     "fetched_date": "2026-05-06",
     "yahoo_ticker": "MET-PE"
   },
+  "59156RCQ9": {
+    "adv_30d": null,
+    "fetched_date": "2026-05-08",
+    "yahoo_ticker": null
+  },
   "61761J406": {
     "adv_30d": 65097,
     "fetched_date": "2026-05-06",
@@ -3005,8 +3010,8 @@
     "yahoo_ticker": "ADAMN"
   },
   "PFEP0537639": {
-    "adv_30d": 87617,
-    "fetched_date": "2026-04-30",
+    "adv_30d": 123016,
+    "fetched_date": "2026-05-08",
     "yahoo_ticker": "IIPR-PA"
   },
   "PFEP0539643": {
@@ -3415,8 +3420,8 @@
     "yahoo_ticker": "BANC-PF"
   },
   "PFEP0604637": {
-    "adv_30d": 33730,
-    "fetched_date": "2026-04-30",
+    "adv_30d": 26910,
+    "fetched_date": "2026-05-08",
     "yahoo_ticker": "ATLCZ"
   },
   "PFEP0604645": {
