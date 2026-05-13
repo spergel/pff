@@ -191,7 +191,7 @@
   },
   "04686J838": {
     "adv_30d": null,
-    "fetched_date": "2026-05-02",
+    "fetched_date": "2026-05-13",
     "yahoo_ticker": null
   },
   "04686J861": {
@@ -470,8 +470,8 @@
     "yahoo_ticker": "CG"
   },
   "172967242": {
-    "adv_30d": 323,
-    "fetched_date": "2026-05-02",
+    "adv_30d": 2107,
+    "fetched_date": "2026-05-13",
     "yahoo_ticker": "CPII"
   },
   "174610402": {
@@ -495,8 +495,8 @@
     "yahoo_ticker": null
   },
   "21871X208": {
-    "adv_30d": 5904710,
-    "fetched_date": "2026-05-02",
+    "adv_30d": 7056393,
+    "fetched_date": "2026-05-13",
     "yahoo_ticker": "CRBG"
   },
   "229899307": {
@@ -620,8 +620,8 @@
     "yahoo_ticker": "FG"
   },
   "30190A609": {
-    "adv_30d": 596330,
-    "fetched_date": "2026-05-02",
+    "adv_30d": 578280,
+    "fetched_date": "2026-05-13",
     "yahoo_ticker": "FG"
   },
   "313745200": {
@@ -969,6 +969,11 @@
     "fetched_date": "2026-05-06",
     "yahoo_ticker": null
   },
+  "693475BF1": {
+    "adv_30d": null,
+    "fetched_date": "2026-05-13",
+    "yahoo_ticker": null
+  },
   "694308206": {
     "adv_30d": 5386,
     "fetched_date": "2026-05-06",
@@ -1166,7 +1171,7 @@
   },
   "825252885": {
     "adv_30d": null,
-    "fetched_date": "2026-05-02",
+    "fetched_date": "2026-05-13",
     "yahoo_ticker": null
   },
   "842587404": {
@@ -3435,8 +3440,8 @@
     "yahoo_ticker": "ATLCZ"
   },
   "PFEP0604645": {
-    "adv_30d": 49093,
-    "fetched_date": "2026-05-05",
+    "adv_30d": 48350,
+    "fetched_date": "2026-05-13",
     "yahoo_ticker": "BTSGU"
   },
   "PFEP0604942": {
@@ -3795,8 +3800,8 @@
     "yahoo_ticker": null
   },
   "PFEP0610790": {
-    "adv_30d": 18825,
-    "fetched_date": "2026-05-05",
+    "adv_30d": 15989,
+    "fetched_date": "2026-05-13",
     "yahoo_ticker": "CFTR-PA"
   },
   "PFEP0610931": {
