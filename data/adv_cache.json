@@ -551,7 +551,7 @@
   },
   "2612674": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "263534307": {
@@ -718,6 +718,11 @@
     "adv_30d": 511493,
     "fetched_date": "2026-05-14",
     "yahoo_ticker": "GL"
+  },
+  "404280DT3": {
+    "adv_30d": 1731250,
+    "fetched_date": "2026-05-15",
+    "yahoo_ticker": "HSBC"
   },
   "410120406": {
     "adv_30d": 821553,
@@ -1436,22 +1441,22 @@
   },
   "B06H0T3": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "B07GC93": {
-    "adv_30d": 80431,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 70485,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "GS-PA"
   },
   "B0B87W3": {
-    "adv_30d": 129143,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 74268,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MET-PA"
   },
   "B0N0V47": {
-    "adv_30d": 28783,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 23871,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "GS-PC"
   },
   "B0PR2S7": {
@@ -1461,87 +1466,87 @@
   },
   "B125QN4": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "B15CKS5": {
-    "adv_30d": 173551,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 155918,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "GS-PD"
   },
   "B1802M4": {
-    "adv_30d": 5834537,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 5535853,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MS"
   },
   "B1GH4Y3": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "B1VN1F6": {
-    "adv_30d": 33472700,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 32618910,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BAC"
   },
   "B2PB3Z7": {
-    "adv_30d": 9730,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 8047,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BAC-PL"
   },
   "B3KRSW9": {
-    "adv_30d": 10468,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 5320,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "WFC-PL"
   },
   "B3Z1BZ0": {
-    "adv_30d": 12465283,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 11600197,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "C"
   },
   "B617Z40": {
-    "adv_30d": 1337,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 1175,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "USB-PA"
   },
   "B87XV26": {
-    "adv_30d": 1332940,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 1417373,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ALL"
   },
   "B8K7RN8": {
-    "adv_30d": 21956,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 23255,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "VNO-PL"
   },
   "B93SGN8": {
-    "adv_30d": 2815707,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2642823,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "EIX"
   },
   "B9CDPW6": {
-    "adv_30d": 3402317,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 3703003,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PBI"
   },
   "BD0RST6": {
-    "adv_30d": 24780,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 15194,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "KIM-PM"
   },
   "BD0S963": {
-    "adv_30d": 3448593,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 3505637,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ETR"
   },
   "BD0YJ83": {
-    "adv_30d": 18803,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 10579,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DLR-PJ"
   },
   "BD2Z8N2": {
-    "adv_30d": 42299,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 34725,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "AXS-PE"
   },
   "BD2ZSL0": {
@@ -1550,343 +1555,343 @@
     "yahoo_ticker": null
   },
   "BD5NDN8": {
-    "adv_30d": 3448593,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 3505637,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ETR"
   },
   "BD915N2": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BDC3P68": {
-    "adv_30d": 2815707,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2642823,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "EIX"
   },
   "BDRW5R1": {
-    "adv_30d": 969487,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 989320,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "NAVI"
   },
   "BDT6C58": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BF0WD23": {
-    "adv_30d": 4801607,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 4745230,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SO"
   },
   "BF2N465": {
-    "adv_30d": 36366,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 24397,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RLJ-PA"
   },
   "BF2PL60": {
-    "adv_30d": 33472700,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 32618910,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BAC"
   },
   "BF3L703": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BF4YJ94": {
-    "adv_30d": 67083,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 51703,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MS-PE"
   },
   "BF545Q2": {
-    "adv_30d": 36484280,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 36000787,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "T"
   },
   "BF5J7D8": {
-    "adv_30d": 19575,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 15241,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "HIG-PG"
   },
   "BF5JWJ9": {
-    "adv_30d": 524680,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 516757,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BHF"
   },
   "BF7PKX5": {
-    "adv_30d": 27700,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 20743,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSA-PG"
   },
   "BF956G8": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BFMZ665": {
-    "adv_30d": 13800,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 11901,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RNR-PF"
   },
   "BFNR2X9": {
-    "adv_30d": 3312963,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 3058143,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DUK"
   },
   "BFXBC20": {
-    "adv_30d": 2908187,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2811217,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CMS"
   },
   "BFY34D0": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BFYF0S3": {
-    "adv_30d": 1307510,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 1273717,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "UNM"
   },
   "BFYWGC0": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BFZNM46": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BG43LW5": {
-    "adv_30d": 58052,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 56998,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MET-PE"
   },
   "BG844G9": {
-    "adv_30d": 2313203,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2290313,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PRU"
   },
   "BGMHQB3": {
-    "adv_30d": 18789,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 15578,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSA-PH"
   },
   "BGMJPW3": {
-    "adv_30d": 96964,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 78801,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "COF-PI"
   },
   "BH3JGK4": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BH58353": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BH5QGM5": {
-    "adv_30d": 91604,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 94706,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MS-PF"
   },
   "BJ029D4": {
-    "adv_30d": 39684177,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 51632157,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "F"
   },
   "BJ0M332": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BJ2KBT6": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BJBK4B0": {
-    "adv_30d": 2102570,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 1946183,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "WRB"
   },
   "BJBL059": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BJGS497": {
-    "adv_30d": 20183,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 15246,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "VOYA-PB"
   },
   "BJHDLJ0": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BJHJQ37": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BJJP666": {
-    "adv_30d": 2908187,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2811217,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CMS"
   },
   "BJMXZX7": {
-    "adv_30d": 39325,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 32721,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RF-PC"
   },
   "BJN6RX9": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BJP1KW2": {
-    "adv_30d": 39684177,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 51632157,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "F"
   },
   "BJR2164": {
-    "adv_30d": 22112,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 18434,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DLR-PK"
   },
   "BJVB6B7": {
-    "adv_30d": 124220,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 129907,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "WFC-PZ"
   },
   "BJVJZF8": {
-    "adv_30d": 346190,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 340823,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "AMG"
   },
   "BJXH6L3": {
-    "adv_30d": 76012,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 55668,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DUK-PA"
   },
   "BK229B7": {
-    "adv_30d": 28946,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 23980,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CFG-PE"
   },
   "BK26FC2": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BK57WX2": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BK598B8": {
-    "adv_30d": 28320,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 12230,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSA-PI"
   },
   "BK59DD5": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BK6JGG8": {
-    "adv_30d": 23608,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 21371,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MS-PL"
   },
   "BK727P2": {
-    "adv_30d": 23909,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 18738,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ALL-PI"
   },
   "BK72JQ7": {
-    "adv_30d": 12118,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 9767,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSA-PJ"
   },
   "BK77YC3": {
-    "adv_30d": 66382,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 58700,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SYF-PA"
   },
   "BK8LV34": {
-    "adv_30d": 3230440,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 3362340,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SRE"
   },
   "BK9PWX2": {
-    "adv_30d": 92076,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 65528,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "COF-PJ"
   },
   "BKDJPD1": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BKDKS91": {
-    "adv_30d": 80636,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 62567,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ALL-PH"
   },
   "BKFVZR9": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BKKBGL5": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BKLXG10": {
-    "adv_30d": 24464,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 18290,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DLR-PL"
   },
   "BKM3QB9": {
-    "adv_30d": 4801607,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 4745230,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SO"
   },
   "BKMF2F1": {
-    "adv_30d": 16837,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 14569,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TFC-PI"
   },
   "BKPK060": {
-    "adv_30d": 95037,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 72905,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "T-PA"
   },
   "BKPLQ32": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BKRMRC9": {
-    "adv_30d": 78639,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 50056,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "EQH-PA"
   },
   "BKSD8W8": {
-    "adv_30d": 17417,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 11462,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSA-PK"
   },
   "BKSDN56": {
-    "adv_30d": 27909,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 21956,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RNR-PG"
   },
   "BKVHZH1": {
@@ -1896,52 +1901,52 @@
   },
   "BKVJXF1": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BKWG6L8": {
-    "adv_30d": 28316,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 18564,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ATH-PB"
   },
   "BL3BQ19": {
-    "adv_30d": 98348,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 71058,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MET-PF"
   },
   "BL5C513": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BLB2465": {
-    "adv_30d": 2313203,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2290313,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PRU"
   },
   "BLD4B13": {
-    "adv_30d": 74382,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 63549,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TFC-PR"
   },
   "BLD4BS0": {
-    "adv_30d": 380103,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 418593,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "AIZ"
   },
   "BLFB156": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BLFF1H0": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BLFGL51": {
-    "adv_30d": 45909,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 33079,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSA-PL"
   },
   "BLFKCL6": {
@@ -1950,13 +1955,13 @@
     "yahoo_ticker": "PSA-PN"
   },
   "BLHLTL6": {
-    "adv_30d": 73703,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 65543,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FCNCA"
   },
   "BLL1ZY7": {
-    "adv_30d": 170567,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 99822,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "T-PC"
   },
   "BLNB396": {
@@ -1966,62 +1971,62 @@
   },
   "BM8TGF9": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BM91SN6": {
-    "adv_30d": 71891,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 59120,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSA-PP"
   },
   "BM9JJ93": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMC7GV5": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMC8G63": {
-    "adv_30d": 41546,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 35762,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ATH-PD"
   },
   "BMDKP83": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMDX0S7": {
-    "adv_30d": 16012,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 9131,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SF-PC"
   },
   "BMF1DS0": {
-    "adv_30d": 76330,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 50214,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "EQH-PC"
   },
   "BMF4W82": {
-    "adv_30d": 79574,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 77985,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MS-PO"
   },
   "BMFDGD2": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMFV904": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMFYGG8": {
-    "adv_30d": 41944,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 33317,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TFC-PO"
   },
   "BMG053841620": {
@@ -2110,13 +2115,13 @@
     "yahoo_ticker": null
   },
   "BMG9SY4": {
-    "adv_30d": 314447,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 349167,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RGA"
   },
   "BMGS0L2": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMH2T16": {
@@ -2126,87 +2131,87 @@
   },
   "BMH40V9": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMH4QB1": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMHJZD1": {
-    "adv_30d": 25549,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 18560,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "COF-PN"
   },
   "BMHV4X0": {
-    "adv_30d": 3128270,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 3338520,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CG"
   },
   "BMHV5V5": {
-    "adv_30d": 25662,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 16821,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "VNO-PO"
   },
   "BMHXRD7": {
-    "adv_30d": 2401287,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2476643,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SOPA"
   },
   "BMJ0KL5": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMQ85K6": {
-    "adv_30d": 30260,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 22877,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSA-PR"
   },
   "BMVN6G9": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMVXBP3": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMW32F9": {
-    "adv_30d": 73814,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 61278,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SCHW-PJ"
   },
   "BMW6VL7": {
-    "adv_30d": 572620,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 580830,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "JXN"
   },
   "BMW9C79": {
-    "adv_30d": 16766,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 16193,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSA-PO"
   },
   "BMWDYS6": {
-    "adv_30d": 53461,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 41628,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BANC-PF"
   },
   "BMX3XP5": {
-    "adv_30d": 2172063,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2048453,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ASB"
   },
   "BMX47S9": {
-    "adv_30d": 40378,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 30387,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "COF-PL"
   },
   "BMX8DR2": {
-    "adv_30d": 28244,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 14374,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSA-PS"
   },
   "BMXB7Y6": {
@@ -2216,152 +2221,152 @@
   },
   "BMY4XS0": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMYVT83": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BMZLX57": {
-    "adv_30d": 575247,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 624470,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FG"
   },
   "BN0TD19": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BN2D5N5": {
-    "adv_30d": 5262850,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 4910100,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "KKR"
   },
   "BN460B5": {
-    "adv_30d": 4801607,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 4745230,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SO"
   },
   "BN4Q1G7": {
-    "adv_30d": 46288,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 43563,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BAC-PP"
   },
   "BN72V73": {
-    "adv_30d": 303365,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 207741,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "KKR-PD"
   },
   "BN75VC7": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BN7SQB0": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BNBXR41": {
-    "adv_30d": 44685,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 33865,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ALL-PJ"
   },
   "BND7XB0": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BNDSDV3": {
-    "adv_30d": 848300,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 683327,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "NMFC"
   },
   "BNHQ5L7": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BNKBJW8": {
-    "adv_30d": 2102570,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 1946183,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "WRB"
   },
   "BNKG9F6": {
-    "adv_30d": 575247,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 624470,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FG"
   },
   "BNM9HL5": {
-    "adv_30d": 10037590,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 10147743,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RF"
   },
   "BNQNFS6": {
-    "adv_30d": 1281350,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 1401387,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DTE"
   },
   "BNRLZ01": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BNSNM38": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BNTYXM6": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BNYBNX3": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BP09108": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BP2C5M5": {
-    "adv_30d": 29568,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 24227,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RF-PE"
   },
   "BP38124": {
-    "adv_30d": 23188,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 14032,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SF-PD"
   },
   "BP398R1": {
-    "adv_30d": 52768,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 49846,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "LNC-PD"
   },
   "BP91X65": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BPBP9W3": {
-    "adv_30d": 8651403,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 8261827,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "NEE"
   },
   "BPBPCX5": {
-    "adv_30d": 396627,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 422590,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BOH"
   },
   "BPCR4M3": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BPCTR42": {
@@ -2370,8 +2375,8 @@
     "yahoo_ticker": "ALB"
   },
   "BPDXXZ6": {
-    "adv_30d": 60384,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 54741,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MS-PQ"
   },
   "BPDYYD4": {
@@ -2380,68 +2385,68 @@
     "yahoo_ticker": "BTSG"
   },
   "BPGN2R8": {
-    "adv_30d": 5482,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 5533,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PCG-PA"
   },
   "BPJK038": {
-    "adv_30d": 39684177,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 51632157,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "F"
   },
   "BPLKV33": {
-    "adv_30d": 66701,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 66953,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ATH-PE"
   },
   "BPLPQT9": {
-    "adv_30d": 12890967,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 12088070,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "KEY"
   },
   "BPSKDY1": {
-    "adv_30d": 48108,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 30526,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ATH-PA"
   },
   "BQ0QJ57": {
-    "adv_30d": 175520,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 168983,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MBIN"
   },
   "BQ7WWQ0": {
-    "adv_30d": 62097,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 69997,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ATLC"
   },
   "BQB5JR5": {
-    "adv_30d": 2313203,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2290313,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PRU"
   },
   "BQC5ZW1": {
-    "adv_30d": 4317340,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 4164767,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "APO"
   },
   "BQGD2H5": {
-    "adv_30d": 23122,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 18936,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CFG-PH"
   },
   "BQH5ZL5": {
-    "adv_30d": 70005,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 62520,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MS-PP"
   },
   "BQMS207": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BQT2G00": {
-    "adv_30d": 65293,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 49033,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MS-PI"
   },
   "BR115D8": {
@@ -2450,128 +2455,128 @@
     "yahoo_ticker": "B"
   },
   "BR4TW49": {
-    "adv_30d": 305937,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 299352,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ARES-PB"
   },
   "BRBLC59": {
-    "adv_30d": 6129637,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 6519670,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BA"
   },
   "BRBLDX4": {
-    "adv_30d": 8651403,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 8261827,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "NEE"
   },
   "BRBVKF5": {
-    "adv_30d": 16262367,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 15022407,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "HPE"
   },
   "BRC7MJ0": {
-    "adv_30d": 2953380,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2875443,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TPG"
   },
   "BRT81P5": {
-    "adv_30d": 27053,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 21802,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CFG-PI"
   },
   "BRWK9M1": {
-    "adv_30d": 175520,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 168983,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MBIN"
   },
   "BS0CHC2": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BS55Z77": {
-    "adv_30d": 46192,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 38278,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MTB-PJ"
   },
   "BS9FVR5": {
-    "adv_30d": 7012137,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 7124937,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CRBG"
   },
   "BSKRGV9": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BSLKYN5": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BSLL7L7": {
-    "adv_30d": 346190,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 340823,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "AMG"
   },
   "BSNWT01": {
-    "adv_30d": 51522,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 42898,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SYF-PB"
   },
   "BSQL9V6": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BT6C950": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BTCDKX2": {
-    "adv_30d": 18482450,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 17920610,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MSTR"
   },
   "BTJTLY1": {
-    "adv_30d": 32393,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 26299,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BK-PK"
   },
   "BTNML68": {
-    "adv_30d": 691157,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 705907,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "UMBF"
   },
   "BTTRKK4": {
-    "adv_30d": 9525000,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 10609553,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MCHP"
   },
   "BTVJJB2": {
-    "adv_30d": 1813920,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 1704943,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FOUR"
   },
   "BTWWZS9": {
-    "adv_30d": 352917,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 430443,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "NOVT"
   },
   "BTZQRD7": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BV2JPV7": {
-    "adv_30d": 4474617,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 4885670,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "XEL"
   },
   "BV6GRK7": {
-    "adv_30d": 21215,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 9457,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PNFP-PA"
   },
   "BV6KW37": {
@@ -2580,18 +2585,18 @@
     "yahoo_ticker": null
   },
   "BVD8W90": {
-    "adv_30d": 6210713,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 5881517,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TMUS"
   },
   "BVD8WB2": {
-    "adv_30d": 6210713,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 5881517,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TMUS"
   },
   "BVD8WD4": {
-    "adv_30d": 6210713,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 5881517,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TMUS"
   },
   "BVDCXR7": {
@@ -2600,53 +2605,53 @@
     "yahoo_ticker": "B"
   },
   "BVJ4YD0": {
-    "adv_30d": 14043250,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 15742217,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "QXO"
   },
   "BVK4BN8": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BVK6BQ7": {
-    "adv_30d": 48795,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 32116,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MTB-PK"
   },
   "BVMNH35": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BVZG8H2": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BVZM740": {
-    "adv_30d": 1925700,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2141587,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BRKR"
   },
   "BW9KZK9": {
-    "adv_30d": 6880473,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 6001153,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FITB"
   },
   "BYPFT55": {
-    "adv_30d": 63672,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 54801,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SCHW-PD"
   },
   "BYPK477": {
-    "adv_30d": 43621,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 36061,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "STT-PG"
   },
   "BYQHXS1": {
-    "adv_30d": 40672,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 31697,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "WFC-PY"
   },
   "BYVLYP2": {
@@ -2656,27 +2661,27 @@
   },
   "BYVQZ09": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BYWLBZ0": {
     "adv_30d": null,
-    "fetched_date": "2026-05-07",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "BYWSYZ2": {
-    "adv_30d": 2908187,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 2811217,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CMS"
   },
   "BYYYY81": {
-    "adv_30d": 55158,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 43285,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MS-PK"
   },
   "BYZ2PF8": {
-    "adv_30d": 22248,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 16051,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSA-PF"
   },
   "BZ4C835": {
@@ -2685,13 +2690,13 @@
     "yahoo_ticker": null
   },
   "BZ60HT6": {
-    "adv_30d": 4801607,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 4745230,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SO"
   },
   "BZC0L09": {
-    "adv_30d": 3448593,
-    "fetched_date": "2026-05-07",
+    "adv_30d": 3505637,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ETR"
   },
   "CA67000B2030": {
@@ -2760,13 +2765,13 @@
     "yahoo_ticker": "TRTN-PG"
   },
   "EQ0000000002458219": {
-    "adv_30d": 1390640,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 1161660,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "GTLS"
   },
   "EQ0031011600060001": {
-    "adv_30d": 3992613,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 3726040,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "AQN"
   },
   "G05384162": {
@@ -2850,8 +2855,8 @@
     "yahoo_ticker": null
   },
   "PFEP0066209": {
-    "adv_30d": 27109,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 19961,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FLG-PU"
   },
   "PFEP0101675": {
@@ -2860,58 +2865,58 @@
     "yahoo_ticker": "JSM"
   },
   "PFEP0139618": {
-    "adv_30d": 1941,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 2046,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "LXP-PC"
   },
   "PFEP0158782": {
-    "adv_30d": 2987,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 2707,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SLMBP"
   },
   "PFEP0315424": {
-    "adv_30d": 2108,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 3108,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "EPR-PE"
   },
   "PFEP0423004": {
-    "adv_30d": 16630,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 11823,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DHCNI"
   },
   "PFEP0423905": {
-    "adv_30d": 2625,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 2171,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MITT-PA"
   },
   "PFEP0425074": {
-    "adv_30d": 25284,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 23491,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SLG-PI"
   },
   "PFEP0427799": {
-    "adv_30d": 6419,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5288,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MITT-PB"
   },
   "PFEP0436741": {
-    "adv_30d": 21747,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 23255,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "VNO-PL"
   },
   "PFEP0438903": {
-    "adv_30d": 25043,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 19397,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PBI-PB"
   },
   "PFEP0441154": {
-    "adv_30d": 10828,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 9657,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MFA-PB"
   },
   "PFEP0462051": {
-    "adv_30d": 7934,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 6056,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ACR-PC"
   },
   "PFEP0489187": {
@@ -2921,82 +2926,82 @@
   },
   "PFEP0501536": {
     "adv_30d": null,
-    "fetched_date": "2026-05-06",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "PFEP0506840": {
-    "adv_30d": 8152,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 7195,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BHR-PB"
   },
   "PFEP0513507": {
-    "adv_30d": 119323,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 115133,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CTBB"
   },
   "PFEP0516765": {
-    "adv_30d": 9453,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 8516,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CIM-PA"
   },
   "PFEP0522300": {
-    "adv_30d": 16370,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 15599,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DBRG-PH"
   },
   "PFEP0523977": {
-    "adv_30d": 37335,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 29181,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CIM-PB"
   },
   "PFEP0524637": {
-    "adv_30d": 5548,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 6270,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PMT-PA"
   },
   "PFEP0524728": {
-    "adv_30d": 39179,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 28825,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TWO-PA"
   },
   "PFEP0524934": {
-    "adv_30d": 135775,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 49408,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FLG-PA"
   },
   "PFEP0527051": {
-    "adv_30d": 96157,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 89897,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CTDD"
   },
   "PFEP0528133": {
-    "adv_30d": 6472,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 6098,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "GLOP-PA"
   },
   "PFEP0529198": {
-    "adv_30d": 31629,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 30102,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DBRG-PI"
   },
   "PFEP0530568": {
-    "adv_30d": 18421,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 11974,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SCE-PL"
   },
   "PFEP0530626": {
-    "adv_30d": 8414,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 6876,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CODI-PA"
   },
   "PFEP0531053": {
-    "adv_30d": 13156,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 12817,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PMT-PB"
   },
   "PFEP0531699": {
-    "adv_30d": 33006,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 20760,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TWO-PB"
   },
   "PFEP0532747": {
@@ -3005,8 +3010,8 @@
     "yahoo_ticker": "VLYPO"
   },
   "PFEP0533315": {
-    "adv_30d": 19367,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 19487,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "IVR-PC"
   },
   "PFEP0534511": {
@@ -3020,13 +3025,13 @@
     "yahoo_ticker": "GNL-PA"
   },
   "PFEP0535534": {
-    "adv_30d": 36880,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 37508,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DBRG-PJ"
   },
   "PFEP0537365": {
-    "adv_30d": 14283,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 13750,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ADAMN"
   },
   "PFEP0537639": {
@@ -3035,73 +3040,73 @@
     "yahoo_ticker": "IIPR-PA"
   },
   "PFEP0539643": {
-    "adv_30d": 7326,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 6792,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "INN-PE"
   },
   "PFEP0540906": {
-    "adv_30d": 64063,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 48452,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TWO-PC"
   },
   "PFEP0541888": {
-    "adv_30d": 10070,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 10073,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "EPR-PG"
   },
   "PFEP0542720": {
-    "adv_30d": 26319,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 22031,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "VNO-PM"
   },
   "PFEP0549212": {
-    "adv_30d": 20558,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 15307,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CODI-PB"
   },
   "PFEP0552968": {
-    "adv_30d": 10770,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 8930,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "OAK-PA"
   },
   "PFEP0558197": {
-    "adv_30d": 9532,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 7319,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "OAK-PB"
   },
   "PFEP0559674": {
-    "adv_30d": 20207,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 17327,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BHFAL"
   },
   "PFEP0560425": {
-    "adv_30d": 41872,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 26763,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CIM-PC"
   },
   "PFEP0564401": {
-    "adv_30d": 4922,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 4678,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BHR-PD"
   },
   "PFEP0565333": {
-    "adv_30d": 10008,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 13575,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PEB-PF"
   },
   "PFEP0565390": {
-    "adv_30d": 15851,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 11217,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PEB-PE"
   },
   "PFEP0566463": {
-    "adv_30d": 19966,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 12536,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CIM-PD"
   },
   "PFEP0569459": {
-    "adv_30d": 33330,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 28213,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BHFAP"
   },
   "PFEP0574905": {
@@ -3110,8 +3115,8 @@
     "yahoo_ticker": "RCB"
   },
   "PFEP0575472": {
-    "adv_30d": 27027,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 14602,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "AHL-PE"
   },
   "PFEP0576793": {
@@ -3120,8 +3125,8 @@
     "yahoo_ticker": "BFS-PE"
   },
   "PFEP0577072": {
-    "adv_30d": 7910,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 6753,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MITT-PC"
   },
   "PFEP0579284": {
@@ -3130,18 +3135,18 @@
     "yahoo_ticker": "ADAMM"
   },
   "PFEP0580365": {
-    "adv_30d": 8077,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 7796,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TRTN-PC"
   },
   "PFEP0580845": {
-    "adv_30d": 60414,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 58700,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SYF-PA"
   },
   "PFEP0581280": {
-    "adv_30d": 34614,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 34317,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CODI-PC"
   },
   "PFEP0582072": {
@@ -3151,32 +3156,32 @@
   },
   "PFEP0583278": {
     "adv_30d": null,
-    "fetched_date": "2026-05-06",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "PFEP0585000": {
-    "adv_30d": 4854,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 4810,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TRTN-PD"
   },
   "PFEP0585158": {
-    "adv_30d": 17038,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 17756,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ARR-PC"
   },
   "PFEP0585836": {
-    "adv_30d": 41851,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 35752,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RITM-PC"
   },
   "PFEP0586586": {
-    "adv_30d": 22433,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 17352,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MFA-PC"
   },
   "PFEP0588665": {
-    "adv_30d": 44347,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 35343,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BHFAO"
   },
   "PFEP0589762": {
@@ -3185,23 +3190,23 @@
     "yahoo_ticker": "OPIRQ"
   },
   "PFEP0591420": {
-    "adv_30d": 4727,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 6007,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "UZD"
   },
   "PFEP0596403": {
-    "adv_30d": 49290,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 43737,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BHFAN"
   },
   "PFEP0596916": {
-    "adv_30d": 27837,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 23809,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "VNO-PN"
   },
   "PFEP0596940": {
-    "adv_30d": 4527,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 4587,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "UZE"
   },
   "PFEP0597104": {
@@ -3210,58 +3215,58 @@
     "yahoo_ticker": "ALTG-PA"
   },
   "PFEP0597112": {
-    "adv_30d": 19400,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 19877,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "LBRDP"
   },
   "PFEP0597427": {
-    "adv_30d": 277350,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 320180,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DCOM"
   },
   "PFEP0597617": {
-    "adv_30d": 29420,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 19645,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TDS-PU"
   },
   "PFEP0597765": {
-    "adv_30d": 8283,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 7270,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MBINN"
   },
   "PFEP0597963": {
-    "adv_30d": 27780,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 18880,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "KKRS"
   },
   "PFEP0598359": {
-    "adv_30d": 22057,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 25133,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BW-PA"
   },
   "PFEP0598391": {
-    "adv_30d": 11434,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 30548,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PEB-PG"
   },
   "PFEP0598409": {
-    "adv_30d": 5347,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 4927,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "UZF"
   },
   "PFEP0598425": {
-    "adv_30d": 11121,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 11174,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SHO-PH"
   },
   "PFEP0598458": {
-    "adv_30d": 5371,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 4032,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ACR-PD"
   },
   "PFEP0598623": {
-    "adv_30d": 18562,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 24965,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ABR-PD"
   },
   "PFEP0598672": {
@@ -3270,78 +3275,78 @@
     "yahoo_ticker": "RC-PE"
   },
   "PFEP0598730": {
-    "adv_30d": 12168,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 9404,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TRTX-PC"
   },
   "PFEP0598789": {
-    "adv_30d": 6863,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 4827,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ATLCP"
   },
   "PFEP0598953": {
-    "adv_30d": 2068,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 3051,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CTO-PA"
   },
   "PFEP0599118": {
-    "adv_30d": 7903,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 6455,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PSEC-PA"
   },
   "PFEP0599134": {
-    "adv_30d": 35291,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 24832,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SHO-PI"
   },
   "PFEP0599324": {
-    "adv_30d": 15933,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 22292,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PEB-PH"
   },
   "PFEP0599431": {
-    "adv_30d": 8418,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 7830,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ABR-PE"
   },
   "PFEP0599456": {
-    "adv_30d": 3703,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5344,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "INN-PF"
   },
   "PFEP0599472": {
-    "adv_30d": 52276,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 33059,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TDS-PV"
   },
   "PFEP0599480": {
-    "adv_30d": 1433,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 1843,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "OXLCO"
   },
   "PFEP0599514": {
-    "adv_30d": 7187,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5430,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TRTN-PE"
   },
   "PFEP0599613": {
-    "adv_30d": 27101,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 31439,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PMT-PC"
   },
   "PFEP0599753": {
-    "adv_30d": 24018,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 16821,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "VNO-PO"
   },
   "PFEP0599761": {
-    "adv_30d": 53552,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 41756,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RITM-PD"
   },
   "PFEP0599779": {
-    "adv_30d": 14428,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 14746,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "WAL-PA"
   },
   "PFEP0599894": {
@@ -3350,73 +3355,73 @@
     "yahoo_ticker": "NHPBP"
   },
   "PFEP0600098": {
-    "adv_30d": 23560,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 20668,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FBRT-PE"
   },
   "PFEP0600247": {
-    "adv_30d": 11467,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 7644,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "HPP-PC"
   },
   "PFEP0600270": {
-    "adv_30d": 2487,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 2667,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "EFSCP"
   },
   "PFEP0600288": {
-    "adv_30d": 37680,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 31153,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BHFAM"
   },
   "PFEP0600593": {
-    "adv_30d": 7366,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5600,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "EFC-PB"
   },
   "PFEP0600601": {
-    "adv_30d": 7557,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 7657,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BWNB"
   },
   "PFEP0601112": {
-    "adv_30d": 26150,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 22393,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "KMPB"
   },
   "PFEP0601328": {
-    "adv_30d": 5313,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 4300,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RIV-PA"
   },
   "PFEP0601906": {
-    "adv_30d": 3653,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 1693,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MSBIP"
   },
   "PFEP0602243": {
-    "adv_30d": 9250,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 9373,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FTAIN"
   },
   "PFEP0602680": {
-    "adv_30d": 6985,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5858,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RWT-PA"
   },
   "PFEP0603522": {
-    "adv_30d": 143256,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 149428,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "APO-PA"
   },
   "PFEP0603597": {
-    "adv_30d": 3897,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 4400,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "REGCO"
   },
   "PFEP0603704": {
-    "adv_30d": 13381,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 11952,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "GNL-PD"
   },
   "PFEP0603712": {
@@ -3425,18 +3430,18 @@
     "yahoo_ticker": "GNL-PE"
   },
   "PFEP0603993": {
-    "adv_30d": 5717,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5760,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ABXL"
   },
   "PFEP0604009": {
-    "adv_30d": 53872,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 58469,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ET-PI"
   },
   "PFEP0604199": {
-    "adv_30d": 53721,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 41628,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BANC-PF"
   },
   "PFEP0604637": {
@@ -3450,8 +3455,8 @@
     "yahoo_ticker": "BTSGU"
   },
   "PFEP0604942": {
-    "adv_30d": 213550,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 130827,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ALB-PA"
   },
   "PFEP0605220": {
@@ -3460,43 +3465,43 @@
     "yahoo_ticker": "BEPJ"
   },
   "PFEP0605246": {
-    "adv_30d": 6047,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 4717,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TRINZ"
   },
   "PFEP0605626": {
-    "adv_30d": 34339,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 24725,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SCE-PN"
   },
   "PFEP0605642": {
-    "adv_30d": 9440,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 7827,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MITP"
   },
   "PFEP0605709": {
-    "adv_30d": 7840,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5507,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CIMN"
   },
   "PFEP0605758": {
-    "adv_30d": 12287,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 10630,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BIPJ"
   },
   "PFEP0605972": {
-    "adv_30d": 6797,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5963,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RWTO"
   },
   "PFEP0606301": {
-    "adv_30d": 13023,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 12230,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TRINI"
   },
   "PFEP0606319": {
-    "adv_30d": 25670,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 24230,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "AOMN"
   },
   "PFEP0606509": {
@@ -3510,38 +3515,38 @@
     "yahoo_ticker": "CIMO"
   },
   "PFEP0606715": {
-    "adv_30d": 5247,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 6100,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "NEWTH"
   },
   "PFEP0606764": {
-    "adv_30d": 152383,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 151663,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "HPE-PC"
   },
   "PFEP0606897": {
-    "adv_30d": 45833,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 45543,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CICB"
   },
   "PFEP0606970": {
-    "adv_30d": 307312,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 299352,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ARES-PB"
   },
   "PFEP0606988": {
-    "adv_30d": 6640,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5090,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "EIIA"
   },
   "PFEP0607085": {
-    "adv_30d": 708754,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 841784,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BA-PA"
   },
   "PFEP0607135": {
-    "adv_30d": 4030,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 4450,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SPMA"
   },
   "PFEP0607275": {
@@ -3550,13 +3555,13 @@
     "yahoo_ticker": "MBINL"
   },
   "PFEP0607291": {
-    "adv_30d": 48797,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 41287,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CRBD"
   },
   "PFEP0607309": {
     "adv_30d": null,
-    "fetched_date": "2026-05-06",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "PFEP0607317": {
@@ -3565,68 +3570,68 @@
     "yahoo_ticker": "METCZ"
   },
   "PFEP0607408": {
-    "adv_30d": 9870,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 10310,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RCD"
   },
   "PFEP0607499": {
-    "adv_30d": 2233,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 2297,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "PDPA"
   },
   "PFEP0607549": {
-    "adv_30d": 39807,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 30450,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FGSN"
   },
   "PFEP0607556": {
-    "adv_30d": 12443,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 7826,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ANG-PD"
   },
   "PFEP0607572": {
-    "adv_30d": 21617,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 18087,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ADAMG"
   },
   "PFEP0607622": {
-    "adv_30d": 10227,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 8167,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RWTP"
   },
   "PFEP0607697": {
-    "adv_30d": 8114,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 8712,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TRTN-PF"
   },
   "PFEP0607721": {
-    "adv_30d": 149043,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 127273,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "STRK"
   },
   "PFEP0607887": {
-    "adv_30d": 7077,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5433,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "OXLCG"
   },
   "PFEP0607937": {
-    "adv_30d": 1859,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 1876,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RPT-PC"
   },
   "PFEP0607986": {
-    "adv_30d": 393153,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 207741,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "KKR-PD"
   },
   "PFEP0608075": {
-    "adv_30d": 103067,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 92337,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "STRF"
   },
   "PFEP0608406": {
     "adv_30d": null,
-    "fetched_date": "2026-05-06",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "PFEP0608414": {
@@ -3635,28 +3640,28 @@
     "yahoo_ticker": "BUSEP"
   },
   "PFEP0608430": {
-    "adv_30d": 2380,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 2420,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MBNKO"
   },
   "PFEP0608562": {
-    "adv_30d": 76833,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 69850,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "STRD"
   },
   "PFEP0608729": {
-    "adv_30d": 18883,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 13747,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ADAMH"
   },
   "PFEP0608885": {
-    "adv_30d": 3346103,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 3996777,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "STRC"
   },
   "PFEP0608893": {
-    "adv_30d": 26960,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 21802,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CFG-PI"
   },
   "PFEP0608901": {
@@ -3665,8 +3670,8 @@
     "yahoo_ticker": "METCI"
   },
   "PFEP0608935": {
-    "adv_30d": 11677,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 7950,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "LOB-PA"
   },
   "PFEP0608943": {
@@ -3675,133 +3680,133 @@
     "yahoo_ticker": "NLY-PJ"
   },
   "PFEP0608950": {
-    "adv_30d": 6050,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5120,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "OXSQH"
   },
   "PFEP0609008": {
-    "adv_30d": 4933,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 4140,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "NEWTP"
   },
   "PFEP0609032": {
-    "adv_30d": 6927,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 7733,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "AGM-PH"
   },
   "PFEP0609123": {
-    "adv_30d": 67983,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 62243,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "AGNCZ"
   },
   "PFEP0609180": {
-    "adv_30d": 55617,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 36577,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DTK"
   },
   "PFEP0609214": {
-    "adv_30d": 14370,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 13803,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CIMP"
   },
   "PFEP0609222": {
-    "adv_30d": 11003,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 6620,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "WSBCO"
   },
   "PFEP0609271": {
-    "adv_30d": 39921,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 35247,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RITM-PE"
   },
   "PFEP0609321": {
-    "adv_30d": 83863,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 55717,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "XELLL"
   },
   "PFEP0609420": {
-    "adv_30d": 41130,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 26667,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TCPA"
   },
   "PFEP0609560": {
-    "adv_30d": 48193,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 32116,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "MTB-PK"
   },
   "PFEP0609636": {
     "adv_30d": null,
-    "fetched_date": "2026-05-06",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "PFEP0609784": {
-    "adv_30d": 8729,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5672,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "XRN-PB"
   },
   "PFEP0609800": {
-    "adv_30d": 25923,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 23517,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RWTQ"
   },
   "PFEP0609883": {
-    "adv_30d": 8669,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 10340,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "BFH-PA"
   },
   "PFEP0610139": {
-    "adv_30d": 14933,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 13360,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "SRJN"
   },
   "PFEP0610154": {
-    "adv_30d": 7056,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 9720,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "TRTN-PG"
   },
   "PFEP0610162": {
-    "adv_30d": 45084,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 46679,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "RITM-PF"
   },
   "PFEP0610246": {
-    "adv_30d": 158509,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 113641,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "C-PR"
   },
   "PFEP0610261": {
-    "adv_30d": 42750,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 33327,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FCNCN"
   },
   "PFEP0610311": {
-    "adv_30d": 5280,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 5137,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "CICC"
   },
   "PFEP0610378": {
-    "adv_30d": 1523991,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 1568938,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "ORCL-PD"
   },
   "PFEP0610501": {
-    "adv_30d": 241028,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 317777,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "WHR-PA"
   },
   "PFEP0610550": {
-    "adv_30d": 681755,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 305899,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "NEE-PV"
   },
   "PFEP0610584": {
-    "adv_30d": 188137,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 99963,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "FHN-PH"
   },
   "PFEP0610733": {
     "adv_30d": null,
-    "fetched_date": "2026-05-06",
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": null
   },
   "PFEP0610790": {
@@ -4655,8 +4660,8 @@
     "yahoo_ticker": "DBRG-PI"
   },
   "US25401T5048": {
-    "adv_30d": 16370,
-    "fetched_date": "2026-05-06",
+    "adv_30d": 15599,
+    "fetched_date": "2026-05-15",
     "yahoo_ticker": "DBRG-PH"
   },
   "US25406P2002": {
