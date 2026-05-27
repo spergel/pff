@@ -1,39 +1,45 @@
 {
   "-": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "USD"
   },
   "00123Q807": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AGNCO"
   },
   "00123Q831": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AGNCZ"
   },
   "00123Q872": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AGNCP"
   },
   "00206R300": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "TBB"
+    "yahoo_ticker": "T"
   },
   "00206R508": {
-    "fetched_date": "2026-04-10",
-    "industry": "Telecom Services",
-    "sector": "Communication Services",
-    "yahoo_ticker": "T"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "T-PA"
+  },
+  "00206R706": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "T-PC"
   },
   "00775V104": {
     "fetched_date": "2026-04-10",
@@ -42,10 +48,10 @@
     "yahoo_ticker": "AEFC"
   },
   "008252827": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "MGRE"
+    "yahoo_ticker": "AMG"
   },
   "008252835": {
     "fetched_date": "2026-04-10",
@@ -54,15 +60,15 @@
     "yahoo_ticker": "AMG"
   },
   "008252843": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AMG"
   },
   "008252850": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AMG"
   },
   "008492209": {
@@ -72,22 +78,22 @@
     "yahoo_ticker": "ADC"
   },
   "020002788": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
-    "yahoo_ticker": "ALL"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ALL-PJ"
   },
   "020002812": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
-    "yahoo_ticker": "ALL"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ALL-PI"
   },
   "020002838": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
-    "yahoo_ticker": "ALL"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ALL-PH"
   },
   "025932807": {
     "fetched_date": "2026-04-10",
@@ -125,10 +131,22 @@
     "sector": "Real Estate",
     "yahoo_ticker": "AMH"
   },
+  "035710821": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "NLY-PJ"
+  },
+  "035710870": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "NLY-PF"
+  },
   "03769M205": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "APO"
   },
   "03939A107": {
@@ -156,16 +174,34 @@
     "yahoo_ticker": "ASB"
   },
   "045487600": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ASB"
   },
   "04621X306": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AIZ"
+  },
+  "04686J200": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ATH-PB"
+  },
+  "04686J408": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ATH-PD"
+  },
+  "04686J507": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ATH-PE"
   },
   "04686J838": {
     "fetched_date": "2026-04-10",
@@ -173,28 +209,46 @@
     "sector": "",
     "yahoo_ticker": "ATHS"
   },
+  "04686J861": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ATH-PA"
+  },
   "04914Y409": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ATLC"
   },
+  "05461T305": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "AXS-PE"
+  },
+  "05463HAC5": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "AXS"
+  },
   "05554M100": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Diversified",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BIP"
   },
   "05990K841": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "BANC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BANC-PF"
   },
   "060505179": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BAC"
   },
   "060505195": {
@@ -228,10 +282,10 @@
     "yahoo_ticker": "BAC"
   },
   "06055H608": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "BAC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BAC-PP"
   },
   "06055H806": {
     "fetched_date": "2026-04-10",
@@ -240,9 +294,9 @@
     "yahoo_ticker": "BAC"
   },
   "062540307": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BOH"
   },
   "062545207": {
@@ -252,10 +306,10 @@
     "yahoo_ticker": "BOH"
   },
   "064058845": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "BK"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BK-PK"
   },
   "06417N202": {
     "fetched_date": "2026-04-10",
@@ -270,27 +324,27 @@
     "yahoo_ticker": "WRB"
   },
   "084423805": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WRB"
   },
   "084423870": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WRB"
   },
   "084423888": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WRB"
   },
   "10922N202": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BHF"
   },
   "10922N301": {
@@ -330,21 +384,21 @@
     "yahoo_ticker": "BIP"
   },
   "117043604": {
-    "fetched_date": "2026-04-10",
-    "industry": "Recreational Vehicles",
-    "sector": "Consumer Cyclical",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BC"
   },
   "12542R506": {
-    "fetched_date": "2026-04-10",
-    "industry": "Farm Products",
-    "sector": "Consumer Defensive",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CHSCN"
   },
   "12542R704": {
-    "fetched_date": "2026-04-10",
-    "industry": "Farm Products",
-    "sector": "Consumer Defensive",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CHSCM"
   },
   "125896837": {
@@ -354,21 +408,21 @@
     "yahoo_ticker": "CMS"
   },
   "125896845": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "CMSD"
+    "yahoo_ticker": "CMS"
   },
   "125896852": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CMS"
   },
   "125896860": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CMS"
   },
   "12621E301": {
@@ -378,16 +432,16 @@
     "yahoo_ticker": "CNO"
   },
   "14040H733": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "COF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "COF-PN"
   },
   "14040H758": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "COF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "COF-PL"
   },
   "14040H774": {
     "fetched_date": "2026-04-10",
@@ -396,52 +450,52 @@
     "yahoo_ticker": "COF"
   },
   "14040H782": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "COF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "COF-PJ"
   },
   "14040H824": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "COF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "COF-PI"
   },
   "14314C105": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CG"
   },
   "172967242": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "C"
-  },
-  "174610402": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "CFG"
-  },
-  "174610600": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "CFG"
-  },
-  "174610808": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "CFG"
-  },
-  "21871X208": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "CRBD"
+    "yahoo_ticker": "CPII"
+  },
+  "174610402": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CFG-PE"
+  },
+  "174610600": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CFG-PH"
+  },
+  "174610808": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CFG-PI"
+  },
+  "21871X208": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CRBG"
   },
   "229899307": {
     "fetched_date": "2026-04-10",
@@ -456,9 +510,9 @@
     "yahoo_ticker": "DTK"
   },
   "233331818": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DTE"
   },
   "233331826": {
@@ -480,22 +534,22 @@
     "yahoo_ticker": "TVA"
   },
   "253868822": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
-    "yahoo_ticker": "DLR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "DLR-PL"
   },
   "253868830": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
-    "yahoo_ticker": "DLR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "DLR-PK"
   },
   "253868855": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
-    "yahoo_ticker": "DLR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "DLR-PJ"
   },
   "2612674": {
     "fetched_date": "2026-04-10",
@@ -510,16 +564,16 @@
     "yahoo_ticker": "CTVA"
   },
   "26441C402": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DUK"
   },
   "26441C501": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
-    "yahoo_ticker": "DUK"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "DUK-PA"
   },
   "26884U505": {
     "fetched_date": "2026-04-10",
@@ -528,58 +582,58 @@
     "yahoo_ticker": "EPR"
   },
   "29359U109": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ESGRF"
   },
   "29364D100": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ETR"
   },
   "29364N108": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ETR"
   },
   "29364P103": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ETR"
   },
   "29364W108": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ETR"
   },
   "29452E200": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
-    "yahoo_ticker": "EQH"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "EQH-PA"
   },
   "29452E408": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
-    "yahoo_ticker": "EQH"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "EQH-PC"
   },
   "30190A203": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FG"
   },
   "30190A609": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "FGSN"
+    "yahoo_ticker": "FG"
   },
   "313745200": {
     "fetched_date": "2026-04-10",
@@ -588,9 +642,9 @@
     "yahoo_ticker": "FRT"
   },
   "316773837": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FITBM"
   },
   "316773860": {
@@ -612,15 +666,15 @@
     "yahoo_ticker": "FCNCA"
   },
   "31959X400": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FCNCA"
   },
   "319626305": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FCNCA"
   },
   "320517402": {
@@ -630,10 +684,10 @@
     "yahoo_ticker": "FHN"
   },
   "320517840": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "FHN"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "FHN-PH"
   },
   "320517865": {
     "fetched_date": "2026-04-10",
@@ -642,9 +696,21 @@
     "yahoo_ticker": "FHN"
   },
   "345370811": {
-    "fetched_date": "2026-04-10",
-    "industry": "Auto Manufacturers",
-    "sector": "Consumer Cyclical",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "F"
+  },
+  "345370837": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "F"
+  },
+  "345370845": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "F"
   },
   "360271308": {
@@ -654,9 +720,9 @@
     "yahoo_ticker": "FULT"
   },
   "373334440": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SO"
   },
   "379378300": {
@@ -665,11 +731,23 @@
     "sector": "Real Estate",
     "yahoo_ticker": "GNL"
   },
+  "379378409": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "GNL-PB"
+  },
   "37959E300": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GL"
+  },
+  "404280DT3": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "HSBC"
   },
   "410120406": {
     "fetched_date": "2026-04-10",
@@ -678,10 +756,10 @@
     "yahoo_ticker": "HWC"
   },
   "416518603": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "HIG"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "HIG-PG"
   },
   "446150757": {
     "fetched_date": "2026-04-10",
@@ -708,9 +786,9 @@
     "yahoo_ticker": "HBAN"
   },
   "46817M206": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "JXN"
   },
   "48128B523": {
@@ -756,21 +834,21 @@
     "yahoo_ticker": "KKR"
   },
   "48253M104": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "KKRS"
+    "yahoo_ticker": "KKR"
   },
   "488401308": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "KMPR"
   },
   "493267843": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "KEY"
   },
   "493267868": {
@@ -786,34 +864,34 @@
     "yahoo_ticker": "KEY"
   },
   "49446R711": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Retail",
-    "sector": "Real Estate",
-    "yahoo_ticker": "KIM"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "KIM-PM"
   },
   "49446R737": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Retail",
-    "sector": "Real Estate",
-    "yahoo_ticker": "KIM"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "KIM-PL"
   },
   "534187885": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
-    "yahoo_ticker": "LNC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "LNC-PD"
   },
   "55261F849": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MTB"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MTB-PK"
   },
   "55261F864": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MTB"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MTB-PJ"
   },
   "58844R702": {
     "fetched_date": "2026-04-10",
@@ -822,9 +900,9 @@
     "yahoo_ticker": "MBIN"
   },
   "58844R850": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MBIN"
   },
   "58844R884": {
@@ -833,59 +911,65 @@
     "sector": "Financial Services",
     "yahoo_ticker": "MBIN"
   },
+  "59156R850": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MET-PF"
+  },
   "59156R876": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MET"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MET-PE"
   },
   "61761J406": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PI"
   },
   "61762V200": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PE"
   },
   "61762V606": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PK"
   },
   "61762V804": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PL"
   },
   "61762V838": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PQ"
   },
   "61762V853": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PP"
   },
   "61762V861": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PO"
   },
   "61763E207": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PF"
   },
   "637432105": {
     "fetched_date": "2026-04-10",
@@ -894,9 +978,9 @@
     "yahoo_ticker": "NRUC"
   },
   "63938C405": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NAVI"
   },
   "647551308": {
@@ -906,10 +990,10 @@
     "yahoo_ticker": "NMFC"
   },
   "649445202": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "FLG"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "FLG-PA"
   },
   "65339K829": {
     "fetched_date": "2026-04-10",
@@ -935,6 +1019,12 @@
     "sector": "Financial Services",
     "yahoo_ticker": "NTRS"
   },
+  "674001409": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "OAK-PB"
+  },
   "68003D204": {
     "fetched_date": "2026-04-10",
     "industry": "Banks - Regional",
@@ -953,10 +1043,16 @@
     "sector": "Utilities",
     "yahoo_ticker": "PCG"
   },
+  "72348N505": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PNFP-PC"
+  },
   "724479506": {
-    "fetched_date": "2026-04-10",
-    "industry": "Integrated Freight & Logistics",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PBI"
   },
   "73317H206": {
@@ -966,34 +1062,34 @@
     "yahoo_ticker": "BPOP"
   },
   "744320805": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PRU"
   },
   "744320870": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PRU"
   },
   "744320888": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PRU"
   },
   "74460W396": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PS"
   },
   "74460W420": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PR"
   },
   "74460W446": {
     "fetched_date": "2026-04-10",
@@ -1002,10 +1098,10 @@
     "yahoo_ticker": "PSA"
   },
   "74460W461": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PP"
   },
   "74460W487": {
     "fetched_date": "2026-04-10",
@@ -1014,10 +1110,10 @@
     "yahoo_ticker": "PSA"
   },
   "74460W511": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PN"
   },
   "74460W537": {
     "fetched_date": "2026-04-10",
@@ -1026,10 +1122,10 @@
     "yahoo_ticker": "PSA"
   },
   "74460W552": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PL"
   },
   "74460W594": {
     "fetched_date": "2026-04-10",
@@ -1038,58 +1134,64 @@
     "yahoo_ticker": "PSA"
   },
   "74460W628": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PI"
   },
   "74460W644": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PH"
   },
   "74460W669": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PG"
   },
   "74460W685": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PF"
   },
   "7591EP704": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "RF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RF-PC"
   },
   "7591EP860": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RF"
   },
   "7591EP886": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "RF"
-  },
-  "759351885": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "RZC"
+    "yahoo_ticker": "RF-PE"
+  },
+  "759351885": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RGA"
   },
   "75968N309": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Reinsurance",
-    "sector": "Financial Services",
-    "yahoo_ticker": "RNR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RNR-PF"
+  },
+  "780082AT0": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RY"
   },
   "783892201": {
     "fetched_date": "2026-04-10",
@@ -1104,16 +1206,16 @@
     "yahoo_ticker": "EIX"
   },
   "78410V200": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EIX"
   },
   "78440X507": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Office",
-    "sector": "Real Estate",
-    "yahoo_ticker": "SLG"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SLG-PI"
   },
   "80620A208": {
     "fetched_date": "2026-04-10",
@@ -1122,16 +1224,16 @@
     "yahoo_ticker": "EIX"
   },
   "808513600": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SCHW"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SCHW-PD"
   },
   "808513865": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SCHW"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SCHW-PJ"
   },
   "816300503": {
     "fetched_date": "2026-04-10",
@@ -1140,28 +1242,28 @@
     "yahoo_ticker": "SIGI"
   },
   "816851604": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Diversified",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SRE"
   },
   "842587404": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SO"
   },
   "842587800": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "SOJD"
+    "yahoo_ticker": "SO"
   },
   "842587867": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "SOJF"
+    "yahoo_ticker": "SO"
   },
   "842587883": {
     "fetched_date": "2026-04-10",
@@ -1170,15 +1272,21 @@
     "yahoo_ticker": "SOJE"
   },
   "84857L705": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Gas",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SR"
   },
+  "857477855": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "STT-PG"
+  },
   "860630607": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SF"
   },
   "860630706": {
@@ -1188,52 +1296,52 @@
     "yahoo_ticker": "SF"
   },
   "860630862": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SF-PD"
   },
   "860630870": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SF-PC"
   },
   "87165B202": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SYF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SYF-PA"
   },
   "87165B400": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SYF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SYF-PB"
   },
   "87264A105": {
-    "fetched_date": "2026-04-10",
-    "industry": "Telecom Services",
-    "sector": "Communication Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TMUS"
   },
   "87264A204": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "TMUSZ"
+    "yahoo_ticker": "TMUS"
   },
   "87264A303": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "TMUSI"
+    "yahoo_ticker": "TMUS"
   },
   "872652102": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
-    "yahoo_ticker": "TPGXL"
+    "yahoo_ticker": "TPG"
   },
   "879433761": {
     "fetched_date": "2026-04-10",
@@ -1259,16 +1367,22 @@
     "sector": "",
     "yahoo_ticker": "TCPA"
   },
+  "89832Q695": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TFC-PR"
+  },
   "89832Q745": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "TFC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TFC-PO"
   },
   "902788405": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "UMBF"
   },
   "902973668": {
@@ -1308,9 +1422,9 @@
     "yahoo_ticker": "AD"
   },
   "91529Y601": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "UNM"
   },
   "919794404": {
@@ -1320,28 +1434,34 @@
     "yahoo_ticker": "VLY"
   },
   "929042794": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Office",
-    "sector": "Real Estate",
-    "yahoo_ticker": "VNO"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VNO-PO"
   },
   "929042810": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Office",
-    "sector": "Real Estate",
-    "yahoo_ticker": "VNO"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VNO-PN"
   },
   "929042828": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Office",
-    "sector": "Real Estate",
-    "yahoo_ticker": "VNO"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VNO-PM"
   },
   "929042844": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Office",
-    "sector": "Real Estate",
-    "yahoo_ticker": "VNO"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VNO-PL"
+  },
+  "929089209": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VOYA-PB"
   },
   "938824307": {
     "fetched_date": "2026-04-10",
@@ -1362,16 +1482,16 @@
     "yahoo_ticker": "WFC"
   },
   "94988U151": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "WFC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "WFC-PZ"
   },
   "94988U656": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "WFC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "WFC-PY"
   },
   "95002Y202": {
     "fetched_date": "2026-04-10",
@@ -1398,9 +1518,9 @@
     "yahoo_ticker": "WTFC"
   },
   "98389B878": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "XEL"
   },
   "B06H0T3": {
@@ -1410,27 +1530,27 @@
     "yahoo_ticker": "BAC"
   },
   "B07GC93": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "GS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "GS-PA"
   },
   "B0B87W3": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MET"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MET-PA"
   },
   "B0N0V47": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "GS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "GS-PC"
   },
   "B0PR2S7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BAC"
   },
   "B125QN4": {
@@ -1440,111 +1560,111 @@
     "yahoo_ticker": "USB"
   },
   "B15CKS5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "GS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "GS-PD"
   },
   "B1802M4": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MS"
   },
   "B1VN1F6": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BAC"
   },
   "B2PB3Z7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "BAC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BAC-PL"
   },
   "B3KRSW9": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "WFC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "WFC-PL"
   },
   "B3Z1BZ0": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "C"
   },
   "B617Z40": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "USB"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "USB-PA"
   },
   "B87XV26": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ALL"
   },
   "B8K7RN8": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Office",
-    "sector": "Real Estate",
-    "yahoo_ticker": "VNO"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VNO-PL"
   },
   "B93SGN8": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EIX"
   },
   "B9CDPW6": {
-    "fetched_date": "2026-04-10",
-    "industry": "Integrated Freight & Logistics",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PBI"
   },
   "BD0RST6": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Retail",
-    "sector": "Real Estate",
-    "yahoo_ticker": "KIM"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "KIM-PM"
   },
   "BD0S963": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ETR"
   },
   "BD0YJ83": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
-    "yahoo_ticker": "DLR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "DLR-PJ"
   },
   "BD2Z8N2": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Specialty",
-    "sector": "Financial Services",
-    "yahoo_ticker": "AXS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "AXS-PE"
   },
   "BD5NDN8": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ETR"
   },
   "BDC3P68": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EIX"
   },
   "BDRW5R1": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NAVI"
   },
   "BDT6C58": {
@@ -1554,21 +1674,21 @@
     "yahoo_ticker": "USB"
   },
   "BF0WD23": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SO"
   },
   "BF2N465": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
-    "yahoo_ticker": "RLJ"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RLJ-PA"
   },
   "BF2PL60": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BAC"
   },
   "BF3L703": {
@@ -1578,34 +1698,34 @@
     "yahoo_ticker": "DTE"
   },
   "BF4YJ94": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PE"
   },
   "BF545Q2": {
-    "fetched_date": "2026-04-10",
-    "industry": "Telecom Services",
-    "sector": "Communication Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "T"
   },
   "BF5J7D8": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "HIG"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "HIG-PG"
   },
   "BF5JWJ9": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BHF"
   },
   "BF7PKX5": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PG"
   },
   "BF956G8": {
     "fetched_date": "2026-04-10",
@@ -1614,21 +1734,21 @@
     "yahoo_ticker": "ACGL"
   },
   "BFMZ665": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Reinsurance",
-    "sector": "Financial Services",
-    "yahoo_ticker": "RNR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RNR-PF"
   },
   "BFNR2X9": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DUK"
   },
   "BFXBC20": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CMS"
   },
   "BFY34D0": {
@@ -1638,9 +1758,9 @@
     "yahoo_ticker": "JPM"
   },
   "BFYF0S3": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "UNM"
   },
   "BFZNM46": {
@@ -1650,28 +1770,28 @@
     "yahoo_ticker": "BAC"
   },
   "BG43LW5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MET"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MET-PE"
   },
   "BG844G9": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PRU"
   },
   "BGMHQB3": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PH"
   },
   "BGMJPW3": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "COF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "COF-PI"
   },
   "BH3JGK4": {
     "fetched_date": "2026-04-10",
@@ -1686,15 +1806,15 @@
     "yahoo_ticker": "FITB"
   },
   "BH5QGM5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PF"
   },
   "BJ029D4": {
-    "fetched_date": "2026-04-10",
-    "industry": "Auto Manufacturers",
-    "sector": "Consumer Cyclical",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "F"
   },
   "BJ0M332": {
@@ -1710,9 +1830,9 @@
     "yahoo_ticker": "JPM"
   },
   "BJBK4B0": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WRB"
   },
   "BJBL059": {
@@ -1722,10 +1842,10 @@
     "yahoo_ticker": "NRUC"
   },
   "BJGS497": {
-    "fetched_date": "2026-04-10",
-    "industry": "Financial Conglomerates",
-    "sector": "Financial Services",
-    "yahoo_ticker": "VOYA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VOYA-PB"
   },
   "BJHDLJ0": {
     "fetched_date": "2026-04-10",
@@ -1734,16 +1854,16 @@
     "yahoo_ticker": "KEY"
   },
   "BJJP666": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CMS"
   },
   "BJMXZX7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "RF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RF-PC"
   },
   "BJN6RX9": {
     "fetched_date": "2026-04-10",
@@ -1752,40 +1872,40 @@
     "yahoo_ticker": "BAC"
   },
   "BJP1KW2": {
-    "fetched_date": "2026-04-10",
-    "industry": "Auto Manufacturers",
-    "sector": "Consumer Cyclical",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "F"
   },
   "BJR2164": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
-    "yahoo_ticker": "DLR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "DLR-PK"
   },
   "BJVB6B7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "WFC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "WFC-PZ"
   },
   "BJVJZF8": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AMG"
   },
   "BJXH6L3": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
-    "yahoo_ticker": "DUK"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "DUK-PA"
   },
   "BK229B7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "CFG"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CFG-PE"
   },
   "BK57WX2": {
     "fetched_date": "2026-04-10",
@@ -1794,52 +1914,52 @@
     "yahoo_ticker": "JPM"
   },
   "BK598B8": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PI"
   },
   "BK6JGG8": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PL"
   },
   "BK727P2": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
-    "yahoo_ticker": "ALL"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ALL-PI"
   },
   "BK72JQ7": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PJ"
   },
   "BK77YC3": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SYF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SYF-PA"
   },
   "BK8LV34": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Diversified",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SRE"
   },
   "BK9PWX2": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "COF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "COF-PJ"
   },
   "BKDKS91": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
-    "yahoo_ticker": "ALL"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ALL-PH"
   },
   "BKFVZR9": {
     "fetched_date": "2026-04-10",
@@ -1854,28 +1974,28 @@
     "yahoo_ticker": "FITB"
   },
   "BKLXG10": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
-    "yahoo_ticker": "DLR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "DLR-PL"
   },
   "BKM3QB9": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SO"
   },
   "BKMF2F1": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "TFC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TFC-PI"
   },
   "BKPK060": {
-    "fetched_date": "2026-04-10",
-    "industry": "Telecom Services",
-    "sector": "Communication Services",
-    "yahoo_ticker": "T"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "T-PA"
   },
   "BKPLQ32": {
     "fetched_date": "2026-04-10",
@@ -1884,22 +2004,22 @@
     "yahoo_ticker": "HBAN"
   },
   "BKRMRC9": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
-    "yahoo_ticker": "EQH"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "EQH-PA"
   },
   "BKSD8W8": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PK"
   },
   "BKSDN56": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Reinsurance",
-    "sector": "Financial Services",
-    "yahoo_ticker": "RNR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RNR-PG"
   },
   "BKVJXF1": {
     "fetched_date": "2026-04-10",
@@ -1907,11 +2027,17 @@
     "sector": "Financial Services",
     "yahoo_ticker": "BAC"
   },
+  "BKWG6L8": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ATH-PB"
+  },
   "BL3BQ19": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MET"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MET-PF"
   },
   "BL5C513": {
     "fetched_date": "2026-04-10",
@@ -1920,21 +2046,21 @@
     "yahoo_ticker": "WFC"
   },
   "BLB2465": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PRU"
   },
   "BLD4B13": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "TFC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TFC-PR"
   },
   "BLD4BS0": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AIZ"
   },
   "BLFB156": {
@@ -1944,34 +2070,34 @@
     "yahoo_ticker": "EIX"
   },
   "BLFGL51": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PL"
   },
   "BLFKCL6": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PN"
   },
   "BLHLTL6": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FCNCA"
   },
   "BLL1ZY7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Telecom Services",
-    "sector": "Communication Services",
-    "yahoo_ticker": "T"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "T-PC"
   },
   "BLNB396": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
-    "yahoo_ticker": "CMS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CMS-PC"
   },
   "BM8TGF9": {
     "fetched_date": "2026-04-10",
@@ -1980,10 +2106,10 @@
     "yahoo_ticker": "JPM"
   },
   "BM91SN6": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PP"
   },
   "BM9JJ93": {
     "fetched_date": "2026-04-10",
@@ -1997,6 +2123,12 @@
     "sector": "Financial Services",
     "yahoo_ticker": "USB"
   },
+  "BMC8G63": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ATH-PD"
+  },
   "BMDKP83": {
     "fetched_date": "2026-04-10",
     "industry": "Telecom Services",
@@ -2004,22 +2136,22 @@
     "yahoo_ticker": "TDS"
   },
   "BMDX0S7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SF-PC"
   },
   "BMF1DS0": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
-    "yahoo_ticker": "EQH"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "EQH-PC"
   },
   "BMF4W82": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PO"
   },
   "BMFDGD2": {
     "fetched_date": "2026-04-10",
@@ -2034,10 +2166,10 @@
     "yahoo_ticker": "USB"
   },
   "BMFYGG8": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "TFC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TFC-PO"
   },
   "BMG162522756": {
     "fetched_date": "2026-04-10",
@@ -2046,21 +2178,39 @@
     "yahoo_ticker": "BIP"
   },
   "BMG7498P1279": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Reinsurance",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RNR-PG"
   },
+  "BMG9078F1317": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TRTN-PB"
+  },
+  "BMG9078F1499": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TRTN-PC"
+  },
   "BMG9078F1564": {
-    "fetched_date": "2026-04-10",
-    "industry": "Rental & Leasing Services",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TRTN-PE"
   },
+  "BMG9078F1648": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TRTN-PD"
+  },
   "BMG9SY4": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Reinsurance",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RGA"
   },
   "BMGS0L2": {
@@ -2082,34 +2232,34 @@
     "yahoo_ticker": "BAC"
   },
   "BMHJZD1": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "COF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "COF-PN"
   },
   "BMHV4X0": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CG"
   },
   "BMHV5V5": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Office",
-    "sector": "Real Estate",
-    "yahoo_ticker": "VNO"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VNO-PO"
   },
   "BMHXRD7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
-    "yahoo_ticker": "SO"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SOPA"
   },
   "BMQ85K6": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PR"
   },
   "BMVN6G9": {
     "fetched_date": "2026-04-10",
@@ -2124,51 +2274,51 @@
     "yahoo_ticker": "BAC"
   },
   "BMW32F9": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SCHW"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SCHW-PJ"
   },
   "BMW6VL7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "JXN"
   },
   "BMW9C79": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PO"
   },
   "BMWDYS6": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "BANC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BANC-PF"
   },
   "BMX3XP5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ASB"
   },
   "BMX47S9": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "COF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "COF-PL"
   },
   "BMX8DR2": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PS"
   },
   "BMXB7Y6": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "HWC"
   },
   "BMY4XS0": {
@@ -2184,9 +2334,9 @@
     "yahoo_ticker": "WFC"
   },
   "BMZLX57": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FG"
   },
   "BN0TD19": {
@@ -2196,28 +2346,28 @@
     "yahoo_ticker": "BHF"
   },
   "BN2D5N5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "KKR"
   },
   "BN460B5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SO"
   },
   "BN4Q1G7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "BAC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BAC-PP"
   },
   "BN72V73": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
-    "yahoo_ticker": "KKR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "KKR-PD"
   },
   "BN75VC7": {
     "fetched_date": "2026-04-10",
@@ -2232,10 +2382,10 @@
     "yahoo_ticker": "BAC"
   },
   "BNBXR41": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
-    "yahoo_ticker": "ALL"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ALL-PJ"
   },
   "BND7XB0": {
     "fetched_date": "2026-04-10",
@@ -2244,33 +2394,33 @@
     "yahoo_ticker": "JPM"
   },
   "BNDSDV3": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NMFC"
   },
   "BNKBJW8": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WRB"
   },
   "BNKG9F6": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FG"
   },
   "BNM9HL5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RF"
   },
   "BNQNFS6": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DTE"
   },
   "BNRLZ01": {
@@ -2304,22 +2454,22 @@
     "yahoo_ticker": "VLY"
   },
   "BP2C5M5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "RF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RF-PE"
   },
   "BP38124": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SF-PD"
   },
   "BP398R1": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
-    "yahoo_ticker": "LNC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "LNC-PD"
   },
   "BP91X65": {
     "fetched_date": "2026-04-10",
@@ -2328,15 +2478,15 @@
     "yahoo_ticker": "WFC"
   },
   "BPBP9W3": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NEE"
   },
   "BPBPCX5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BOH"
   },
   "BPCR4M3": {
@@ -2346,76 +2496,88 @@
     "yahoo_ticker": "WSBC"
   },
   "BPCTR42": {
-    "fetched_date": "2026-04-10",
-    "industry": "Specialty Chemicals",
-    "sector": "Basic Materials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ALB"
   },
   "BPDXXZ6": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PQ"
   },
   "BPDYYD4": {
-    "fetched_date": "2026-04-10",
-    "industry": "Health Information Services",
-    "sector": "Healthcare",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BTSG"
   },
   "BPGN2R8": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
-    "yahoo_ticker": "PCG"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PCG-PA"
   },
   "BPJK038": {
-    "fetched_date": "2026-04-10",
-    "industry": "Auto Manufacturers",
-    "sector": "Consumer Cyclical",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "F"
   },
+  "BPLKV33": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ATH-PE"
+  },
   "BPLPQT9": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "KEY"
   },
+  "BPSKDY1": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ATH-PA"
+  },
   "BQ0QJ57": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MBIN"
   },
   "BQ7WWQ0": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ATLC"
   },
   "BQB5JR5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PRU"
   },
   "BQC5ZW1": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "APO"
   },
   "BQGD2H5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "CFG"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CFG-PH"
   },
   "BQH5ZL5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PP"
   },
   "BQMS207": {
     "fetched_date": "2026-04-10",
@@ -2424,76 +2586,82 @@
     "yahoo_ticker": "HBAN"
   },
   "BQT2G00": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PI"
+  },
+  "BR115D8": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "B"
   },
   "BR4TW49": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
-    "yahoo_ticker": "ARES"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ARES-PB"
   },
   "BRBLC59": {
-    "fetched_date": "2026-04-10",
-    "industry": "Aerospace & Defense",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BA"
   },
   "BRBLDX4": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NEE"
   },
   "BRBVKF5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Communication Equipment",
-    "sector": "Technology",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "HPE"
   },
   "BRC7MJ0": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TPG"
   },
   "BRT81P5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "CFG"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CFG-PI"
   },
   "BRWK9M1": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MBIN"
   },
   "BS55Z77": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MTB"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MTB-PJ"
   },
   "BS9FVR5": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CRBG"
   },
   "BSLL7L7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AMG"
   },
   "BSNWT01": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SYF"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SYF-PB"
   },
   "BSQL9V6": {
     "fetched_date": "2026-04-10",
@@ -2508,39 +2676,39 @@
     "yahoo_ticker": "KKR"
   },
   "BTCDKX2": {
-    "fetched_date": "2026-04-10",
-    "industry": "Software - Application",
-    "sector": "Technology",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MSTR"
   },
   "BTJTLY1": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "BK"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BK-PK"
   },
   "BTNML68": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "UMBF"
   },
   "BTTRKK4": {
-    "fetched_date": "2026-04-10",
-    "industry": "Semiconductors",
-    "sector": "Technology",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MCHP"
   },
   "BTVJJB2": {
-    "fetched_date": "2026-04-10",
-    "industry": "Software - Infrastructure",
-    "sector": "Technology",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FOUR"
   },
   "BTWWZS9": {
-    "fetched_date": "2026-04-10",
-    "industry": "Scientific & Technical Instruments",
-    "sector": "Technology",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NOVT"
   },
   "BTZQRD7": {
@@ -2550,39 +2718,45 @@
     "yahoo_ticker": "NEE"
   },
   "BV2JPV7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "XEL"
   },
   "BV6GRK7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "PNFP"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PNFP-PA"
   },
   "BVD8W90": {
-    "fetched_date": "2026-04-10",
-    "industry": "Telecom Services",
-    "sector": "Communication Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TMUS"
   },
   "BVD8WB2": {
-    "fetched_date": "2026-04-10",
-    "industry": "Telecom Services",
-    "sector": "Communication Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TMUS"
   },
   "BVD8WD4": {
-    "fetched_date": "2026-04-10",
-    "industry": "Telecom Services",
-    "sector": "Communication Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TMUS"
   },
+  "BVDCXR7": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "B"
+  },
   "BVJ4YD0": {
-    "fetched_date": "2026-04-10",
-    "industry": "Industrial Distribution",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "QXO"
   },
   "BVK4BN8": {
@@ -2592,10 +2766,10 @@
     "yahoo_ticker": "WTFC"
   },
   "BVK6BQ7": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MTB"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MTB-PK"
   },
   "BVMNH35": {
     "fetched_date": "2026-04-10",
@@ -2604,40 +2778,40 @@
     "yahoo_ticker": "DTE"
   },
   "BVZM740": {
-    "fetched_date": "2026-04-10",
-    "industry": "Medical Devices",
-    "sector": "Healthcare",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BRKR"
   },
   "BW9KZK9": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FITB"
   },
   "BYPFT55": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "SCHW"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SCHW-PD"
   },
   "BYPK477": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
-    "yahoo_ticker": "STT"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "STT-PG"
   },
   "BYQHXS1": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "WFC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "WFC-PY"
   },
   "BYVLYP2": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
-    "yahoo_ticker": "FLG"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "FLG-PA"
   },
   "BYVQZ09": {
     "fetched_date": "2026-04-10",
@@ -2652,33 +2826,33 @@
     "yahoo_ticker": "KEY"
   },
   "BYWSYZ2": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CMS"
   },
   "BYYYY81": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
-    "yahoo_ticker": "MS"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MS-PK"
   },
   "BYZ2PF8": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
-    "yahoo_ticker": "PSA"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSA-PF"
   },
   "BZ60HT6": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SO"
   },
   "BZC0L09": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ETR"
   },
   "CASHUSD00": {
@@ -2687,16 +2861,22 @@
     "sector": "",
     "yahoo_ticker": "USD"
   },
+  "EP0610154": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TRTN-PG"
+  },
   "EQ0000000002458219": {
-    "fetched_date": "2026-04-10",
-    "industry": "Specialty Industrial Machinery",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GTLS"
   },
   "EQ0031011600060001": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Diversified",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AQN"
   },
   "G16249156": {
@@ -2718,459 +2898,1137 @@
     "yahoo_ticker": "BIP"
   },
   "G7498P127": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Reinsurance",
-    "sector": "Financial Services",
-    "yahoo_ticker": "RNR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RNR-PG"
   },
   "MHY271831213": {
-    "fetched_date": "2026-04-10",
-    "industry": "Marine Shipping",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GSL"
   },
+  "PFEP0066209": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "FLG-PU"
+  },
   "PFEP0101675": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "JSM"
   },
+  "PFEP0139618": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "LXP-PC"
+  },
   "PFEP0158782": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SLMBP"
   },
+  "PFEP0315424": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "EPR-PE"
+  },
   "PFEP0423004": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "DHCNI"
   },
+  "PFEP0423905": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MITT-PA"
+  },
+  "PFEP0425074": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SLG-PI"
+  },
+  "PFEP0427799": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MITT-PB"
+  },
+  "PFEP0436741": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VNO-PL"
+  },
+  "PFEP0438903": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PBI-PB"
+  },
+  "PFEP0441154": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MFA-PB"
+  },
+  "PFEP0462051": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ACR-PC"
+  },
+  "PFEP0489187": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VLYPP"
+  },
+  "PFEP0506840": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BHR-PB"
+  },
   "PFEP0513507": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "CTBB"
   },
+  "PFEP0516765": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CIM-PA"
+  },
+  "PFEP0522300": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "DBRG-PH"
+  },
+  "PFEP0523977": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CIM-PB"
+  },
+  "PFEP0524637": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PMT-PA"
+  },
+  "PFEP0524728": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TWO-PA"
+  },
+  "PFEP0524934": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "FLG-PA"
+  },
   "PFEP0527051": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "CTDD"
   },
+  "PFEP0528133": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "GLOP-PA"
+  },
+  "PFEP0529198": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "DBRG-PI"
+  },
+  "PFEP0530568": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SCE-PL"
+  },
+  "PFEP0530626": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CODI-PA"
+  },
+  "PFEP0531053": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PMT-PB"
+  },
+  "PFEP0531699": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TWO-PB"
+  },
   "PFEP0532747": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "VLYPO"
   },
+  "PFEP0533315": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "IVR-PC"
+  },
+  "PFEP0534511": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RLJ-PA"
+  },
+  "PFEP0534842": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "GNL-PA"
+  },
+  "PFEP0535534": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "DBRG-PJ"
+  },
   "PFEP0537365": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ADAMN"
   },
+  "PFEP0537639": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "IIPR-PA"
+  },
+  "PFEP0539643": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "INN-PE"
+  },
+  "PFEP0540906": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TWO-PC"
+  },
+  "PFEP0541888": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "EPR-PG"
+  },
+  "PFEP0542720": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VNO-PM"
+  },
+  "PFEP0549212": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CODI-PB"
+  },
+  "PFEP0552968": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "OAK-PA"
+  },
+  "PFEP0558197": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "OAK-PB"
+  },
   "PFEP0559674": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "BHFAL"
   },
+  "PFEP0560425": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CIM-PC"
+  },
+  "PFEP0564401": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BHR-PD"
+  },
+  "PFEP0565333": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PEB-PF"
+  },
+  "PFEP0565390": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PEB-PE"
+  },
+  "PFEP0566463": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CIM-PD"
+  },
   "PFEP0569459": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BHFAP"
   },
   "PFEP0574905": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "RCB"
   },
+  "PFEP0575472": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "AHL-PE"
+  },
+  "PFEP0576793": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BFS-PE"
+  },
+  "PFEP0577072": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MITT-PC"
+  },
   "PFEP0579284": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ADAMM"
   },
+  "PFEP0580365": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TRTN-PC"
+  },
+  "PFEP0580845": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SYF-PA"
+  },
+  "PFEP0581280": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CODI-PC"
+  },
+  "PFEP0582072": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "GNL-PB"
+  },
+  "PFEP0585000": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TRTN-PD"
+  },
+  "PFEP0585158": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ARR-PC"
+  },
+  "PFEP0585836": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RITM-PC"
+  },
+  "PFEP0586586": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MFA-PC"
+  },
   "PFEP0588665": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BHFAO"
   },
+  "PFEP0589762": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "OPIRQ"
+  },
   "PFEP0591420": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "UZD"
   },
   "PFEP0596403": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BHFAN"
   },
+  "PFEP0596916": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VNO-PN"
+  },
   "PFEP0596940": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "UZE"
   },
+  "PFEP0597104": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ALTG-PA"
+  },
   "PFEP0597112": {
-    "fetched_date": "2026-04-10",
-    "industry": "Telecom Services",
-    "sector": "Communication Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "LBRDP"
   },
   "PFEP0597427": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DCOM"
   },
+  "PFEP0597617": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TDS-PU"
+  },
   "PFEP0597765": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MBINN"
   },
   "PFEP0597963": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "KKRS"
   },
+  "PFEP0598359": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BW-PA"
+  },
+  "PFEP0598391": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PEB-PG"
+  },
   "PFEP0598409": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "UZF"
   },
+  "PFEP0598425": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SHO-PH"
+  },
+  "PFEP0598458": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ACR-PD"
+  },
+  "PFEP0598623": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ABR-PD"
+  },
+  "PFEP0598672": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RC-PE"
+  },
+  "PFEP0598730": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TRTX-PC"
+  },
   "PFEP0598789": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ATLCP"
   },
+  "PFEP0598953": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CTO-PA"
+  },
+  "PFEP0599118": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PSEC-PA"
+  },
+  "PFEP0599134": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SHO-PI"
+  },
+  "PFEP0599324": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PEB-PH"
+  },
+  "PFEP0599431": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ABR-PE"
+  },
+  "PFEP0599456": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "INN-PF"
+  },
+  "PFEP0599472": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TDS-PV"
+  },
   "PFEP0599480": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "OXLCO"
   },
+  "PFEP0599514": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TRTN-PE"
+  },
+  "PFEP0599613": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PMT-PC"
+  },
+  "PFEP0599753": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "VNO-PO"
+  },
+  "PFEP0599761": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RITM-PD"
+  },
+  "PFEP0599779": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "WAL-PA"
+  },
+  "PFEP0599894": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "NHPBP"
+  },
+  "PFEP0600098": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "FBRT-PE"
+  },
+  "PFEP0600247": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "HPP-PC"
+  },
   "PFEP0600270": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EFSCP"
   },
   "PFEP0600288": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BHFAM"
   },
+  "PFEP0600593": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "EFC-PB"
+  },
   "PFEP0600601": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "BWNB"
   },
   "PFEP0601112": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "KMPB"
   },
+  "PFEP0601328": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RIV-PA"
+  },
   "PFEP0601906": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MSBIP"
   },
   "PFEP0602243": {
-    "fetched_date": "2026-04-10",
-    "industry": "Rental & Leasing Services",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FTAIN"
   },
+  "PFEP0602680": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RWT-PA"
+  },
+  "PFEP0603522": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "APO-PA"
+  },
   "PFEP0603597": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Retail",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "REGCO"
   },
+  "PFEP0603704": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "GNL-PD"
+  },
+  "PFEP0603712": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "GNL-PE"
+  },
   "PFEP0603993": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "ABXL"
   },
+  "PFEP0604009": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ET-PI"
+  },
+  "PFEP0604199": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BANC-PF"
+  },
   "PFEP0604637": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "ATLCZ"
   },
+  "PFEP0604645": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BTSGU"
+  },
+  "PFEP0604942": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ALB-PA"
+  },
   "PFEP0605220": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "BEPJ"
   },
   "PFEP0605246": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "TRINZ"
   },
+  "PFEP0605626": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "SCE-PN"
+  },
   "PFEP0605642": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "MITP"
   },
   "PFEP0605709": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "CIMN"
   },
   "PFEP0605758": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "BIPJ"
   },
   "PFEP0605972": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "RWTO"
   },
   "PFEP0606301": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "TRINI"
   },
   "PFEP0606319": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "AOMN"
   },
   "PFEP0606509": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "VLYPN"
   },
+  "PFEP0606608": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CIMO"
+  },
   "PFEP0606715": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "NEWTH"
   },
+  "PFEP0606764": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "HPE-PC"
+  },
   "PFEP0606897": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "CICB"
   },
+  "PFEP0606970": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ARES-PB"
+  },
   "PFEP0606988": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EIIA"
   },
+  "PFEP0607085": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BA-PA"
+  },
   "PFEP0607135": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SPMA"
   },
   "PFEP0607275": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MBINL"
   },
   "PFEP0607291": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "CRBD"
   },
   "PFEP0607317": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "METCZ"
   },
   "PFEP0607408": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "RCD"
   },
   "PFEP0607499": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PDPA"
   },
   "PFEP0607549": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "FGSN"
   },
+  "PFEP0607556": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ANG-PD"
+  },
   "PFEP0607572": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "ADAMG"
   },
   "PFEP0607622": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "RWTP"
   },
+  "PFEP0607697": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TRTN-PF"
+  },
   "PFEP0607721": {
-    "fetched_date": "2026-04-10",
-    "industry": "Software - Application",
-    "sector": "Technology",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "STRK"
   },
   "PFEP0607887": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "OXLCG"
   },
+  "PFEP0607937": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RPT-PC"
+  },
+  "PFEP0607986": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "KKR-PD"
+  },
   "PFEP0608075": {
-    "fetched_date": "2026-04-10",
-    "industry": "Software - Application",
-    "sector": "Technology",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "STRF"
   },
   "PFEP0608414": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BUSEP"
   },
   "PFEP0608430": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MBNKO"
   },
   "PFEP0608562": {
-    "fetched_date": "2026-04-10",
-    "industry": "Software - Application",
-    "sector": "Technology",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "STRD"
   },
   "PFEP0608729": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "ADAMH"
   },
   "PFEP0608885": {
-    "fetched_date": "2026-04-10",
-    "industry": "Software - Application",
-    "sector": "Technology",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "STRC"
   },
+  "PFEP0608893": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CFG-PI"
+  },
   "PFEP0608901": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "METCI"
   },
+  "PFEP0608935": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "LOB-PA"
+  },
+  "PFEP0608943": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "NLY-PJ"
+  },
   "PFEP0608950": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "OXSQH"
   },
   "PFEP0609008": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NEWTP"
   },
+  "PFEP0609032": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "AGM-PH"
+  },
   "PFEP0609123": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AGNCZ"
   },
   "PFEP0609180": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "DTK"
   },
   "PFEP0609214": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "CIMP"
   },
   "PFEP0609222": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WSBCO"
   },
+  "PFEP0609271": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RITM-PE"
+  },
   "PFEP0609321": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "XELLL"
   },
   "PFEP0609420": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "TCPA"
   },
+  "PFEP0609560": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "MTB-PK"
+  },
+  "PFEP0609784": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "XRN-PB"
+  },
   "PFEP0609800": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "RWTQ"
   },
+  "PFEP0609883": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BFH-PA"
+  },
   "PFEP0610139": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "SRJN"
   },
+  "PFEP0610154": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "TRTN-PG"
+  },
+  "PFEP0610162": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RITM-PF"
+  },
+  "PFEP0610246": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "C-PR"
+  },
   "PFEP0610261": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "FCNCN"
   },
   "PFEP0610311": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "CICC"
   },
+  "PFEP0610378": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ORCL-PD"
+  },
+  "PFEP0610501": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "WHR-PA"
+  },
+  "PFEP0610550": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "NEE-PV"
+  },
+  "PFEP0610584": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "FHN-PH"
+  },
+  "PFEP0610790": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CFTR-PA"
+  },
   "US00123Q8565": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AGNCL"
   },
   "US00206R3003": {
@@ -3192,45 +4050,45 @@
     "yahoo_ticker": "T-PC"
   },
   "US00489Q2012": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ACR-PC"
   },
   "US00489Q3002": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ACR-PD"
   },
   "US0082528276": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AMG"
   },
   "US0082528359": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AMG"
   },
   "US0082528433": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AMG"
   },
   "US0082528508": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AMG"
   },
   "US0084922097": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Retail",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ADC-PA"
   },
   "US0126532003": {
@@ -3240,63 +4098,63 @@
     "yahoo_ticker": "ALB"
   },
   "US0200023093": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ALL"
   },
   "US0200027888": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ALL-PJ"
   },
   "US0200028126": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ALL-PI"
   },
   "US0200028381": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ALL-PH"
   },
   "US0259328070": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AFG"
   },
   "US0259328641": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AFG"
   },
   "US0259328724": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AFG"
   },
   "US0259328807": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AFG"
   },
   "US02665T8687": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Residential",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AMH-PH"
   },
   "US02665T8760": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Residential",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AMH-PG"
   },
   "US0357108218": {
@@ -3324,15 +4182,15 @@
     "yahoo_ticker": "NLY-PF"
   },
   "US03769M2052": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "APO"
   },
   "US03769M3043": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "APO"
   },
   "US0389238504": {
@@ -3342,22 +4200,22 @@
     "yahoo_ticker": "ABR-PF"
   },
   "US0389238686": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ABR-PE"
   },
   "US0389238769": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ABR-PD"
   },
   "US03990B3096": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
-    "yahoo_ticker": "ARES"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "ARES-PB"
   },
   "US04208T2078": {
     "fetched_date": "2026-04-10",
@@ -3366,81 +4224,81 @@
     "yahoo_ticker": "AHH-PA"
   },
   "US0423156068": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ARR-PC"
   },
   "US0454872047": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ASB-PE"
   },
   "US0454874027": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ASB-PF"
   },
   "US0454876006": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ASB"
   },
   "US04621X3061": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AIZ"
   },
   "US04686J2006": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ATH-PB"
   },
   "US04686J4085": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ATH-PD"
   },
   "US04686J5074": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ATH-PE"
   },
   "US04686J8615": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ATH-PA"
   },
   "US04911A2069": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AUB-PA"
   },
   "US04914Y3009": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ATLC"
   },
   "US04914Y4098": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ATLC"
   },
   "US05461T3059": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Specialty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AXS-PE"
   },
   "US05554M1009": {
@@ -3450,10 +4308,10 @@
     "yahoo_ticker": "BIP"
   },
   "US05580M7939": {
-    "fetched_date": "2026-04-10",
-    "industry": "Financial Conglomerates",
-    "sector": "Financial Services",
-    "yahoo_ticker": "RILY"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "RILYZ"
   },
   "US05580M8010": {
     "fetched_date": "2026-04-10",
@@ -3468,9 +4326,9 @@
     "yahoo_ticker": "RILY"
   },
   "US05580M8275": {
-    "fetched_date": "2026-04-10",
-    "industry": "Financial Conglomerates",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RILY"
   },
   "US05580M8358": {
@@ -3480,34 +4338,34 @@
     "yahoo_ticker": "RILY"
   },
   "US05614L3087": {
-    "fetched_date": "2026-04-10",
-    "industry": "Specialty Industrial Machinery",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BW"
   },
   "US05614L4077": {
-    "fetched_date": "2026-04-10",
-    "industry": "Specialty Industrial Machinery",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BW-PA"
   },
   "US05614L5066": {
-    "fetched_date": "2026-04-10",
-    "industry": "Specialty Industrial Machinery",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BW"
   },
   "US05990K8412": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BANC-PF"
   },
   "US0605051798": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "BAC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BAC-PK"
   },
   "US0605051954": {
     "fetched_date": "2026-04-10",
@@ -3522,9 +4380,9 @@
     "yahoo_ticker": "BAC"
   },
   "US0605055914": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BAC"
   },
   "US0605056250": {
@@ -3534,15 +4392,15 @@
     "yahoo_ticker": "BAC"
   },
   "US0605056821": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BAC-PL"
   },
   "US0605058157": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BAC-PE"
   },
   "US06053U6010": {
@@ -3564,10 +4422,10 @@
     "yahoo_ticker": "BAC"
   },
   "US06055H6080": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "BAC"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "BAC-PP"
   },
   "US06055H8060": {
     "fetched_date": "2026-04-10",
@@ -3582,45 +4440,45 @@
     "yahoo_ticker": "BAC"
   },
   "US0625403078": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BOH"
   },
   "US0625452075": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BOH-PA"
   },
   "US0640588457": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BK-PK"
   },
   "US0844237067": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WRB"
   },
   "US0844238057": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WRB"
   },
   "US0844238701": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WRB"
   },
   "US0844238883": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WRB"
   },
   "US0970232049": {
@@ -3630,15 +4488,15 @@
     "yahoo_ticker": "BA"
   },
   "US10482B2007": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BHR-PB"
   },
   "US10922N2027": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BHF"
   },
   "US10950A2050": {
@@ -3654,9 +4512,9 @@
     "yahoo_ticker": "BIP"
   },
   "US11276B2088": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Diversified",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BIP"
   },
   "US1167942077": {
@@ -3666,21 +4524,21 @@
     "yahoo_ticker": "BRKR"
   },
   "US1170434062": {
-    "fetched_date": "2026-04-10",
-    "industry": "Recreational Vehicles",
-    "sector": "Consumer Cyclical",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BC"
   },
   "US1170436042": {
-    "fetched_date": "2026-04-10",
-    "industry": "Recreational Vehicles",
-    "sector": "Consumer Cyclical",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BC"
   },
   "US1258968379": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CMS-PC"
   },
   "US1258968452": {
@@ -3696,81 +4554,81 @@
     "yahoo_ticker": "CMS"
   },
   "US1258968601": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CMS"
   },
   "US12621E3018": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CNO"
   },
   "US14040H7338": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "COF-PN"
   },
   "US14040H7585": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "COF-PL"
   },
   "US14040H7742": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "COF-PK"
   },
   "US14040H7825": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "COF-PJ"
   },
   "US14040H8245": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "COF-PI"
   },
   "US14167R1005": {
-    "fetched_date": "2026-04-10",
-    "industry": "Health Information Services",
-    "sector": "Healthcare",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CCLD"
   },
   "US14314C1053": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CG"
   },
   "US16115Q3083": {
-    "fetched_date": "2026-04-10",
-    "industry": "Specialty Industrial Machinery",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GTLS"
   },
   "US16115Q4073": {
-    "fetched_date": "2026-04-10",
-    "industry": "Specialty Industrial Machinery",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GTLS"
   },
   "US16208T2015": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CLDT-PA"
   },
   "US16934Q3074": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CIM-PA"
   },
   "US16934Q4064": {
@@ -3786,87 +4644,87 @@
     "yahoo_ticker": "CIM-PC"
   },
   "US16934Q6044": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CIM-PD"
   },
   "US16934Q8693": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CIM"
   },
   "US17259U4022": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CION"
   },
   "US1729672428": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
-    "yahoo_ticker": "C"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "CPII"
   },
   "US1730802014": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "C"
   },
   "US1746104025": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CFG-PE"
   },
   "US1746106004": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CFG-PH"
   },
   "US1746108083": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "CFG-PI"
   },
   "US20451Q2030": {
-    "fetched_date": "2026-04-10",
-    "industry": "Conglomerates",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CODI-PA"
   },
   "US20451Q3020": {
-    "fetched_date": "2026-04-10",
-    "industry": "Conglomerates",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CODI-PB"
   },
   "US20451Q4010": {
-    "fetched_date": "2026-04-10",
-    "industry": "Conglomerates",
-    "sector": "Industrials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CODI-PC"
   },
   "US21871X2080": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CRBG"
   },
   "US22948Q2003": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Diversified",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CTO-PA"
   },
   "US2298993070": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CFR-PB"
   },
   "US2333317921": {
@@ -3894,9 +4752,9 @@
     "yahoo_ticker": "DTE"
   },
   "US2527844003": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DRH"
   },
   "US2538688225": {
@@ -3906,15 +4764,15 @@
     "yahoo_ticker": "DLR-PL"
   },
   "US2538688308": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DLR-PK"
   },
   "US2538688555": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DLR-PJ"
   },
   "US25401T3068": {
@@ -3930,21 +4788,21 @@
     "yahoo_ticker": "DBRG-PI"
   },
   "US25401T5048": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DBRG-PH"
   },
   "US25406P2002": {
-    "fetched_date": "2026-04-10",
-    "industry": "Department Stores",
-    "sector": "Consumer Cyclical",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DDS"
   },
   "US25432X2018": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DCOM"
   },
   "US25525P2065": {
@@ -3960,9 +4818,9 @@
     "yahoo_ticker": "DHC"
   },
   "US2635343070": {
-    "fetched_date": "2026-04-10",
-    "industry": "Agricultural Inputs",
-    "sector": "Basic Materials",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "CTVA"
   },
   "US26441C4024": {
@@ -3978,51 +4836,51 @@
     "yahoo_ticker": "DUK-PA"
   },
   "US26817Q8785": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "DX-PC"
   },
   "US26884U2087": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EPR-PC"
   },
   "US26884U3077": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EPR-PE"
   },
   "US26884U5056": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EPR-PG"
   },
   "US2836782092": {
-    "fetched_date": "2026-04-10",
-    "industry": "Oil & Gas Midstream",
-    "sector": "Energy",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "KMI"
   },
   "US28852N2080": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EFC"
   },
   "US28852N3070": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EFC-PB"
   },
   "US28852N4060": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EFC-PC"
   },
   "US29364D1000": {
@@ -4038,9 +4896,9 @@
     "yahoo_ticker": "ETR"
   },
   "US29364P1030": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ETR"
   },
   "US29364W1080": {
@@ -4050,87 +4908,87 @@
     "yahoo_ticker": "ETR"
   },
   "US29380T4022": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Specialty",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EPR"
   },
   "US29452E2000": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EQH-PA"
   },
   "US29452E4089": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "EQH-PC"
   },
   "US30190A2033": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FG"
   },
   "US30190A6091": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FG"
   },
   "US30258N5014": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "FATBP"
   },
   "US3137452005": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Retail",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FRT-PC"
   },
   "US3167738372": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FITBM"
   },
   "US31959X2027": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FCNCA"
   },
   "US31959X4007": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FCNCA"
   },
   "US3196263053": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FCNCA"
   },
   "US3205174028": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FHN-PE"
   },
   "US3205178409": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "FHN-PH"
   },
   "US3205178656": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FHN-PF"
   },
   "US3453708113": {
@@ -4152,21 +5010,21 @@
     "yahoo_ticker": "F"
   },
   "US34988V1061": {
-    "fetched_date": "2026-04-10",
-    "industry": "Footwear & Accessories",
-    "sector": "Consumer Cyclical",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FOSL"
   },
   "US34988V3042": {
-    "fetched_date": "2026-04-10",
-    "industry": "Footwear & Accessories",
-    "sector": "Consumer Cyclical",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FOSL"
   },
   "US34988VAF31": {
-    "fetched_date": "2026-04-10",
-    "industry": "Footwear & Accessories",
-    "sector": "Consumer Cyclical",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FOSL"
   },
   "US35243J2006": {
@@ -4182,87 +5040,87 @@
     "yahoo_ticker": "SO"
   },
   "US3765468000": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GAIN"
   },
   "US3765468596": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GAIN"
   },
   "US3765468679": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GAIN"
   },
   "US3765468836": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GAIN"
   },
   "US3793783008": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Diversified",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GNL-PA"
   },
   "US3793784097": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Diversified",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GNL-PB"
   },
   "US3793785086": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Diversified",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GNL-PD"
   },
   "US37959E3009": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GL"
   },
   "US38143Y6656": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GS-PA"
   },
   "US38144G8042": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GS-PD"
   },
   "US38144X6094": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "GS-PC"
   },
   "US38741L3050": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "GPMT-PA"
   },
   "US4101204067": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "HWC"
   },
   "US4165186036": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "HIG-PG"
   },
   "US42824C2089": {
@@ -4278,21 +5136,21 @@
     "yahoo_ticker": "HPP-PC"
   },
   "US4461507570": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "HBANZ"
   },
   "US46131B5066": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "IVR-PC"
   },
   "US46817M2061": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "JXN"
   },
   "US48128B5232": {
@@ -4338,10 +5196,10 @@
     "yahoo_ticker": "KREF-PA"
   },
   "US48251W5004": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
-    "yahoo_ticker": "KKR"
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "KKR-PD"
   },
   "US48251W6093": {
     "fetched_date": "2026-04-10",
@@ -4350,21 +5208,21 @@
     "yahoo_ticker": "KKR"
   },
   "US48253M1045": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "KKR"
   },
   "US4884013081": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Property & Casualty",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "KMPR"
   },
   "US4932678430": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "KEY"
   },
   "US49446R7118": {
@@ -4374,57 +5232,57 @@
     "yahoo_ticker": "KIM-PM"
   },
   "US49446R7373": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Retail",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "KIM-PL"
   },
   "US5290433094": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "LXP-PC"
   },
   "US5303075031": {
-    "fetched_date": "2026-04-10",
-    "industry": "Telecom Services",
-    "sector": "Communication Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "LBRDA"
   },
   "US5341878859": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "LNC-PD"
   },
   "US53803X4025": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "LOB-PA"
   },
   "US55261F8499": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MTB-PK"
   },
   "US55261F8648": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MTB-PJ"
   },
   "US55261F8721": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MTB-PH"
   },
   "US55272X4097": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MFA-PB"
   },
   "US55272X5086": {
@@ -4434,39 +5292,39 @@
     "yahoo_ticker": "MFA-PC"
   },
   "US55272X7066": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MFA"
   },
   "US58844R8503": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MBIN"
   },
   "US58844R8842": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MBIN"
   },
   "US59156R5046": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MET-PA"
   },
   "US59156R8503": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MET-PF"
   },
   "US59156R8768": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MET-PE"
   },
   "US5949728530": {
@@ -4500,63 +5358,63 @@
     "yahoo_ticker": "MCHP"
   },
   "US5977423038": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MSBI"
   },
   "US61747S5047": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MS"
   },
   "US61761J4067": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MS-PI"
   },
   "US61762V2007": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MS-PE"
   },
   "US61762V6065": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MS-PK"
   },
   "US61762V8046": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MS-PL"
   },
   "US61762V8384": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MS-PQ"
   },
   "US61762V8533": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MS-PP"
   },
   "US61762V8616": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MS-PO"
   },
   "US61763E2072": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "MS-PF"
   },
   "US62913M2061": {
@@ -4572,27 +5430,33 @@
     "yahoo_ticker": "NRUC"
   },
   "US6378702053": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NSA-PA"
   },
+  "US6378703044": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "NSA-PB"
+  },
   "US63938C4050": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NAVI"
   },
   "US6475513080": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NMFC"
   },
   "US64828T3005": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RITM-PA"
   },
   "US64828T4094": {
@@ -4614,9 +5478,9 @@
     "yahoo_ticker": "RITM-PD"
   },
   "US64828T8053": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RITM-PE"
   },
   "US64828T8889": {
@@ -4626,27 +5490,27 @@
     "yahoo_ticker": "RITM-PF"
   },
   "US6494452021": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FLG-PA"
   },
   "US64944P3073": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FLG"
   },
   "US6496048165": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "ADAM"
   },
   "US6525267083": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NEWT"
   },
   "US65339F1194": {
@@ -4668,9 +5532,9 @@
     "yahoo_ticker": "NEE"
   },
   "US65339F7134": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Electric",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "NEEXU"
   },
   "US65339K8291": {
@@ -4692,13 +5556,13 @@
     "yahoo_ticker": "NEE"
   },
   "US6740013007": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "OAK-PA"
   },
   "US6740014096": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "OAK-PB"
@@ -4722,45 +5586,45 @@
     "yahoo_ticker": "PPL"
   },
   "US6943082064": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "PCG-PA"
   },
   "US70509V6056": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PEB-PE"
   },
   "US70509V7047": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PEB-PF"
   },
   "US70509V8037": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PEB-PG"
   },
   "US70509V8862": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PEB-PH"
   },
   "US70931T3014": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PMT-PA"
   },
   "US70931T4004": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PMT-PB"
   },
   "US70931T5092": {
@@ -4770,28 +5634,40 @@
     "yahoo_ticker": "PMT-PC"
   },
   "US70931T7072": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PMT"
   },
   "US70931T8062": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PMT"
   },
   "US72346Q3020": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PNFP-PB"
   },
+  "US72348N2080": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PNFP-PA"
+  },
   "US72348N3070": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PNFP-PB"
+  },
+  "US72348N5059": {
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
+    "yahoo_ticker": "PNFP-PC"
   },
   "US7244795065": {
     "fetched_date": "2026-04-10",
@@ -4800,33 +5676,33 @@
     "yahoo_ticker": "PBI"
   },
   "US73317H2067": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BPOP"
   },
   "US74348T5653": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PSEC-PA"
   },
   "US7443208050": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PRU"
   },
   "US7443208704": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PRU"
   },
   "US7443208886": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PRU"
   },
   "US74460W3960": {
@@ -4842,9 +5718,9 @@
     "yahoo_ticker": "PSA-PR"
   },
   "US74460W4463": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PSA-PQ"
   },
   "US74460W4612": {
@@ -4854,9 +5730,9 @@
     "yahoo_ticker": "PSA-PP"
   },
   "US74460W4877": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PSA-PO"
   },
   "US74460W5114": {
@@ -4866,9 +5742,9 @@
     "yahoo_ticker": "PSA-PN"
   },
   "US74460W5379": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PSA-PM"
   },
   "US74460W5528": {
@@ -4878,9 +5754,9 @@
     "yahoo_ticker": "PSA-PL"
   },
   "US74460W5783": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Industrial",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "PSA-PK"
   },
   "US74460W5940": {
@@ -4920,75 +5796,75 @@
     "yahoo_ticker": "RLJ-PA"
   },
   "US75574U4085": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RC"
   },
   "US75574U6064": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RC"
   },
   "US75574U8383": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RC"
   },
   "US75574U8870": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RC-PE"
   },
   "US7580758578": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RWT"
   },
   "US7591EP7044": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RF-PC"
   },
   "US7591EP8604": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RF"
   },
   "US7591EP8869": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RF-PE"
   },
   "US7593518027": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Reinsurance",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RGA"
   },
   "US7593518852": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Reinsurance",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RGA"
   },
   "US75968N3098": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Reinsurance",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RNR-PF"
   },
   "US78163D4079": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "RWAY"
   },
   "US78407R2040": {
@@ -5004,39 +5880,39 @@
     "yahoo_ticker": "EIX"
   },
   "US78440X5077": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Office",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SLG-PI"
   },
   "US80349A8027": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SAR"
   },
   "US80349A8514": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SAR"
   },
   "US8043958797": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Retail",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "BFS-PE"
   },
   "US8085136005": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SCHW-PD"
   },
   "US8085138654": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SCHW-PJ"
   },
   "US8168516040": {
@@ -5046,9 +5922,9 @@
     "yahoo_ticker": "SRE"
   },
   "US82452J3077": {
-    "fetched_date": "2026-04-10",
-    "industry": "Software - Infrastructure",
-    "sector": "Technology",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "FOUR"
   },
   "US82846H5046": {
@@ -5088,75 +5964,75 @@
     "yahoo_ticker": "SO"
   },
   "US84857L7055": {
-    "fetched_date": "2026-04-10",
-    "industry": "Utilities - Regulated Gas",
-    "sector": "Utilities",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SR"
   },
   "US8574778556": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "STT-PG"
   },
   "US8606306079": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SF"
   },
   "US8606307069": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SF-PB"
   },
   "US8606308620": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SF-PD"
   },
   "US8606308703": {
-    "fetched_date": "2026-04-10",
-    "industry": "Capital Markets",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SF-PC"
   },
   "US8660826053": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "INN-PE"
   },
   "US8660827044": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "INN-PF"
   },
   "US8678928040": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SHO-PH"
   },
   "US8678928875": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Hotel & Motel",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SHO-PI"
   },
   "US87165B2025": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SYF-PA"
   },
   "US87165B4005": {
-    "fetched_date": "2026-04-10",
-    "industry": "Credit Services",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "SYF-PB"
   },
   "US87264A1051": {
@@ -5178,15 +6054,15 @@
     "yahoo_ticker": "TMUS"
   },
   "US8726521029": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TPG"
   },
   "US87266M2061": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TRTX-PC"
   },
   "US8794337613": {
@@ -5214,39 +6090,39 @@
     "yahoo_ticker": "TVA"
   },
   "US8964426055": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TRIN"
   },
   "US8964427046": {
-    "fetched_date": "2026-04-10",
-    "industry": "Asset Management",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TRIN"
   },
   "US89832Q6952": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TFC-PR"
   },
   "US89832Q7455": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TFC-PO"
   },
   "US89832Q8107": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TFC-PI"
   },
   "US90187B2007": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TWO-PA"
   },
   "US90187B3096": {
@@ -5256,31 +6132,31 @@
     "yahoo_ticker": "TWO-PB"
   },
   "US90187B5075": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TWO-PC"
   },
   "US90187B8871": {
-    "fetched_date": "2026-04-10",
-    "industry": "REIT - Mortgage",
-    "sector": "Real Estate",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "TWO"
   },
   "US9027882078": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "UMBF"
   },
   "US9027884058": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "UMBF"
   },
   "US9029738666": {
-    "fetched_date": "2026-04-10",
+    "fetched_date": "2026-05-27",
     "industry": "",
     "sector": "",
     "yahoo_ticker": "USB-PA"
@@ -5298,9 +6174,9 @@
     "yahoo_ticker": "AD"
   },
   "US9116848014": {
-    "fetched_date": "2026-04-10",
-    "industry": "Telecom Services",
-    "sector": "Communication Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "AD"
   },
   "US9116848840": {
@@ -5310,9 +6186,9 @@
     "yahoo_ticker": "AD"
   },
   "US91529Y6014": {
-    "fetched_date": "2026-04-10",
-    "industry": "Insurance - Life",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "UNM"
   },
   "US9182842099": {
@@ -5346,27 +6222,27 @@
     "yahoo_ticker": "VNO-PL"
   },
   "US9290892093": {
-    "fetched_date": "2026-04-10",
-    "industry": "Financial Conglomerates",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "VOYA-PB"
   },
   "US9478905055": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WBS-PF"
   },
   "US9478907036": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WBS-PG"
   },
   "US9497468044": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WFC-PL"
   },
   "US94988U1280": {
@@ -5376,15 +6252,15 @@
     "yahoo_ticker": "WFC"
   },
   "US94988U1512": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WFC-PZ"
   },
   "US94988U6560": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Diversified",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WFC-PY"
   },
   "US95002Y2028": {
@@ -5400,9 +6276,9 @@
     "yahoo_ticker": "WFC"
   },
   "US9576384062": {
-    "fetched_date": "2026-04-10",
-    "industry": "Banks - Regional",
-    "sector": "Financial Services",
+    "fetched_date": "2026-05-27",
+    "industry": "",
+    "sector": "",
     "yahoo_ticker": "WAL-PA"
   },
   "US9633202059": {
