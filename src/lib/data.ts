@@ -8,6 +8,14 @@ const DATA_ROOT = path.join(process.cwd(), "data");
 export const SUPPORTED_ETFS = ["PFF", "PGX", "FPE", "PFFA", "PFFD", "PFXF"] as const;
 export type EtfTicker = typeof SUPPORTED_ETFS[number];
 
+/**
+ * Maximum number of historical days the dashboard surfaces. Older CSVs stay
+ * in the repo for backtests / Python pipeline use, but the Next pages cap
+ * date navigation and per-ETF loads at this window so build artifacts stay
+ * small even as the holdings archive keeps growing.
+ */
+const MAX_HISTORY_DAYS = 90;
+
 function readCsv<T>(filePath: string): T[] {
   const content = fs.readFileSync(filePath, "utf-8");
   const result = Papa.parse<T>(content, {
@@ -153,7 +161,8 @@ export function listHoldingDates(etf: EtfTicker = "PFF"): string[] {
     .filter((f) => f.endsWith(".csv"))
     .map((f) => f.replace(".csv", ""))
     .sort()
-    .reverse();
+    .reverse()
+    .slice(0, MAX_HISTORY_DAYS);
 }
 
 export function listFlowDates(etf: EtfTicker = "PFF"): string[] {
@@ -163,7 +172,8 @@ export function listFlowDates(etf: EtfTicker = "PFF"): string[] {
     .filter((f) => f.endsWith(".csv"))
     .map((f) => f.replace(".csv", ""))
     .sort()
-    .reverse();
+    .reverse()
+    .slice(0, MAX_HISTORY_DAYS);
 }
 
 export function loadHoldings(date: string, etf: EtfTicker = "PFF"): Holding[] {

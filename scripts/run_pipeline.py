@@ -59,7 +59,15 @@ def run_etf(etf: str, cfg: dict, date_arg: str | None):
         return False
 
     print(f"\n--- Step 1: Fetch holdings ---")
-    wrote = fetcher(date_arg)
+    try:
+        wrote = fetcher(date_arg)
+    except Exception as e:
+        # Isolate provider failures so one broken feed (e.g. iShares endpoint
+        # change) doesn't cascade across the other 5 ETFs.
+        import traceback
+        print(f"  {etf} fetch failed: {e}")
+        traceback.print_exc()
+        return False
     if not wrote:
         print(f"  No new holdings for {etf} — skipping remaining steps.")
         return False
