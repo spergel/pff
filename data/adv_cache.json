@@ -764,6 +764,11 @@
     "fetched_date": "2026-05-27",
     "yahoo_ticker": null
   },
+  "46138E511": {
+    "adv_30d": 2150257,
+    "fetched_date": "2026-05-30",
+    "yahoo_ticker": "PGX"
+  },
   "46817M206": {
     "adv_30d": 549629,
     "fetched_date": "2026-05-27",
@@ -1298,6 +1303,11 @@
     "adv_30d": null,
     "fetched_date": "2026-05-27",
     "yahoo_ticker": null
+  },
+  "89117F8Z5": {
+    "adv_30d": 1780953,
+    "fetched_date": "2026-05-30",
+    "yahoo_ticker": "TD"
   },
   "893526681": {
     "adv_30d": null,
