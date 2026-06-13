@@ -1129,14 +1129,24 @@
     "fetched_date": "2026-06-12",
     "yahoo_ticker": "PSA-PF"
   },
+  "74913G857": {
+    "adv_30d": null,
+    "fetched_date": "2026-06-13",
+    "yahoo_ticker": null
+  },
+  "74913G865": {
+    "adv_30d": null,
+    "fetched_date": "2026-06-13",
+    "yahoo_ticker": null
+  },
   "74913G873": {
     "adv_30d": null,
-    "fetched_date": "2026-05-27",
+    "fetched_date": "2026-06-13",
     "yahoo_ticker": null
   },
   "74913G881": {
     "adv_30d": null,
-    "fetched_date": "2026-05-27",
+    "fetched_date": "2026-06-13",
     "yahoo_ticker": null
   },
   "7591EP704": {
