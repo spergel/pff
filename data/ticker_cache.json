@@ -3891,6 +3891,24 @@
     "ticker": "QVCN",
     "ticker_raw": "QVCN"
   },
+  "US74913G8574": {
+    "figi": null,
+    "figi_ticker": "CTL 6.75 06/15/52",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "CTL",
+    "ticker_raw": ""
+  },
+  "US74913G8657": {
+    "figi": null,
+    "figi_ticker": "CTL 6.5 09/01/51",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "CTL",
+    "ticker_raw": ""
+  },
   "US74913G8731": {
     "figi": "BBG00GGWSZ35",
     "figi_name": "QWEST CORP",
