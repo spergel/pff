@@ -75,9 +75,9 @@
     "yahoo_ticker": null
   },
   "018581603": {
-    "adv_30d": 68968,
-    "fetched_date": "2026-06-19",
-    "yahoo_ticker": "BFH-PB"
+    "adv_30d": 739717,
+    "fetched_date": "2026-06-27",
+    "yahoo_ticker": "BFH"
   },
   "018820AF7": {
     "adv_30d": null,
@@ -1375,8 +1375,8 @@
     "yahoo_ticker": null
   },
   "89117F8Z5": {
-    "adv_30d": 1780953,
-    "fetched_date": "2026-05-30",
+    "adv_30d": 2218907,
+    "fetched_date": "2026-06-27",
     "yahoo_ticker": "TD"
   },
   "893526681": {
