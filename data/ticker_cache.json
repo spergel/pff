@@ -481,6 +481,24 @@
     "ticker": "ALL-H",
     "ticker_raw": "ALL"
   },
+  "US02079K4040": {
+    "figi": null,
+    "figi_ticker": "GOOGL 6.25 05/15/29 A",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "GOOGL",
+    "ticker_raw": ""
+  },
+  "US02079K6029": {
+    "figi": null,
+    "figi_ticker": "GOOGL 6.25 05/15/29 B",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "GOOGL",
+    "ticker_raw": ""
+  },
   "US0256768591": {
     "figi": null,
     "figi_name": null,
@@ -4440,6 +4458,15 @@
     "securityType": "PUBLIC",
     "ticker": "SHO-I",
     "ticker_raw": "SHO"
+  },
+  "US86800U5002": {
+    "figi": null,
+    "figi_ticker": "SMCI 7 06/01/29",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "SMCI",
+    "ticker_raw": ""
   },
   "US87157B3015": {
     "figi": "BBG011MF0X50",
