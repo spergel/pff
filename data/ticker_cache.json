@@ -117,6 +117,15 @@
     "ticker": "SPNT-B",
     "ticker_raw": "SPNT"
   },
+  "BMG9001E1443": {
+    "figi": null,
+    "figi_ticker": "LILAK 9 PERP A",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "LILAK",
+    "ticker_raw": ""
+  },
   "BMG9078F1317": {
     "figi": "BBG00PGH4647",
     "figi_name": "TRITON INTERNATIONAL LTD",
