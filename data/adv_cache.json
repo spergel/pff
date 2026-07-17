@@ -1171,7 +1171,7 @@
   },
   "74913G865": {
     "adv_30d": null,
-    "fetched_date": "2026-07-09",
+    "fetched_date": "2026-07-17",
     "yahoo_ticker": null
   },
   "74913G873": {
@@ -1271,7 +1271,7 @@
   },
   "825252885": {
     "adv_30d": null,
-    "fetched_date": "2026-07-09",
+    "fetched_date": "2026-07-17",
     "yahoo_ticker": null
   },
   "842587404": {
@@ -2804,6 +2804,11 @@
     "fetched_date": "2026-06-25",
     "yahoo_ticker": null
   },
+  "BWQLSB7": {
+    "adv_30d": null,
+    "fetched_date": "2026-07-17",
+    "yahoo_ticker": null
+  },
   "BWRNH48": {
     "adv_30d": 664,
     "fetched_date": "2026-07-09",
@@ -2885,8 +2890,8 @@
     "yahoo_ticker": null
   },
   "CASHUSD00": {
-    "adv_30d": 1048576,
-    "fetched_date": "2026-07-09",
+    "adv_30d": 1038400,
+    "fetched_date": "2026-07-17",
     "yahoo_ticker": "USD"
   },
   "COYO8456254": {
