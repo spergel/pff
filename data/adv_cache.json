@@ -1274,6 +1274,11 @@
     "fetched_date": "2026-07-22",
     "yahoo_ticker": "SRE"
   },
+  "816851BT5": {
+    "adv_30d": 3821150,
+    "fetched_date": "2026-07-23",
+    "yahoo_ticker": "SRE"
+  },
   "825252885": {
     "adv_30d": null,
     "fetched_date": "2026-07-17",
@@ -3060,8 +3065,8 @@
     "yahoo_ticker": null
   },
   "PFEP0066209": {
-    "adv_30d": 38479,
-    "fetched_date": "2026-07-15",
+    "adv_30d": 38460,
+    "fetched_date": "2026-07-23",
     "yahoo_ticker": "FLG-PU"
   },
   "PFEP0101675": {
@@ -3630,8 +3635,8 @@
     "yahoo_ticker": "GNL-PD"
   },
   "PFEP0603712": {
-    "adv_30d": 9809,
-    "fetched_date": "2026-07-15",
+    "adv_30d": 8257,
+    "fetched_date": "2026-07-23",
     "yahoo_ticker": "GNL-PE"
   },
   "PFEP0603993": {
@@ -3640,13 +3645,13 @@
     "yahoo_ticker": "ABXL"
   },
   "PFEP0604009": {
-    "adv_30d": 67694,
-    "fetched_date": "2026-07-15",
+    "adv_30d": 69545,
+    "fetched_date": "2026-07-23",
     "yahoo_ticker": "ET-PI"
   },
   "PFEP0604199": {
-    "adv_30d": 48688,
-    "fetched_date": "2026-07-15",
+    "adv_30d": 45729,
+    "fetched_date": "2026-07-23",
     "yahoo_ticker": "BANC-PF"
   },
   "PFEP0604637": {
@@ -3680,8 +3685,8 @@
     "yahoo_ticker": "SCE-PN"
   },
   "PFEP0605642": {
-    "adv_30d": 5813,
-    "fetched_date": "2026-07-15",
+    "adv_30d": 9333,
+    "fetched_date": "2026-07-23",
     "yahoo_ticker": "MITP"
   },
   "PFEP0605709": {
@@ -3750,8 +3755,8 @@
     "yahoo_ticker": "BA-PA"
   },
   "PFEP0607135": {
-    "adv_30d": 5220,
-    "fetched_date": "2026-07-15",
+    "adv_30d": 5150,
+    "fetched_date": "2026-07-23",
     "yahoo_ticker": "SPMA"
   },
   "PFEP0607275": {
@@ -3785,8 +3790,8 @@
     "yahoo_ticker": "RCD"
   },
   "PFEP0607499": {
-    "adv_30d": 1557,
-    "fetched_date": "2026-07-15",
+    "adv_30d": 3207,
+    "fetched_date": "2026-07-23",
     "yahoo_ticker": "PDPA"
   },
   "PFEP0607549": {
@@ -3951,7 +3956,7 @@
   },
   "PFEP0609636": {
     "adv_30d": null,
-    "fetched_date": "2026-07-15",
+    "fetched_date": "2026-07-23",
     "yahoo_ticker": null
   },
   "PFEP0609784": {
@@ -4068,6 +4073,11 @@
     "adv_30d": 125755,
     "fetched_date": "2026-07-21",
     "yahoo_ticker": "CTHH"
+  },
+  "PFEP0611194": {
+    "adv_30d": 3339043,
+    "fetched_date": "2026-07-23",
+    "yahoo_ticker": "SMCIP"
   },
   "PFEP0611434": {
     "adv_30d": null,
