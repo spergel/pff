@@ -75,8 +75,8 @@
     "yahoo_ticker": null
   },
   "018581603": {
-    "adv_30d": 759560,
-    "fetched_date": "2026-07-16",
+    "adv_30d": 747247,
+    "fetched_date": "2026-07-25",
     "yahoo_ticker": "BFH"
   },
   "018820AF7": {
@@ -1176,7 +1176,7 @@
   },
   "74913G865": {
     "adv_30d": null,
-    "fetched_date": "2026-07-17",
+    "fetched_date": "2026-07-25",
     "yahoo_ticker": null
   },
   "74913G873": {
@@ -1281,7 +1281,7 @@
   },
   "825252885": {
     "adv_30d": null,
-    "fetched_date": "2026-07-17",
+    "fetched_date": "2026-07-25",
     "yahoo_ticker": null
   },
   "842587404": {
