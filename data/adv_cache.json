@@ -615,8 +615,8 @@
     "yahoo_ticker": null
   },
   "29359U109": {
-    "adv_30d": 5106,
-    "fetched_date": "2026-07-24",
+    "adv_30d": 5621,
+    "fetched_date": "2026-08-01",
     "yahoo_ticker": "ESGRF"
   },
   "29364D100": {
@@ -2290,9 +2290,9 @@
     "yahoo_ticker": "VNO-PO"
   },
   "BMHXRD7": {
-    "adv_30d": null,
-    "fetched_date": "2026-07-24",
-    "yahoo_ticker": null
+    "adv_30d": 12991,
+    "fetched_date": "2026-08-01",
+    "yahoo_ticker": "SOPA"
   },
   "BMJ0KL5": {
     "adv_30d": null,
@@ -2600,8 +2600,8 @@
     "yahoo_ticker": "ARES-PB"
   },
   "BRBLC59": {
-    "adv_30d": 5643793,
-    "fetched_date": "2026-07-24",
+    "adv_30d": 5850977,
+    "fetched_date": "2026-08-01",
     "yahoo_ticker": "BA"
   },
   "BRBLDX4": {
@@ -2610,8 +2610,8 @@
     "yahoo_ticker": "NEE"
   },
   "BRBVKF5": {
-    "adv_30d": 22420087,
-    "fetched_date": "2026-07-24",
+    "adv_30d": 20039120,
+    "fetched_date": "2026-08-01",
     "yahoo_ticker": "HPE"
   },
   "BRC7MJ0": {
@@ -2695,13 +2695,13 @@
     "yahoo_ticker": "UMBF"
   },
   "BTTQ6B4": {
-    "adv_30d": 3142636,
-    "fetched_date": "2026-07-24",
-    "yahoo_ticker": "ORCL-PD"
+    "adv_30d": 37738443,
+    "fetched_date": "2026-08-01",
+    "yahoo_ticker": "ORCL"
   },
   "BTTRKK4": {
-    "adv_30d": 11952830,
-    "fetched_date": "2026-07-24",
+    "adv_30d": 12203773,
+    "fetched_date": "2026-08-01",
     "yahoo_ticker": "MCHP"
   },
   "BTVJJB2": {
@@ -2840,8 +2840,8 @@
     "yahoo_ticker": "CPII"
   },
   "BWTWYL9": {
-    "adv_30d": 11097640,
-    "fetched_date": "2026-07-24",
+    "adv_30d": 11510240,
+    "fetched_date": "2026-08-01",
     "yahoo_ticker": "NEE"
   },
   "BXNSMM7": {
