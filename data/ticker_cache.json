@@ -1213,6 +1213,15 @@
     "ticker": "WRB",
     "ticker_raw": "WRB"
   },
+  "US09175D2009": {
+    "figi": null,
+    "figi_ticker": "BMNR 9.5 PERP A",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "BMNR",
+    "ticker_raw": ""
+  },
   "US0970232049": {
     "figi": "BBG01QK4ZRJ2",
     "figi_name": "BOEING CO/THE",
