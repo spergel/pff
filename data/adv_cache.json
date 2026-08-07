@@ -460,8 +460,8 @@
     "yahoo_ticker": "CMS-PC"
   },
   "125896845": {
-    "adv_30d": 3502620,
-    "fetched_date": "2026-07-30",
+    "adv_30d": 3601990,
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": "CMS"
   },
   "125896852": {
@@ -2245,8 +2245,8 @@
     "yahoo_ticker": null
   },
   "BMG9001E1443": {
-    "adv_30d": 2061950,
-    "fetched_date": "2026-07-30",
+    "adv_30d": 1626663,
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": "LILAK"
   },
   "BMG9078F1317": {
@@ -3051,12 +3051,12 @@
   },
   "G16249156": {
     "adv_30d": null,
-    "fetched_date": "2026-07-30",
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": null
   },
   "G16249164": {
     "adv_30d": null,
-    "fetched_date": "2026-07-30",
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": null
   },
   "G16252267": {
@@ -3610,8 +3610,8 @@
     "yahoo_ticker": "RITM-PD"
   },
   "PFEP0599779": {
-    "adv_30d": 15890,
-    "fetched_date": "2026-07-30",
+    "adv_30d": 18892,
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": "WAL-PA"
   },
   "PFEP0599894": {
@@ -4270,13 +4270,13 @@
     "yahoo_ticker": "ALL-PH"
   },
   "US02079K4040": {
-    "adv_30d": 34350273,
-    "fetched_date": "2026-07-30",
+    "adv_30d": 34272033,
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": "GOOGL"
   },
   "US02079K6029": {
-    "adv_30d": 34350273,
-    "fetched_date": "2026-07-30",
+    "adv_30d": 34272033,
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": "GOOGL"
   },
   "US0256768591": {
@@ -4350,8 +4350,8 @@
     "yahoo_ticker": "APO"
   },
   "US0389238504": {
-    "adv_30d": 21648,
-    "fetched_date": "2026-07-30",
+    "adv_30d": 21427,
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": "ABR-PF"
   },
   "US0389238686": {
@@ -5880,8 +5880,8 @@
     "yahoo_ticker": "PNFP-PC"
   },
   "US7244795065": {
-    "adv_30d": 2418467,
-    "fetched_date": "2026-07-30",
+    "adv_30d": 2234250,
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": "PBI"
   },
   "US73317H2067": {
@@ -5991,12 +5991,12 @@
   },
   "US74913G8574": {
     "adv_30d": null,
-    "fetched_date": "2026-07-30",
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": null
   },
   "US74913G8657": {
     "adv_30d": null,
-    "fetched_date": "2026-07-30",
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": null
   },
   "US74913G8731": {
@@ -6170,8 +6170,8 @@
     "yahoo_ticker": "FOUR"
   },
   "US82846H5046": {
-    "adv_30d": 27868030,
-    "fetched_date": "2026-07-30",
+    "adv_30d": 28251577,
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": "QXO"
   },
   "US8425874042": {
@@ -6265,8 +6265,8 @@
     "yahoo_ticker": "SHO-PI"
   },
   "US86800U5002": {
-    "adv_30d": 51584563,
-    "fetched_date": "2026-07-30",
+    "adv_30d": 44889027,
+    "fetched_date": "2026-08-07",
     "yahoo_ticker": "SMCI"
   },
   "US87157B3015": {
