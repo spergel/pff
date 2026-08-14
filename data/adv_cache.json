@@ -211,7 +211,7 @@
   },
   "04686J838": {
     "adv_30d": null,
-    "fetched_date": "2026-08-06",
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": null
   },
   "04686J861": {
@@ -765,8 +765,8 @@
     "yahoo_ticker": "F"
   },
   "345370837": {
-    "adv_30d": 53731400,
-    "fetched_date": "2026-08-06",
+    "adv_30d": 50788290,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "F"
   },
   "345370845": {
@@ -1010,8 +1010,8 @@
     "yahoo_ticker": "MS-PE"
   },
   "61762V606": {
-    "adv_30d": 81447,
-    "fetched_date": "2026-08-06",
+    "adv_30d": 66748,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "MS-PK"
   },
   "61762V804": {
@@ -1241,7 +1241,7 @@
   },
   "74913G857": {
     "adv_30d": null,
-    "fetched_date": "2026-08-06",
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": null
   },
   "74913G865": {
@@ -2996,7 +2996,7 @@
   },
   "CA67000B2030": {
     "adv_30d": null,
-    "fetched_date": "2026-08-05",
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": null
   },
   "CASHUSD00": {
@@ -3295,8 +3295,8 @@
     "yahoo_ticker": null
   },
   "PFEP0528133": {
-    "adv_30d": 3049,
-    "fetched_date": "2026-08-06",
+    "adv_30d": 2821,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "GLOP-PA"
   },
   "PFEP0529198": {
@@ -3470,8 +3470,8 @@
     "yahoo_ticker": "CODI-PC"
   },
   "PFEP0582072": {
-    "adv_30d": 5747,
-    "fetched_date": "2026-08-06",
+    "adv_30d": 5934,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "GNL-PB"
   },
   "PFEP0583278": {
@@ -3815,8 +3815,8 @@
     "yahoo_ticker": "RWTO"
   },
   "PFEP0606301": {
-    "adv_30d": 8083,
-    "fetched_date": "2026-08-06",
+    "adv_30d": 7987,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "TRNI"
   },
   "PFEP0606319": {
@@ -3845,8 +3845,8 @@
     "yahoo_ticker": "HPE-PC"
   },
   "PFEP0606897": {
-    "adv_30d": 6120,
-    "fetched_date": "2026-08-06",
+    "adv_30d": 4244,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "CICB"
   },
   "PFEP0606970": {
@@ -3960,8 +3960,8 @@
     "yahoo_ticker": "MCHPP"
   },
   "PFEP0608331": {
-    "adv_30d": 33283,
-    "fetched_date": "2026-08-05",
+    "adv_30d": 51702,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "FOUR-PA"
   },
   "PFEP0608406": {
@@ -4110,8 +4110,8 @@
     "yahoo_ticker": "C-PR"
   },
   "PFEP0610261": {
-    "adv_30d": 51447,
-    "fetched_date": "2026-08-06",
+    "adv_30d": 22970,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "FCNCN"
   },
   "PFEP0610311": {
@@ -4150,8 +4150,8 @@
     "yahoo_ticker": null
   },
   "PFEP0610790": {
-    "adv_30d": 5141,
-    "fetched_date": "2026-08-05",
+    "adv_30d": 4493,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "CFTR-PA"
   },
   "PFEP0610931": {
@@ -4180,13 +4180,13 @@
     "yahoo_ticker": "GOOGN"
   },
   "PFEP0611160": {
-    "adv_30d": 173313,
-    "fetched_date": "2026-08-06",
+    "adv_30d": 83473,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "CTGG"
   },
   "PFEP0611186": {
-    "adv_30d": 99107,
-    "fetched_date": "2026-08-06",
+    "adv_30d": 52180,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "CTHH"
   },
   "PFEP0611194": {
@@ -4691,7 +4691,7 @@
   },
   "US09175D2009": {
     "adv_30d": null,
-    "fetched_date": "2026-08-04",
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": null
   },
   "US0970232049": {
@@ -5785,8 +5785,8 @@
     "yahoo_ticker": "NEWT"
   },
   "US65339F1194": {
-    "adv_30d": 202690,
-    "fetched_date": "2026-08-05",
+    "adv_30d": 141835,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "NEE-PT"
   },
   "US65339F6557": {
@@ -5795,8 +5795,8 @@
     "yahoo_ticker": "NEE-PV"
   },
   "US65339F6631": {
-    "adv_30d": 202919,
-    "fetched_date": "2026-08-05",
+    "adv_30d": 65652,
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": "NEE-PS"
   },
   "US65339F7134": {
@@ -5806,12 +5806,12 @@
   },
   "US65339K8291": {
     "adv_30d": null,
-    "fetched_date": "2026-08-05",
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": null
   },
   "US65339K8374": {
     "adv_30d": null,
-    "fetched_date": "2026-08-05",
+    "fetched_date": "2026-08-14",
     "yahoo_ticker": null
   },
   "US65339K8606": {
