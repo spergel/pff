@@ -1251,7 +1251,7 @@
   },
   "74913G857": {
     "adv_30d": null,
-    "fetched_date": "2026-08-14",
+    "fetched_date": "2026-08-22",
     "yahoo_ticker": null
   },
   "74913G865": {
@@ -1328,6 +1328,11 @@
     "adv_30d": 8147,
     "fetched_date": "2026-08-19",
     "yahoo_ticker": "SLG-PI"
+  },
+  "80282K700": {
+    "adv_30d": null,
+    "fetched_date": "2026-08-22",
+    "yahoo_ticker": null
   },
   "80620A208": {
     "adv_30d": null,
