@@ -1615,8 +1615,8 @@
     "yahoo_ticker": "WBS-PF"
   },
   "949746804": {
-    "adv_30d": 8619,
-    "fetched_date": "2026-08-11",
+    "adv_30d": 7534,
+    "fetched_date": "2026-08-29",
     "yahoo_ticker": "WFC-PL"
   },
   "94988U128": {
@@ -3030,8 +3030,8 @@
     "yahoo_ticker": null
   },
   "CASHUSD00": {
-    "adv_30d": 721040,
-    "fetched_date": "2026-08-21",
+    "adv_30d": 708143,
+    "fetched_date": "2026-08-29",
     "yahoo_ticker": "USD"
   },
   "COYO8456254": {
