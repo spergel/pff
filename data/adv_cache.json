@@ -45,8 +45,8 @@
     "yahoo_ticker": "AMG"
   },
   "008252835": {
-    "adv_30d": 270876,
-    "fetched_date": "2026-08-27",
+    "adv_30d": 256675,
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": "AMG"
   },
   "008252843": {
@@ -465,8 +465,8 @@
     "yahoo_ticker": "CHSCN"
   },
   "12542R704": {
-    "adv_30d": 25857,
-    "fetched_date": "2026-08-20",
+    "adv_30d": 24902,
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": "CHSCM"
   },
   "125896837": {
@@ -565,8 +565,8 @@
     "yahoo_ticker": null
   },
   "21871X208": {
-    "adv_30d": 4309335,
-    "fetched_date": "2026-08-27",
+    "adv_30d": 4217883,
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": "CRBG"
   },
   "21871XAU3": {
@@ -700,8 +700,8 @@
     "yahoo_ticker": "ETR"
   },
   "29452E200": {
-    "adv_30d": 56309,
-    "fetched_date": "2026-08-27",
+    "adv_30d": 57878,
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": "EQH-PA"
   },
   "29452E408": {
@@ -720,8 +720,8 @@
     "yahoo_ticker": null
   },
   "30190A203": {
-    "adv_30d": 634825,
-    "fetched_date": "2026-08-27",
+    "adv_30d": 574039,
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": "FG"
   },
   "30190A609": {
@@ -1650,13 +1650,13 @@
     "yahoo_ticker": "WFC"
   },
   "95002YAC7": {
-    "adv_30d": 16416738,
-    "fetched_date": "2026-06-02",
+    "adv_30d": 12472697,
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": "WFC"
   },
   "95002YAE3": {
     "adv_30d": null,
-    "fetched_date": "2026-04-08",
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": null
   },
   "950810887": {
@@ -3275,13 +3275,13 @@
     "yahoo_ticker": "ACR-PC"
   },
   "PFEP0489187": {
-    "adv_30d": 5671,
-    "fetched_date": "2026-08-27",
+    "adv_30d": 5510,
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": "VLYPP"
   },
   "PFEP0501536": {
     "adv_30d": null,
-    "fetched_date": "2026-08-27",
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": null
   },
   "PFEP0506840": {
@@ -5925,18 +5925,18 @@
     "yahoo_ticker": "PCG-PA"
   },
   "US70509V6056": {
-    "adv_30d": 4928,
-    "fetched_date": "2026-08-27",
+    "adv_30d": 5230,
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": "PEB-PE"
   },
   "US70509V7047": {
-    "adv_30d": 4302,
-    "fetched_date": "2026-08-27",
+    "adv_30d": 5109,
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": "PEB-PF"
   },
   "US70509V8037": {
-    "adv_30d": 5524,
-    "fetched_date": "2026-08-27",
+    "adv_30d": 7055,
+    "fetched_date": "2026-09-04",
     "yahoo_ticker": "PEB-PG"
   },
   "US70509V8862": {
