@@ -210,8 +210,8 @@
     "yahoo_ticker": "ATH-PD"
   },
   "04686J507": {
-    "adv_30d": 39840,
-    "fetched_date": "2026-09-11",
+    "adv_30d": 46483,
+    "fetched_date": "2026-09-19",
     "yahoo_ticker": "ATH-PE"
   },
   "04686J838": {
@@ -220,8 +220,8 @@
     "yahoo_ticker": null
   },
   "04686J861": {
-    "adv_30d": 86001,
-    "fetched_date": "2026-09-11",
+    "adv_30d": 103389,
+    "fetched_date": "2026-09-19",
     "yahoo_ticker": "ATH-PA"
   },
   "04914Y409": {
@@ -480,8 +480,8 @@
     "yahoo_ticker": "CMS-PC"
   },
   "125896845": {
-    "adv_30d": 3366822,
-    "fetched_date": "2026-09-10",
+    "adv_30d": 3332127,
+    "fetched_date": "2026-09-19",
     "yahoo_ticker": "CMS"
   },
   "125896852": {
@@ -815,8 +815,8 @@
     "yahoo_ticker": "GNL-PA"
   },
   "379378409": {
-    "adv_30d": 8184,
-    "fetched_date": "2026-09-11",
+    "adv_30d": 8182,
+    "fetched_date": "2026-09-19",
     "yahoo_ticker": "GNL-PB"
   },
   "37959E300": {
@@ -1500,8 +1500,8 @@
     "yahoo_ticker": "TMUS"
   },
   "872652102": {
-    "adv_30d": 2987564,
-    "fetched_date": "2026-09-10",
+    "adv_30d": 2929590,
+    "fetched_date": "2026-09-19",
     "yahoo_ticker": "TPG"
   },
   "879433761": {
@@ -1656,7 +1656,7 @@
   },
   "94988U128": {
     "adv_30d": null,
-    "fetched_date": "2026-09-11",
+    "fetched_date": "2026-09-19",
     "yahoo_ticker": null
   },
   "94988U151": {
@@ -3176,7 +3176,7 @@
   },
   "G16249156": {
     "adv_30d": null,
-    "fetched_date": "2026-09-10",
+    "fetched_date": "2026-09-19",
     "yahoo_ticker": null
   },
   "G16249164": {
