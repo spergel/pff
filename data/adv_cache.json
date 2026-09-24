@@ -5,13 +5,13 @@
     "yahoo_ticker": "USD"
   },
   "00123Q807": {
-    "adv_30d": 20667,
-    "fetched_date": "2026-09-11",
+    "adv_30d": 19110,
+    "fetched_date": "2026-09-24",
     "yahoo_ticker": "AGNCO"
   },
   "00123Q831": {
-    "adv_30d": 35133,
-    "fetched_date": "2026-09-11",
+    "adv_30d": 34604,
+    "fetched_date": "2026-09-24",
     "yahoo_ticker": "AGNCZ"
   },
   "00123Q872": {
@@ -155,8 +155,8 @@
     "yahoo_ticker": "AMH-PG"
   },
   "035710821": {
-    "adv_30d": 37005,
-    "fetched_date": "2026-09-11",
+    "adv_30d": 35795,
+    "fetched_date": "2026-09-24",
     "yahoo_ticker": "NLY-PJ"
   },
   "035710870": {
@@ -635,8 +635,8 @@
     "yahoo_ticker": "DLR-PJ"
   },
   "25401T306": {
-    "adv_30d": 39628,
-    "fetched_date": "2026-09-11",
+    "adv_30d": 50506,
+    "fetched_date": "2026-09-24",
     "yahoo_ticker": "DBRG-PJ"
   },
   "2612674": {
@@ -675,8 +675,8 @@
     "yahoo_ticker": null
   },
   "29359U109": {
-    "adv_30d": 3912,
-    "fetched_date": "2026-09-11",
+    "adv_30d": 2363,
+    "fetched_date": "2026-09-24",
     "yahoo_ticker": "ESGRF"
   },
   "29364D100": {
@@ -3325,8 +3325,8 @@
     "yahoo_ticker": "VNO-PL"
   },
   "PFEP0438903": {
-    "adv_30d": 26062,
-    "fetched_date": "2026-09-10",
+    "adv_30d": 34374,
+    "fetched_date": "2026-09-24",
     "yahoo_ticker": "PBI-PB"
   },
   "PFEP0441154": {
@@ -3905,8 +3905,8 @@
     "yahoo_ticker": "TRNZ"
   },
   "PFEP0605626": {
-    "adv_30d": 57313,
-    "fetched_date": "2026-09-16",
+    "adv_30d": 71046,
+    "fetched_date": "2026-09-24",
     "yahoo_ticker": "SCE-PN"
   },
   "PFEP0605642": {
@@ -4000,8 +4000,8 @@
     "yahoo_ticker": "AHL-PF"
   },
   "PFEP0607317": {
-    "adv_30d": 3921,
-    "fetched_date": "2026-09-16",
+    "adv_30d": 4056,
+    "fetched_date": "2026-09-24",
     "yahoo_ticker": "METCZ"
   },
   "PFEP0607382": {
@@ -4115,8 +4115,8 @@
     "yahoo_ticker": "CFG-PI"
   },
   "PFEP0608901": {
-    "adv_30d": 1693,
-    "fetched_date": "2026-09-16",
+    "adv_30d": 1924,
+    "fetched_date": "2026-09-24",
     "yahoo_ticker": "METCI"
   },
   "PFEP0608935": {
@@ -4318,6 +4318,11 @@
     "adv_30d": 11557,
     "fetched_date": "2026-09-22",
     "yahoo_ticker": "CHTRP"
+  },
+  "PFEP0611798": {
+    "adv_30d": null,
+    "fetched_date": "2026-09-24",
+    "yahoo_ticker": null
   },
   "Printer Friendly Page": {
     "adv_30d": null,
