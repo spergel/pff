@@ -895,8 +895,8 @@
     "yahoo_ticker": null
   },
   "46138E511": {
-    "adv_30d": 3377351,
-    "fetched_date": "2026-08-27",
+    "adv_30d": 6330967,
+    "fetched_date": "2026-10-03",
     "yahoo_ticker": "PGX"
   },
   "46817M206": {
@@ -997,6 +997,11 @@
   "539439BF5": {
     "adv_30d": null,
     "fetched_date": "2026-08-13",
+    "yahoo_ticker": null
+  },
+  "53944YAV5": {
+    "adv_30d": null,
+    "fetched_date": "2026-10-03",
     "yahoo_ticker": null
   },
   "55261F823": {
@@ -1220,8 +1225,8 @@
     "yahoo_ticker": "PSA"
   },
   "74460W370": {
-    "adv_30d": 897273,
-    "fetched_date": "2026-09-05",
+    "adv_30d": 864820,
+    "fetched_date": "2026-10-03",
     "yahoo_ticker": "PSA"
   },
   "74460W396": {
@@ -3170,8 +3175,8 @@
     "yahoo_ticker": null
   },
   "CASHUSD00": {
-    "adv_30d": 557330,
-    "fetched_date": "2026-09-25",
+    "adv_30d": 556483,
+    "fetched_date": "2026-10-03",
     "yahoo_ticker": "USD"
   },
   "COYO8456254": {
