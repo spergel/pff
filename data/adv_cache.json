@@ -3180,8 +3180,8 @@
     "yahoo_ticker": null
   },
   "CASHUSD00": {
-    "adv_30d": 556483,
-    "fetched_date": "2026-10-03",
+    "adv_30d": 505649,
+    "fetched_date": "2026-10-13",
     "yahoo_ticker": "USD"
   },
   "COYO8456254": {
@@ -3485,9 +3485,9 @@
     "yahoo_ticker": "GLOP-PA"
   },
   "PFEP0529198": {
-    "adv_30d": 150087,
-    "fetched_date": "2026-09-30",
-    "yahoo_ticker": "DBRG-PI"
+    "adv_30d": 222859,
+    "fetched_date": "2026-10-13",
+    "yahoo_ticker": "DBRIP"
   },
   "PFEP0530568": {
     "adv_30d": null,
