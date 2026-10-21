@@ -349,6 +349,11 @@
     "fetched_date": "2026-10-17",
     "yahoo_ticker": null
   },
+  "06055HAN3": {
+    "adv_30d": null,
+    "fetched_date": "2026-10-21",
+    "yahoo_ticker": null
+  },
   "062540307": {
     "adv_30d": 449697,
     "fetched_date": "2026-10-20",
@@ -391,7 +396,7 @@
   },
   "0778FPAQ2": {
     "adv_30d": null,
-    "fetched_date": "2026-04-24",
+    "fetched_date": "2026-10-21",
     "yahoo_ticker": null
   },
   "084423706": {
@@ -1371,7 +1376,7 @@
   },
   "775109DU2": {
     "adv_30d": null,
-    "fetched_date": "2026-09-18",
+    "fetched_date": "2026-10-21",
     "yahoo_ticker": null
   },
   "780082AT0": {
@@ -3190,8 +3195,8 @@
     "yahoo_ticker": null
   },
   "CASHUSD00": {
-    "adv_30d": 505649,
-    "fetched_date": "2026-10-13",
+    "adv_30d": 538406,
+    "fetched_date": "2026-10-21",
     "yahoo_ticker": "USD"
   },
   "COYO8456254": {
@@ -3420,8 +3425,8 @@
     "yahoo_ticker": "VNO-PL"
   },
   "PFEP0438903": {
-    "adv_30d": 34374,
-    "fetched_date": "2026-09-24",
+    "adv_30d": 43136,
+    "fetched_date": "2026-10-21",
     "yahoo_ticker": "PBI-PB"
   },
   "PFEP0441154": {
@@ -3495,8 +3500,8 @@
     "yahoo_ticker": "GLOP-PA"
   },
   "PFEP0529198": {
-    "adv_30d": 222859,
-    "fetched_date": "2026-10-13",
+    "adv_30d": 211894,
+    "fetched_date": "2026-10-21",
     "yahoo_ticker": "DBRIP"
   },
   "PFEP0530568": {
@@ -3605,8 +3610,8 @@
     "yahoo_ticker": "CIM-PC"
   },
   "PFEP0564401": {
-    "adv_30d": 7665,
-    "fetched_date": "2026-10-09",
+    "adv_30d": 10140,
+    "fetched_date": "2026-10-21",
     "yahoo_ticker": "BHR-PD"
   },
   "PFEP0565333": {
@@ -3628,6 +3633,11 @@
     "adv_30d": 39518,
     "fetched_date": "2026-10-20",
     "yahoo_ticker": "BHFAP"
+  },
+  "PFEP0573006": {
+    "adv_30d": 8419,
+    "fetched_date": "2026-10-21",
+    "yahoo_ticker": "AHRT-PA"
   },
   "PFEP0574905": {
     "adv_30d": 9052,
@@ -3978,6 +3988,11 @@
     "adv_30d": 122622,
     "fetched_date": "2026-10-20",
     "yahoo_ticker": "BANC-PF"
+  },
+  "PFEP0604538": {
+    "adv_30d": 14750,
+    "fetched_date": "2026-10-21",
+    "yahoo_ticker": "RWTN"
   },
   "PFEP0604637": {
     "adv_30d": 18189,
