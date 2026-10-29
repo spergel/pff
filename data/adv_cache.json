@@ -105,9 +105,9 @@
     "yahoo_ticker": "ALL-PH"
   },
   "023608AT9": {
-    "adv_30d": null,
-    "fetched_date": "2026-09-09",
-    "yahoo_ticker": null
+    "adv_30d": 1962203,
+    "fetched_date": "2026-10-29",
+    "yahoo_ticker": "AEE"
   },
   "02369GAA3": {
     "adv_30d": null,
@@ -669,6 +669,16 @@
     "fetched_date": "2026-10-22",
     "yahoo_ticker": "DBRG-PH"
   },
+  "25525P206": {
+    "adv_30d": 1926244,
+    "fetched_date": "2026-10-29",
+    "yahoo_ticker": "DHC"
+  },
+  "25525P305": {
+    "adv_30d": 1926244,
+    "fetched_date": "2026-10-29",
+    "yahoo_ticker": "DHC"
+  },
   "25746UDT3": {
     "adv_30d": null,
     "fetched_date": "2026-10-28",
@@ -693,6 +703,11 @@
     "adv_30d": 178256,
     "fetched_date": "2026-10-28",
     "yahoo_ticker": "DUK-PA"
+  },
+  "26441CCG8": {
+    "adv_30d": 3931312,
+    "fetched_date": "2026-10-29",
+    "yahoo_ticker": "DUK"
   },
   "26884U505": {
     "adv_30d": 6431,
@@ -1000,8 +1015,8 @@
     "yahoo_ticker": "KKR"
   },
   "488401308": {
-    "adv_30d": 881936,
-    "fetched_date": "2026-05-27",
+    "adv_30d": 851368,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "KMPR"
   },
   "493267843": {
@@ -1183,6 +1198,11 @@
     "adv_30d": null,
     "fetched_date": "2026-06-17",
     "yahoo_ticker": null
+  },
+  "65473PAT2": {
+    "adv_30d": 5942424,
+    "fetched_date": "2026-10-29",
+    "yahoo_ticker": "NI"
   },
   "665859856": {
     "adv_30d": null,
@@ -1508,6 +1528,11 @@
     "adv_30d": null,
     "fetched_date": "2026-10-27",
     "yahoo_ticker": null
+  },
+  "842587EB9": {
+    "adv_30d": 6222889,
+    "fetched_date": "2026-10-29",
+    "yahoo_ticker": "SO"
   },
   "84857L705": {
     "adv_30d": 495593,
@@ -3225,8 +3250,8 @@
     "yahoo_ticker": null
   },
   "CASHUSD00": {
-    "adv_30d": 538406,
-    "fetched_date": "2026-10-21",
+    "adv_30d": 577395,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "USD"
   },
   "COYO8456254": {
@@ -3290,8 +3315,8 @@
     "yahoo_ticker": "GTLS"
   },
   "EQ0000000038018603": {
-    "adv_30d": 22024027,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 18605997,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "HPE"
   },
   "EQ0000000089420183": {
@@ -3300,8 +3325,8 @@
     "yahoo_ticker": "APO"
   },
   "EQ0000000408476569": {
-    "adv_30d": 84153,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 97236,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "OPI"
   },
   "EQ0000000408483259": {
@@ -3315,8 +3340,8 @@
     "yahoo_ticker": "BA"
   },
   "EQ0031011600060001": {
-    "adv_30d": 4518732,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 3847162,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "AQN"
   },
   "G05384162": {
@@ -3411,22 +3436,22 @@
   },
   "PFEP0066209": {
     "adv_30d": null,
-    "fetched_date": "2026-10-20",
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": null
   },
   "PFEP0101675": {
-    "adv_30d": 20890,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 20819,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "JSM"
   },
   "PFEP0139618": {
-    "adv_30d": 4057,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 6910,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "LXP-PC"
   },
   "PFEP0158782": {
-    "adv_30d": 1631,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 1811,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "SLMBP"
   },
   "PFEP0315424": {
@@ -3440,23 +3465,23 @@
     "yahoo_ticker": "DHCNI"
   },
   "PFEP0423905": {
-    "adv_30d": 5688,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 5084,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MITT-PA"
   },
   "PFEP0425074": {
-    "adv_30d": 9950,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 11979,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "SLG-PI"
   },
   "PFEP0427799": {
-    "adv_30d": 12712,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 11534,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MITT-PB"
   },
   "PFEP0436741": {
-    "adv_30d": 21654,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 23665,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "VNO-PL"
   },
   "PFEP0438903": {
@@ -3495,8 +3520,8 @@
     "yahoo_ticker": "CTBB"
   },
   "PFEP0516765": {
-    "adv_30d": 16534,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 17759,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CIM-PA"
   },
   "PFEP0522300": {
@@ -3505,13 +3530,13 @@
     "yahoo_ticker": "DBRHP"
   },
   "PFEP0523977": {
-    "adv_30d": 34981,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 38684,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CIM-PB"
   },
   "PFEP0524637": {
-    "adv_30d": 8395,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 11436,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "PMT-PA"
   },
   "PFEP0524728": {
@@ -3520,8 +3545,8 @@
     "yahoo_ticker": "TWO-PA"
   },
   "PFEP0524934": {
-    "adv_30d": 43441,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 54071,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "FLG-PA"
   },
   "PFEP0527051": {
@@ -3541,7 +3566,7 @@
   },
   "PFEP0530568": {
     "adv_30d": null,
-    "fetched_date": "2026-10-20",
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": null
   },
   "PFEP0530626": {
@@ -3550,8 +3575,8 @@
     "yahoo_ticker": "CODI-PA"
   },
   "PFEP0531053": {
-    "adv_30d": 12590,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 13236,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "PMT-PB"
   },
   "PFEP0531699": {
@@ -3565,18 +3590,18 @@
     "yahoo_ticker": "VLYPO"
   },
   "PFEP0533315": {
-    "adv_30d": 20702,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 25285,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "IVR-PC"
   },
   "PFEP0534511": {
-    "adv_30d": 20770,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 20936,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "RLJ-PA"
   },
   "PFEP0534842": {
-    "adv_30d": 7778,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 10130,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "GNL-PA"
   },
   "PFEP0535294": {
@@ -3590,8 +3615,8 @@
     "yahoo_ticker": "DBRJP"
   },
   "PFEP0537365": {
-    "adv_30d": 7844,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 7900,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "ADAMN"
   },
   "PFEP0537639": {
@@ -3600,8 +3625,8 @@
     "yahoo_ticker": "IIPR-PA"
   },
   "PFEP0539643": {
-    "adv_30d": 7013,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 7261,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "INN-PE"
   },
   "PFEP0540906": {
@@ -3610,13 +3635,13 @@
     "yahoo_ticker": "TWO-PC"
   },
   "PFEP0541888": {
-    "adv_30d": 6957,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 6208,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "EPR-PG"
   },
   "PFEP0542720": {
-    "adv_30d": 14143,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 16512,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "VNO-PM"
   },
   "PFEP0549212": {
@@ -3625,8 +3650,8 @@
     "yahoo_ticker": "CODI-PB"
   },
   "PFEP0552968": {
-    "adv_30d": 9755,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 9064,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "OAK-PA"
   },
   "PFEP0553792": {
@@ -3635,8 +3660,8 @@
     "yahoo_ticker": "UNMA"
   },
   "PFEP0558197": {
-    "adv_30d": 12004,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 12260,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "OAK-PB"
   },
   "PFEP0559674": {
@@ -3645,8 +3670,8 @@
     "yahoo_ticker": "BHFAL"
   },
   "PFEP0560425": {
-    "adv_30d": 36889,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 37848,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CIM-PC"
   },
   "PFEP0564401": {
@@ -3655,23 +3680,23 @@
     "yahoo_ticker": "BHR-PD"
   },
   "PFEP0565333": {
-    "adv_30d": 5794,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 4965,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "PEB-PF"
   },
   "PFEP0565390": {
-    "adv_30d": 7419,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 7612,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "PEB-PE"
   },
   "PFEP0566463": {
-    "adv_30d": 16065,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 16430,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CIM-PD"
   },
   "PFEP0569459": {
-    "adv_30d": 39518,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 39849,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "BHFAP"
   },
   "PFEP0573006": {
@@ -3690,63 +3715,63 @@
     "yahoo_ticker": "AHL-PE"
   },
   "PFEP0576793": {
-    "adv_30d": 4936,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 6007,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "BFS-PE"
   },
   "PFEP0577072": {
-    "adv_30d": 12122,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 10891,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MITT-PC"
   },
   "PFEP0579284": {
-    "adv_30d": 16263,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 15706,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "ADAMM"
   },
   "PFEP0580365": {
-    "adv_30d": 18432,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 18908,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "TRTN-PC"
   },
   "PFEP0580845": {
-    "adv_30d": 90016,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 99953,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "SYF-PA"
   },
   "PFEP0581280": {
-    "adv_30d": 8699,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 8978,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CODI-PC"
   },
   "PFEP0582072": {
-    "adv_30d": 7217,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 6892,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "GNL-PB"
   },
   "PFEP0583278": {
     "adv_30d": null,
-    "fetched_date": "2026-10-20",
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": null
   },
   "PFEP0585000": {
-    "adv_30d": 6932,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 7287,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "TRTN-PD"
   },
   "PFEP0585158": {
-    "adv_30d": 20906,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 22136,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "ARR-PC"
   },
   "PFEP0585836": {
-    "adv_30d": 28516,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 29545,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "RITM-PC"
   },
   "PFEP0586586": {
-    "adv_30d": 42176,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 39486,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MFA-PC"
   },
   "PFEP0588665": {
@@ -3770,13 +3795,13 @@
     "yahoo_ticker": "BHFAN"
   },
   "PFEP0596916": {
-    "adv_30d": 15583,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 14694,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "VNO-PN"
   },
   "PFEP0596940": {
-    "adv_30d": 7037,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 7541,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "UZE"
   },
   "PFEP0597104": {
@@ -3795,18 +3820,18 @@
     "yahoo_ticker": "DCOM"
   },
   "PFEP0597617": {
-    "adv_30d": 23930,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 31751,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "TDS-PU"
   },
   "PFEP0597765": {
-    "adv_30d": 9305,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 10192,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MBINN"
   },
   "PFEP0597963": {
-    "adv_30d": 29629,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 30107,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "KKRS"
   },
   "PFEP0598359": {
@@ -3815,8 +3840,8 @@
     "yahoo_ticker": "BW-PA"
   },
   "PFEP0598391": {
-    "adv_30d": 12308,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 12846,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "PEB-PG"
   },
   "PFEP0598409": {
@@ -3845,23 +3870,23 @@
     "yahoo_ticker": "RC-PE"
   },
   "PFEP0598730": {
-    "adv_30d": 17155,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 16789,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "TRTX-PC"
   },
   "PFEP0598789": {
-    "adv_30d": 3867,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 5510,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "ATLCP"
   },
   "PFEP0598953": {
-    "adv_30d": 4699,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 4418,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CTO-PA"
   },
   "PFEP0599118": {
-    "adv_30d": 7193,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 8123,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "PSEC-PA"
   },
   "PFEP0599134": {
@@ -3870,8 +3895,8 @@
     "yahoo_ticker": "SHO-PI"
   },
   "PFEP0599324": {
-    "adv_30d": 10576,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 11087,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "PEB-PH"
   },
   "PFEP0599431": {
@@ -3880,13 +3905,13 @@
     "yahoo_ticker": "ABR-PE"
   },
   "PFEP0599456": {
-    "adv_30d": 7012,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 6844,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "INN-PF"
   },
   "PFEP0599472": {
-    "adv_30d": 43531,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 48361,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "TDS-PV"
   },
   "PFEP0599480": {
@@ -3895,8 +3920,8 @@
     "yahoo_ticker": "OXLCO"
   },
   "PFEP0599514": {
-    "adv_30d": 10898,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 12222,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "TRTN-PE"
   },
   "PFEP0599613": {
@@ -3905,18 +3930,18 @@
     "yahoo_ticker": "PMT-PC"
   },
   "PFEP0599753": {
-    "adv_30d": 23034,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 21848,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "VNO-PO"
   },
   "PFEP0599761": {
-    "adv_30d": 103118,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 107952,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "RITM-PD"
   },
   "PFEP0599779": {
-    "adv_30d": 62679,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 59082,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "WAL-PA"
   },
   "PFEP0599894": {
@@ -3930,28 +3955,28 @@
     "yahoo_ticker": "ABR-PF"
   },
   "PFEP0600098": {
-    "adv_30d": 28622,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 27104,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "FBRT-PE"
   },
   "PFEP0600247": {
-    "adv_30d": 14214,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 12651,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "HPP-PC"
   },
   "PFEP0600270": {
-    "adv_30d": 5912,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 5092,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "EFSCP"
   },
   "PFEP0600288": {
-    "adv_30d": 65243,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 64907,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "BHFAM"
   },
   "PFEP0600593": {
-    "adv_30d": 10400,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 10152,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "EFC-PB"
   },
   "PFEP0600601": {
@@ -3960,18 +3985,18 @@
     "yahoo_ticker": "BWNB"
   },
   "PFEP0601112": {
-    "adv_30d": 15121,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 19376,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "KMPB"
   },
   "PFEP0601328": {
-    "adv_30d": 9073,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 20929,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "RIV-PA"
   },
   "PFEP0601906": {
-    "adv_30d": 2817,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 3055,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MSBIP"
   },
   "PFEP0602243": {
@@ -3995,13 +4020,13 @@
     "yahoo_ticker": "APO-PA"
   },
   "PFEP0603597": {
-    "adv_30d": 2563,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 2102,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "REGCO"
   },
   "PFEP0603704": {
-    "adv_30d": 9966,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 9588,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "GNL-PD"
   },
   "PFEP0603712": {
@@ -4010,18 +4035,18 @@
     "yahoo_ticker": "GNL-PE"
   },
   "PFEP0603993": {
-    "adv_30d": 12059,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 11580,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "ABXL"
   },
   "PFEP0604009": {
-    "adv_30d": 56862,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 53562,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "ET-PI"
   },
   "PFEP0604066": {
     "adv_30d": null,
-    "fetched_date": "2026-10-20",
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": null
   },
   "PFEP0604199": {
@@ -4030,8 +4055,8 @@
     "yahoo_ticker": "BANC-PF"
   },
   "PFEP0604538": {
-    "adv_30d": 14750,
-    "fetched_date": "2026-10-21",
+    "adv_30d": 14361,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "RWTN"
   },
   "PFEP0604637": {
@@ -4050,13 +4075,13 @@
     "yahoo_ticker": "ALB-PA"
   },
   "PFEP0605220": {
-    "adv_30d": 20280,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 18391,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "BEPJ"
   },
   "PFEP0605246": {
-    "adv_30d": 15827,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 11013,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "TRNZ"
   },
   "PFEP0605626": {
@@ -4065,18 +4090,18 @@
     "yahoo_ticker": null
   },
   "PFEP0605642": {
-    "adv_30d": 11279,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 10499,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MITP"
   },
   "PFEP0605709": {
-    "adv_30d": 11558,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 11706,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CIMN"
   },
   "PFEP0605758": {
-    "adv_30d": 7857,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 7702,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "BIPJ"
   },
   "PFEP0605972": {
@@ -4085,18 +4110,18 @@
     "yahoo_ticker": "RWTO"
   },
   "PFEP0606301": {
-    "adv_30d": 14730,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 12195,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "TRNI"
   },
   "PFEP0606319": {
-    "adv_30d": 7592,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 8096,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "AOMN"
   },
   "PFEP0606509": {
-    "adv_30d": 21133,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 20436,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "VLYPN"
   },
   "PFEP0606608": {
@@ -4105,48 +4130,48 @@
     "yahoo_ticker": "CIMO"
   },
   "PFEP0606715": {
-    "adv_30d": 5753,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 6402,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "NEWTH"
   },
   "PFEP0606764": {
-    "adv_30d": 213507,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 219572,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "HPE-PC"
   },
   "PFEP0606897": {
-    "adv_30d": 7592,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 8498,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CICB"
   },
   "PFEP0606970": {
-    "adv_30d": 174729,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 194773,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "ARES-PB"
   },
   "PFEP0606988": {
-    "adv_30d": 5291,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 6308,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "EIIA"
   },
   "PFEP0607085": {
-    "adv_30d": 459857,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 742994,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "BA-PA"
   },
   "PFEP0607135": {
-    "adv_30d": 4680,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 4947,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "SPMA"
   },
   "PFEP0607275": {
-    "adv_30d": 21773,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 24149,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MBINL"
   },
   "PFEP0607291": {
-    "adv_30d": 81289,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 66076,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CRBD"
   },
   "PFEP0607309": {
@@ -4170,23 +4195,23 @@
     "yahoo_ticker": "RCD"
   },
   "PFEP0607499": {
-    "adv_30d": 3256,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 2701,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "PDPA"
   },
   "PFEP0607549": {
-    "adv_30d": 33087,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 32342,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "FGSN"
   },
   "PFEP0607556": {
-    "adv_30d": 41285,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 36571,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "ANG-PD"
   },
   "PFEP0607572": {
-    "adv_30d": 16042,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 16828,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "ADAMG"
   },
   "PFEP0607622": {
@@ -4195,43 +4220,43 @@
     "yahoo_ticker": "RWTP"
   },
   "PFEP0607697": {
-    "adv_30d": 10555,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 13835,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "TRTN-PF"
   },
   "PFEP0607721": {
-    "adv_30d": 94031,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 88718,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "STRK"
   },
   "PFEP0607887": {
-    "adv_30d": 6995,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 6177,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "OXLCG"
   },
   "PFEP0607937": {
-    "adv_30d": 3685,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 4287,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "RPT-PC"
   },
   "PFEP0607986": {
-    "adv_30d": 111439,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 148568,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "KKR-PD"
   },
   "PFEP0608075": {
-    "adv_30d": 50675,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 49866,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "STRF"
   },
   "PFEP0608083": {
-    "adv_30d": 102336,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 80036,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MCHPP"
   },
   "PFEP0608331": {
-    "adv_30d": 33272,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 39405,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "FOUR-PA"
   },
   "PFEP0608406": {
@@ -4245,8 +4270,8 @@
     "yahoo_ticker": "BUSEP"
   },
   "PFEP0608430": {
-    "adv_30d": 28672,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 31768,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MBNKO"
   },
   "PFEP0608562": {
@@ -4275,8 +4300,8 @@
     "yahoo_ticker": "METCI"
   },
   "PFEP0608935": {
-    "adv_30d": 7105,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 5866,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "LOB-PA"
   },
   "PFEP0608943": {
@@ -4285,33 +4310,33 @@
     "yahoo_ticker": "NLY-PJ"
   },
   "PFEP0608950": {
-    "adv_30d": 3683,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 3669,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "OXSQH"
   },
   "PFEP0609008": {
-    "adv_30d": 3412,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 3559,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "NEWTP"
   },
   "PFEP0609032": {
-    "adv_30d": 6868,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 6541,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "AGM-PH"
   },
   "PFEP0609123": {
-    "adv_30d": 90028,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 106836,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "AGNCZ"
   },
   "PFEP0609180": {
-    "adv_30d": 89362,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 81147,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "DTK"
   },
   "PFEP0609214": {
-    "adv_30d": 12520,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 13808,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CIMP"
   },
   "PFEP0609222": {
@@ -4320,23 +4345,23 @@
     "yahoo_ticker": "WSBCO"
   },
   "PFEP0609271": {
-    "adv_30d": 39286,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 40561,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "RITM-PE"
   },
   "PFEP0609321": {
-    "adv_30d": 117980,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 144922,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "XELLL"
   },
   "PFEP0609420": {
-    "adv_30d": 50984,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 57562,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "TCPA"
   },
   "PFEP0609560": {
-    "adv_30d": 67531,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 68423,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MTB-PK"
   },
   "PFEP0609636": {
@@ -4355,83 +4380,83 @@
     "yahoo_ticker": "RWTQ"
   },
   "PFEP0609883": {
-    "adv_30d": 13032,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 11566,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "BFH-PA"
   },
   "PFEP0610139": {
-    "adv_30d": 35453,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 38237,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "SRJN"
   },
   "PFEP0610154": {
-    "adv_30d": 26487,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 28426,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "TRTN-PG"
   },
   "PFEP0610162": {
-    "adv_30d": 37651,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 40477,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "RITM-PF"
   },
   "PFEP0610246": {
-    "adv_30d": 153570,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 153742,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "C-PR"
   },
   "PFEP0610261": {
-    "adv_30d": 52722,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 64005,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "FCNCN"
   },
   "PFEP0610311": {
-    "adv_30d": 5463,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 5304,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CICC"
   },
   "PFEP0610378": {
-    "adv_30d": 895803,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 629549,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "ORCL-PD"
   },
   "PFEP0610394": {
-    "adv_30d": 28794,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 52290,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "VSECU"
   },
   "PFEP0610501": {
-    "adv_30d": 71861,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 76111,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "WHR-PA"
   },
   "PFEP0610550": {
-    "adv_30d": 343677,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 327732,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "NEE-PV"
   },
   "PFEP0610584": {
-    "adv_30d": 100255,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 101408,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "FHN-PH"
   },
   "PFEP0610733": {
     "adv_30d": null,
-    "fetched_date": "2026-10-20",
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": null
   },
   "PFEP0610790": {
-    "adv_30d": 2775,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 1656,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CFTR-PA"
   },
   "PFEP0610931": {
-    "adv_30d": 44626,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 35083,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "BFH-PB"
   },
   "PFEP0610972": {
-    "adv_30d": 23088,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 10048,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "AGM-PI"
   },
   "PFEP0611004": {
@@ -4460,23 +4485,28 @@
     "yahoo_ticker": "CTHH"
   },
   "PFEP0611194": {
-    "adv_30d": 733516,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 680872,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "SMCIP"
   },
   "PFEP0611434": {
-    "adv_30d": 108590,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 121379,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "MTB-PL"
   },
   "PFEP0611632": {
-    "adv_30d": 11041,
-    "fetched_date": "2026-10-20",
+    "adv_30d": 11184,
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": "CHTRP"
   },
   "PFEP0611798": {
+    "adv_30d": 125687,
+    "fetched_date": "2026-10-29",
+    "yahoo_ticker": "DX-PD"
+  },
+  "PFEP0611954": {
     "adv_30d": null,
-    "fetched_date": "2026-09-24",
+    "fetched_date": "2026-10-29",
     "yahoo_ticker": null
   },
   "Printer Friendly Page": {
