@@ -2011,6 +2011,15 @@
     "ticker": "DUK-A",
     "ticker_raw": "DUK"
   },
+  "US26441C8819": {
+    "figi": null,
+    "figi_ticker": "DUK 7.75 08/01/29",
+    "parsed_from_name": false,
+    "resolved": true,
+    "securityType": null,
+    "ticker": "DUK",
+    "ticker_raw": ""
+  },
   "US26817Q8785": {
     "figi": "BBG00RR4L142",
     "figi_name": "DYNEX CAPITAL INC",
